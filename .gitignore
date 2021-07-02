@@ -1,0 +1,13 @@
+mysrcs/*
+cil/*
+!cil/src
+cil/src/*
+!cil/src/ext
+!cil/src/main.ml
+!cil/src/test0.ml
+cil/src/ext/*
+!cil/src/ext/learning.ml
+!cil/src/ext/crestInstrument.ml
+tests/*/*
+!tests/*/*.c
+tests/*/*.cil.c
