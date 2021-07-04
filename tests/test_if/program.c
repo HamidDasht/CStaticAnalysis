@@ -48,9 +48,11 @@ int main()
 {
     //print_hello();
     int a;
+    int* ptr = (int*)malloc(sizeof(int));
+    *ptr = 3;
     scanf("%d", &a);
     
-    if ( a > 100)   
+    if ( *ptr > 100)   
     {
         if (a > 200)
             printf("200");
