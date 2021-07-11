@@ -14,7 +14,7 @@ int f1(int b)
         if (b > 0)
             printf("b is +");
     }
-    
+    f4();
     if ( b < 10) 
     {
         if (b < 200) 

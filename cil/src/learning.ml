@@ -85,10 +85,44 @@ class masterBranchVisitor = object(self)
 		DoChildren
 end
 
-class slaveFuncDepthVisitor funcdefs = 
+
+class slaveFuncDepthVisitor = object(self)
+	inherit nopCilVisitor as super
+
+	val mutable func_depths = Hashtbl.create 50;
+	val mutable in_main = false;
+	val cur_func_name = ref "";
+	val cur_func_branches = ref 0;
+	val depth = ref 0;
+
+	method get_func_depth func_name = Hashtbl.find func_depths func_name;
+
+	method vstmt ( s : stmt) =
+		match s.skind with 
+		If(_,_,_,_) -> begin
+			incr cur_func_branches; 
+			DoChildren
+		end
+		| Return(_,_) ->
+		begin
+			ignore(E.log "depth of %s is %d\n\n" !cur_func_name !cur_func_branches);
+			Hashtbl.add func_depths !cur_func_name !cur_func_branches;
+			cur_func_branches := 0;
+			DoChildren
+		end
+		| _ -> DoChildren
+
+	method vfunc (fd : fundec) =
+		cur_func_name := fd.svar.vname;
+		DoChildren
+	
+end
+
+class masterFuncDepthVisitor file = 
 object
 	inherit nopCilVisitor as super
 
+	val vis_func = new slaveFuncDepthVisitor;
 	val depth = ref 0;
 	method get_depth : int = !depth;
 
@@ -103,48 +137,21 @@ object
 		match i with 
 		| Call(_,(Lval (Var func_name,_)),_,_) when (func_name.vstorage != Extern)  -> 
 		begin
-			ignore(E.log "call %s\n\n" func_name.vname);
-			let vis_func = new masterBranchVisitor  in
-			begin
-				(visitCilFunction (vis_func :> cilVisitor) ((Hashtbl.find funcdefs func_name.vname ) :> Cil.fundec) ); 
-				(*depth := !depth + vis_func#get_depth;*)
-			end
+			ignore(E.log "call %s with depth %d\n\n" func_name.vname (vis_func#get_func_depth func_name.vname));
+			depth := !depth + vis_func#get_func_depth func_name.vname;
 			DoChildren
 		end
 		| _ -> DoChildren
 
-end
-
-class masterFuncDepthVisitor = object(self)
-	inherit nopCilVisitor as super
-
-	val mutable funcdefs = Hashtbl.create 50;
-	val mutable in_main = false;
-	val depth = ref 0;
-
-	method vinst ( i : instr) =
-		match i with 
-		| Call(_,(Lval (Var func_name,_)),_,_) when (func_name.vstorage != Extern)  -> 
-		(
-			ignore(E.log "call %s\n\n" func_name.vname);
-			let vis_func = new slaveFuncDepthVisitor funcdefs in
-			(
-				ignore(visitCilFunction (vis_func :> cilVisitor) (Hashtbl.find funcdefs func_name )); 
-				depth := !depth + vis_func#get_depth;
-			)
-			DoChildren
-		)
-		| _ -> DoChildren
-
 	method vfunc (fd : fundec) =
-		Hashtbl.add funcdefs fd.svar.vname fd;
-		if fd.svar.vname = "main"
-			then (
-				in_main <- true;
-				DoChildren
-			)
+		if fd.svar.vname = "main" then
+		begin
+		ignore(E.log "MASTER CALLLED\n\n" );
+			visitCilFileSameGlobals (vis_func :> cilVisitor) file; 
+			DoChildren
+		end
 		else
-			SkipChildren;
+		SkipChildren;
 end
 
 class branchVisitor = object(self)
@@ -503,7 +510,7 @@ let feature : featureDescr =
     (function (f: file) -> 
         let vis = new branchVisitor and
 		nestvis = new masterBranchVisitor and
-		depthvis = new masterFuncDepthVisitor and
+		depthvis = new masterFuncDepthVisitor f and
 		local_ref_vis = new localVariableBranchVisitor and
 		ptr_vis = new pointerBranchVisitor and 
 		ext_vis = new extCallBranchVisitor f and
@@ -535,6 +542,9 @@ let feature : featureDescr =
 		print_float nestvis#get_avg_nested_branches;
 		
         visitCilFileSameGlobals (depthvis :> cilVisitor) f;
+		print_string "\ndepth of program: ";
+		print_int depthvis#get_depth;
+		print_string "\n";
 
 		visitCilFileSameGlobals (local_ref_vis :> cilVisitor) f;
 		print_string "\nnumber of branches with local var in main: ";
