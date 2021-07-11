@@ -33,14 +33,16 @@ void f2(float b)
     printf("f2\n");
     return;
 }
-void f3()
+int f3()
 {
+    
     printf("f3\n");
-    return;
+    return 23;
 }
 void f4()
 {
-    printf("f4\n");
+    if (f3())
+        printf("f4\n");
     return;
 }
 

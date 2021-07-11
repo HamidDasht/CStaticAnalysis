@@ -85,27 +85,59 @@ class masterBranchVisitor = object(self)
 		DoChildren
 end
 
-class slaveFuncDepthVisitor = object(self)
+class slaveFuncDepthVisitor funcdefs = 
+object
 	inherit nopCilVisitor as super
 
+	val depth = ref 0;
+	method get_depth : int = !depth;
+
+	method vstmt (s: stmt) =
+		match s.skind with
+		|  If(_,_,_,_) ->
+			incr depth;
+			DoChildren
+		| _ -> DoChildren
+	
+	method vinst ( i : instr) =
+		match i with 
+		| Call(_,(Lval (Var func_name,_)),_,_) when (func_name.vstorage != Extern)  -> 
+		begin
+			ignore(E.log "call %s\n\n" func_name.vname);
+			let vis_func = new masterBranchVisitor  in
+			begin
+				(visitCilFunction (vis_func :> cilVisitor) ((Hashtbl.find funcdefs func_name.vname ) :> Cil.fundec) ); 
+				(*depth := !depth + vis_func#get_depth;*)
+			end
+			DoChildren
+		end
+		| _ -> DoChildren
 
 end
 
 class masterFuncDepthVisitor = object(self)
 	inherit nopCilVisitor as super
 
+	val mutable funcdefs = Hashtbl.create 50;
 	val mutable in_main = false;
+	val depth = ref 0;
 
 	method vinst ( i : instr) =
 		match i with 
-		Call(_,func_name,_,_) ->
+		| Call(_,(Lval (Var func_name,_)),_,_) when (func_name.vstorage != Extern)  -> 
 		(
-			ignore(E.log "%a@!\n\n" d_exp func_name);
+			ignore(E.log "call %s\n\n" func_name.vname);
+			let vis_func = new slaveFuncDepthVisitor funcdefs in
+			(
+				ignore(visitCilFunction (vis_func :> cilVisitor) (Hashtbl.find funcdefs func_name )); 
+				depth := !depth + vis_func#get_depth;
+			)
 			DoChildren
 		)
 		| _ -> DoChildren
 
 	method vfunc (fd : fundec) =
+		Hashtbl.add funcdefs fd.svar.vname fd;
 		if fd.svar.vname = "main"
 			then (
 				in_main <- true;
@@ -138,7 +170,7 @@ class branchVisitor = object(self)
 	method get_depth_of_main : int = !depth_of_main; 														(* feature #B.2 *)
 	method get_avg_branches : float = (float_of_int !number_of_branches) /. (float_of_int !num_of_funcs); 	(* feature #B.5 *)
 	method get_max_branches_in_funcs : int = !cur_max_branches_in_funcs; 									(* feature #B.6 *)
-	method get_num_of_branches : int = !number_of_branches; 												(* feature # *)
+	method get_num_of_branches : int = !number_of_branches; 												
 
 
 	method vstmt (s: stmt) =
@@ -178,16 +210,16 @@ class localVariableBranchVisitor = object(self)
 	inherit nopCilVisitor as super
 
 	val mutable is_in_main = false;
-	val local_ref_branches_in_main = ref 0;
+	val branches_in_main = ref 0;
 	(* maximum number of branches with local refernces in a function *)
-	val cur_func_local_ref_branches = ref 0;
-	val cur_max_local_ref_branches_in_funcs = ref 0;
-	val local_ref_branches_in_whole = ref 0;
+	val cur_func_branches = ref 0;
+	val cur_max_in_funcs = ref 0;
+	val branches_in_whole = ref 0;
 	val num_of_funcs = ref 0;
 
-	method get_local_ref_branches_in_main : int = !local_ref_branches_in_main;
-	method get_max_local_ref_branches_in_funcs : int = !cur_max_local_ref_branches_in_funcs;
-	method get_avg_local_ref_branches : float = (float_of_int !local_ref_branches_in_whole) /. (float_of_int !num_of_funcs);
+	method get_branches_in_main : int = !branches_in_main;													(* feature #B.26 *)
+	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);	(* feature #B.27 *)
+	method get_max : int = !cur_max_in_funcs;									(* feature #B.28 *)
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -197,28 +229,28 @@ class localVariableBranchVisitor = object(self)
 	            | Cil.BinOp(_, e1, e2, _) ->
 			    begin
 			     match e1, e2 with
-			      | CastE(_ ,Lval(Var i, _)), _   when i.vglob = false -> (incr cur_func_local_ref_branches; 
-				  														   if is_in_main then incr local_ref_branches_in_main)
-			      | _, CastE(_, Lval(Var i, _))  when i.vglob = false -> (incr cur_func_local_ref_branches; 
-				  														   if is_in_main then incr local_ref_branches_in_main)
-			      | Lval(Var i, _), _  when i.vglob = false -> (incr cur_func_local_ref_branches; 
-				  												if is_in_main then incr local_ref_branches_in_main)	
-				  | _, Lval(Var i, _) when i.vglob = false -> (incr cur_func_local_ref_branches; 
-				  											 	if is_in_main then incr local_ref_branches_in_main) 
+			      | CastE(_ ,Lval(Var i, _)), _   when i.vglob = false -> (incr cur_func_branches; 
+				  														   if is_in_main then incr branches_in_main)
+			      | _, CastE(_, Lval(Var i, _))  when i.vglob = false -> (incr cur_func_branches; 
+				  														   if is_in_main then incr branches_in_main)
+			      | Lval(Var i, _), _  when i.vglob = false -> (incr cur_func_branches; 
+				  												if is_in_main then incr branches_in_main)	
+				  | _, Lval(Var i, _) when i.vglob = false -> (incr cur_func_branches; 
+				  											 	if is_in_main then incr branches_in_main) 
 				  | _, _ -> ()
 	   		    end
-	         	| Cil.Lval(Var i, _) when(i.vglob = false) -> (incr cur_func_local_ref_branches; 
-				  											   if is_in_main then incr local_ref_branches_in_main)
+	         	| Cil.Lval(Var i, _) when(i.vglob = false) -> (incr cur_func_branches; 
+				  											   if is_in_main then incr branches_in_main)
 				| _ -> ()  
             end;
 			DoChildren   
 
 		| Return(_,_) ->
 			(* find maximum number of branches in a function *)
-			if !cur_func_local_ref_branches > !cur_max_local_ref_branches_in_funcs
-				then cur_max_local_ref_branches_in_funcs := !cur_func_local_ref_branches;
-			local_ref_branches_in_whole := !local_ref_branches_in_whole + !cur_func_local_ref_branches;
-			cur_func_local_ref_branches := 0;
+			if !cur_func_branches > !cur_max_in_funcs
+				then cur_max_in_funcs := !cur_func_branches;
+			branches_in_whole := !branches_in_whole + !cur_func_branches;
+			cur_func_branches := 0;
 			DoChildren
 		| _ -> DoChildren	
 
@@ -233,16 +265,16 @@ class pointerBranchVisitor = object(self)
 	inherit nopCilVisitor as super
 
 	val mutable is_in_main = false;
-	val ptr_branches_in_main = ref 0;
+	val branches_in_main = ref 0;
 	(* maximum number of branches with local refernces in a function *)
-	val cur_func_ptr_branches = ref 0;
-	val cur_max_ptr_branches_in_funcs = ref 0;
-	val ptr_branches_in_whole = ref 0;
+	val cur_func_branches = ref 0;
+	val cur_max_in_funcs = ref 0;
+	val branches_in_whole = ref 0;
 	val num_of_funcs = ref 0;
 
-	method get_ptr_branches_in_main : int = !ptr_branches_in_main;
-	method get_max_ptr_branches_in_funcs : int = !cur_max_ptr_branches_in_funcs;
-	method get_avg_ptr_branches : float = (float_of_int !ptr_branches_in_whole) /. (float_of_int !num_of_funcs);
+	method get_branches_in_main : int = !branches_in_main;													(* feature #B.23 *)
+	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);	(* feature #B.24 *)
+	method get_max : int = !cur_max_in_funcs;									(* feature #B.25 *)
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -255,22 +287,22 @@ class pointerBranchVisitor = object(self)
 			      | CastE(_ ,Lval(Mem _, _)), _ 
 			      | _, CastE(_, Lval(Mem _, _)) 
 			      | Lval(Mem _, _), _  
-				  | _, Lval(Mem _, _)  -> (incr cur_func_ptr_branches; 
-				  											 	if is_in_main then incr ptr_branches_in_main) 
+				  | _, Lval(Mem _, _)  -> (incr cur_func_branches; 
+				  											 	if is_in_main then incr branches_in_main) 
 				  | _, _ -> ()
 	   		    end
-	         	| Cil.Lval(Mem _, _) -> (incr cur_func_ptr_branches; 
-				  											   if is_in_main then incr ptr_branches_in_main)
+	         	| Cil.Lval(Mem _, _) -> (incr cur_func_branches; 
+				  											   if is_in_main then incr branches_in_main)
 				| _ -> ()  
             end;
 			DoChildren   
 
 		| Return(_,_) ->
 			(* find maximum number of branches in a function *)
-			if !cur_func_ptr_branches > !cur_max_ptr_branches_in_funcs
-				then cur_max_ptr_branches_in_funcs := !cur_func_ptr_branches;
-			ptr_branches_in_whole := !ptr_branches_in_whole + !cur_func_ptr_branches;
-			cur_func_ptr_branches := 0;
+			if !cur_func_branches > !cur_max_in_funcs
+				then cur_max_in_funcs := !cur_func_branches;
+			branches_in_whole := !branches_in_whole + !cur_func_branches;
+			cur_func_branches := 0;
 			DoChildren
 		| _ -> DoChildren	
 
@@ -280,6 +312,186 @@ class pointerBranchVisitor = object(self)
 		incr num_of_funcs;
 		DoChildren
 end
+
+
+let queue_to_list : 'a Queue.t -> 'a list 
+	= fun queue -> 
+	Queue.fold (fun b_l element -> element::b_l) [] queue
+
+class collectExternFuncNames = object(self)
+	inherit nopCilVisitor
+	val mutable ext_vals = Queue.create ()
+	method get = ext_vals
+
+	method vinst (i: instr) =
+		match i with
+		| Call((Some (Var vi, _)), (Lval (Var func_name,_)), _, _) 
+		  when (func_name.vstorage = Extern) && (vi.vdescr != Pretty.nil)-> 
+		 		Queue.push vi.vname ext_vals;
+				SkipChildren
+		| _ -> SkipChildren
+end
+class extCallBranchVisitor f = object(self)
+	inherit nopCilVisitor as super
+
+		
+	val vlist =
+		let vis = new collectExternFuncNames in
+		let _ = visitCilFileSameGlobals (vis :> cilVisitor) f in
+		let func_queue = vis#get in queue_to_list func_queue;
+
+	val mutable is_in_main = false;
+	val branches_in_main = ref 0;
+	(* maximum number of branches with local refernces in a function *)
+	val cur_func_branches = ref 0;
+	val cur_max_in_funcs = ref 0;
+	val branches_in_whole = ref 0;
+	val num_of_funcs = ref 0;
+
+	method get_branches_in_main : int = !branches_in_main;													(* feature #B.23 *)
+	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);	(* feature #B.24 *)
+	method get_max : int = !cur_max_in_funcs;									(* feature #B.25 *)
+
+	method vstmt (s: stmt) =
+		match s.skind with
+		| If(exp, _, _, _) -> 
+			begin
+		        match exp with
+	            | Cil.BinOp(_, e1, e2, _) ->
+			    begin
+			     match e1, e2 with
+			      |  _, Lval (Var vi, _) when (List.mem vi.vname vlist) -> (incr cur_func_branches; 
+				  											 	if is_in_main then incr branches_in_main)
+				  | Lval (Var vi, _), _  when (List.mem vi.vname vlist)  -> (incr cur_func_branches; 
+				  											 	if is_in_main then incr branches_in_main) 
+				  | _, _ -> ()
+	   		    end
+				| Lval (Var vi, _) when (List.mem vi.vname vlist) -> (incr cur_func_branches; 
+				  											 	if is_in_main then incr branches_in_main)
+				| _ -> ()  
+            end;
+			DoChildren   
+
+		| Return(_,_) ->
+			(* find maximum number of branches in a function *)
+			if !cur_func_branches > !cur_max_in_funcs
+				then cur_max_in_funcs := !cur_func_branches;
+			branches_in_whole := !branches_in_whole + !cur_func_branches;
+			cur_func_branches := 0;
+			DoChildren
+		| _ -> DoChildren	
+
+    method vfunc (fd: fundec) =
+        if fd.svar.vname = "main" then is_in_main <- true
+        else is_in_main <- false;
+		incr num_of_funcs;
+		DoChildren
+end
+
+
+class intBranchVisitor = object(self)
+	inherit nopCilVisitor as super
+
+	val mutable is_in_main = false;
+	val branches_in_main = ref 0;
+	(* maximum number of branches with local refernces in a function *)
+	val cur_func_branches = ref 0;
+	val cur_max_in_funcs = ref 0;
+	val branches_in_whole = ref 0;
+	val num_of_funcs = ref 0;
+
+	method get_branches_in_main : int = !branches_in_main;													(* feature #B.23 *)
+	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);	(* feature #B.24 *)
+	method get_max : int = !cur_max_in_funcs;									(* feature #B.25 *)
+
+	method vstmt (s: stmt) =
+		match s.skind with
+		| If(exp, _, _, _) -> 
+			begin
+		        match exp with
+	            | Cil.BinOp(_, e1, e2, _) ->
+			    begin
+			     match e1, e2 with
+			      | Cil.Const(CInt64 (_, _, _)), _
+			      | _, Cil.Const(CInt64 (_, _, _)) -> (incr cur_func_branches; 
+				  											 	if is_in_main then incr branches_in_main) 
+				  | _, _ -> ()
+	   		    end
+	         	| Cil.Const(CInt64 (_, _, _)) -> (incr cur_func_branches; 
+				  											   if is_in_main then incr branches_in_main)
+				| _ -> ()  
+            end;
+			DoChildren   
+
+		| Return(_,_) ->
+			(* find maximum number of branches in a function *)
+			if !cur_func_branches > !cur_max_in_funcs
+				then cur_max_in_funcs := !cur_func_branches;
+			branches_in_whole := !branches_in_whole + !cur_func_branches;
+			cur_func_branches := 0;
+			DoChildren
+		| _ -> DoChildren	
+
+    method vfunc (fd: fundec) =
+        if fd.svar.vname = "main" then is_in_main <- true
+        else is_in_main <- false;
+		incr num_of_funcs;
+		DoChildren
+end
+
+
+class strBranchVisitor = object(self)
+	inherit nopCilVisitor as super
+
+	val mutable is_in_main = false;
+	val branches_in_main = ref 0;
+	(* maximum number of branches with local refernces in a function *)
+	val cur_func_branches = ref 0;
+	val cur_max_in_funcs = ref 0;
+	val branches_in_whole = ref 0;
+	val num_of_funcs = ref 0;
+
+	method get_branches_in_main : int = !branches_in_main;													(* feature #B.23 *)
+	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);	(* feature #B.24 *)
+	method get_max : int = !cur_max_in_funcs;									(* feature #B.25 *)
+
+	method vstmt (s: stmt) =
+		match s.skind with
+		| If(exp, _, _, _) -> 
+			begin
+		        match exp with
+	            | Cil.BinOp(_, e1, e2, _) ->
+			    begin
+			     match e1, e2 with
+			      | Cil.Const(CInt64 (a1, _, _)), _ 
+					when (snd (truncateInteger64 IInt a1)=false) && (i64_to_int a1)<128 && (i64_to_int a1)>=0
+					-> (incr cur_func_branches; if is_in_main then incr branches_in_main)
+			      | _, Cil.Const(CInt64 (a1, _, _)) 
+					when (snd (truncateInteger64 IInt a1)=false) && (i64_to_int a1)<128 && (i64_to_int a1)>=0 
+					-> (incr cur_func_branches; if is_in_main then incr branches_in_main) 
+				  | _, _ -> ()
+	   		    end
+	         	| Cil.Const(CInt64 (_, _, _)) -> (incr cur_func_branches; if is_in_main then incr branches_in_main)
+				| _ -> ()  
+            end;
+			DoChildren   
+
+		| Return(_,_) ->
+			(* find maximum number of branches in a function *)
+			if !cur_func_branches > !cur_max_in_funcs
+				then cur_max_in_funcs := !cur_func_branches;
+			branches_in_whole := !branches_in_whole + !cur_func_branches;
+			cur_func_branches := 0;
+			DoChildren
+		| _ -> DoChildren	
+
+    method vfunc (fd: fundec) =
+        if fd.svar.vname = "main" then is_in_main <- true
+        else is_in_main <- false;
+		incr num_of_funcs;
+		DoChildren
+end
+
 
 let feature : featureDescr = 
   { fd_name ="Learning";
@@ -293,7 +505,10 @@ let feature : featureDescr =
 		nestvis = new masterBranchVisitor and
 		depthvis = new masterFuncDepthVisitor and
 		local_ref_vis = new localVariableBranchVisitor and
-		ptr_vis = new pointerBranchVisitor in
+		ptr_vis = new pointerBranchVisitor and 
+		ext_vis = new extCallBranchVisitor f and
+		int_vis = new intBranchVisitor and
+		str_vis = new strBranchVisitor in
         visitCilFileSameGlobals (vis :> cilVisitor) f ;
         print_string "branches in main: ";
         print_int vis#get_num_of_branches_in_main;
@@ -323,19 +538,46 @@ let feature : featureDescr =
 
 		visitCilFileSameGlobals (local_ref_vis :> cilVisitor) f;
 		print_string "\nnumber of branches with local var in main: ";
-		print_int local_ref_vis#get_local_ref_branches_in_main;
+		print_int local_ref_vis#get_branches_in_main;
 		print_string "\nmax number of branches with local var in a function: ";
-		print_int local_ref_vis#get_max_local_ref_branches_in_funcs;
+		print_int local_ref_vis#get_max;
 		print_string "\naverage number of branches with local var: ";
-		print_float local_ref_vis#get_avg_local_ref_branches;
+		print_float local_ref_vis#get_avg;
 
 		visitCilFileSameGlobals (ptr_vis :> cilVisitor) f;
 		print_string "\nnumber of branches with pointer in main: ";
-		print_int ptr_vis#get_ptr_branches_in_main;
+		print_int ptr_vis#get_branches_in_main;
 		print_string "\nmax number of branches with pointer in a function: ";
-		print_int ptr_vis#get_max_ptr_branches_in_funcs;
+		print_int ptr_vis#get_max;
 		print_string "\naverage number of branches with pointer: ";
-		print_float ptr_vis#get_avg_ptr_branches;
+		print_float ptr_vis#get_avg;
+		print_string "\n";
+
+		visitCilFileSameGlobals (ext_vis :> cilVisitor) f;
+		print_string "\nnumber of branches with external calls in main: ";
+		print_int ext_vis#get_branches_in_main;
+		print_string "\nmax number of branches with external calls in a function: ";
+		print_int ext_vis#get_max;
+		print_string "\naverage number of branches with external calls: ";
+		print_float ext_vis#get_avg;
+		print_string "\n";
+
+		visitCilFileSameGlobals (int_vis :> cilVisitor) f;
+		print_string "\nnumber of branches with constant string in main: ";
+		print_int int_vis#get_branches_in_main;
+		print_string "\nmax number of branches with constant string in a function: ";
+		print_int int_vis#get_max;
+		print_string "\naverage number of branches with constant string: ";
+		print_float int_vis#get_avg;
+		print_string "\n";
+
+		visitCilFileSameGlobals (str_vis :> cilVisitor) f;
+		print_string "\nnumber of branches with constant int in main: ";
+		print_int str_vis#get_branches_in_main;
+		print_string "\nmax number of branches with constant int in a function: ";
+		print_int str_vis#get_max;
+		print_string "\naverage number of branches with constant int: ";
+		print_float str_vis#get_avg;
 		print_string "\n";
 		
 		(*let feature = collect_features f in
