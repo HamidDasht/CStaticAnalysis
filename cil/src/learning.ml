@@ -32,7 +32,7 @@ class ifDepth depth = object(self)
 
 			ignore(Printf.printf "cur depth %d in %d \n" !cur_depth !depth );
 			
-			if !depth != 0 then 
+			(*if !depth != 0 then *)
 			begin
 				if vis_false#get_cur_depth = 0 then
 					cur_depth_f := !cur_depth
@@ -46,7 +46,7 @@ class ifDepth depth = object(self)
 				max_depth := !cur_depth;
 				ignore(Printf.printf "MAX: %d \n" !max_depth );
 			end;
-			if !depth == 0 then begin
+			if !depth = 0 then begin
 				cur_depth := 0;
 				print_string "fuck. Nothing\n";
 			end;

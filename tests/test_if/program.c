@@ -63,6 +63,20 @@ void f2(float b)
             }
         }
     }
+    /*else
+    {
+        if(b>10)
+        if(b>10)
+        if(b>10)
+        if(b>10)
+        if(b>10)
+        if(b>10)
+        if(b>10)
+        if(b>10)
+        if(b>10)
+        if(b>10)
+            printf("k");
+    }*/
     printf("f2\n");
     return;
 }
