@@ -25,6 +25,7 @@ class masterBranchVisitor = object(self)
 	val number_of_nested_branches_in_main = ref 0;
 	val mutable is_in_main = false;
 	val num_of_funcs = ref 0;
+	val number_of_loops = ref 0;
 
 	(* maximum number of nested branches in a function *)
 	val cur_func_nested_branches = ref 0;
@@ -34,6 +35,7 @@ class masterBranchVisitor = object(self)
 	method get_avg_nested_branches : float = (float_of_int !number_of_nested_branches) /. (float_of_int !num_of_funcs); (* feature #B.7 *)
 	method get_max_nested_branches_in_funcs : int = !cur_max_nested_branches_in_funcs; 									(* feature #B.8 *)
 	method get_number_of_nested_branches : int = !number_of_nested_branches; 											(* feature #Test *)
+	method get_number_of_loops : int = !number_of_loops;
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -68,6 +70,7 @@ class masterBranchVisitor = object(self)
 			cur_func_nested_branches := !cur_func_nested_branches + vis_block#get_number_of_nested_branches - 1;
 			
 			);
+			incr number_of_loops;
 			SkipChildren
 		| Return(_,_) ->
 			(* find maximum number of nested branches in a function *)
@@ -225,8 +228,8 @@ class localVariableBranchVisitor = object(self)
 	val num_of_funcs = ref 0;
 
 	method get_branches_in_main : int = !branches_in_main;													(* feature #B.26 *)
-	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);	(* feature #B.27 *)
-	method get_max : int = !cur_max_in_funcs;									(* feature #B.28 *)
+	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);				(* feature #B.27 *)
+	method get_max : int = !cur_max_in_funcs;																(* feature #B.28 *)
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -279,9 +282,9 @@ class pointerBranchVisitor = object(self)
 	val branches_in_whole = ref 0;
 	val num_of_funcs = ref 0;
 
-	method get_branches_in_main : int = !branches_in_main;													(* feature #B.23 *)
-	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);	(* feature #B.24 *)
-	method get_max : int = !cur_max_in_funcs;									(* feature #B.25 *)
+	method get_branches_in_main : int = !branches_in_main;											(* feature #B.23 *)
+	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);		(* feature #B.24 *)
+	method get_max : int = !cur_max_in_funcs;														(* feature #B.25 *)
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -355,9 +358,9 @@ class extCallBranchVisitor f = object(self)
 	val branches_in_whole = ref 0;
 	val num_of_funcs = ref 0;
 
-	method get_branches_in_main : int = !branches_in_main;													(* feature #B.23 *)
-	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);	(* feature #B.24 *)
-	method get_max : int = !cur_max_in_funcs;									(* feature #B.25 *)
+	method get_branches_in_main : int = !branches_in_main;											(* feature #B.14 *)
+	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);		(* feature #B.15 *)
+	method get_max : int = !cur_max_in_funcs;														(* feature #B.16 *)
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -407,9 +410,9 @@ class intBranchVisitor = object(self)
 	val branches_in_whole = ref 0;
 	val num_of_funcs = ref 0;
 
-	method get_branches_in_main : int = !branches_in_main;													(* feature #B.23 *)
-	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);	(* feature #B.24 *)
-	method get_max : int = !cur_max_in_funcs;									(* feature #B.25 *)
+	method get_branches_in_main : int = !branches_in_main;											(* feature #B.17 *)
+	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);		(* feature #B.18 *)
+	method get_max : int = !cur_max_in_funcs;														(* feature #B.19 *)
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -458,9 +461,9 @@ class strBranchVisitor = object(self)
 	val branches_in_whole = ref 0;
 	val num_of_funcs = ref 0;
 
-	method get_branches_in_main : int = !branches_in_main;													(* feature #B.23 *)
-	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);	(* feature #B.24 *)
-	method get_max : int = !cur_max_in_funcs;									(* feature #B.25 *)
+	method get_branches_in_main : int = !branches_in_main;											(* feature #B.20 *)
+	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);		(* feature #B.21 *)
+	method get_max : int = !cur_max_in_funcs;														(* feature #B.22 *)
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -590,6 +593,10 @@ let feature : featureDescr =
 		print_float str_vis#get_avg;
 		print_string "\n";
 		
+
+		print_string "\nnumber of loops: ";
+		print_int nestvis#get_number_of_loops;
+		print_string "\n";
 		(*let feature = collect_features f in
         (   prerr_feature feature;
 	        write_feature f "features" feature;  
