@@ -17,6 +17,7 @@ int f1(int b)
     f4();
     if ( b < 10) 
     {
+        printf("100");
         if (b < 200) 
         {
             if (b < 300)
@@ -30,6 +31,26 @@ int f1(int b)
 
 void f2(float b)
 {
+    if (b > 3) //0 --- 1 + 5
+    {
+        if (b > 4) //1 --- 2 + 3
+        {
+            if (b > 5) //2 --- 3 + 0 ---- 
+                printf("b >= 6");
+            if (b > 5)
+                if (b > 6)
+                 if (b > 7)
+                  printf("fdfdfs");
+                  else
+                   if (b > 8)
+                    if (b >9)
+                        print("fdfdfdf");
+        }
+        if (b > 5)
+            if (b > 6)
+                if (b > 7)
+                    printf("f");
+    }
     printf("f2\n");
     return;
 }

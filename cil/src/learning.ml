@@ -3,6 +3,65 @@ open Printf
 module E = Errormsg
 module D = Dominators
 
+
+class ifDepth depth = object(self)
+	inherit nopCilVisitor as super
+
+	val max_depth = ref 0;
+	val cur_depth = ref 0;
+	val cur_depth_f = ref 0;
+	
+	method get_depth : int = !max_depth;
+
+	method get_cur_depth : int = !max_depth;
+
+	method vstmt (s: stmt) =
+		match s.skind with
+		|  If(_,bt,bf,_) ->
+			ignore(Printf.printf "%d started\n" !depth );
+			
+			cur_depth := !depth + 1;
+			let new_vis = new ifDepth cur_depth in
+			ignore(visitCilBlock (new_vis :> cilVisitor) bt);
+			if new_vis#get_cur_depth = 0 then
+				cur_depth := !cur_depth
+			else
+				cur_depth := new_vis#get_cur_depth;
+
+			ignore(Printf.printf "%d Passed %d \n" !cur_depth !depth );
+			
+			if !depth != 0 then 
+			begin
+				ignore(visitCilBlock (new_vis :> cilVisitor) bf);
+				if new_vis#get_cur_depth = 0 then
+					cur_depth_f := !cur_depth
+				else
+					cur_depth_f := new_vis#get_cur_depth;
+				if !cur_depth_f > !cur_depth then
+					cur_depth := !cur_depth_f;
+			end;
+			if !cur_depth > !max_depth then
+			begin
+				max_depth := !cur_depth;
+				ignore(Printf.printf "MAX: %d \n" !max_depth );
+			end;
+			if !depth == 0 then begin
+				cur_depth := 0;
+				print_string "fuck. Nothing\n";
+			end;
+			ignore(Printf.printf "Exited from: %d \n" !depth );
+			SkipChildren
+		| Return(_,_) ->
+			DoChildren
+		| _ -> SkipChildren
+
+	method vfunc (fd: fundec) =
+		if fd.svar.vname = "f2"
+		then DoChildren
+		else SkipChildren;
+end
+
+
 class nestedBranchVisitor = object(self)
 	inherit nopCilVisitor as super
 
@@ -511,6 +570,7 @@ let feature : featureDescr =
     fd_post_check = true;
     fd_doit = 
     (function (f: file) -> 
+		let depth = ref 0 in
         let vis = new branchVisitor and
 		nestvis = new masterBranchVisitor and
 		depthvis = new masterFuncDepthVisitor f and
@@ -518,7 +578,8 @@ let feature : featureDescr =
 		ptr_vis = new pointerBranchVisitor and 
 		ext_vis = new extCallBranchVisitor f and
 		int_vis = new intBranchVisitor and
-		str_vis = new strBranchVisitor in
+		str_vis = new strBranchVisitor and
+		if_dpeth = new ifDepth depth in
         visitCilFileSameGlobals (vis :> cilVisitor) f ;
         print_string "branches in main: ";
         print_int vis#get_num_of_branches_in_main;
@@ -593,9 +654,13 @@ let feature : featureDescr =
 		print_float str_vis#get_avg;
 		print_string "\n";
 		
-
 		print_string "\nnumber of loops: ";
 		print_int nestvis#get_number_of_loops;
+		print_string "\n";
+		
+		visitCilFileSameGlobals (if_dpeth :> cilVisitor) f;
+		print_string "\nmax depth of ifs: ";
+		print_int if_dpeth#get_depth;
 		print_string "\n";
 		(*let feature = collect_features f in
         (   prerr_feature feature;
