@@ -42,14 +42,26 @@ void f2(float b)
                  if (b > 7)
                   printf("fdfdfs");
                   else
-                   if (b > 8)
+                  {  if (b > 8)
                     if (b >9)
-                        print("fdfdfdf");
+                        printf("fdfdfdf");}
         }
-        if (b > 5)
-            if (b > 6)
-                if (b > 7)
+        if (b > 5) // 1
+        {
+            if (b > 6) // 2
+            {    if (b > 7) // 3
                     printf("f");
+            }
+            else
+            {
+                if (b > 7)
+                    if (b < 6)
+                        if (b > 7)
+                            if (b > 8)
+                                if (b >9)
+                                    printf("8");
+            }
+        }
     }
     printf("f2\n");
     return;

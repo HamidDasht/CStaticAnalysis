@@ -21,22 +21,23 @@ class ifDepth depth = object(self)
 			ignore(Printf.printf "%d started\n" !depth );
 			
 			cur_depth := !depth + 1;
-			let new_vis = new ifDepth cur_depth in
-			ignore(visitCilBlock (new_vis :> cilVisitor) bt);
-			if new_vis#get_cur_depth = 0 then
+			let vis_true = new ifDepth cur_depth and
+			vis_false = new ifDepth cur_depth in
+			ignore(visitCilBlock (vis_true :> cilVisitor) bt);
+			ignore(visitCilBlock (vis_false :> cilVisitor) bf);
+			if vis_true#get_cur_depth = 0 then
 				cur_depth := !cur_depth
 			else
-				cur_depth := new_vis#get_cur_depth;
+				cur_depth := vis_true#get_cur_depth;
 
-			ignore(Printf.printf "%d Passed %d \n" !cur_depth !depth );
+			ignore(Printf.printf "cur depth %d in %d \n" !cur_depth !depth );
 			
 			if !depth != 0 then 
 			begin
-				ignore(visitCilBlock (new_vis :> cilVisitor) bf);
-				if new_vis#get_cur_depth = 0 then
+				if vis_false#get_cur_depth = 0 then
 					cur_depth_f := !cur_depth
 				else
-					cur_depth_f := new_vis#get_cur_depth;
+					cur_depth_f := vis_false#get_cur_depth;
 				if !cur_depth_f > !cur_depth then
 					cur_depth := !cur_depth_f;
 			end;
@@ -52,7 +53,7 @@ class ifDepth depth = object(self)
 			ignore(Printf.printf "Exited from: %d \n" !depth );
 			SkipChildren
 		| Return(_,_) ->
-			DoChildren
+			SkipChildren
 		| _ -> SkipChildren
 
 	method vfunc (fd: fundec) =
