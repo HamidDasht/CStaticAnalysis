@@ -4,6 +4,61 @@ module E = Errormsg
 module D = Dominators
 
 
+class cntEdges if_depth = object(self)
+	inherit nopCilVisitor as super
+
+	val num_of_nodes = ref 0;
+	val next_depth = ref 0;
+	val mutable has_no_ifs = true;
+	val mutable first_if_in_block = true;
+	val mutable last_in_chain = false;
+	
+	method get_num_of_nodes : int = if has_no_ifs then 2 else !num_of_nodes;
+
+	method get_edges : int =  (
+	 if !num_of_nodes = 3 then 2
+	 else if !num_of_nodes = 0 then 0
+	 else (!num_of_nodes - 1)*2
+	);
+
+	method has_no_ifs : bool = has_no_ifs;
+
+	method vstmt (s: stmt) =
+		match s.skind with
+		|  If(_,bt,bf,_) ->
+			(*ignore(Printf.printf "%d started\n" !if_depth );*)
+
+			has_no_ifs <- false;
+			next_depth := !if_depth + 1;
+
+			let vis_true = new cntEdges next_depth and
+			vis_false = new cntEdges next_depth in
+			ignore(visitCilBlock (vis_true :> cilVisitor) bt);
+			ignore(visitCilBlock (vis_false :> cilVisitor) bf);
+			
+			if vis_true#has_no_ifs then last_in_chain <- true;
+
+			if first_if_in_block = true then
+				if last_in_chain = false then
+					num_of_nodes := !num_of_nodes + vis_true#get_num_of_nodes + 1
+				else
+					num_of_nodes := !num_of_nodes + vis_true#get_num_of_nodes 
+			else
+				num_of_nodes := !num_of_nodes * vis_true#get_num_of_nodes;
+
+			
+			(*ignore(Printf.printf "exiting %d with nodes %d \n" !if_depth !num_of_nodes );*)
+
+			first_if_in_block <- false;
+			SkipChildren
+		| _ -> SkipChildren
+
+	method vfunc (fd: fundec) =
+		if fd.svar.vname = "f3"
+		then DoChildren
+		else SkipChildren;
+end
+
 class ifDepth depth = object(self)
 	inherit nopCilVisitor as super
 
@@ -580,7 +635,8 @@ let feature : featureDescr =
 		ext_vis = new extCallBranchVisitor f and
 		int_vis = new intBranchVisitor and
 		str_vis = new strBranchVisitor and
-		if_dpeth = new ifDepth depth in
+		if_dpeth = new ifDepth depth and
+		count_edges = new cntEdges depth in
         visitCilFileSameGlobals (vis :> cilVisitor) f ;
         print_string "branches in main: ";
         print_int vis#get_num_of_branches_in_main;
@@ -658,10 +714,15 @@ let feature : featureDescr =
 		print_string "\nnumber of loops: ";
 		print_int nestvis#get_number_of_loops;
 		print_string "\n";
-		
+		(*
 		visitCilFileSameGlobals (if_dpeth :> cilVisitor) f;
 		print_string "\nmax depth of ifs: ";
 		print_int if_dpeth#get_depth;
+		print_string "\n";
+		*)
+		visitCilFileSameGlobals (count_edges :> cilVisitor) f;
+		print_string "\nnumber of edges: ";
+		print_int count_edges#get_edges;
 		print_string "\n";
 		(*let feature = collect_features f in
         (   prerr_feature feature;

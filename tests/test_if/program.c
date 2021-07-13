@@ -80,9 +80,75 @@ void f2(float b)
     printf("f2\n");
     return;
 }
+int glob = 5;
 int f3()
 {
+    if (glob > 7)
+        if (glob > 9)
+            if (glob > 9)
+                printf("h");
+            else
+                if(glob > 12)
+                    if (glob > 13)
+                        printf("h");
+    /*
+    if (glob>9)
+        printf("h");
+    if (glob > 9)
+        printf("h");
+    if (glob > 9)
+        printf("h");
+    */
+    /*
+    if (glob > 7)
+        if (glob > 9)
+            printf("h");
+    if (glob>9)
+        printf("h");
+    if (glob > 9)
+        printf("h");
+    if (glob > 9)
+        printf("h");
+    */
     
+    /*
+    if (glob > 7)
+    {
+        if (glob > 9)
+            printf("h");
+        if (glob>9)
+        printf("h");
+    }
+    if (glob > 9)
+        printf("h");
+    if (glob > 9)
+        printf("h");
+    */
+
+    /*
+    if (glob > 7)
+        if (glob > 9)
+            printf("h");
+    if (glob > 9)
+        printf("h");
+    if (glob > 9)
+        printf("h");
+    */
+   
+    /*
+   if (glob > 7) { // 0
+        if (glob > 9) // 1
+            if (glob > 9) // 2
+                printf("h"); // 3
+        if (glob > 9) // 1
+                printf("h"); // 2
+   }    
+    if (glob > 9) // 0
+        printf("h"); // 1
+    if (glob > 9) // 0
+        printf("h"); // 1
+    */ 
+   
     printf("f3\n");
     return 23;
 }
