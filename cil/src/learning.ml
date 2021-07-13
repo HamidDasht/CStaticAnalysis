@@ -3,12 +3,12 @@ open Printf
 module E = Errormsg
 module D = Dominators
 
-
 class cntEdges if_depth = object(self)
 	inherit nopCilVisitor as super
 
 	val num_of_nodes = ref 0;
 	val next_depth = ref 0;
+	val else_depth = ref 0;
 	val mutable has_no_ifs = true;
 	val mutable first_if_in_block = true;
 	val mutable last_in_chain = false;
@@ -16,9 +16,9 @@ class cntEdges if_depth = object(self)
 	method get_num_of_nodes : int = if has_no_ifs then 2 else !num_of_nodes;
 
 	method get_edges : int =  (
-	 if !num_of_nodes = 3 then 2
-	 else if !num_of_nodes = 0 then 0
-	 else (!num_of_nodes - 1)*2
+	 (*if !num_of_nodes = 3 then 2*)
+	 if !num_of_nodes = 0 then 0
+	 else (!num_of_nodes - 1) * 2
 	);
 
 	method has_no_ifs : bool = has_no_ifs;
@@ -26,15 +26,15 @@ class cntEdges if_depth = object(self)
 	method vstmt (s: stmt) =
 		match s.skind with
 		|  If(_,bt,bf,_) ->
-			(*ignore(Printf.printf "%d started\n" !if_depth );*)
+			ignore(Printf.printf "%d started\n" !if_depth );
 
 			has_no_ifs <- false;
 			next_depth := !if_depth + 1;
 
+
 			let vis_true = new cntEdges next_depth and
-			vis_false = new cntEdges next_depth in
+			vis_false = new cntEdges else_depth in
 			ignore(visitCilBlock (vis_true :> cilVisitor) bt);
-			ignore(visitCilBlock (vis_false :> cilVisitor) bf);
 			
 			if vis_true#has_no_ifs then last_in_chain <- true;
 
@@ -45,10 +45,18 @@ class cntEdges if_depth = object(self)
 					num_of_nodes := !num_of_nodes + vis_true#get_num_of_nodes 
 			else
 				num_of_nodes := !num_of_nodes * vis_true#get_num_of_nodes;
-
 			
-			(*ignore(Printf.printf "exiting %d with nodes %d \n" !if_depth !num_of_nodes );*)
+			ignore(Printf.printf "passed true %d with %d nodes \n" !if_depth !num_of_nodes );
 
+			if List.length bf.bstmts > 0 then
+			ignore(visitCilBlock (vis_false :> cilVisitor) bf);
+			if vis_false#has_no_ifs = false then
+			begin
+				num_of_nodes := !num_of_nodes + vis_false#get_num_of_nodes - 1;
+				ignore(Printf.printf "hello %d here! my else had %d nodes \n" !if_depth (vis_false#get_num_of_nodes ) )
+			end;
+			
+			ignore(Printf.printf "exiting %d with nodes %d \n" !if_depth !num_of_nodes );
 			first_if_in_block <- false;
 			SkipChildren
 		| _ -> SkipChildren
