@@ -25,12 +25,11 @@ class cntEdges if_depth = object(self)
 
 	method vstmt (s: stmt) =
 		match s.skind with
-		|  If(_,bt,bf,_) ->
+		|  If(_,bt,bf,_) ->			
 			ignore(Printf.printf "%d started\n" !if_depth );
 
 			has_no_ifs <- false;
 			next_depth := !if_depth + 1;
-
 
 			let vis_true = new cntEdges next_depth and
 			vis_false = new cntEdges else_depth in
@@ -58,11 +57,23 @@ class cntEdges if_depth = object(self)
 			
 			ignore(Printf.printf "exiting %d with nodes %d \n" !if_depth !num_of_nodes );
 			first_if_in_block <- false;
-			SkipChildren
+			SkipChildren 
+		| Loop(blk,_,_,_) -> 
+				let vis_loop = new cntEdges else_depth in
+				num_of_nodes := !num_of_nodes * 2;
+				E.log "%a" d_block (mkBlock(List.tl blk.bstmts));
+				ignore(visitCilBlock (vis_loop :> cilVisitor) (mkBlock(List.tl blk.bstmts)));
+				if vis_loop#has_no_ifs = false then
+				begin
+					num_of_nodes := !num_of_nodes/2+ (!num_of_nodes/2) * vis_loop#get_num_of_nodes;
+				end;
+				SkipChildren
 		| _ -> SkipChildren
 
+
+
 	method vfunc (fd: fundec) =
-		if fd.svar.vname = "f3"
+		if fd.svar.vname = "main"
 		then DoChildren
 		else SkipChildren;
 end

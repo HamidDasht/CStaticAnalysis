@@ -226,7 +226,7 @@ void f4()
 int main()
 {
     //print_hello();
-    //print("Hello world");
+    print("Hello world");
     int a;
     int* ptr = (int*)malloc(sizeof(int));
     *ptr = 3;
@@ -250,11 +250,6 @@ int main()
         printf("a > 10");
         if (a > 20) 
             printf("a > 20");
-
-        while (a < 5)
-            if (a > 40)
-                if (a < 30)
-                    printf("dfd");
         a--;
     }
 
