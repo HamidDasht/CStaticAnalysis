@@ -1,0 +1,6 @@
+{
+	"pgm_name": "test_if",
+	"pgm_dir": "../tests/test_if/",
+	"exec_dir": "./",
+	"exec_cmd": "'./program'"
+}

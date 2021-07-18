@@ -12,3 +12,8 @@ cil/src/ext/*
 tests/*/*
 !tests/*/*.c
 tests/*/*.cil.c
+bin/*
+experiments/*
+tests/cdaudio/*
+tests/floppy/*
+tests/kbfiltr/*

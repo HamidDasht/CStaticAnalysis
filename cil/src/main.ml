@@ -104,9 +104,9 @@ let features : C.featureDescr list =
     Logcalls.feature;
     Ptranal.feature;
     Liveness.feature;
-    (*CrestInstrument.feature;*)
+    CrestInstrument.feature;
     Test0.feature;
-    Learning.feature;
+    BranchLearning.feature;
   ] 
   @ Feature_config.features 
 
