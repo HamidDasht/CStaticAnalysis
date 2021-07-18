@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "print.h"
+//#include <crest.h>
 //#include "mylib.h"
 
 int f1(int b)
@@ -18,6 +19,7 @@ int f1(int b)
     f4();
     if ( b < 10) 
     {
+        
         printf("100");
         if (b < 200) 
         {
@@ -64,6 +66,7 @@ void f2(float b)
             }
         }
     }
+    
     /*else
     {
         if(b>10)
@@ -84,12 +87,12 @@ void f2(float b)
 int glob = 5;
 int f3()
 {
-    /* EX : 2
+    /* // EX : 2
     if (glob > 0)
         printf("hell");
     */
 
-    /* EX : 4
+    /* // EX : 4
     if (glob > 9)
         printf("h");
     else if (glob > 10)
@@ -213,21 +216,29 @@ int f3()
         printf("h"); // 1
     */ 
    
+   while(glob > 2)
+    while(glob > 3)
     printf("f3\n");
+    while (glob > 4)
+    printf("f");
     return 23;
 }
 void f4()
 {
-    if (f3())
+    //if (f3())
+    if (glob > 2)
+     if (glob > 2)
         printf("f4\n");
+    if (glob > 2)
     return;
 }
 
 int main()
 {
     //print_hello();
-    //print("Hello world");
+    print("Hello world");
     int a;
+    CREST_int(a);
     int* ptr = (int*)malloc(sizeof(int));
     *ptr = 3;
     scanf("%d", &a);
@@ -259,6 +270,9 @@ int main()
     }
 
     for (int i =0; i <5; i++)
+    {
+        f3();
         printf("i=%d ", i);
+    }
     return 0;
 }
