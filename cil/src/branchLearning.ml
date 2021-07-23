@@ -270,7 +270,9 @@ class masterBranchVisitor = object(self)
 
 	method get_number_of_nested_branches_in_main : int = !number_of_nested_branches_in_main; 							(* feature #A.3 *)
 	method get_avg_nested_branches : float = (float_of_int !number_of_nested_branches) /. (float_of_int !num_of_funcs); (* feature #B.7 *)
-	method get_max_nested_branches_in_funcs : int = !cur_max_nested_branches_in_funcs; 									(* feature #B.8 *)
+	method get_max_nested_branches_in_funcs : int = 																	(* feature #B.6 *)
+		if !cur_func_nested_branches > !cur_max_nested_branches_in_funcs
+		then !cur_func_nested_branches else !cur_max_nested_branches_in_funcs;
 	method get_number_of_nested_branches : int = !number_of_nested_branches; 											(* feature #Test *)
 
 	method vstmt (s: stmt) =
@@ -307,16 +309,15 @@ class masterBranchVisitor = object(self)
 			
 			);
 			SkipChildren
-		| Return(_,_) ->
-			(* find maximum number of nested branches in a function *)
-			if !cur_func_nested_branches > !cur_max_nested_branches_in_funcs
-				then cur_max_nested_branches_in_funcs := !cur_func_nested_branches;
-			cur_func_nested_branches := 0;
-			DoChildren
 		
 		| _ -> DoChildren
 
 	method vfunc (fd: fundec) =
+		(* find maximum number of nested branches in a function *)
+		if !cur_func_nested_branches > !cur_max_nested_branches_in_funcs
+			then cur_max_nested_branches_in_funcs := !cur_func_nested_branches;
+		cur_func_nested_branches := 0;
+
         if fd.svar.vname = "main" then is_in_main <- true
         else is_in_main <- false;
 		incr num_of_funcs;
@@ -427,7 +428,8 @@ class branchVisitor = object(self)
 
 	method get_depth_of_main : int = !depth_of_main; 														(* feature #B.2 *)
 	method get_avg_branches : float = (float_of_int !number_of_branches) /. (float_of_int !num_of_funcs); 	(* feature #B.5 *)
-	method get_max_branches_in_funcs : int = !cur_max_branches_in_funcs; 									(* feature #B.6 *)
+	method get_max_branches_in_funcs : int = if !cur_func_branches > !cur_max_branches_in_funcs				(* feature #B.6 *)
+												then !cur_func_branches else !cur_max_branches_in_funcs;
 	method get_num_of_branches : int = !number_of_branches; 												
 
 
@@ -442,15 +444,15 @@ class branchVisitor = object(self)
 			incr cur_func_branches;
 			DoChildren
 
-		| Return(_,_) ->
-			(* find maximum number of branches in a function *)
-			if !cur_func_branches > !cur_max_branches_in_funcs
-				then cur_max_branches_in_funcs := !cur_func_branches;
-			cur_func_branches := 0;
-			DoChildren
+
 		| _ -> DoChildren	
 
     method vfunc (fd: fundec) =
+		(* find maximum number of branches in a function *)
+		if !cur_func_branches > !cur_max_branches_in_funcs
+			then cur_max_branches_in_funcs := !cur_func_branches;
+		cur_func_branches := 0;
+
         if fd.svar.vname = "main" then is_in_main <- true
         else is_in_main <- false;
 		if fd.svar.vstorage != Extern then incr num_of_funcs;
@@ -471,7 +473,8 @@ class localVariableBranchVisitor = object(self)
 
 	method get_branches_in_main : int = !branches_in_main;													(* feature #B.26 *)
 	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);				(* feature #B.27 *)
-	method get_max : int = !cur_max_in_funcs;																(* feature #B.28 *)
+	method get_max : int = if !cur_func_branches > !cur_max_in_funcs										(* feature #B.28 *)
+							then !cur_func_branches else !cur_max_in_funcs;
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -497,16 +500,15 @@ class localVariableBranchVisitor = object(self)
             end;
 			DoChildren   
 
-		| Return(_,_) ->
-			(* find maximum number of branches in a function *)
-			if !cur_func_branches > !cur_max_in_funcs
-				then cur_max_in_funcs := !cur_func_branches;
-			branches_in_whole := !branches_in_whole + !cur_func_branches;
-			cur_func_branches := 0;
-			DoChildren
 		| _ -> DoChildren	
 
     method vfunc (fd: fundec) =
+		(* find maximum number of branches in a function *)
+		if !cur_func_branches > !cur_max_in_funcs
+			then cur_max_in_funcs := !cur_func_branches;
+		branches_in_whole := !branches_in_whole + !cur_func_branches;
+		cur_func_branches := 0;
+
         if fd.svar.vname = "main" then is_in_main <- true
         else is_in_main <- false;
 		incr num_of_funcs;
@@ -526,7 +528,8 @@ class pointerBranchVisitor = object(self)
 
 	method get_branches_in_main : int = !branches_in_main;											(* feature #B.23 *)
 	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);		(* feature #B.24 *)
-	method get_max : int = !cur_max_in_funcs;														(* feature #B.25 *)
+	method get_max : int = if !cur_func_branches > !cur_max_in_funcs								(* feature #B.25 *)
+							then !cur_func_branches else !cur_max_in_funcs;
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -549,16 +552,15 @@ class pointerBranchVisitor = object(self)
             end;
 			DoChildren   
 
-		| Return(_,_) ->
-			(* find maximum number of branches in a function *)
-			if !cur_func_branches > !cur_max_in_funcs
-				then cur_max_in_funcs := !cur_func_branches;
-			branches_in_whole := !branches_in_whole + !cur_func_branches;
-			cur_func_branches := 0;
-			DoChildren
 		| _ -> DoChildren	
 
     method vfunc (fd: fundec) =
+		(* find maximum number of branches in a function *)
+		if !cur_func_branches > !cur_max_in_funcs
+			then cur_max_in_funcs := !cur_func_branches;
+		branches_in_whole := !branches_in_whole + !cur_func_branches;
+		cur_func_branches := 0;
+
         if fd.svar.vname = "main" then is_in_main <- true
         else is_in_main <- false;
 		incr num_of_funcs;
@@ -602,7 +604,8 @@ class extCallBranchVisitor f = object(self)
 
 	method get_branches_in_main : int = !branches_in_main;											(* feature #B.14 *)
 	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);		(* feature #B.15 *)
-	method get_max : int = !cur_max_in_funcs;														(* feature #B.16 *)
+	method get_max : int = if !cur_func_branches > !cur_max_in_funcs 								(* feature #B.16 *)
+							then !cur_func_branches else !cur_max_in_funcs;
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -624,16 +627,15 @@ class extCallBranchVisitor f = object(self)
             end;
 			DoChildren   
 
-		| Return(_,_) ->
-			(* find maximum number of branches in a function *)
-			if !cur_func_branches > !cur_max_in_funcs
-				then cur_max_in_funcs := !cur_func_branches;
-			branches_in_whole := !branches_in_whole + !cur_func_branches;
-			cur_func_branches := 0;
-			DoChildren
 		| _ -> DoChildren	
 
     method vfunc (fd: fundec) =
+		(* find maximum number of branches in a function *)
+		if !cur_func_branches > !cur_max_in_funcs
+			then cur_max_in_funcs := !cur_func_branches;
+		branches_in_whole := !branches_in_whole + !cur_func_branches;
+		cur_func_branches := 0;
+
         if fd.svar.vname = "main" then is_in_main <- true
         else is_in_main <- false;
 		incr num_of_funcs;
@@ -654,7 +656,8 @@ class intBranchVisitor = object(self)
 
 	method get_branches_in_main : int = !branches_in_main;											(* feature #B.17 *)
 	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);		(* feature #B.18 *)
-	method get_max : int = !cur_max_in_funcs;														(* feature #B.19 *)
+	method get_max : int = if !cur_func_branches > !cur_max_in_funcs								(* feature #B.19 *)
+							then !cur_func_branches else !cur_max_in_funcs;														
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -675,16 +678,15 @@ class intBranchVisitor = object(self)
             end;
 			DoChildren   
 
-		| Return(_,_) ->
-			(* find maximum number of branches in a function *)
-			if !cur_func_branches > !cur_max_in_funcs
-				then cur_max_in_funcs := !cur_func_branches;
-			branches_in_whole := !branches_in_whole + !cur_func_branches;
-			cur_func_branches := 0;
-			DoChildren
 		| _ -> DoChildren	
 
     method vfunc (fd: fundec) =
+		(* find maximum number of branches in a function *)
+		if !cur_func_branches > !cur_max_in_funcs
+			then cur_max_in_funcs := !cur_func_branches;
+		branches_in_whole := !branches_in_whole + !cur_func_branches;
+		cur_func_branches := 0;
+
         if fd.svar.vname = "main" then is_in_main <- true
         else is_in_main <- false;
 		incr num_of_funcs;
@@ -705,7 +707,8 @@ class strBranchVisitor = object(self)
 
 	method get_branches_in_main : int = !branches_in_main;											(* feature #B.20 *)
 	method get_avg : float = (float_of_int !branches_in_whole) /. (float_of_int !num_of_funcs);		(* feature #B.21 *)
-	method get_max : int = !cur_max_in_funcs;														(* feature #B.22 *)
+	method get_max : int = if !cur_func_branches > !cur_max_in_funcs								(* feature #B.22 *)
+							then !cur_func_branches else !cur_max_in_funcs;														
 
 	method vstmt (s: stmt) =
 		match s.skind with
@@ -728,16 +731,15 @@ class strBranchVisitor = object(self)
             end;
 			DoChildren   
 
-		| Return(_,_) ->
-			(* find maximum number of branches in a function *)
-			if !cur_func_branches > !cur_max_in_funcs
-				then cur_max_in_funcs := !cur_func_branches;
-			branches_in_whole := !branches_in_whole + !cur_func_branches;
-			cur_func_branches := 0;
-			DoChildren
 		| _ -> DoChildren	
 
     method vfunc (fd: fundec) =
+		(* find maximum number of branches in a function *)
+		if !cur_func_branches > !cur_max_in_funcs
+			then cur_max_in_funcs := !cur_func_branches;
+		branches_in_whole := !branches_in_whole + !cur_func_branches;
+		cur_func_branches := 0;
+
         if fd.svar.vname = "main" then is_in_main <- true
         else is_in_main <- false;
 		incr num_of_funcs;
