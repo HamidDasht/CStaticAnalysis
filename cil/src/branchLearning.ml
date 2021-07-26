@@ -824,8 +824,8 @@ let feature : featureDescr =
 		Printf.printf "max depth of loops: %d\n" loop_depth#get_max_depth;
 
 		visitCilFileSameGlobals (count_edges :> cilVisitor) f;
-		Printf.printf "number of edges: %Ld\n" count_edges#get_num_of_nodes;
-		Printf.printf "width: %Ld\n" count_edges#get_edges;
+		Printf.printf "number of edges: %Ld\n" count_edges#get_edges;
+		Printf.printf "width: %Ld\n" count_edges#get_num_of_nodes;
 		
 		let output_file = open_out "static_features" in
 		Printf.fprintf output_file "%d\n" 
