@@ -29,7 +29,7 @@ int main()
         printf("2");
     */
    
-    /* //EX : 10   
+     //EX : 10   
     if (glob > 1)
         printf("1");
     else
@@ -40,7 +40,7 @@ int main()
         printf("1");
     else
         printf("2");
-    */
+    
 
     /* //EX : 6    
     if (glob > 7)

@@ -16,8 +16,8 @@ class gatherFuncDecs = object(self)
 
 end
 
-let func_decs = new gatherFuncDecs;
-
+let func_decs = new gatherFuncDecs;;
+let visited_funcs = ref [];;
 
 class cntEdges if_depth = object(self)
 	inherit nopCilVisitor as super
@@ -31,7 +31,7 @@ class cntEdges if_depth = object(self)
 	val mutable first_loop_in_block = true;
 	val mutable last_in_chain = false;
 	val visiting_func = ref "main";
-
+	
 	
 	method get_num_of_nodes : int64 = if has_no_ifs then 2L else !num_of_nodes;
 
@@ -46,7 +46,7 @@ class cntEdges if_depth = object(self)
 	method vstmt (s: stmt) =
 		match s.skind with
 		|  If(_,bt,bf,_) ->			
-			(*ignore(Printf.printf "%d started with %d nodex\n" !if_depth !num_of_nodes);*)
+			(*ignore(Printf.printf "%d started with %Ld nodex\n" !if_depth !num_of_nodes);*)
 
 			has_no_ifs <- false;
 			next_depth := !if_depth + 1;
@@ -61,7 +61,7 @@ class cntEdges if_depth = object(self)
 			if vis_true#has_no_ifs = true then
 				child_nodes :=  1L
 			else
-				child_nodes := Int64.add !child_nodes vis_true#get_num_of_nodes;
+				child_nodes := vis_true#get_num_of_nodes;
 
 			if vis_false#has_no_ifs = true then
 				child_nodes := Int64.add !child_nodes 1L
@@ -102,9 +102,14 @@ class cntEdges if_depth = object(self)
 			let funbody = try((func_decs#get_fd func_name.vname).sbody) with e -> mkBlock[] in
 			if !visiting_func != func_name.vname then
 			begin
-				visiting_func := func_name.vname;
-				if List.length funbody.bstmts > 0 then
-				ignore(visitCilBlock (self :> cilVisitor) funbody);
+				if List.mem func_name.vname !visited_funcs then ()
+				else
+				begin
+					visiting_func := func_name.vname;
+					visited_funcs := !visiting_func::!visited_funcs;
+					if List.length funbody.bstmts > 0 then
+					ignore(visitCilBlock (self :> cilVisitor) funbody);
+				end;
 			end;
 			visiting_func := vis_temp;
 			
@@ -113,8 +118,13 @@ class cntEdges if_depth = object(self)
 		| _ -> DoChildren
 
 	method vfunc (fd: fundec) =
+		
 		if fd.svar.vname = "main"
-		then DoChildren
+		then 
+		begin
+			visited_funcs := [];
+			DoChildren
+		end
 		else SkipChildren;
 		
 end
@@ -125,6 +135,7 @@ class loopDepth depth  = object(self)
 
 	val max_depth = ref !depth;
 	val visiting_func = ref "main";
+	
 
 	
 	method get_max_depth : int = !max_depth;
@@ -160,9 +171,13 @@ class loopDepth depth  = object(self)
 			let funbody =try((func_decs#get_fd func_name.vname).sbody) with e -> mkBlock[]in
 			if !visiting_func != func_name.vname then
 			begin
-				visiting_func := func_name.vname;
-				if List.length funbody.bstmts > 0 then
-				ignore(visitCilBlock (self :> cilVisitor) funbody);
+				if List.mem func_name.vname !visited_funcs then ()
+				else begin
+					visiting_func := func_name.vname;
+					visited_funcs := !visiting_func::!visited_funcs;
+					if List.length funbody.bstmts > 0 then
+					ignore(visitCilBlock (self :> cilVisitor) funbody);
+				end;
 			end;
 			visiting_func := vis_temp;
 			
@@ -172,7 +187,10 @@ class loopDepth depth  = object(self)
 
 	method vfunc (fd: fundec) =
 		if fd.svar.vname = "main" then
+			begin
+			visited_funcs := [];
 			DoChildren
+		end
 		else
 			SkipChildren;
 		
@@ -183,6 +201,7 @@ class ifDepth depth = object(self)
 
 	val max_depth = ref !depth;
 	val visiting_func = ref "main";
+	
 
 	method get_max_depth : int = !max_depth;
 	method get_depth : int = !depth;
@@ -191,6 +210,7 @@ class ifDepth depth = object(self)
 		match s.skind with
 		|  If(_,bt,bf,_) ->
 			(*ignore(Printf.printf "%d started\n" !depth );*)
+			Printf.printf "visiting %s %d\n" !visiting_func (List.length !visited_funcs);
 			
 			let next_depth = ref (!depth + 1) in
 			let vis_true = new ifDepth next_depth and
@@ -223,9 +243,14 @@ class ifDepth depth = object(self)
 			let funbody = try((func_decs#get_fd func_name.vname).sbody) with e -> mkBlock[] in
 			if !visiting_func != func_name.vname then
 			begin
-				visiting_func := func_name.vname;
-				if List.length funbody.bstmts > 0 then
-				ignore(visitCilBlock (self :> cilVisitor) funbody);
+			if List.mem func_name.vname !visited_funcs then ()
+			else
+				begin
+					visiting_func := func_name.vname;
+					visited_funcs := !visiting_func::!visited_funcs;
+					if List.length funbody.bstmts > 0 then
+					ignore(visitCilBlock (self :> cilVisitor) funbody);
+				end;
 			end;
 			visiting_func := vis_temp;
 			
@@ -235,7 +260,10 @@ class ifDepth depth = object(self)
 
 	method vfunc (fd: fundec) =
 		if fd.svar.vname = "main" then
+			begin
+			visited_funcs := [];
 			DoChildren
+		end
 		else
 			SkipChildren;
 		
@@ -755,6 +783,7 @@ let feature : featureDescr =
     fd_post_check = true;
     fd_doit = 
     (function (f: file) -> 
+	
 		let depth = ref 0 in
         let vis = new branchVisitor and
 		loop_vis = new loopVisitor and
@@ -768,6 +797,7 @@ let feature : featureDescr =
 		loop_depth = new loopDepth depth and
 		if_depth = new ifDepth depth and
 		count_edges = new cntEdges depth in
+		Printf.printf "Start \n";
 		visitCilFileSameGlobals (func_decs :> cilVisitor) f;
         visitCilFileSameGlobals (vis :> cilVisitor) f ;
 		
@@ -909,6 +939,7 @@ let feature : featureDescr =
         (   prerr_feature feature ;
 	        write_feature f "features" feature;  
         )*)
+	
     )
   } 
 ;;
