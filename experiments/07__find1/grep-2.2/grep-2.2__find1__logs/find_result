@@ -1,0 +1,10 @@
+grep-2.2find1__ours__4.log:4000:It: 4000, Time: 47, covered: 705, reach_func: 46, reach_branch: 2210
+grep-2.2find1__ours__2.log:4000:It: 4000, Time: 62, covered: 711, reach_func: 48, reach_branch: 2200
+grep-2.2find1__ours__7.log:4000:It: 4000, Time: 54, covered: 751, reach_func: 52, reach_branch: 2232
+grep-2.2find1__ours__1.log:4000:It: 4000, Time: 46, covered: 767, reach_func: 46, reach_branch: 2210
+grep-2.2find1__ours__8.log:4000:It: 4000, Time: 50, covered: 844, reach_func: 51, reach_branch: 2246
+grep-2.2find1__ours__5.log:4000:It: 4000, Time: 52, covered: 880, reach_func: 51, reach_branch: 2228
+grep-2.2find1__ours__10.log:4000:It: 4000, Time: 45, covered: 1031, reach_func: 54, reach_branch: 2264
+grep-2.2find1__ours__3.log:4000:It: 4000, Time: 55, covered: 1069, reach_func: 53, reach_branch: 2262
+grep-2.2find1__ours__6.log:4000:It: 4000, Time: 71, covered: 1078, reach_func: 54, reach_branch: 2264
+grep-2.2find1__ours__9.log:4000:It: 4000, Time: 54, covered: 1079, reach_func: 54, reach_branch: 2264

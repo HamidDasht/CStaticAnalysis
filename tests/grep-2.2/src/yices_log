@@ -1,0 +1,5 @@
+(define x9::int)
+(assert (>= x9 -128))
+(assert (<= x9 127))
+(assert (= (+ -40 (* x9 1)) 0))
+(check)

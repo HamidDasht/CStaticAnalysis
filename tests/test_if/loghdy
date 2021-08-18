@@ -1,0 +1,4 @@
+digraph CFG___globinit_program {
+-1 [label="-1: instr"]
+	
+}
