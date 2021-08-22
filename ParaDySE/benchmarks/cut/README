@@ -1,2 +1,5 @@
-cilly --save-temps -std=gnu99 -g -Wl,--as-needed  -o csplit csplit.c ../../../coreutils-8.30/src/libver.a ../../../coreutils-8.30/lib/libcoreutils.a -I../../../coreutils-8.30/lib -I../../../coreutils-8.30/src  ../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I/home/hamid/Desktop/ParaDySE/include -L/home/hamid/Desktop/ParaDySE/lib
-rm branches cfg* csplit.cil.* csplit.i csplit.o csplit dominator* features funcount idcount input_data stmtcount szd_execution xx*
+./cut -f -d input_data
+
+cilly --save-temps -std=gnu99 -g -Wl,--as-needed  -o cut cut.c set-fields.c ../../../../coreutils-8.30/src/libver.a ../../../../coreutils-8.30/lib/libcoreutils.a -I../../../../coreutils-8.30/lib -I../../../../coreutils-8.30/src  ../../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I/home/hamid/Desktop/ParaDySE/include -L/home/hamid/Desktop/ParaDySE/lib
+
+rm branches cfg* cut.cil.* cut.i cut.o cut dominator* features funcount idcount input_data stmtcount szd_execution set-fields.i set-fields.o set-fields.cil.*

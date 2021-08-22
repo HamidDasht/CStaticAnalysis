@@ -23,6 +23,7 @@
    Rewrite cut_fields and cut_bytes -- Jim Meyering.  */
 
 #include <config.h>
+#include <crest.h>
 
 #include <stdio.h>
 #include <assert.h>
@@ -476,6 +477,10 @@ cut_file (char const *file)
   return true;
 }
 
+#define MYMAX 100
+#define IN_FILE "input_data"
+#define INPUT_LEN 10
+
 int
 main (int argc, char **argv)
 {
@@ -483,6 +488,15 @@ main (int argc, char **argv)
   bool ok;
   bool delim_specified = false;
   char *spec_list_string IF_LINT ( = NULL);
+  
+  // Instrument
+  char input_data[MYMAX];
+  for (int i = 0; i < MYMAX; i++)
+    CREST_char(input_data[i]);
+
+  FILE* f = fopen(IN_FILE, "w");
+  fputs(input_data, f);
+  fclose(f);
 
   initialize_main (&argc, &argv);
   set_program_name (argv[0]);
@@ -510,6 +524,9 @@ main (int argc, char **argv)
           if (operating_mode != undefined_mode)
             FATAL_ERROR (_("only one type of list may be specified"));
           operating_mode = byte_mode;
+          // Instrument
+          //for (int i = 0; i < INPUT_LEN; i++)
+          //  CREST_char(optarg[i]);
           spec_list_string = optarg;
           break;
 
@@ -517,6 +534,10 @@ main (int argc, char **argv)
           /* Build the field list. */
           if (operating_mode != undefined_mode)
             FATAL_ERROR (_("only one type of list may be specified"));
+          // Instrument
+          do{
+          CREST_unsigned_char(optarg[0]);
+          }while (!(optarg[0] > '0' && optarg[0] <= '9'));
           operating_mode = field_mode;
           spec_list_string = optarg;
           break;
@@ -526,6 +547,9 @@ main (int argc, char **argv)
           /* Interpret -d '' to mean 'use the NUL byte as the delimiter.'  */
           if (optarg[0] != '\0' && optarg[1] != '\0')
             FATAL_ERROR (_("the delimiter must be a single character"));
+          // Instrument
+          CREST_unsigned_char(optarg[0]);
+
           delim = optarg[0];
           delim_specified = true;
           break;
