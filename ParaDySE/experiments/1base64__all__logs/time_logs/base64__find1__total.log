@@ -1,0 +1,100 @@
+26.040856 , 51        , It: 4000, Time: 26, covered: 42, reach_func: 4, reach_branch: 92
+26.351651 , 1         , It: 4000, Time: 26, covered: 42, reach_func: 4, reach_branch: 92
+54.660303 , 52        , It: 4000, Time: 28, covered: 42, reach_func: 4, reach_branch: 92
+54.714834 , 2         , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+87.461332 , 53        , It: 4000, Time: 33, covered: 42, reach_func: 4, reach_branch: 92
+87.718371 , 3         , It: 4000, Time: 33, covered: 42, reach_func: 4, reach_branch: 92
+116.396426, 54        , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+116.727708, 4         , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+145.42611 , 55        , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+145.955282, 5         , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+174.048308, 56        , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+174.437343, 6         , It: 4000, Time: 28, covered: 42, reach_func: 4, reach_branch: 92
+202.639911, 57        , It: 4000, Time: 28, covered: 42, reach_func: 4, reach_branch: 92
+203.072596, 7         , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+230.815821, 58        , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+231.730779, 8         , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+260.343624, 59        , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+260.717506, 9         , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+289.350602, 60        , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+290.051817, 10        , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+317.788652, 61        , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+318.581643, 11        , It: 4000, Time: 28, covered: 42, reach_func: 4, reach_branch: 92
+346.591935, 62        , It: 4000, Time: 28, covered: 42, reach_func: 4, reach_branch: 92
+347.281119, 12        , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+375.658518, 63        , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+375.962415, 13        , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+404.988175, 64        , It: 4000, Time: 30, covered: 42, reach_func: 4, reach_branch: 92
+405.506443, 14        , It: 4000, Time: 29, covered: 42, reach_func: 4, reach_branch: 92
+432.096684, 15        , It: 4000, Time: 27, covered: 42, reach_func: 4, reach_branch: 92
+453.645416, 16        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+475.33842 , 17        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+496.429035, 18        , It: 4000, Time: 21, covered: 40, reach_func: 4, reach_branch: 92
+517.375963, 19        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+538.704255, 20        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+560.876791, 21        , It: 4000, Time: 22, covered: 40, reach_func: 4, reach_branch: 92
+582.200245, 22        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+603.462256, 23        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+624.682544, 24        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+646.263108, 25        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+668.368991, 26        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+689.851054, 27        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+711.875526, 28        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+733.705488, 29        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+755.026152, 30        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+776.189685, 31        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+797.43623 , 32        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+818.702806, 33        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+839.870738, 34        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+861.503984, 35        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+882.99348 , 36        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+904.742318, 37        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+926.411395, 38        , It: 4000, Time: 21, covered: 40, reach_func: 4, reach_branch: 92
+948.072676, 39        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+969.679004, 40        , It: 4000, Time: 21, covered: 40, reach_func: 4, reach_branch: 92
+990.7734  , 41        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+1012.178884, 42        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+1033.560587, 43        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+1054.818845, 44        , It: 4000, Time: 22, covered: 40, reach_func: 4, reach_branch: 92
+1077.306149, 45        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+1098.782198, 46        , It: 4000, Time: 22, covered: 42, reach_func: 4, reach_branch: 92
+1120.659153, 47        , It: 4000, Time: 21, covered: 42, reach_func: 4, reach_branch: 92
+1140.323746, 48        , It: 4000, Time: 20, covered: 40, reach_func: 4, reach_branch: 92
+1158.817802, 49        , It: 4000, Time: 19, covered: 42, reach_func: 4, reach_branch: 92
+1179.347315, 50        , It: 4000, Time: 20, covered: 42, reach_func: 4, reach_branch: 92
+1359.732572, 65        , It: 4000, Time: 955, covered: 42, reach_func: 4, reach_branch: 92
+1491.25777, 66        , It: 4000, Time: 131, covered: 42, reach_func: 4, reach_branch: 92
+1634.586488, 67        , It: 4000, Time: 143, covered: 42, reach_func: 4, reach_branch: 92
+1784.151573, 68        , It: 4000, Time: 150, covered: 42, reach_func: 4, reach_branch: 92
+1925.334592, 69        , It: 4000, Time: 141, covered: 42, reach_func: 4, reach_branch: 92
+2043.122279, 70        , It: 4000, Time: 118, covered: 42, reach_func: 4, reach_branch: 92
+2145.177085, 71        , It: 4000, Time: 102, covered: 42, reach_func: 4, reach_branch: 92
+2248.502295, 72        , It: 4000, Time: 103, covered: 42, reach_func: 4, reach_branch: 92
+2348.905144, 73        , It: 4000, Time: 101, covered: 42, reach_func: 4, reach_branch: 92
+2452.450748, 74        , It: 4000, Time: 103, covered: 42, reach_func: 4, reach_branch: 92
+2524.756247, 75        , It: 4000, Time: 73, covered: 42, reach_func: 4, reach_branch: 92
+2542.454351, 76        , It: 4000, Time: 17, covered: 42, reach_func: 4, reach_branch: 92
+2560.035284, 77        , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92
+2577.457337, 78        , It: 4000, Time: 17, covered: 42, reach_func: 4, reach_branch: 92
+2595.069778, 79        , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92
+2612.419271, 80        , It: 4000, Time: 17, covered: 42, reach_func: 4, reach_branch: 92
+2630.140429, 81        , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92
+2647.673306, 82        , It: 4000, Time: 17, covered: 42, reach_func: 4, reach_branch: 92
+2665.227899, 83        , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92
+2682.546304, 84        , It: 4000, Time: 17, covered: 42, reach_func: 4, reach_branch: 92
+2700.455837, 85        , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92
+2717.932692, 86        , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92
+2735.475571, 87        , It: 4000, Time: 17, covered: 42, reach_func: 4, reach_branch: 92
+2753.217338, 88        , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92
+2770.95722, 89        , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92
+2788.476754, 90        , It: 4000, Time: 17, covered: 42, reach_func: 4, reach_branch: 92
+2806.259292, 91        , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92
+2823.701195, 92        , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92
+2841.186372, 93        , It: 4000, Time: 17, covered: 42, reach_func: 4, reach_branch: 92
+2858.452752, 94        , It: 4000, Time: 17, covered: 40, reach_func: 4, reach_branch: 92
+2876.226966, 95        , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92
+2893.814175, 96        , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92
+2911.572679, 97        , It: 4000, Time: 17, covered: 40, reach_func: 4, reach_branch: 92
+2929.809164, 98        , It: 4000, Time: 19, covered: 42, reach_func: 4, reach_branch: 92
+2947.408621, 99        , It: 4000, Time: 17, covered: 42, reach_func: 4, reach_branch: 92
+2965.072334, 100       , It: 4000, Time: 18, covered: 42, reach_func: 4, reach_branch: 92

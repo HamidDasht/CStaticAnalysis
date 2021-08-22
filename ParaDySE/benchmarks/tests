@@ -1,0 +1,12 @@
+b2sum/	  timeout/	make-prime-list/  printf/     sha512sum/  tr/
+base32/   expr/		md5sum/		  ptx/	      shuf/	  pr/
+base64/   factor/	mkdir/		  realpath/   sort/	  truncate/
+cdaudio/  floppy/	mknod/		  replace/    split/	  tsort/
+cksum/	  fmt/		mktemp/		  rm/	      stat/	  uname/
+comm/	  sha384sum/	nice/		  runcon/     sum/	  unexpand/
+ls/	  expand/	nl/		  who/	      tac/	  uniq/
+csplit/   head/		nohup/		  seq/	      tail/	  vdir/
+cut/	  id/		numfmt/		  sha1sum/    tee/	  sha256sum/
+dirname/  join/		od/		  sha224sum/  test/	  wc/
+echo/	  kbfiltr/	paste/		    	 
+   				    

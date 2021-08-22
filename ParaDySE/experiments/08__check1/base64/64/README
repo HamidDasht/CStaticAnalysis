@@ -1,0 +1,12 @@
+cilly --save-temps -std=gnu99  -I../../../coreutils-8.30 -I../../../coreutils-8.30/lib  -DBASE_TYPE=64 -Ilib -I../../../coreutils-8.30/lib -Iinstrumented -I../../../coreutils-8.30/instrumented  -g -O2 -MT ./src_base64-base64.o -MD -MP -MF ../../../coreutils-8.30/instrumented/.deps/src_base64-base64.Tpo -c -o ./src_base64-base64.o `test -f './base64.c' || echo './'`./base64.c -lcrest -lstdc++ -I/home/hamid/Desktop/Chameleon/include -L/home/hamid/Desktop/Chameleon/lib
+
+cilly --save-temps -std=gnu99  -I../../../coreutils-8.30 -I../../../coreutils-8.30/lib  -DBASE_TYPE=64 -Ilib -I../../../coreutils-8.30/lib -Iinstrumented -I../../../coreutils-8.30/instrumented -g -O2 -MT ./src_base64-base64.o -MD -MP -MF ../../../coreutils-8.30/instrumented/.deps/src_base64-base64.Tpo -c -o ./src_base64-base64.o ./base64.c -lcrest -lstdc++ -I/home/hamid/Desktop/Chameleon/include -L/home/hamid/Desktop/Chameleon/lib
+
+cilly --save-temps -std=gnu99 --merge  -g -O2 -Wl,--as-needed  -o ./base64 ./base64.c ./src_base64-base64.o ../../../coreutils-8.30/instrumented/libver.a ../../../coreutils-8.30/lib/libcoreutils.a  ../../../coreutils-8.30/lib/libcoreutils.a -lcrest -lstdc++ -I/home/hamid/Desktop/Chameleon/include -L/home/hamid/Desktop/Chameleon/lib
+ 
+
+cilly --save-temps -std=gnu99 --merge -I../../../coreutils-8.30 -I../../../coreutils-8.30/lib  -DBASE_TYPE=64 -Ilib -I../../../coreutils-8.30/lib -Iinstrumented -I../../../coreutils-8.30/instrumented -g -O2 -MT ./base64 -MD -MP -MF ../../../coreutils-8.30/instrumented/.deps/src_base64-base64.Tpo -c -o ./base64 ../../../coreutils-8.30/instrumented/libver.a ../../../coreutils-8.30/lib/libcoreutils.a  ../../../coreutils-8.30/lib/libcoreutils.a -lcrest -lstdc++ -I/home/hamid/Desktop/Chameleon/include -L/home/hamid/Desktop/Chameleon/lib
+
+cilly --save-temps -std=gnu99 --merge -DBASE_TYPE=64  -g -O2 -Wl,--as-needed  -o ./base64 ./base64.c  ../../../coreutils-8.30/instrumented/libver.a ../../../coreutils-8.30/lib/libcoreutils.a  ../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I/home/hamid/Desktop/ParaDySE/include -L/home/hamid/Desktop/ParaDySE/lib -I../../../coreutils-8.30/lib -I../../../coreutils-8.30/src
+
+rm base64.cil.* base64.i branches cfg cfg_branches cfg_func_map dominator dominator_tree features funcount idcount stmtcount

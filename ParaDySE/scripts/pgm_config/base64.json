@@ -1,0 +1,6 @@
+{
+	"pgm_name": "base64",
+	"pgm_dir": "../benchmarks/base64/",
+	"exec_dir": "./",
+	"exec_cmd": "'./base64'"
+}
