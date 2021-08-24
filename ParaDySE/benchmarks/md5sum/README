@@ -1,0 +1,6 @@
+./md5sum -b -z input_file
+
+
+cilly --save-temps -std=gnu99 --merge -DHASH_ALGO_MD5=1  -g -Wl,--as-needed  -o ./md5sum ./md5sum.c  ../../../../coreutils-8.30/src/libver.a ../../../../coreutils-8.30/lib/libcoreutils.a  ../../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I/home/hamid/Desktop/ParaDySE/include -L/home/hamid/Desktop/ParaDySE/lib -I../../../../coreutils-8.30/lib -I../../../../coreutils-8.30/src
+
+rm md5sum.cil.* md5sum.i md5sum.o md5sum branches cfg cfg_branches cfg_func_map dominator dominator_tree features funcount idcount stmtcount szd_execution input_file

@@ -25,10 +25,8 @@
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
@@ -152,7 +150,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -186,8 +184,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -671,7 +669,9 @@ extern int putw (int __w, FILE *__stream);
 
 extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
      ;
-# 640 "/usr/include/stdio.h" 3 4
+# 638 "/usr/include/stdio.h" 3 4
+extern char *gets (char *__s) __attribute__ ((__deprecated__));
+
 
 # 665 "/usr/include/stdio.h" 3 4
 extern __ssize_t __getdelim (char **__restrict __lineptr,
@@ -847,8 +847,8 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 2 "program.c" 2
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
 # 33 "/usr/include/stdlib.h" 2 3 4
 
@@ -1146,7 +1146,7 @@ typedef __clockid_t clockid_t;
 typedef __timer_t timer_t;
 # 133 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 # 146 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -1636,7 +1636,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -1665,14 +1665,7 @@ extern void *valloc (size_t __size) __attribute__ ((__nothrow__ , __leaf__)) __a
 
 extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1))) ;
-
-
-
-
-extern void *aligned_alloc (size_t __alignment, size_t __size)
-     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__malloc__)) __attribute__ ((__alloc_size__ (2))) ;
-
-
+# 513 "/usr/include/stdlib.h" 3 4
 
 
 extern void abort (void) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
@@ -1680,16 +1673,7 @@ extern void abort (void) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ 
 
 
 extern int atexit (void (*__func) (void)) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-
-
-extern int at_quick_exit (void (*__func) (void)) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
-
-
+# 530 "/usr/include/stdlib.h" 3 4
 
 
 
@@ -1709,7 +1693,7 @@ extern void exit (int __status) __attribute__ ((__nothrow__ , __leaf__)) __attri
 
 
 
-extern void quick_exit (int __status) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+
 
 
 
@@ -1907,60 +1891,12 @@ extern int getloadavg (double __loadavg[], int __nelem)
 # 967 "/usr/include/stdlib.h" 3 4
 
 # 3 "program.c" 2
+# 1 "print.h" 1
 
-# 1 "../../include/crest.h" 1
-# 136 "../../include/crest.h"
 
-# 136 "../../include/crest.h"
-typedef enum {
+void print(char * );
+# 4 "program.c" 2
 
-  __CREST_ADD = 0,
-  __CREST_SUBTRACT = 1,
-  __CREST_MULTIPLY = 2,
-  __CREST_DIVIDE = 3,
-  __CREST_MOD = 4,
-
-  __CREST_AND = 5,
-  __CREST_OR = 6,
-  __CREST_XOR = 7,
-  __CREST_SHIFT_L = 8,
-  __CREST_SHIFT_R = 9,
-
-  __CREST_L_AND = 10,
-  __CREST_L_OR = 11,
-
-  __CREST_EQ = 12,
-  __CREST_NEQ = 13,
-  __CREST_GT = 14,
-  __CREST_LEQ = 15,
-  __CREST_LT = 16,
-  __CREST_GEQ = 17,
-
-  __CREST_CONCRETE = 18,
-
-  __CREST_NEGATE = 19,
-  __CREST_NOT = 20,
-  __CREST_L_NOT = 21,
-};
-# 176 "../../include/crest.h"
-extern void __CrestInit() __attribute__((crest_skip));
-extern void __CrestLoad(int, unsigned long int, long long int) __attribute__((crest_skip));
-extern void __CrestStore(int, unsigned long int) __attribute__((crest_skip));
-extern void __CrestClearStack(int) __attribute__((crest_skip));
-extern void __CrestApply1(int, int, long long int) __attribute__((crest_skip));
-extern void __CrestApply2(int, int, long long int) __attribute__((crest_skip));
-extern void __CrestBranch(int, int, unsigned char) __attribute__((crest_skip));
-extern void __CrestCall(int, unsigned int) __attribute__((crest_skip));
-extern void __CrestReturn(int) __attribute__((crest_skip));
-extern void __CrestHandleReturn(int, long long int) __attribute__((crest_skip));
-# 197 "../../include/crest.h"
-extern void __CrestUChar(unsigned char* x) __attribute__((crest_skip));
-extern void __CrestUShort(unsigned short* x) __attribute__((crest_skip));
-extern void __CrestUInt(unsigned int* x) __attribute__((crest_skip));
-extern void __CrestChar(char* x) __attribute__((crest_skip));
-extern void __CrestShort(short* x) __attribute__((crest_skip));
-extern void __CrestInt(int* x) __attribute__((crest_skip));
-# 5 "program.c" 2
 
 
 int f1(int b)
@@ -2055,7 +1991,7 @@ int main()
 
 
     int a;
-    __CrestInt(&a);
+
     int* ptr = (int*)malloc(sizeof(int));
     *ptr = 3;
     scanf("%d", &a);

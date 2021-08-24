@@ -1345,7 +1345,6 @@ main (int argc, char **argv)
   int optc;
   
   char input_data[MYMAX];
-  
   for (int i = 0; i < MYMAX; i++)
     CREST_char(input_data[i]);
 
