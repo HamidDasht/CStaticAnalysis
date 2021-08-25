@@ -1,0 +1,5 @@
+./paste input_file1 input_file2 input_file3
+
+cilly --save-temps -std=gnu99 -g -Wl,--as-needed  -o paste paste.c ../../../../coreutils-8.30/src/libver.a ../../../../coreutils-8.30/lib/libcoreutils.a -I../../../../coreutils-8.30/lib -I../../../../coreutils-8.30/src  ../../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I/home/hamid/Desktop/ParaDySE/include -L/home/hamid/Desktop/ParaDySE/lib
+
+rm branches cfg* paste.cil.* paste.i paste.o paste dominator* features funcount idcount stmtcount szd_execution input_file1 input_file2 input_file3
