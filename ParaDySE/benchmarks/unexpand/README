@@ -1,0 +1,5 @@
+./unexpand -t 124545 input_file
+
+cilly --save-temps -std=gnu99 -g -Wl,--as-needed  -o unexpand unexpand.c expand-common.c ../../../../coreutils-8.30/src/libver.a ../../../../coreutils-8.30/lib/libcoreutils.a -I../../../../coreutils-8.30/lib -I../../../../coreutils-8.30/src  ../../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I/home/hamid/Desktop/ParaDySE/include -L/home/hamid/Desktop/ParaDySE/lib
+
+rm branches cfg* unexpand.cil.* unexpand.i unexpand.o unexpand expand-common.cil.* expand-common.i expand-common.o dominator* features funcount idcount input_file stmtcount szd_execution input_file
