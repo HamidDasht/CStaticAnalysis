@@ -1,0 +1,5 @@
+./tac -s a input_file
+
+cilly --save-temps -std=gnu99 -g -Wl,--as-needed -lpthread -o tac tac.c ../../../../coreutils-8.30/src/libver.a ../../../../coreutils-8.30/lib/libcoreutils.a -I../../../../coreutils-8.30/lib -I../../../../coreutils-8.30/src  ../../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I/home/hamid/Desktop/ParaDySE/include -L/home/hamid/Desktop/ParaDySE/lib
+
+rm branches cfg* tac.cil.* tac.i tac.o tac dominator* features funcount idcount stmtcount szd_execution input_file
