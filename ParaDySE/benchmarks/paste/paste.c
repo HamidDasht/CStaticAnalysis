@@ -491,14 +491,14 @@ main (int argc, char **argv)
   for (int i = 0; i < MAX_DATA/4; i++)
     CREST_char(input_data3[i]);
 
-  FILE* f = fopen(IN_FILE1, "w");
-  fputs(input_data1, f);
+  FILE* f = fopen(IN_FILE1, "wb");
+  fwrite(input_data1, sizeof(input_data1), 1, f);
   fclose(f);
-  f = fopen(IN_FILE2, "w");
-  fputs(input_data2, f);
+  f = fopen(IN_FILE2, "wb");
+  fwrite(input_data2, sizeof(input_data2), 1, f);
   fclose(f);
-  f = fopen(IN_FILE3, "w");
-  fputs(input_data3, f);
+  f = fopen(IN_FILE3, "wb");
+  fwrite(input_data3, sizeof(input_data3), 1, f);
   fclose(f);
 
 
