@@ -35,8 +35,6 @@
 #include <config.h>
 
 #include <crest.h>
-#define MYMAX 20
-#define IN_FILE "crest_data"
 
 /* The official name of this program (e.g., no 'g' prefix).  */
 #define PROGRAM_NAME "cksum"
@@ -203,8 +201,6 @@ cksum (const char *file, bool print_name)
     }
   else
     {
-      /* Instrumention: Take input from the file storing instrumented input generation*/
-      file = IN_FILE;
       fp = fopen (file, (O_BINARY ? "rb" : "r"));
       if (fp == NULL)
         {
@@ -217,6 +213,15 @@ cksum (const char *file, bool print_name)
 
   while ((bytes_read = fread (buf, 1, BUFLEN, fp)) > 0)
     {
+      ////////////////////////
+      // Symbolic input
+      char tmp1;
+      for (int i = 0; i < BUFLEN; i++)
+      {
+        CREST_char(tmp1);
+        buf[i] = tmp1;
+      }
+      ////////////////////////
       unsigned char *cp = buf;
 
       if (length + bytes_read < length)
@@ -286,12 +291,13 @@ Print CRC checksum and byte counts of each FILE.\n\
 
 
 int
-main (void)
+main (int argc, char** argv)
 {
   int i;
   bool ok;
+  
   /* Instrumention */
-  int argc = 2;
+  /*int argc = 2;
   char** argv;
   argv = (char**)malloc(sizeof(char*)*2);
   argv[0] = (char*)malloc(sizeof(char)*10);
@@ -306,7 +312,7 @@ main (void)
   fputs(input_data, input_fh);
   fclose(input_fh);
   strcat(argv[1], input_data);
-
+  */
 
   initialize_main (&argc, &argv);
   set_program_name (argv[0]);

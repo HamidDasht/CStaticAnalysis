@@ -1,5 +1,5 @@
 # 1 "node.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -40,10 +40,8 @@
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
@@ -167,7 +165,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -201,8 +199,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -968,17 +966,17 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 # 37 "awk.h" 2
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 34 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 34 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 168 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 168 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 143 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
@@ -1002,9 +1000,9 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
 # 152 "/usr/include/limits.h" 2 3 4
-# 169 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
-# 8 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 2 3 4
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
+# 169 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
+# 8 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 2 3 4
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
 # 39 "awk.h" 2
 
 # 1 "/usr/include/ctype.h" 1 3 4
@@ -1270,7 +1268,7 @@ extern void siglongjmp (sigjmp_buf __env, int __val)
 
 # 1 "/usr/include/locale.h" 1 3 4
 # 28 "/usr/include/locale.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 29 "/usr/include/locale.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/locale.h" 1 3 4
 # 30 "/usr/include/locale.h" 2 3 4
@@ -1377,7 +1375,7 @@ extern __locale_t uselocale (__locale_t __dataset) __attribute__ ((__nothrow__ ,
 # 44 "awk.h" 2
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
 # 47 "awk.h" 2
 
 
@@ -2035,7 +2033,7 @@ extern int sigreturn (struct sigcontext *__scp) __attribute__ ((__nothrow__ , __
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 317 "/usr/include/signal.h" 2 3 4
 
 
@@ -2411,7 +2409,7 @@ extern int __libc_current_sigrtmax (void) __attribute__ ((__nothrow__ , __leaf__
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 38 "/usr/include/time.h" 2 3 4
 
 
@@ -2820,7 +2818,7 @@ typedef __suseconds_t suseconds_t;
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -3201,8 +3199,8 @@ extern int __xmknodat (int __ver, int __fd, const char *__path,
 # 118 "awk.h"
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
 # 33 "/usr/include/stdlib.h" 2 3 4
 
@@ -3587,7 +3585,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -3968,7 +3966,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/string.h" 2 3 4
 
 
@@ -4289,7 +4287,7 @@ extern char *basename (const char *__filename) __attribute__ ((__nothrow__ , __l
 # 23 "/usr/include/x86_64-linux-gnu/bits/environments.h" 2 3 4
 # 210 "/usr/include/unistd.h" 2 3 4
 # 229 "/usr/include/unistd.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 230 "/usr/include/unistd.h" 2 3 4
 # 270 "/usr/include/unistd.h" 3 4
 typedef __intptr_t intptr_t;
@@ -5637,8 +5635,6 @@ extern void swab (const void *__restrict __from, void *__restrict __to,
 # 175 "awk.h"
 # 1 "regex.h" 1
 # 40 "regex.h"
-
-# 40 "regex.h"
 typedef long int s_reg_t;
 typedef unsigned long int active_reg_t;
 
@@ -6485,37 +6481,13 @@ register NODE *n;
   return 0.0;
 
  cp = n->sub.val.sp;
- if ((1 && 
-# 60 "node.c" 3 4
-    ((*__ctype_b_loc ())[(int) ((
-# 60 "node.c"
-    *cp
-# 60 "node.c" 3 4
-    ))] & (unsigned short int) _ISalpha)
-# 60 "node.c"
-    ))
+ if ((1 && ((*__ctype_b_loc ())[(int) ((*cp))] & (unsigned short int) _ISalpha)))
   return 0.0;
 
  cpend = cp + n->sub.val.slen;
- while (cp < cpend && 
-# 64 "node.c" 3 4
-                     ((*__ctype_b_loc ())[(int) ((
-# 64 "node.c"
-                     *cp
-# 64 "node.c" 3 4
-                     ))] & (unsigned short int) _ISspace)
-# 64 "node.c"
-                                 )
+ while (cp < cpend && ((*__ctype_b_loc ())[(int) ((*cp))] & (unsigned short int) _ISspace))
   cp++;
- if (cp == cpend || 
-# 66 "node.c" 3 4
-                   ((*__ctype_b_loc ())[(int) ((
-# 66 "node.c"
-                   *cp
-# 66 "node.c" 3 4
-                   ))] & (unsigned short int) _ISalpha)
-# 66 "node.c"
-                               )
+ if (cp == cpend || ((*__ctype_b_loc ())[(int) ((*cp))] & (unsigned short int) _ISalpha))
   return 0.0;
 
  if (n->flags & 128) {
@@ -6524,56 +6496,28 @@ register NODE *n;
  } else
   newflags = 0;
  if (cpend - cp == 1) {
-  if ((1 && 
-# 75 "node.c" 3 4
-     ((*__ctype_b_loc ())[(int) ((
-# 75 "node.c"
-     *cp
-# 75 "node.c" 3 4
-     ))] & (unsigned short int) _ISdigit)
-# 75 "node.c"
-     )) {
+  if ((1 && ((*__ctype_b_loc ())[(int) ((*cp))] & (unsigned short int) _ISdigit))) {
    n->sub.val.fltnum = (double)(*cp - '0');
    n->flags |= newflags;
   }
   return n->sub.val.fltnum;
  }
 # 90 "node.c"
- 
-# 90 "node.c" 3 4
-(*__errno_location ()) 
-# 90 "node.c"
-      = 0;
+ (*__errno_location ()) = 0;
  save = *cpend;
  *cpend = '\0';
  n->sub.val.fltnum = (double) strtod((const char *) cp, &ptr);
 
 
- while ((1 && 
-# 96 "node.c" 3 4
-       ((*__ctype_b_loc ())[(int) ((
-# 96 "node.c"
-       *ptr
-# 96 "node.c" 3 4
-       ))] & (unsigned short int) _ISspace)
-# 96 "node.c"
-       ))
+ while ((1 && ((*__ctype_b_loc ())[(int) ((*ptr))] & (unsigned short int) _ISspace)))
   ptr++;
  *cpend = save;
 finish:
 
- if (
-# 101 "node.c" 3 4
-    (*__errno_location ()) 
-# 101 "node.c"
-          == 0 && ptr >= cpend)
+ if ((*__errno_location ()) == 0 && ptr >= cpend)
   n->flags |= newflags;
  else
-  
-# 104 "node.c" 3 4
- (*__errno_location ()) 
-# 104 "node.c"
-       = 0;
+  (*__errno_location ()) = 0;
 
  return n->sub.val.fltnum;
 }
@@ -6611,11 +6555,7 @@ register NODE *s;
 
 
  if ((val = double_to_int(s->sub.val.fltnum)) != s->sub.val.fltnum
-     || val < 
-# 142 "node.c" 3 4
-             (-0x7fffffffffffffffL - 1L) 
-# 142 "node.c"
-                      || val > 0x7fffffffffffffffL) {
+     || val < (-9223372036854775807L - 1L) || val > 9223372036854775807L) {
 # 169 "node.c"
   sprintf(sp, format, s->sub.val.fltnum);
   s->sub.val.slen = strlen(sp);
@@ -6634,11 +6574,7 @@ register NODE *s;
   }
   s->sub.val.idx = -1;
  }
- (void)((s->sub.val.sp=(char *)malloc((size_t)(s->sub.val.slen + 2))) || (set_loc("node.c", 186), r_fatal("%s: %s: can't allocate memory (%s)", ("force_string"), "s->stptr", strerror(
-# 186 "node.c" 3 4
-(*__errno_location ())
-# 186 "node.c"
-)),0));
+ (void)((s->sub.val.sp=(char *)malloc((size_t)(s->sub.val.slen + 2))) || (set_loc("node.c", 186), r_fatal("%s: %s: can't allocate memory (%s)", ("force_string"), "s->stptr", strerror((*__errno_location ()))),0));
  memcpy(s->sub.val.sp, sp, s->sub.val.slen+1);
 
 
@@ -6676,7 +6612,7 @@ NODE *n;
   return n;
  }
  if ((n->flags & (1|16)) == (1|16)) {
-  if (n->sub.val.sref < 0x7fffffffffffffffL)
+  if (n->sub.val.sref < 9223372036854775807L)
    n->sub.val.sref++;
   return n;
  }
@@ -6686,11 +6622,7 @@ NODE *n;
  r->flags |= 1;
  if (n->type == Node_val && (n->flags & 16) != 0) {
   r->sub.val.sref = 1;
-  (void)((r->sub.val.sp=(char *)malloc((size_t)(r->sub.val.slen + 2))) || (set_loc("node.c", 247), r_fatal("%s: %s: can't allocate memory (%s)", ("dupnode"), "r->stptr", strerror(
-# 247 "node.c" 3 4
- (*__errno_location ())
-# 247 "node.c"
- )),0));
+  (void)((r->sub.val.sp=(char *)malloc((size_t)(r->sub.val.slen + 2))) || (set_loc("node.c", 247), r_fatal("%s: %s: can't allocate memory (%s)", ("dupnode"), "r->stptr", strerror((*__errno_location ()))),0));
   memcpy(r->sub.val.sp, n->sub.val.sp, r->sub.val.slen);
   r->sub.val.sp[r->sub.val.slen] = '\0';
  }
@@ -6734,11 +6666,7 @@ int flags;
  if (flags & 2)
   r->sub.val.sp = s;
  else {
-  (void)((r->sub.val.sp=(char *)malloc((size_t)(len + 2))) || (set_loc("node.c", 291), r_fatal("%s: %s: can't allocate memory (%s)", (s), "r->stptr", strerror(
-# 291 "node.c" 3 4
- (*__errno_location ())
-# 291 "node.c"
- )),0));
+  (void)((r->sub.val.sp=(char *)malloc((size_t)(len + 2))) || (set_loc("node.c", 291), r_fatal("%s: %s: can't allocate memory (%s)", (s), "r->stptr", strerror((*__errno_location ()))),0));
   memcpy(r->sub.val.sp, s, len);
  }
  r->sub.val.sp[len] = '\0';
@@ -6764,11 +6692,7 @@ int flags;
     *ptm++ = c;
   }
   len = ptm - r->sub.val.sp;
-  (void)((r->sub.val.sp=(char *)realloc((char *)r->sub.val.sp, (size_t)(len + 1))) || (set_loc("node.c", 317), r_fatal("%s: %s: can't allocate memory (%s)", ("make_str_node"), "r->stptr", strerror(
-# 317 "node.c" 3 4
- (*__errno_location ())
-# 317 "node.c"
- )),0));
+  (void)((r->sub.val.sp=(char *)realloc((char *)r->sub.val.sp, (size_t)(len + 1))) || (set_loc("node.c", 317), r_fatal("%s: %s: can't allocate memory (%s)", ("make_str_node"), "r->stptr", strerror((*__errno_location ()))),0));
   r->sub.val.sp[len] = '\0';
   r->flags |= 4;
  }
@@ -6797,11 +6721,7 @@ size_t len;
 
 
 
-NODE *nextfree = 
-# 346 "node.c" 3 4
-                ((void *)0)
-# 346 "node.c"
-                    ;
+NODE *nextfree = ((void *)0);
 
 NODE *
 more_nodes()
@@ -6809,21 +6729,13 @@ more_nodes()
  register NODE *np;
 
 
- (void)((nextfree=(NODE *)malloc((size_t)(100 * sizeof(NODE)))) || (set_loc("node.c", 354), r_fatal("%s: %s: can't allocate memory (%s)", ("newnode"), "nextfree", strerror(
-# 354 "node.c" 3 4
-(*__errno_location ())
-# 354 "node.c"
-)),0));
+ (void)((nextfree=(NODE *)malloc((size_t)(100 * sizeof(NODE)))) || (set_loc("node.c", 354), r_fatal("%s: %s: can't allocate memory (%s)", ("newnode"), "nextfree", strerror((*__errno_location ()))),0));
  for (np = nextfree; np <= &nextfree[100 - 1]; np++) {
   np->flags = 0;
   np->sub.nodep.l.lptr = np + 1;
  }
  --np;
- np->sub.nodep.l.lptr = 
-# 360 "node.c" 3 4
-            ((void *)0)
-# 360 "node.c"
-                ;
+ np->sub.nodep.l.lptr = ((void *)0);
  np = nextfree;
  nextfree = nextfree->sub.nodep.l.lptr;
  return np;
@@ -6833,11 +6745,7 @@ void
 unref(tmp)
 register NODE *tmp;
 {
- if (tmp == 
-# 391 "node.c" 3 4
-           ((void *)0)
-# 391 "node.c"
-               )
+ if (tmp == ((void *)0))
   return;
  if ((tmp->flags & 4) != 0)
   return;
@@ -6845,7 +6753,7 @@ register NODE *tmp;
   tmp->flags &= ~2;
   if ((tmp->flags & 16) != 0) {
    if (tmp->sub.val.sref > 1) {
-    if (tmp->sub.val.sref != 0x7fffffffffffffffL)
+    if (tmp->sub.val.sref != 9223372036854775807L)
      tmp->sub.val.sref--;
     return;
    }
@@ -6919,49 +6827,17 @@ char **string_ptr;
   }
   if (do_posix)
    return ('x');
-  if (! 
-# 492 "node.c" 3 4
-       ((*__ctype_b_loc ())[(int) ((
-# 492 "node.c"
-       (*string_ptr)[0]
-# 492 "node.c" 3 4
-       ))] & (unsigned short int) _ISxdigit)
-# 492 "node.c"
-                                 ) {
+  if (! ((*__ctype_b_loc ())[(int) (((*string_ptr)[0]))] & (unsigned short int) _ISxdigit)) {
    warning("no hex digits in \\x escape sequence");
    return ('x');
   }
   i = 0;
   for (;;) {
-   if ((1 && 
-# 498 "node.c" 3 4
-      ((*__ctype_b_loc ())[(int) ((
-# 498 "node.c"
-      (c = *(*string_ptr)++)
-# 498 "node.c" 3 4
-      ))] & (unsigned short int) _ISxdigit)
-# 498 "node.c"
-      )) {
+   if ((1 && ((*__ctype_b_loc ())[(int) (((c = *(*string_ptr)++)))] & (unsigned short int) _ISxdigit))) {
     i *= 16;
-    if ((1 && 
-# 500 "node.c" 3 4
-       ((*__ctype_b_loc ())[(int) ((
-# 500 "node.c"
-       c
-# 500 "node.c" 3 4
-       ))] & (unsigned short int) _ISdigit)
-# 500 "node.c"
-       ))
+    if ((1 && ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISdigit)))
      i += c - '0';
-    else if ((1 && 
-# 502 "node.c" 3 4
-            ((*__ctype_b_loc ())[(int) ((
-# 502 "node.c"
-            c
-# 502 "node.c" 3 4
-            ))] & (unsigned short int) _ISupper)
-# 502 "node.c"
-            ))
+    else if ((1 && ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISupper)))
      i += c - 'A' + 10;
     else
      i += c - 'a' + 10;

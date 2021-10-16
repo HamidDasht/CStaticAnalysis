@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "print.h"
-//#include <crest.h>
-//#include "mylib.h"
+#include <crest.h>
+#include "mylib.h"
 
 int f1(int b)
 {
@@ -235,8 +235,8 @@ void f4()
 
 int main()
 {
-    //print_hello();
-    //print("Hello world");
+    print_hello();
+    print("Hello world");
     int a;
     //CREST_int(a);
     int* ptr = (int*)malloc(sizeof(int));

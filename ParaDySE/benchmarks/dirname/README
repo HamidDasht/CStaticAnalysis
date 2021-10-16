@@ -1,0 +1,5 @@
+./dirname aaaa/aaaa/aaaa/aaaa
+
+cilly --save-temps -std=gnu99 -g -Wl,--as-needed  -o dirname dirname.c ../../../../coreutils-8.30/src/libver.a ../../../../coreutils-8.30/lib/libcoreutils.a -I../../../../coreutils-8.30/lib -I../../../../coreutils-8.30/src  ../../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I/home/hamid/Desktop/ParaDySE/include -L/home/hamid/Desktop/ParaDySE/lib
+
+rm branches cfg* dirname.cil.* dirname.i dirname.o dirname dominator* features funcount idcount input_file stmtcount szd_execution 

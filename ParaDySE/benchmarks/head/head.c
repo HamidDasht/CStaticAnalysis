@@ -955,13 +955,8 @@ main (int argc, char **argv)
     CREST_char(input_data[i]);
 
   FILE* f = fopen(IN_FILE, "w");
-  fputs(input_data, f);
+  fwrite(input_data, MAX_DATA, 1, f);
   fclose(f);
-
-  // Instrument -c argument's input
-  unsigned int crest_input;
-  CREST_unsigned_int(crest_input);
-  sprintf(argv[2], "%u", crest_input % MAX_DATA);
 
   have_read_stdin = false;
 
@@ -1051,7 +1046,8 @@ main (int argc, char **argv)
           elide_from_end = (*optarg == '-');
           if (elide_from_end)
             ++optarg;
-          n_units = string_to_integer (count_lines, optarg);
+          //n_units = string_to_integer (count_lines, optarg);
+          CREST_int(n_units);
           break;
 
         case 'n':

@@ -1,5 +1,5 @@
 # 1 "main.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -91,10 +91,8 @@ extern void __CrestInt(int* x) __attribute__((crest_skip));
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
@@ -218,7 +216,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -252,8 +250,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -1019,17 +1017,17 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 # 37 "awk.h" 2
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 34 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 34 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 168 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 168 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 143 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
@@ -1053,9 +1051,9 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
 # 152 "/usr/include/limits.h" 2 3 4
-# 169 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
-# 8 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 2 3 4
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
+# 169 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
+# 8 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 2 3 4
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
 # 39 "awk.h" 2
 
 # 1 "/usr/include/ctype.h" 1 3 4
@@ -1321,7 +1319,7 @@ extern void siglongjmp (sigjmp_buf __env, int __val)
 
 # 1 "/usr/include/locale.h" 1 3 4
 # 28 "/usr/include/locale.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 29 "/usr/include/locale.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/locale.h" 1 3 4
 # 30 "/usr/include/locale.h" 2 3 4
@@ -1428,7 +1426,7 @@ extern __locale_t uselocale (__locale_t __dataset) __attribute__ ((__nothrow__ ,
 # 44 "awk.h" 2
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
 # 47 "awk.h" 2
 
 
@@ -2086,7 +2084,7 @@ extern int sigreturn (struct sigcontext *__scp) __attribute__ ((__nothrow__ , __
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 317 "/usr/include/signal.h" 2 3 4
 
 
@@ -2462,7 +2460,7 @@ extern int __libc_current_sigrtmax (void) __attribute__ ((__nothrow__ , __leaf__
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 38 "/usr/include/time.h" 2 3 4
 
 
@@ -2871,7 +2869,7 @@ typedef __suseconds_t suseconds_t;
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -3252,8 +3250,8 @@ extern int __xmknodat (int __ver, int __fd, const char *__path,
 # 118 "awk.h"
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
 # 33 "/usr/include/stdlib.h" 2 3 4
 
@@ -3638,7 +3636,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -4019,7 +4017,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/string.h" 2 3 4
 
 
@@ -4340,7 +4338,7 @@ extern char *basename (const char *__filename) __attribute__ ((__nothrow__ , __l
 # 23 "/usr/include/x86_64-linux-gnu/bits/environments.h" 2 3 4
 # 210 "/usr/include/unistd.h" 2 3 4
 # 229 "/usr/include/unistd.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 230 "/usr/include/unistd.h" 2 3 4
 # 270 "/usr/include/unistd.h" 3 4
 typedef __intptr_t intptr_t;
@@ -5688,8 +5686,6 @@ extern void swab (const void *__restrict __from, void *__restrict __to,
 # 175 "awk.h"
 # 1 "regex.h" 1
 # 40 "regex.h"
-
-# 40 "regex.h"
 typedef long int s_reg_t;
 typedef unsigned long int active_reg_t;
 
@@ -6561,18 +6557,10 @@ NODE *Nnull_string;
 const char *myname;
 
 
-NODE *begin_block = 
-# 70 "main.c" 3 4
-                   ((void *)0)
-# 70 "main.c"
-                       ;
+NODE *begin_block = ((void *)0);
 
 
-NODE *end_block = 
-# 73 "main.c" 3 4
-                 ((void *)0)
-# 73 "main.c"
-                     ;
+NODE *end_block = ((void *)0);
 
 int exiting = 0;
 int exit_val = 0;
@@ -6581,11 +6569,7 @@ int exit_val = 0;
 
 
 
-struct src *srcfiles = 
-# 82 "main.c" 3 4
-                      ((void *)0)
-# 82 "main.c"
-                          ;
+struct src *srcfiles = ((void *)0);
 long numfiles = -1;
 
 int do_traditional = 0;
@@ -6606,134 +6590,26 @@ extern char *version_string;
 NODE *expression_value;
 
 static struct option optab[] = {
- { "compat", 
-# 103 "main.c" 3 4
-             0
-# 103 "main.c"
-                        , & do_traditional, 1 },
- { "traditional", 
-# 104 "main.c" 3 4
-                 0
-# 104 "main.c"
-                            , & do_traditional, 1 },
- { "lint", 
-# 105 "main.c" 3 4
-           0
-# 105 "main.c"
-                      , & do_lint, 1 },
- { "lint-old", 
-# 106 "main.c" 3 4
-               0
-# 106 "main.c"
-                          , & do_lint_old, 1 },
- { "posix", 
-# 107 "main.c" 3 4
-            0
-# 107 "main.c"
-                       , & do_posix, 1 },
- { "nostalgia", 
-# 108 "main.c" 3 4
-                0
-# 108 "main.c"
-                           , & do_nostalgia, 1 },
- { "copyleft", 
-# 109 "main.c" 3 4
-               0
-# 109 "main.c"
-                          , 
-# 109 "main.c" 3 4
-                             ((void *)0)
-# 109 "main.c"
-                                 , 'C' },
- { "copyright", 
-# 110 "main.c" 3 4
-                0
-# 110 "main.c"
-                           , 
-# 110 "main.c" 3 4
-                              ((void *)0)
-# 110 "main.c"
-                                  , 'C' },
- { "field-separator", 
-# 111 "main.c" 3 4
-                     1
-# 111 "main.c"
-                                      , 
-# 111 "main.c" 3 4
-                                        ((void *)0)
-# 111 "main.c"
-                                            , 'F' },
- { "file", 
-# 112 "main.c" 3 4
-           1
-# 112 "main.c"
-                            , 
-# 112 "main.c" 3 4
-                              ((void *)0)
-# 112 "main.c"
-                                  , 'f' },
- { "re-interval", 
-# 113 "main.c" 3 4
-                  0
-# 113 "main.c"
-                             , & do_intervals, 1 },
- { "source", 
-# 114 "main.c" 3 4
-             1
-# 114 "main.c"
-                              , 
-# 114 "main.c" 3 4
-                                ((void *)0)
-# 114 "main.c"
-                                    , 's' },
- { "assign", 
-# 115 "main.c" 3 4
-             1
-# 115 "main.c"
-                              , 
-# 115 "main.c" 3 4
-                                ((void *)0)
-# 115 "main.c"
-                                    , 'v' },
- { "version", 
-# 116 "main.c" 3 4
-              0
-# 116 "main.c"
-                         , 
-# 116 "main.c" 3 4
-                            ((void *)0)
-# 116 "main.c"
-                                , 'V' },
- { "usage", 
-# 117 "main.c" 3 4
-            0
-# 117 "main.c"
-                       , 
-# 117 "main.c" 3 4
-                          ((void *)0)
-# 117 "main.c"
-                              , 'u' },
- { "help", 
-# 118 "main.c" 3 4
-           0
-# 118 "main.c"
-                      , 
-# 118 "main.c" 3 4
-                         ((void *)0)
-# 118 "main.c"
-                             , 'u' },
+ { "compat", 0, & do_traditional, 1 },
+ { "traditional", 0, & do_traditional, 1 },
+ { "lint", 0, & do_lint, 1 },
+ { "lint-old", 0, & do_lint_old, 1 },
+ { "posix", 0, & do_posix, 1 },
+ { "nostalgia", 0, & do_nostalgia, 1 },
+ { "copyleft", 0, ((void *)0), 'C' },
+ { "copyright", 0, ((void *)0), 'C' },
+ { "field-separator", 1, ((void *)0), 'F' },
+ { "file", 1, ((void *)0), 'f' },
+ { "re-interval", 0, & do_intervals, 1 },
+ { "source", 1, ((void *)0), 's' },
+ { "assign", 1, ((void *)0), 'v' },
+ { "version", 0, ((void *)0), 'V' },
+ { "usage", 0, ((void *)0), 'u' },
+ { "help", 0, ((void *)0), 'u' },
 
 
 
- { 
-# 122 "main.c" 3 4
-  ((void *)0)
-# 122 "main.c"
-      , 0, 
-# 122 "main.c" 3 4
-           ((void *)0)
-# 122 "main.c"
-               , '\0' }
+ { ((void *)0), 0, ((void *)0), '\0' }
 };
 
 
@@ -6769,33 +6645,13 @@ char **argv;
  extern int opterr;
  extern char *optarg;
 
- setlocale(
-# 158 "main.c" 3 4
-          0
-# 158 "main.c"
-                  , "");
- setlocale(
-# 159 "main.c" 3 4
-          3
-# 159 "main.c"
-                    , "");
+ setlocale(0, "");
+ setlocale(3, "");
 
- (void) signal(
-# 161 "main.c" 3 4
-              8
-# 161 "main.c"
-                    , (void (*) (int)) catchsig);
- (void) signal(
-# 162 "main.c" 3 4
-              11
-# 162 "main.c"
-                     , (void (*) (int)) catchsig);
+ (void) signal(8, (void (*) (int)) catchsig);
+ (void) signal(11, (void (*) (int)) catchsig);
 
- (void) signal(
-# 164 "main.c" 3 4
-              7
-# 164 "main.c"
-                    , (void (*) (int)) catchsig);
+ (void) signal(7, (void (*) (int)) catchsig);
 
 
  myname = gawk_name(argv[0]);
@@ -6807,11 +6663,7 @@ char **argv;
   version_string += 4;
 
  if (argc < 2)
-  usage(1, 
-# 176 "main.c" 3 4
-          stderr
-# 176 "main.c"
-                );
+  usage(1, stderr);
 
 
  Nnull_string = make_str_node((""), (size_t) (0), 0);
@@ -6834,11 +6686,7 @@ char **argv;
  init_vars();
 
 
- (void)((srcfiles=(struct src *)malloc((size_t)(argc * sizeof(struct src)))) || (set_loc("main.c", 199), r_fatal("%s: %s: can't allocate memory (%s)", ("main"), "srcfiles", strerror(
-# 199 "main.c" 3 4
-(*__errno_location ())
-# 199 "main.c"
-)),0));
+ (void)((srcfiles=(struct src *)malloc((size_t)(argc * sizeof(struct src)))) || (set_loc("main.c", 199), r_fatal("%s: %s: can't allocate memory (%s)", ("main"), "srcfiles", strerror((*__errno_location ()))),0));
  memset(srcfiles, '\0', argc * sizeof(struct src));
 
 
@@ -6846,15 +6694,7 @@ char **argv;
 
 
  for (optopt = 0, old_optind = 1;
-      (c = getopt_long(argc, argv, optlist, optab, 
-# 207 "main.c" 3 4
-                                                  ((void *)0)
-# 207 "main.c"
-                                                      )) != 
-# 207 "main.c" 3 4
-                                                            (-1)
-# 207 "main.c"
-                                                               ;
+      (c = getopt_long(argc, argv, optlist, optab, ((void *)0))) != (-1);
       optopt = 0, old_optind = optind) {
   if (do_posix)
    opterr = 1;
@@ -6867,15 +6707,7 @@ char **argv;
   case 'f':
 # 226 "main.c"
    scan = optarg;
-   while ((1 && 
-# 227 "main.c" 3 4
-         ((*__ctype_b_loc ())[(int) ((
-# 227 "main.c"
-         *scan
-# 227 "main.c" 3 4
-         ))] & (unsigned short int) _ISspace)
-# 227 "main.c"
-         ))
+   while ((1 && ((*__ctype_b_loc ())[(int) ((*scan))] & (unsigned short int) _ISspace)))
     scan++;
 
    ++numfiles;
@@ -6905,11 +6737,7 @@ char **argv;
    break;
 
   case 'W':
-   fprintf(
-# 257 "main.c" 3 4
-          stderr
-# 257 "main.c"
-                , "%s: option `-W %s' unrecognized, ignored\n",
+   fprintf(stderr, "%s: option `-W %s' unrecognized, ignored\n",
     argv[0], optarg);
    break;
 
@@ -6928,11 +6756,7 @@ char **argv;
    break;
 
   case 'u':
-   usage(0, 
-# 276 "main.c" 3 4
-           stdout
-# 276 "main.c"
-                 );
+   usage(0, stdout);
    break;
 
   case 'V':
@@ -6957,11 +6781,7 @@ char **argv;
   default:
 # 310 "main.c"
    if (! do_posix
-       && (optopt == '\0' || strchr(optlist, optopt) == 
-# 311 "main.c" 3 4
-                                                       ((void *)0)
-# 311 "main.c"
-                                                           )) {
+       && (optopt == '\0' || strchr(optlist, optopt) == ((void *)0))) {
 
 
 
@@ -6972,11 +6792,7 @@ char **argv;
     goto out;
    } else if (optopt != '\0')
 
-    fprintf(
-# 322 "main.c" 3 4
-           stderr
-# 322 "main.c"
-                 ,
+    fprintf(stderr,
     "%s: option requires an argument -- %c\n",
      myname, optopt);
 
@@ -6990,11 +6806,7 @@ out:
   nostalgia();
 
 
- if (! do_posix && getenv("POSIXLY_CORRECT") != 
-# 336 "main.c" 3 4
-                                               ((void *)0)
-# 336 "main.c"
-                                                   ) {
+ if (! do_posix && getenv("POSIXLY_CORRECT") != ((void *)0)) {
   do_posix = 1;
   if (do_lint)
    warning(
@@ -7032,20 +6844,12 @@ out:
 
 
 
- if (isatty(fileno(
-# 374 "main.c" 3 4
-                  stdout
-# 374 "main.c"
-                        )))
+ if (isatty(fileno(stdout)))
   output_is_tty = 1;
 
  if (numfiles == -1) {
   if (optind > argc - 1 || stopped_early)
-   usage(1, 
-# 379 "main.c" 3 4
-           stderr
-# 379 "main.c"
-                 );
+   usage(1, stderr);
   srcfiles[++numfiles].stype = CMDLINE;
   srcfiles[numfiles].val = argv[optind];
   optind++;
@@ -7065,46 +6869,18 @@ out:
 
  init_fields();
 
- if (do_lint && begin_block == 
-# 399 "main.c" 3 4
-                              ((void *)0) 
-# 399 "main.c"
-                                   && expression_value == 
-# 399 "main.c" 3 4
-                                                          ((void *)0)
-      
-# 400 "main.c"
-     && end_block == 
-# 400 "main.c" 3 4
-                     ((void *)0)
-# 400 "main.c"
-                         )
+ if (do_lint && begin_block == ((void *)0) && expression_value == ((void *)0)
+      && end_block == ((void *)0))
   warning("no program");
 
- if (begin_block != 
-# 403 "main.c" 3 4
-                   ((void *)0)
-# 403 "main.c"
-                       ) {
+ if (begin_block != ((void *)0)) {
   in_begin_rule = 1;
   (void) interpret(begin_block);
  }
  in_begin_rule = 0;
- if (! exiting && (expression_value != 
-# 408 "main.c" 3 4
-                                      ((void *)0) 
-# 408 "main.c"
-                                           || end_block != 
-# 408 "main.c" 3 4
-                                                           ((void *)0)
-# 408 "main.c"
-                                                               ))
+ if (! exiting && (expression_value != ((void *)0) || end_block != ((void *)0)))
   do_input();
- if (end_block != 
-# 410 "main.c" 3 4
-                 ((void *)0)
-# 410 "main.c"
-                     ) {
+ if (end_block != ((void *)0)) {
   in_end_rule = 1;
   (void) interpret(end_block);
  }
@@ -7182,26 +6958,10 @@ copyleft()
 
 
 
- fputs(blurb_part1, 
-# 488 "main.c" 3 4
-                   stdout
-# 488 "main.c"
-                         );
- fputs(blurb_part2, 
-# 489 "main.c" 3 4
-                   stdout
-# 489 "main.c"
-                         );
- fputs(blurb_part3, 
-# 490 "main.c" 3 4
-                   stdout
-# 490 "main.c"
-                         );
- fflush(
-# 491 "main.c" 3 4
-       stdout
-# 491 "main.c"
-             );
+ fputs(blurb_part1, stdout);
+ fputs(blurb_part2, stdout);
+ fputs(blurb_part3, stdout);
+ fflush(stdout);
  exit(0);
 }
 
@@ -7243,11 +7003,7 @@ char **argv;
  int i, j;
  NODE **aptr;
 
- ARGV_node = install("ARGV", node(Nnull_string, Node_var_array, (NODE *) 
-# 533 "main.c" 3 4
-                                                                        ((void *)0)
-# 533 "main.c"
-                                                                            ));
+ ARGV_node = install("ARGV", node(Nnull_string, Node_var_array, (NODE *) ((void *)0)));
  aptr = assoc_lookup(ARGV_node, mk_number((0.0), (unsigned int)(1|2|32|64)));
  *aptr = make_str_node((argv0), (size_t) (strlen(argv0)), 0);
  (*aptr)->flags |= 128;
@@ -7258,11 +7014,7 @@ char **argv;
   j++;
  }
  ARGC_node = install("ARGC",
-   node(mk_number(((double) j), (unsigned int)(1|32|64)), Node_var, (NODE *) 
-# 544 "main.c" 3 4
-                                                   ((void *)0)
-# 544 "main.c"
-                                                       ));
+   node(mk_number(((double) j), (unsigned int)(1|32|64)), Node_var, (NODE *) ((void *)0)));
 }
 # 554 "main.c"
 struct varinit {
@@ -7275,108 +7027,24 @@ struct varinit {
 };
 static struct varinit varinit[] = {
 {&CONVFMT_node, "CONVFMT", Node_CONVFMT, "%.6g", 0, set_CONVFMT },
-{&NF_node, "NF", Node_NF, 
-# 564 "main.c" 3 4
-                           ((void *)0)
-# 564 "main.c"
-                               , -1, set_NF },
-{&FIELDWIDTHS_node, "FIELDWIDTHS", Node_FIELDWIDTHS, "", 0, 
-# 565 "main.c" 3 4
-                                                            ((void *)0) 
-# 565 "main.c"
-                                                                 },
-{&NR_node, "NR", Node_NR, 
-# 566 "main.c" 3 4
-                           ((void *)0)
-# 566 "main.c"
-                               , 0, set_NR },
-{&FNR_node, "FNR", Node_FNR, 
-# 567 "main.c" 3 4
-                              ((void *)0)
-# 567 "main.c"
-                                  , 0, set_FNR },
-{&FS_node, "FS", Node_FS, " ", 0, 
-# 568 "main.c" 3 4
-                                    ((void *)0) 
-# 568 "main.c"
-                                         },
+{&NF_node, "NF", Node_NF, ((void *)0), -1, set_NF },
+{&FIELDWIDTHS_node, "FIELDWIDTHS", Node_FIELDWIDTHS, "", 0, ((void *)0) },
+{&NR_node, "NR", Node_NR, ((void *)0), 0, set_NR },
+{&FNR_node, "FNR", Node_FNR, ((void *)0), 0, set_FNR },
+{&FS_node, "FS", Node_FS, " ", 0, ((void *)0) },
 {&RS_node, "RS", Node_RS, "\n", 0, set_RS },
-{&IGNORECASE_node, "IGNORECASE", Node_IGNORECASE, 
-# 570 "main.c" 3 4
-                                                 ((void *)0)
-# 570 "main.c"
-                                                     , 0, 
-# 570 "main.c" 3 4
-                                                           ((void *)0) 
-# 570 "main.c"
-                                                                },
-{&FILENAME_node, "FILENAME", Node_var, "", 0, 
-# 571 "main.c" 3 4
-                                               ((void *)0) 
-# 571 "main.c"
-                                                    },
+{&IGNORECASE_node, "IGNORECASE", Node_IGNORECASE, ((void *)0), 0, ((void *)0) },
+{&FILENAME_node, "FILENAME", Node_var, "", 0, ((void *)0) },
 {&OFS_node, "OFS", Node_OFS, " ", 0, set_OFS },
 {&ORS_node, "ORS", Node_ORS, "\n", 0, set_ORS },
 {&OFMT_node, "OFMT", Node_OFMT, "%.6g", 0, set_OFMT },
-{&RLENGTH_node, "RLENGTH", Node_var, 
-# 575 "main.c" 3 4
-                                     ((void *)0)
-# 575 "main.c"
-                                         , 0, 
-# 575 "main.c" 3 4
-                                               ((void *)0) 
-# 575 "main.c"
-                                                    },
-{&RSTART_node, "RSTART", Node_var, 
-# 576 "main.c" 3 4
-                                   ((void *)0)
-# 576 "main.c"
-                                       , 0, 
-# 576 "main.c" 3 4
-                                             ((void *)0) 
-# 576 "main.c"
-                                                  },
-{&SUBSEP_node, "SUBSEP", Node_var, "\034", 0, 
-# 577 "main.c" 3 4
-                                               ((void *)0) 
-# 577 "main.c"
-                                                    },
-{&ARGIND_node, "ARGIND", Node_var, 
-# 578 "main.c" 3 4
-                                   ((void *)0)
-# 578 "main.c"
-                                       , 0, 
-# 578 "main.c" 3 4
-                                             ((void *)0) 
-# 578 "main.c"
-                                                  },
-{&ERRNO_node, "ERRNO", Node_var, 
-# 579 "main.c" 3 4
-                                 ((void *)0)
-# 579 "main.c"
-                                     , 0, 
-# 579 "main.c" 3 4
-                                           ((void *)0) 
-# 579 "main.c"
-                                                },
-{&RT_node, "RT", Node_var, "", 0, 
-# 580 "main.c" 3 4
-                                    ((void *)0) 
-# 580 "main.c"
-                                         },
-{0, 
-# 581 "main.c" 3 4
-    ((void *)0)
-# 581 "main.c"
-        , Node_illegal, 
-# 581 "main.c" 3 4
-                          ((void *)0)
-# 581 "main.c"
-                              , 0, 
-# 581 "main.c" 3 4
-                                    ((void *)0) 
-# 581 "main.c"
-                                         },
+{&RLENGTH_node, "RLENGTH", Node_var, ((void *)0), 0, ((void *)0) },
+{&RSTART_node, "RSTART", Node_var, ((void *)0), 0, ((void *)0) },
+{&SUBSEP_node, "SUBSEP", Node_var, "\034", 0, ((void *)0) },
+{&ARGIND_node, "ARGIND", Node_var, ((void *)0), 0, ((void *)0) },
+{&ERRNO_node, "ERRNO", Node_var, ((void *)0), 0, ((void *)0) },
+{&RT_node, "RT", Node_var, "", 0, ((void *)0) },
+{0, ((void *)0), Node_illegal, ((void *)0), 0, ((void *)0) },
 };
 
 
@@ -7388,18 +7056,10 @@ init_vars()
 
  for (vp = varinit; vp->name; vp++) {
   *(vp->spec) = install((char *) vp->name,
-    node(vp->strval == 
-# 593 "main.c" 3 4
-                      ((void *)0) 
-# 593 "main.c"
-                           ? mk_number((vp->numval), (unsigned int)(1|32|64))
+    node(vp->strval == ((void *)0) ? mk_number((vp->numval), (unsigned int)(1|32|64))
     : make_str_node(((char *) vp->strval), (size_t) (strlen(vp->strval)), 0)
                         ,
-         vp->type, (NODE *) 
-# 596 "main.c" 3 4
-                           ((void *)0)
-# 596 "main.c"
-                               ));
+         vp->type, (NODE *) ((void *)0)));
   (*(vp->spec))->flags |= 512;
   if (vp->assign)
    (*(vp->assign))();
@@ -7419,25 +7079,13 @@ load_environ()
  register int i;
 
  ENVIRON_node = install("ENVIRON",
-   node(Nnull_string, Node_var, (NODE *) 
-# 616 "main.c" 3 4
-                                        ((void *)0)
-# 616 "main.c"
-                                            ));
- for (i = 0; environ[i] != 
-# 617 "main.c" 3 4
-                          ((void *)0)
-# 617 "main.c"
-                              ; i++) {
+   node(Nnull_string, Node_var, (NODE *) ((void *)0)));
+ for (i = 0; environ[i] != ((void *)0); i++) {
   static char nullstr[] = "";
 
   var = environ[i];
   val = strchr(var, '=');
-  if (val != 
-# 622 "main.c" 3 4
-            ((void *)0)
-# 622 "main.c"
-                )
+  if (val != ((void *)0))
    *val++ = '\0';
   else
    val = nullstr;
@@ -7453,11 +7101,7 @@ load_environ()
 
 
 
- if ((cp = getenv("AWKPATH")) == 
-# 638 "main.c" 3 4
-                                ((void *)0)
-# 638 "main.c"
-                                    ) {
+ if ((cp = getenv("AWKPATH")) == ((void *)0)) {
   aptr = assoc_lookup(ENVIRON_node, tmp_string("AWKPATH", 7));
   *aptr = make_str_node((defpath), (size_t) (strlen(defpath)), 0);
   (*aptr)->flags |= 512;
@@ -7472,45 +7116,21 @@ char *arg;
 {
  char *cp, *cp2;
  int badvar;
- Func_ptr after_assign = 
-# 653 "main.c" 3 4
-                        ((void *)0)
-# 653 "main.c"
-                            ;
+ Func_ptr after_assign = ((void *)0);
  NODE *var;
  NODE *it;
  NODE **lhs;
 
  cp = strchr(arg, '=');
- if (cp != 
-# 659 "main.c" 3 4
-          ((void *)0)
-# 659 "main.c"
-              ) {
+ if (cp != ((void *)0)) {
   *cp++ = '\0';
 
   badvar = 0;
-  if (! 
-# 663 "main.c" 3 4
-       ((*__ctype_b_loc ())[(int) ((
-# 663 "main.c"
-       arg[0]
-# 663 "main.c" 3 4
-       ))] & (unsigned short int) _ISalpha) 
-# 663 "main.c"
-                       && arg[0] != '_')
+  if (! ((*__ctype_b_loc ())[(int) ((arg[0]))] & (unsigned short int) _ISalpha) && arg[0] != '_')
    badvar = 1;
   else
    for (cp2 = arg+1; *cp2; cp2++)
-    if (! 
-# 667 "main.c" 3 4
-         ((*__ctype_b_loc ())[(int) ((
-# 667 "main.c"
-         *cp2
-# 667 "main.c" 3 4
-         ))] & (unsigned short int) _ISalnum) 
-# 667 "main.c"
-                       && *cp2 != '_') {
+    if (! ((*__ctype_b_loc ())[(int) ((*cp2))] & (unsigned short int) _ISalnum) && *cp2 != '_') {
      badvar = 1;
      break;
     }
@@ -7527,11 +7147,7 @@ char *arg;
   lhs = ((var)->type == Node_var ? (&(var)->sub.nodep.l.lptr) : r_get_lhs((var), (&after_assign)));
   unref(*lhs);
   *lhs = it;
-  if (after_assign != 
-# 684 "main.c" 3 4
-                     ((void *)0)
-# 684 "main.c"
-                         )
+  if (after_assign != ((void *)0))
    (*after_assign)();
   *--cp = '=';
  }
@@ -7544,23 +7160,11 @@ static void
 pre_assign(v)
 char *v;
 {
- if (arg_assign(v) == 
-# 697 "main.c" 3 4
-                     ((void *)0)
-# 697 "main.c"
-                         ) {
-  fprintf(
-# 698 "main.c" 3 4
-         stderr
-# 698 "main.c"
-               ,
+ if (arg_assign(v) == ((void *)0)) {
+  fprintf(stderr,
    "%s: `%s' argument to `-v' not in `var=value' form\n",
     myname, v);
-  usage(1, 
-# 701 "main.c" 3 4
-          stderr
-# 701 "main.c"
-                );
+  usage(1, stderr);
  }
 }
 
@@ -7573,25 +7177,13 @@ int sig, code;
 
 
 
- if (sig == 
-# 714 "main.c" 3 4
-           8
-# 714 "main.c"
-                 ) {
+ if (sig == 8) {
   set_loc("main.c", 715), r_fatal("floating point exception");
- } else if (sig == 
-# 716 "main.c" 3 4
-                  11
+ } else if (sig == 11
 
-         
-# 718 "main.c"
-        || sig == 
-# 718 "main.c" 3 4
-                  7
+         || sig == 7
 
- 
-# 720 "main.c"
-) {
+ ) {
   set_loc("main.c", 721);
   msg("fatal error: internal error");
 
@@ -7606,11 +7198,7 @@ int sig, code;
 static void
 nostalgia()
 {
- fprintf(
-# 735 "main.c" 3 4
-        stderr
-# 735 "main.c"
-              , "awk: bailing out near line 1\n");
+ fprintf(stderr, "awk: bailing out near line 1\n");
  abort();
 }
 

@@ -19,6 +19,92 @@ end
 let func_decs = new gatherFuncDecs;;
 let visited_funcs = ref [];;
 
+
+
+class cntEdgesMain if_depth = object(self)
+	inherit nopCilVisitor as super
+
+	val num_of_nodes = ref 0L;
+	val next_depth = ref 0;
+	val else_depth = ref 0;
+	val loop_depth = ref 1;
+	val mutable has_no_ifs = true;
+	val mutable first_if_in_block = true;
+	val mutable first_loop_in_block = true;
+	val mutable last_in_chain = false;
+	
+	method get_num_of_nodes : int64 = if has_no_ifs then 2L else !num_of_nodes;
+
+	method get_edges : int64 =  (
+	 (*if !num_of_nodes = 3 then 2*)
+	 if !num_of_nodes = 0L then 0L
+	 else (Int64.mul (Int64.sub !num_of_nodes 1L)  2L)
+	);
+
+	method has_no_ifs : bool = has_no_ifs;
+
+	method vstmt (s: stmt) =
+		match s.skind with
+		|  If(_,bt,bf,_) ->			
+			(*ignore(Printf.printf "%d started with %Ld nodex\n" !if_depth !num_of_nodes);*)
+
+			has_no_ifs <- false;
+			next_depth := !if_depth + 1;
+
+			let vis_true = new cntEdgesMain next_depth and
+			vis_false = new cntEdgesMain else_depth and
+			before = !num_of_nodes in
+			ignore(visitCilBlock (vis_true :> cilVisitor) bt);
+			ignore(visitCilBlock (vis_false :> cilVisitor) bf);
+
+			let child_nodes = ref 0L in
+			if vis_true#has_no_ifs = true then
+				child_nodes :=  1L
+			else
+				child_nodes := vis_true#get_num_of_nodes;
+
+			if vis_false#has_no_ifs = true then
+				child_nodes := Int64.add !child_nodes 1L
+			else
+				child_nodes := Int64.add !child_nodes vis_false#get_num_of_nodes;
+
+			if first_if_in_block = true then
+				num_of_nodes := Int64.add !num_of_nodes !child_nodes
+			else
+				num_of_nodes := Int64.mul !child_nodes before;
+			
+			(*ignore(Printf.printf "exiting %d with nodes %d \n" !if_depth !num_of_nodes );*)
+			first_if_in_block <- false;
+			SkipChildren 
+		| Loop(blk,_,_,_) -> 
+				has_no_ifs <- false;
+				let vis_loop = new cntEdgesMain loop_depth in
+				if !num_of_nodes > 0L then
+					num_of_nodes := Int64.mul !num_of_nodes 2L
+				else
+					num_of_nodes := 2L;
+				
+				ignore(visitCilBlock (vis_loop :> cilVisitor) (mkBlock(List.tl blk.bstmts)));
+				if vis_loop#has_no_ifs = false then
+				begin
+					(*ignore(Printf.printf "Loop had %d nodes\n" vis_loop#get_num_of_nodes);*)
+					num_of_nodes := Int64.add (Int64.mul (Int64.div !num_of_nodes 2L) vis_loop#get_num_of_nodes) (Int64.div !num_of_nodes 2L) ;
+				end;
+				(*ignore(Printf.printf "now we have %d nodes after loop\n" !num_of_nodes);*)
+				SkipChildren
+		| _ -> DoChildren
+
+	method vfunc (fd: fundec) =
+		if fd.svar.vname = "main"
+		then 
+		begin
+			DoChildren
+		end
+		else SkipChildren;
+		
+end
+
+
 class cntEdges if_depth = object(self)
 	inherit nopCilVisitor as super
 
@@ -796,7 +882,8 @@ let feature : featureDescr =
 		str_vis = new strBranchVisitor and
 		loop_depth = new loopDepth depth and
 		if_depth = new ifDepth depth and
-		count_edges = new cntEdges depth in
+		count_edges = new cntEdges depth and
+		count_edges_main = new cntEdgesMain depth in
 		Printf.printf "Start \n";
 		visitCilFileSameGlobals (func_decs :> cilVisitor) f;
         visitCilFileSameGlobals (vis :> cilVisitor) f ;
@@ -856,6 +943,10 @@ let feature : featureDescr =
 		visitCilFileSameGlobals (count_edges :> cilVisitor) f;
 		Printf.printf "number of edges: %Ld\n" count_edges#get_edges;
 		Printf.printf "width: %Ld\n" count_edges#get_num_of_nodes;
+
+		visitCilFileSameGlobals (count_edges_main :> cilVisitor) f;
+		Printf.printf "number of edges in main: %Ld\n" count_edges_main#get_edges;
+		Printf.printf "width of main: %Ld\n" count_edges_main#get_num_of_nodes;
 		
 		let output_file = open_out "static_features" in
 		Printf.fprintf output_file "%d\n" 

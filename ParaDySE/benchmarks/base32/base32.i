@@ -1,5 +1,5 @@
 # 1 "./base32.c"
-# 1 "/home/hamid/Desktop/ParaDySE/benchmarks/base32//"
+# 1 "/home/hamid/Desktop/benchmark/Chameleon/benchmarks/base32//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -1730,8 +1730,8 @@ extern int getopt_long_only (int ___argc, char *const *___argv,
                const struct option *__longopts, int *__longind)
        __attribute__ ((__nothrow__ , __leaf__));
 # 25 "./base32.c" 2
-# 1 "/home/hamid/Desktop/ParaDySE/include/crest.h" 1
-# 136 "/home/hamid/Desktop/ParaDySE/include/crest.h"
+# 1 "../../include/crest.h" 1
+# 136 "../../include/crest.h"
 typedef enum {
 
   __CREST_ADD = 0,
@@ -1762,7 +1762,7 @@ typedef enum {
   __CREST_NOT = 20,
   __CREST_L_NOT = 21,
 };
-# 176 "/home/hamid/Desktop/ParaDySE/include/crest.h"
+# 176 "../../include/crest.h"
 extern void __CrestInit() __attribute__((crest_skip));
 extern void __CrestLoad(int, unsigned long int, long long int) __attribute__((crest_skip));
 extern void __CrestStore(int, unsigned long int) __attribute__((crest_skip));
@@ -1773,7 +1773,7 @@ extern void __CrestBranch(int, int, unsigned char) __attribute__((crest_skip));
 extern void __CrestCall(int, unsigned int) __attribute__((crest_skip));
 extern void __CrestReturn(int) __attribute__((crest_skip));
 extern void __CrestHandleReturn(int, long long int) __attribute__((crest_skip));
-# 197 "/home/hamid/Desktop/ParaDySE/include/crest.h"
+# 197 "../../include/crest.h"
 extern void __CrestUChar(unsigned char* x) __attribute__((crest_skip));
 extern void __CrestUShort(unsigned short* x) __attribute__((crest_skip));
 extern void __CrestUInt(unsigned int* x) __attribute__((crest_skip));
@@ -8812,6 +8812,15 @@ do_encode (FILE *in, FILE *out, uintmax_t wrap_column)
       do
         {
           n = fread_unlocked (inbuf + sum,1,(1024*3*10) - sum,in);
+
+
+          char tmp1;
+          for (int i = sum; i < (1024*3*10) - sum; i++)
+          {
+            __CrestChar(&tmp1);
+            inbuf[i] = tmp1;
+          }
+
           sum += n;
         }
       while (!feof_unlocked (in) && !ferror_unlocked (in) && sum < (1024*3*10));
@@ -8857,6 +8866,14 @@ do_decode (FILE *in, FILE *out, _Bool ignore_garbage)
         {
           n = fread_unlocked (inbuf + sum,1,(((((1024*5)) + 4) / 5) * 8) - sum,in);
 
+
+          char tmp1;
+          for (int i = sum; i < (1024*5) - sum; i++)
+          {
+            __CrestChar(&tmp1);
+            inbuf[i] = tmp1;
+          }
+
           if (ignore_garbage)
             {
               for (size_t i = 0; n > 0 && i < n;)
@@ -8897,53 +8914,13 @@ do_decode (FILE *in, FILE *out, _Bool ignore_garbage)
 }
 
 
-
-
 int
-main (void)
+main (int argc, char**argv)
 {
   int opt;
   FILE *input_fh;
   const char *infile;
-
-  int argc = 2;
-  char** argv;
-  argv = (char**)malloc(sizeof(char*)*2);
-  argv[0] = (char*)malloc(sizeof(char)*10);
-  argv[1] = (char*)malloc(sizeof(char)*28);
-
-  strcpy(argv[0], "base64");
-  char input_data[20];
-
-  char d_opt[4] = "";
-  short d_opt_en;
-  __CrestShort(&d_opt_en);
-  if (d_opt_en > 0)
-  {
-    strcpy(d_opt,"-d ");
-    argc++;
-  }
-  strcpy(argv[1], d_opt);
-
-  char i_opt[4] = "";
-  short i_opt_en;
-  __CrestShort(&i_opt_en);
-  if (i_opt_en > 0)
-  {
-    strcpy(i_opt,"-i ");
-    argc++;
-  }
-  strcat(argv[1], i_opt);
-
-  for (int i = 0; i < 20; i++)
-    __CrestChar(&input_data[i]);
-  input_fh = fopen("crest_data", "w");
-  fputs_unlocked (input_data,input_fh);
-  rpl_fclose(input_fh);
-  strcat(argv[1], input_data);
-
-
-
+# 328 "./base32.c"
   _Bool decode = 0;
 
   _Bool ignore_garbage = 0;
@@ -8957,6 +8934,16 @@ main (void)
   textdomain ("coreutils");
 
   atexit (close_stdout);
+
+  short d_opt_en;
+  __CrestShort(&d_opt_en);
+  if (d_opt_en > 0)
+    decode = 1;
+
+  short i_opt_en;
+  __CrestShort(&i_opt_en);
+  if (i_opt_en > 0)
+    ignore_garbage = 1;
 
   while ((opt = getopt_long (argc, argv, "diw:", long_options, ((void *)0))) != -1)
     switch (opt)
@@ -9001,8 +8988,6 @@ main (void)
     }
   else
     {
-
-      infile = "crest_data";
       input_fh = fopen (infile, "rb");
       if (input_fh == ((void *)0))
         ((!!sizeof (struct { unsigned int _gl_verify_error_if_negative: (1) ? 1 : -1; })) ? ((error (1, (*__errno_location ()), "%s", quotearg_n_style_colon (0, shell_escape_quoting_style, infile)), ((0) ? (void) 0 : __builtin_unreachable ()))) : ((error (1, (*__errno_location ()), "%s", quotearg_n_style_colon (0, shell_escape_quoting_style, infile)), ((0) ? (void) 0 : __builtin_unreachable ()))));

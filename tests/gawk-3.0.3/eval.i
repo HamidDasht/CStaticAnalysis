@@ -1,5 +1,5 @@
 # 1 "eval.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -40,10 +40,8 @@
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
@@ -167,7 +165,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -201,8 +199,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -968,17 +966,17 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 # 37 "awk.h" 2
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 34 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 34 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 168 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 168 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 143 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
@@ -1002,9 +1000,9 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
 # 152 "/usr/include/limits.h" 2 3 4
-# 169 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
-# 8 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 2 3 4
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
+# 169 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
+# 8 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 2 3 4
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
 # 39 "awk.h" 2
 
 # 1 "/usr/include/ctype.h" 1 3 4
@@ -1270,7 +1268,7 @@ extern void siglongjmp (sigjmp_buf __env, int __val)
 
 # 1 "/usr/include/locale.h" 1 3 4
 # 28 "/usr/include/locale.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 29 "/usr/include/locale.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/locale.h" 1 3 4
 # 30 "/usr/include/locale.h" 2 3 4
@@ -1377,7 +1375,7 @@ extern __locale_t uselocale (__locale_t __dataset) __attribute__ ((__nothrow__ ,
 # 44 "awk.h" 2
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
 # 47 "awk.h" 2
 
 
@@ -2035,7 +2033,7 @@ extern int sigreturn (struct sigcontext *__scp) __attribute__ ((__nothrow__ , __
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 317 "/usr/include/signal.h" 2 3 4
 
 
@@ -2411,7 +2409,7 @@ extern int __libc_current_sigrtmax (void) __attribute__ ((__nothrow__ , __leaf__
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 38 "/usr/include/time.h" 2 3 4
 
 
@@ -2820,7 +2818,7 @@ typedef __suseconds_t suseconds_t;
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -3201,8 +3199,8 @@ extern int __xmknodat (int __ver, int __fd, const char *__path,
 # 118 "awk.h"
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
 # 33 "/usr/include/stdlib.h" 2 3 4
 
@@ -3587,7 +3585,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -3968,7 +3966,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/string.h" 2 3 4
 
 
@@ -4289,7 +4287,7 @@ extern char *basename (const char *__filename) __attribute__ ((__nothrow__ , __l
 # 23 "/usr/include/x86_64-linux-gnu/bits/environments.h" 2 3 4
 # 210 "/usr/include/unistd.h" 2 3 4
 # 229 "/usr/include/unistd.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 230 "/usr/include/unistd.h" 2 3 4
 # 270 "/usr/include/unistd.h" 3 4
 typedef __intptr_t intptr_t;
@@ -5637,8 +5635,6 @@ extern void swab (const void *__restrict __from, void *__restrict __to,
 # 175 "awk.h"
 # 1 "regex.h" 1
 # 40 "regex.h"
-
-# 40 "regex.h"
 typedef long int s_reg_t;
 typedef unsigned long int active_reg_t;
 
@@ -6471,8 +6467,6 @@ extern int strncasecmp (const char *s1, const char *s2, register size_t n);
 
 
 
-
-# 69 "/usr/include/assert.h" 3 4
 extern void __assert_fail (const char *__assertion, const char *__file,
       unsigned int __line, const char *__function)
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
@@ -6492,8 +6486,6 @@ extern void __assert (const char *__assertion, const char *__file, int __line)
 
 # 29 "eval.c" 2
 
-
-# 30 "eval.c"
 extern double pow (double x, double y);
 extern double modf (double x, double *yp);
 extern double fmod (double x, double y);
@@ -6662,11 +6654,7 @@ static char *nodetypes[] = {
  "Node_OFMT",
  "Node_CONVFMT",
  "Node_final",
- 
-# 242 "eval.c" 3 4
-((void *)0)
-
-# 243 "eval.c"
+ ((void *)0)
 };
 
 char *
@@ -6688,11 +6676,7 @@ char *
 flags2str(flagval)
 int flagval;
 {
- static char buffer[
-# 264 "eval.c" 3 4
-                   8192
-# 264 "eval.c"
-                         ];
+ static char buffer[8192];
  char *sp;
 
  sp = buffer;
@@ -6784,28 +6768,16 @@ register NODE *volatile tree;
  static jmp_buf rule_tag;
 
 
- register NODE *volatile t = 
-# 356 "eval.c" 3 4
-                            ((void *)0)
-# 356 "eval.c"
-                                ;
+ register NODE *volatile t = ((void *)0);
  NODE **volatile lhs;
  NODE *volatile stable_tree;
  int volatile traverse = 1;
 
 
- source = 
-# 362 "eval.c" 3 4
-         ((void *)0)
-# 362 "eval.c"
-             ;
+ source = ((void *)0);
  sourceline = 0;
 
- if (tree == 
-# 365 "eval.c" 3 4
-            ((void *)0)
-# 365 "eval.c"
-                )
+ if (tree == ((void *)0))
   return 1;
  sourceline = tree->sub.nodep.number;
  source = tree->sub.nodep.name;
@@ -6814,31 +6786,15 @@ register NODE *volatile tree;
   traverse = 0;
 
  case Node_rule_list:
-  for (t = tree; t != 
-# 374 "eval.c" 3 4
-                     ((void *)0)
-# 374 "eval.c"
-                         ; t = t->sub.nodep.r.rptr) {
+  for (t = tree; t != ((void *)0); t = t->sub.nodep.r.rptr) {
    if (traverse)
     tree = t->sub.nodep.l.lptr;
    sourceline = tree->sub.nodep.number;
    source = tree->sub.nodep.name;
-   switch (
-# 379 "eval.c" 3 4
-          _setjmp (
-# 379 "eval.c"
-          rule_tag
-# 379 "eval.c" 3 4
-          )
-# 379 "eval.c"
-                          ) {
+   switch (_setjmp (rule_tag)) {
    case 0:
 
-    if (tree->sub.nodep.l.lptr == 
-# 382 "eval.c" 3 4
-                      ((void *)0) 
-# 382 "eval.c"
-                           ||
+    if (tree->sub.nodep.l.lptr == ((void *)0) ||
         eval_condition(tree->sub.nodep.l.lptr))
      (void) interpret(tree->sub.nodep.r.rptr);
     break;
@@ -6855,11 +6811,7 @@ register NODE *volatile tree;
   break;
 
  case Node_statement_list:
-  for (t = tree; t != 
-# 399 "eval.c" 3 4
-                     ((void *)0)
-# 399 "eval.c"
-                         ; t = t->sub.nodep.r.rptr)
+  for (t = tree; t != ((void *)0); t = t->sub.nodep.r.rptr)
    (void) interpret(t->sub.nodep.l.lptr);
   break;
 
@@ -6875,15 +6827,7 @@ register NODE *volatile tree;
 
   stable_tree = tree;
   while (eval_condition(stable_tree->sub.nodep.l.lptr)) {
-   switch (
-# 415 "eval.c" 3 4
-          _setjmp (
-# 415 "eval.c"
-          loop_tag
-# 415 "eval.c" 3 4
-          )
-# 415 "eval.c"
-                          ) {
+   switch (_setjmp (loop_tag)) {
    case 0:
     (void) interpret(stable_tree->sub.nodep.r.rptr);
     break;
@@ -6903,15 +6847,7 @@ register NODE *volatile tree;
   (memcpy((char *)(loop_tag_stack), (char *)(loop_tag), sizeof(jmp_buf)), loop_tag_valid++);
   stable_tree = tree;
   do {
-   switch (
-# 435 "eval.c" 3 4
-          _setjmp (
-# 435 "eval.c"
-          loop_tag
-# 435 "eval.c" 3 4
-          )
-# 435 "eval.c"
-                          ) {
+   switch (_setjmp (loop_tag)) {
    case 0:
     (void) interpret(stable_tree->sub.nodep.r.rptr);
     break;
@@ -6932,15 +6868,7 @@ register NODE *volatile tree;
   (void) interpret(tree->sub.nodep.r.rptr->sub.nodep.r.hd->init);
   stable_tree = tree;
   while (eval_condition(stable_tree->sub.nodep.r.rptr->sub.nodep.r.hd->cond)) {
-   switch (
-# 456 "eval.c" 3 4
-          _setjmp (
-# 456 "eval.c"
-          loop_tag
-# 456 "eval.c" 3 4
-          )
-# 456 "eval.c"
-                          ) {
+   switch (_setjmp (loop_tag)) {
    case 0:
     (void) interpret(stable_tree->sub.nodep.l.lptr);
 
@@ -6960,11 +6888,7 @@ register NODE *volatile tree;
  case Node_K_arrayfor:
   {
   volatile struct search l;
-  Func_ptr after_assign = 
-# 476 "eval.c" 3 4
-                         ((void *)0)
-# 476 "eval.c"
-                             ;
+  Func_ptr after_assign = ((void *)0);
 
 
 
@@ -6983,15 +6907,7 @@ register NODE *volatile tree;
    *lhs = dupnode(l.retval);
    if (after_assign)
     (*after_assign)();
-   switch (
-# 495 "eval.c" 3 4
-          _setjmp (
-# 495 "eval.c"
-          loop_tag
-# 495 "eval.c" 3 4
-          )
-# 495 "eval.c"
-                          ) {
+   switch (_setjmp (loop_tag)) {
    case 0:
     (void) interpret(stable_tree->sub.nodep.l.lptr);
    case 1:
@@ -7085,16 +7001,8 @@ register NODE *volatile tree;
 
 
   exiting = 1;
-  if (tree->sub.nodep.l.lptr != 
-# 589 "eval.c" 3 4
-                    ((void *)0)
-# 589 "eval.c"
-                        ) {
-   t = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 590 "eval.c" 3 4
-      ((void *)0)
-# 590 "eval.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+  if (tree->sub.nodep.l.lptr != ((void *)0)) {
+   t = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
    exit_val = (int) ({NODE *_tn = (t); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
    do { if ((t)->flags&2) { unref(t); }} while (0);
   }
@@ -7102,11 +7010,7 @@ register NODE *volatile tree;
   break;
 
  case Node_K_return:
-  t = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 598 "eval.c" 3 4
-     ((void *)0)
-# 598 "eval.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+  t = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
   ret_node = dupnode(t);
   do { if ((t)->flags&2) { unref(t); }} while (0);
   longjmp(func_tag, 3);
@@ -7119,11 +7023,7 @@ register NODE *volatile tree;
 
   if (do_lint && tree->type == Node_var)
    warning("statement has no effect");
-  t = ({NODE * _t = (tree); if (_t == 
-# 611 "eval.c" 3 4
-     ((void *)0)
-# 611 "eval.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+  t = ({NODE * _t = (tree); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
   do { if ((t)->flags&2) { unref(t); }} while (0);
   break;
  }
@@ -7151,11 +7051,7 @@ int iscond;
   int paramnum = tree->sub.nodep.number + 1;
 
   tree = stack_ptr[tree->sub.nodep.number];
-  if (tree == 
-# 653 "eval.c" 3 4
-             ((void *)0)
-# 653 "eval.c"
-                 )
+  if (tree == ((void *)0))
    return Nnull_string;
   sprintf(namebuf, "parameter #%d", paramnum);
   tree->vname = namebuf;
@@ -7203,11 +7099,7 @@ int iscond;
  case Node_ORS:
  case Node_OFMT:
  case Node_CONVFMT:
-  lhs = ((tree)->type == Node_var ? (&(tree)->sub.nodep.l.lptr) : r_get_lhs((tree), ((Func_ptr *) 
-# 701 "eval.c" 3 4
-       ((void *)0)
-# 701 "eval.c"
-       )));
+  lhs = ((tree)->type == Node_var ? (&(tree)->sub.nodep.l.lptr) : r_get_lhs((tree), ((Func_ptr *) ((void *)0))));
   return *lhs;
 
  case Node_var_array:
@@ -7215,27 +7107,15 @@ int iscond;
    tree->vname);
 
  case Node_unary_minus:
-  t1 = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 709 "eval.c" 3 4
-      ((void *)0)
-# 709 "eval.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+  t1 = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
   x = -({NODE *_tn = (t1); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
   do { if ((t1)->flags&2) { unref(t1); }} while (0);
   return mk_number((x), (unsigned int)(1|2|32|64));
 
  case Node_cond_exp:
   if (eval_condition(tree->sub.nodep.l.lptr))
-   return ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == 
-# 716 "eval.c" 3 4
-         ((void *)0)
-# 716 "eval.c"
-         ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
-  return ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.r.rptr); if (_t == 
-# 717 "eval.c" 3 4
-        ((void *)0)
-# 717 "eval.c"
-        ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+   return ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+  return ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.r.rptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
 
  case Node_match:
  case Node_nomatch:
@@ -7250,19 +7130,11 @@ int iscond;
 
  case Node_assign:
   {
-  Func_ptr after_assign = 
-# 732 "eval.c" 3 4
-                         ((void *)0)
-# 732 "eval.c"
-                             ;
+  Func_ptr after_assign = ((void *)0);
 
   if (iscond && do_lint)
    warning("assignment used in conditional context");
-  r = ({NODE * _t = (tree->sub.nodep.r.rptr); if (_t == 
-# 736 "eval.c" 3 4
-     ((void *)0)
-# 736 "eval.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+  r = ({NODE * _t = (tree->sub.nodep.r.rptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
   lhs = ((tree->sub.nodep.l.lptr)->type == Node_var ? (&(tree->sub.nodep.l.lptr)->sub.nodep.l.lptr) : r_get_lhs((tree->sub.nodep.l.lptr), (&after_assign)));
   if (r != *lhs) {
    NODE *save;
@@ -7294,16 +7166,8 @@ int iscond;
   for (count = 2; tree && tree->type == Node_concat; tree = tree->sub.nodep.l.lptr)
    count++;
   tree = save_tree;
-  (void)((treelist=(NODE **)malloc((size_t)(sizeof(NODE *) * count))) || (set_loc("eval.c", 784), r_fatal("%s: %s: can't allocate memory (%s)", ("tree_eval"), "treelist", strerror(
-# 784 "eval.c" 3 4
- (*__errno_location ())
-# 784 "eval.c"
- )),0));
-  (void)((strlist=(NODE **)malloc((size_t)(sizeof(NODE *) * count))) || (set_loc("eval.c", 785), r_fatal("%s: %s: can't allocate memory (%s)", ("tree_eval"), "strlist", strerror(
-# 785 "eval.c" 3 4
- (*__errno_location ())
-# 785 "eval.c"
- )),0));
+  (void)((treelist=(NODE **)malloc((size_t)(sizeof(NODE *) * count))) || (set_loc("eval.c", 784), r_fatal("%s: %s: can't allocate memory (%s)", ("tree_eval"), "treelist", strerror((*__errno_location ()))),0));
+  (void)((strlist=(NODE **)malloc((size_t)(sizeof(NODE *) * count))) || (set_loc("eval.c", 785), r_fatal("%s: %s: can't allocate memory (%s)", ("tree_eval"), "strlist", strerror((*__errno_location ()))),0));
 
 
   treep = treelist;
@@ -7320,24 +7184,12 @@ int iscond;
   strp = strlist;
   len = 0;
   while (treep >= treelist) {
-   *strp = ({NODE *_ts = (({NODE * _t = (*treep--); if (_t == 
-# 802 "eval.c" 3 4
-          ((void *)0)
-# 802 "eval.c"
-          ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+   *strp = ({NODE *_ts = (({NODE * _t = (*treep--); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
    len += (*strp)->sub.val.slen;
    strp++;
   }
-  *strp = 
-# 806 "eval.c" 3 4
-         ((void *)0)
-# 806 "eval.c"
-             ;
-  (void)((str=(char *)malloc((size_t)(len+2))) || (set_loc("eval.c", 807), r_fatal("%s: %s: can't allocate memory (%s)", ("tree_eval"), "str", strerror(
-# 807 "eval.c" 3 4
- (*__errno_location ())
-# 807 "eval.c"
- )),0));
+  *strp = ((void *)0);
+  (void)((str=(char *)malloc((size_t)(len+2))) || (set_loc("eval.c", 807), r_fatal("%s: %s: can't allocate memory (%s)", ("tree_eval"), "str", strerror((*__errno_location ()))),0));
   str[len] = str[len+1] = '\0';
   dest = str;
   strp = strlist;
@@ -7372,16 +7224,8 @@ int iscond;
  }
 
 
- t1 = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 842 "eval.c" 3 4
-     ((void *)0)
-# 842 "eval.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
- t2 = ({NODE * _t = (tree->sub.nodep.r.rptr); if (_t == 
-# 843 "eval.c" 3 4
-     ((void *)0)
-# 843 "eval.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ t1 = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ t2 = ({NODE * _t = (tree->sub.nodep.r.rptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
 
  switch (tree->type) {
  case Node_geq:
@@ -7478,11 +7322,7 @@ register NODE *tree;
  register NODE *t1;
  register int ret;
 
- if (tree == 
-# 949 "eval.c" 3 4
-            ((void *)0)
-# 949 "eval.c"
-                )
+ if (tree == ((void *)0))
   return 1;
  if (tree->type == Node_line_range) {
 # 965 "eval.c"
@@ -7502,11 +7342,7 @@ register NODE *tree;
 
 
 
- t1 = ({NODE * _t = (tree); if (_t == 
-# 981 "eval.c" 3 4
-     ((void *)0)
-# 981 "eval.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 1); break; } } _t;});
+ t1 = ({NODE * _t = (tree); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 1); break; } } _t;});
  if (t1->flags & 128)
   (void) ({NODE *_tn = (t1); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
  if (t1->flags & 64)
@@ -7573,11 +7409,7 @@ register NODE *tree;
  double t1, t2;
  long ltemp;
  NODE *tmp;
- Func_ptr after_assign = 
-# 1048 "eval.c" 3 4
-                        ((void *)0)
-# 1048 "eval.c"
-                            ;
+ Func_ptr after_assign = ((void *)0);
 
  lhs = ((tree->sub.nodep.l.lptr)->type == Node_var ? (&(tree->sub.nodep.l.lptr)->sub.nodep.l.lptr) : r_get_lhs((tree->sub.nodep.l.lptr), (&after_assign)));
  lval = ({NODE *_tn = (*lhs); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
@@ -7610,11 +7442,7 @@ register NODE *tree;
   break;
  }
 
- tmp = ({NODE * _t = (tree->sub.nodep.r.rptr); if (_t == 
-# 1081 "eval.c" 3 4
-      ((void *)0)
-# 1081 "eval.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ tmp = ({NODE * _t = (tree->sub.nodep.r.rptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  rval = ({NODE *_tn = (tmp); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
  do { if ((tmp)->flags&2) { unref(tmp); }} while (0);
 
@@ -7688,11 +7516,7 @@ static struct fcall {
  NODE *arglist;
  NODE **prevstack;
  NODE **stack;
-} *fcall_list = 
-# 1166 "eval.c" 3 4
-               ((void *)0)
-# 1166 "eval.c"
-                   ;
+} *fcall_list = ((void *)0);
 
 static long fcall_list_size = 0;
 static long curfcall = -1;
@@ -7714,19 +7538,7 @@ pop_fcall()
  int count;
  struct fcall *f;
 
- 
-# 1188 "eval.c" 3 4
-((
-# 1188 "eval.c"
-curfcall >= 0
-# 1188 "eval.c" 3 4
-) ? (void) (0) : __assert_fail (
-# 1188 "eval.c"
-"curfcall >= 0"
-# 1188 "eval.c" 3 4
-, "eval.c", 1188, __PRETTY_FUNCTION__))
-# 1188 "eval.c"
-                     ;
+ ((curfcall >= 0) ? (void) (0) : __assert_fail ("curfcall >= 0", "eval.c", 1188, __PRETTY_FUNCTION__));
  f = & fcall_list[curfcall];
  stack_ptr = f->prevstack;
 
@@ -7739,11 +7551,7 @@ curfcall >= 0
  sp = f->stack;
  count = f->count;
 
- for (argp = f->arglist; count > 0 && argp != 
-# 1201 "eval.c" 3 4
-                                             ((void *)0)
-# 1201 "eval.c"
-                                                 ; argp = argp->sub.nodep.r.rptr) {
+ for (argp = f->arglist; count > 0 && argp != ((void *)0); argp = argp->sub.nodep.r.rptr) {
   arg = argp->sub.nodep.l.lptr;
   if (arg->type == Node_param_list)
    arg = stack_ptr[arg->sub.nodep.number];
@@ -7800,16 +7608,12 @@ char *func_name;
 
  if (fcall_list_size == 0) {
   (void)((fcall_list=(struct fcall *)malloc((size_t)(10 * sizeof(struct fcall)))) || (set_loc(
-              "eval.c"
+ "eval.c"
 # 1257 "eval.c"
   ,
-              1258
+ 1258
 # 1257 "eval.c"
-  ), r_fatal("%s: %s: can't allocate memory (%s)", ("push_args"), "fcall_list", strerror(
-# 1257 "eval.c" 3 4
- (*__errno_location ())
-# 1257 "eval.c"
- )),0))
+  ), r_fatal("%s: %s: can't allocate memory (%s)", ("push_args"), "fcall_list", strerror((*__errno_location ()))),0))
                ;
   fcall_list_size = 10;
  }
@@ -7817,27 +7621,19 @@ char *func_name;
  if (++curfcall >= fcall_list_size) {
   fcall_list_size *= 2;
   (void)((fcall_list=(struct fcall *)realloc((char *)fcall_list, (size_t)(fcall_list_size * sizeof(struct fcall)))) || (set_loc(
-                                                      "eval.c"
+ "eval.c"
 # 1264 "eval.c"
   ,
-                                                      1265
+ 1265
 # 1264 "eval.c"
-  ), r_fatal("%s: %s: can't allocate memory (%s)", ("push_args"), "fcall_list", strerror(
-# 1264 "eval.c" 3 4
- (*__errno_location ())
-# 1264 "eval.c"
- )),0))
+  ), r_fatal("%s: %s: can't allocate memory (%s)", ("push_args"), "fcall_list", strerror((*__errno_location ()))),0))
                                                        ;
  }
  f = & fcall_list[curfcall];
  memset(f, '\0', sizeof(struct fcall));
 
  if (count > 0)
-  (void)((f->stack=(NODE **)malloc((size_t)(count*sizeof(NODE *)))) || (set_loc("eval.c", 1271), r_fatal("%s: %s: can't allocate memory (%s)", ("func_call"), "f->stack", strerror(
-# 1271 "eval.c" 3 4
- (*__errno_location ())
-# 1271 "eval.c"
- )),0));
+  (void)((f->stack=(NODE **)malloc((size_t)(count*sizeof(NODE *)))) || (set_loc("eval.c", 1271), r_fatal("%s: %s: can't allocate memory (%s)", ("func_call"), "f->stack", strerror((*__errno_location ()))),0));
  f->count = count;
  f->fname = func_name;
  f->arglist = arglist;
@@ -7846,11 +7642,7 @@ char *func_name;
  sp = f->stack;
 
 
- for (argp = arglist; count > 0 && argp != 
-# 1280 "eval.c" 3 4
-                                          ((void *)0)
-# 1280 "eval.c"
-                                              ; argp = argp->sub.nodep.r.rptr) {
+ for (argp = arglist; count > 0 && argp != ((void *)0); argp = argp->sub.nodep.r.rptr) {
   arg = argp->sub.nodep.l.lptr;
   if (nextfree) r = nextfree, nextfree = nextfree->sub.nodep.l.lptr; else r = more_nodes();
   r->type = Node_var;
@@ -7861,17 +7653,9 @@ char *func_name;
   if (arg->type == Node_var_array)
    *r = *arg;
   else {
-   n = ({NODE * _t = (arg); if (_t == 
-# 1291 "eval.c" 3 4
-      ((void *)0)
-# 1291 "eval.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+   n = ({NODE * _t = (arg); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
    r->sub.nodep.l.lptr = dupnode(n);
-   r->sub.nodep.r.rptr = (NODE *) 
-# 1293 "eval.c" 3 4
-                      ((void *)0)
-# 1293 "eval.c"
-                          ;
+   r->sub.nodep.r.rptr = (NODE *) ((void *)0);
      if ((n->flags & 512) != 0)
       r->flags |= 512;
    do { if ((n)->flags&2) { unref(n); }} while (0);
@@ -7879,11 +7663,7 @@ char *func_name;
   *sp++ = r;
   count--;
  }
- if (argp != 
-# 1301 "eval.c" 3 4
-            ((void *)0)
-# 1301 "eval.c"
-                )
+ if (argp != ((void *)0))
   warning(
       "function `%s' called with more arguments than declared",
       func_name);
@@ -7894,11 +7674,7 @@ char *func_name;
   r->type = Node_var;
   r->sub.nodep.l.lptr = Nnull_string;
   r->flags &= ~512;
-  r->sub.nodep.r.rptr = (NODE *) 
-# 1312 "eval.c" 3 4
-                     ((void *)0)
-# 1312 "eval.c"
-                         ;
+  r->sub.nodep.r.rptr = (NODE *) ((void *)0);
   *sp++ = r;
  }
 # 1323 "eval.c"
@@ -7926,11 +7702,7 @@ NODE *arg_list;
 
 
  f = lookup(name->sub.val.sp);
- if (f == 
-# 1347 "eval.c" 3 4
-         ((void *)0) 
-# 1347 "eval.c"
-              || f->type != Node_func)
+ if (f == ((void *)0) || f->type != Node_func)
   set_loc("eval.c", 1348), r_fatal("function `%s' not defined", name->sub.val.sp);
 
 
@@ -7947,15 +7719,7 @@ NODE *arg_list;
  (memcpy((char *)(func_tag_stack), (char *)(func_tag), sizeof(jmp_buf)), func_tag_valid++);
  save_ret_node = ret_node;
  ret_node = Nnull_string;
- if (
-# 1375 "eval.c" 3 4
-    _setjmp (
-# 1375 "eval.c"
-    func_tag
-# 1375 "eval.c" 3 4
-    ) 
-# 1375 "eval.c"
-                     == 0)
+ if (_setjmp (func_tag) == 0)
   (void) interpret(f->sub.nodep.r.rptr);
 
  r = ret_node;
@@ -7987,19 +7751,11 @@ r_get_lhs(ptr, assign)
 register NODE *ptr;
 Func_ptr *assign;
 {
- register NODE **aptr = 
-# 1407 "eval.c" 3 4
-                       ((void *)0)
-# 1407 "eval.c"
-                           ;
+ register NODE **aptr = ((void *)0);
  register NODE *n;
 
  if (assign)
-  *assign = 
-# 1411 "eval.c" 3 4
-           ((void *)0)
-# 1411 "eval.c"
-               ;
+  *assign = ((void *)0);
  if (ptr->type == Node_param_list)
   ptr = stack_ptr[ptr->sub.nodep.number];
 
@@ -8018,31 +7774,19 @@ Func_ptr *assign;
 
  case Node_FIELDWIDTHS:
   aptr = &(FIELDWIDTHS_node->sub.nodep.l.lptr);
-  if (assign != 
-# 1430 "eval.c" 3 4
-               ((void *)0)
-# 1430 "eval.c"
-                   )
+  if (assign != ((void *)0))
    *assign = set_FIELDWIDTHS;
   break;
 
  case Node_RS:
   aptr = &(RS_node->sub.nodep.l.lptr);
-  if (assign != 
-# 1436 "eval.c" 3 4
-               ((void *)0)
-# 1436 "eval.c"
-                   )
+  if (assign != ((void *)0))
    *assign = set_RS;
   break;
 
  case Node_FS:
   aptr = &(FS_node->sub.nodep.l.lptr);
-  if (assign != 
-# 1442 "eval.c" 3 4
-               ((void *)0)
-# 1442 "eval.c"
-                   )
+  if (assign != ((void *)0))
    *assign = set_FS;
   break;
 
@@ -8050,11 +7794,7 @@ Func_ptr *assign;
   unref(FNR_node->sub.nodep.l.lptr);
   FNR_node->sub.nodep.l.lptr = mk_number(((double) FNR), (unsigned int)(1|32|64));
   aptr = &(FNR_node->sub.nodep.l.lptr);
-  if (assign != 
-# 1450 "eval.c" 3 4
-               ((void *)0)
-# 1450 "eval.c"
-                   )
+  if (assign != ((void *)0))
    *assign = set_FNR;
   break;
 
@@ -8062,75 +7802,47 @@ Func_ptr *assign;
   unref(NR_node->sub.nodep.l.lptr);
   NR_node->sub.nodep.l.lptr = mk_number(((double) NR), (unsigned int)(1|32|64));
   aptr = &(NR_node->sub.nodep.l.lptr);
-  if (assign != 
-# 1458 "eval.c" 3 4
-               ((void *)0)
-# 1458 "eval.c"
-                   )
+  if (assign != ((void *)0))
    *assign = set_NR;
   break;
 
  case Node_NF:
   if (NF == -1)
-   (void) get_field(0x7fffffffffffffffL -1, assign);
+   (void) get_field(9223372036854775807L -1, assign);
   unref(NF_node->sub.nodep.l.lptr);
   NF_node->sub.nodep.l.lptr = mk_number(((double) NF), (unsigned int)(1|32|64));
   aptr = &(NF_node->sub.nodep.l.lptr);
-  if (assign != 
-# 1468 "eval.c" 3 4
-               ((void *)0)
-# 1468 "eval.c"
-                   )
+  if (assign != ((void *)0))
    *assign = set_NF;
   break;
 
  case Node_IGNORECASE:
   aptr = &(IGNORECASE_node->sub.nodep.l.lptr);
-  if (assign != 
-# 1474 "eval.c" 3 4
-               ((void *)0)
-# 1474 "eval.c"
-                   )
+  if (assign != ((void *)0))
    *assign = set_IGNORECASE;
   break;
 
  case Node_OFMT:
   aptr = &(OFMT_node->sub.nodep.l.lptr);
-  if (assign != 
-# 1480 "eval.c" 3 4
-               ((void *)0)
-# 1480 "eval.c"
-                   )
+  if (assign != ((void *)0))
    *assign = set_OFMT;
   break;
 
  case Node_CONVFMT:
   aptr = &(CONVFMT_node->sub.nodep.l.lptr);
-  if (assign != 
-# 1486 "eval.c" 3 4
-               ((void *)0)
-# 1486 "eval.c"
-                   )
+  if (assign != ((void *)0))
    *assign = set_CONVFMT;
   break;
 
  case Node_ORS:
   aptr = &(ORS_node->sub.nodep.l.lptr);
-  if (assign != 
-# 1492 "eval.c" 3 4
-               ((void *)0)
-# 1492 "eval.c"
-                   )
+  if (assign != ((void *)0))
    *assign = set_ORS;
   break;
 
  case Node_OFS:
   aptr = &(OFS_node->sub.nodep.l.lptr);
-  if (assign != 
-# 1498 "eval.c" 3 4
-               ((void *)0)
-# 1498 "eval.c"
-                   )
+  if (assign != ((void *)0))
    *assign = set_OFS;
   break;
 
@@ -8142,22 +7854,14 @@ Func_ptr *assign;
   {
   int field_num;
 
-  n = ({NODE * _t = (ptr->sub.nodep.l.lptr); if (_t == 
-# 1510 "eval.c" 3 4
-     ((void *)0)
-# 1510 "eval.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+  n = ({NODE * _t = (ptr->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
   field_num = (int) ({NODE *_tn = (n); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
   do { if ((n)->flags&2) { unref(n); }} while (0);
   if (field_num < 0)
    set_loc("eval.c", 1514), r_fatal("attempt to access field %d", field_num);
   if (field_num == 0 && field0_valid) {
    aptr = &fields_arr[0];
-   if (assign != 
-# 1517 "eval.c" 3 4
-                ((void *)0)
-# 1517 "eval.c"
-                    )
+   if (assign != ((void *)0))
     *assign = reset_record;
    break;
   }
@@ -8208,11 +7912,7 @@ register NODE *tree;
  if (tree->type == Node_regex)
   t1 = *get_field(0, (Func_ptr *) 0);
  else {
-  t1 = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 1568 "eval.c" 3 4
-      ((void *)0)
-# 1568 "eval.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+  t1 = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
   tree = tree->sub.nodep.r.rptr;
  }
  rp = re_update(tree);
@@ -8272,11 +7972,7 @@ set_ORS()
 
 
 
-NODE **fmt_list = 
-# 1640 "eval.c" 3 4
-                 ((void *)0)
-# 1640 "eval.c"
-                     ;
+NODE **fmt_list = ((void *)0);
 static int fmt_ok (NODE *n);
 static int fmt_index (NODE *n);
 
@@ -8289,49 +7985,17 @@ NODE *n;
 
  if (*p++ != '%')
   return 0;
- while (*p && strchr(" +-#", *p) != 
-# 1653 "eval.c" 3 4
-                                   ((void *)0)
-# 1653 "eval.c"
-                                       )
+ while (*p && strchr(" +-#", *p) != ((void *)0))
   p++;
- while (*p && 
-# 1655 "eval.c" 3 4
-             ((*__ctype_b_loc ())[(int) ((
-# 1655 "eval.c"
-             *p
-# 1655 "eval.c" 3 4
-             ))] & (unsigned short int) _ISdigit)
-# 1655 "eval.c"
-                        )
+ while (*p && ((*__ctype_b_loc ())[(int) ((*p))] & (unsigned short int) _ISdigit))
   p++;
- if (*p == '\0' || (*p != '.' && ! 
-# 1657 "eval.c" 3 4
-                                  ((*__ctype_b_loc ())[(int) ((
-# 1657 "eval.c"
-                                  *p
-# 1657 "eval.c" 3 4
-                                  ))] & (unsigned short int) _ISdigit)
-# 1657 "eval.c"
-                                             ))
+ if (*p == '\0' || (*p != '.' && ! ((*__ctype_b_loc ())[(int) ((*p))] & (unsigned short int) _ISdigit)))
   return 0;
  if (*p == '.')
   p++;
- while (*p && 
-# 1661 "eval.c" 3 4
-             ((*__ctype_b_loc ())[(int) ((
-# 1661 "eval.c"
-             *p
-# 1661 "eval.c" 3 4
-             ))] & (unsigned short int) _ISdigit)
-# 1661 "eval.c"
-                        )
+ while (*p && ((*__ctype_b_loc ())[(int) ((*p))] & (unsigned short int) _ISdigit))
   p++;
- if (*p == '\0' || strchr("efgEG", *p) == 
-# 1663 "eval.c" 3 4
-                                         ((void *)0)
-# 1663 "eval.c"
-                                             )
+ if (*p == '\0' || strchr("efgEG", *p) == ((void *)0))
   return 0;
  if (*++p != '\0')
   return 0;
@@ -8348,16 +8012,8 @@ NODE *n;
  static int fmt_num = 4;
  static int fmt_hiwater = 0;
 
- if (fmt_list == 
-# 1680 "eval.c" 3 4
-                ((void *)0)
-# 1680 "eval.c"
-                    )
-  (void)((fmt_list=(NODE **)malloc((size_t)(fmt_num*sizeof(*fmt_list)))) || (set_loc("eval.c", 1681), r_fatal("%s: %s: can't allocate memory (%s)", ("fmt_index"), "fmt_list", strerror(
-# 1681 "eval.c" 3 4
- (*__errno_location ())
-# 1681 "eval.c"
- )),0));
+ if (fmt_list == ((void *)0))
+  (void)((fmt_list=(NODE **)malloc((size_t)(fmt_num*sizeof(*fmt_list)))) || (set_loc("eval.c", 1681), r_fatal("%s: %s: can't allocate memory (%s)", ("fmt_index"), "fmt_list", strerror((*__errno_location ()))),0));
  (void) ({NODE *_ts = (n); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
  while (ix < fmt_hiwater) {
   if (cmp_nodes(fmt_list[ix], n) == 0)
@@ -8374,11 +8030,7 @@ NODE *n;
 
  if (fmt_hiwater >= fmt_num) {
   fmt_num *= 2;
-  (void)((fmt_list=(NODE **)malloc((size_t)(fmt_num))) || (set_loc("eval.c", 1698), r_fatal("%s: %s: can't allocate memory (%s)", ("fmt_index"), "fmt_list", strerror(
-# 1698 "eval.c" 3 4
- (*__errno_location ())
-# 1698 "eval.c"
- )),0));
+  (void)((fmt_list=(NODE **)malloc((size_t)(fmt_num))) || (set_loc("eval.c", 1698), r_fatal("%s: %s: can't allocate memory (%s)", ("fmt_index"), "fmt_list", strerror((*__errno_location ()))),0));
  }
  fmt_list[fmt_hiwater] = dupnode(n);
  return fmt_hiwater++;

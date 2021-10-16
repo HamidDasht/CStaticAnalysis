@@ -245,7 +245,8 @@ cut_bytes (FILE *stream)
     {
       int c;		/* Each character from the file. */
 
-      c = getc (stream);
+      CREST_char(c);
+      //c = getc (stream);
 
       if (c == line_delim)
         {
@@ -293,7 +294,8 @@ cut_fields (FILE *stream)
 
   current_rp = frp;
 
-  c = getc (stream);
+  CREST_char(c);
+  //c = getc (stream);
   if (c == EOF)
     return;
 
@@ -537,7 +539,7 @@ main (int argc, char **argv)
           // Instrument
           do{
           CREST_unsigned_char(optarg[0]);
-          }while (!(optarg[0] > '0' && optarg[0] <= '9'));
+          } while (!(optarg[0] > '0' && optarg[0] <= '9'));
           operating_mode = field_mode;
           spec_list_string = optarg;
           break;
@@ -547,10 +549,10 @@ main (int argc, char **argv)
           /* Interpret -d '' to mean 'use the NUL byte as the delimiter.'  */
           if (optarg[0] != '\0' && optarg[1] != '\0')
             FATAL_ERROR (_("the delimiter must be a single character"));
-          // Instrument
-          CREST_unsigned_char(optarg[0]);
+          
+          //delim = optarg[0];
+          CREST_unsigned_char(delim);
 
-          delim = optarg[0];
           delim_specified = true;
           break;
 

@@ -343,10 +343,6 @@ main (int argc, char **argv)
   fputs(input_data, f);
   fclose(f);
 
-  // Instrument -c argument's input
-  unsigned int crest_input;
-  CREST_unsigned_int(crest_input);
-  sprintf(argv[2], "%u", crest_input % MAX_DATA);
 
 
   crown = tagged = split = uniform = false;
@@ -417,6 +413,7 @@ main (int argc, char **argv)
          output can be quite ugly.  */
       max_width = xdectoumax (max_width_option, 0, MAXCHARS / 2, "",
                               _("invalid width"), 0);
+      CREST_int(max_width);
     }
 
   if (goal_width_option)

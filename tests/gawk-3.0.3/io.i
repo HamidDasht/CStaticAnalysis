@@ -1,5 +1,5 @@
 # 1 "io.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -40,10 +40,8 @@
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
@@ -167,7 +165,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -201,8 +199,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -968,17 +966,17 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 # 37 "awk.h" 2
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 34 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 34 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 168 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 168 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 143 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
@@ -1002,9 +1000,9 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
 # 152 "/usr/include/limits.h" 2 3 4
-# 169 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
-# 8 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 2 3 4
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
+# 169 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
+# 8 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 2 3 4
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
 # 39 "awk.h" 2
 
 # 1 "/usr/include/ctype.h" 1 3 4
@@ -1270,7 +1268,7 @@ extern void siglongjmp (sigjmp_buf __env, int __val)
 
 # 1 "/usr/include/locale.h" 1 3 4
 # 28 "/usr/include/locale.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 29 "/usr/include/locale.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/locale.h" 1 3 4
 # 30 "/usr/include/locale.h" 2 3 4
@@ -1377,7 +1375,7 @@ extern __locale_t uselocale (__locale_t __dataset) __attribute__ ((__nothrow__ ,
 # 44 "awk.h" 2
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
 # 47 "awk.h" 2
 
 
@@ -2035,7 +2033,7 @@ extern int sigreturn (struct sigcontext *__scp) __attribute__ ((__nothrow__ , __
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 317 "/usr/include/signal.h" 2 3 4
 
 
@@ -2411,7 +2409,7 @@ extern int __libc_current_sigrtmax (void) __attribute__ ((__nothrow__ , __leaf__
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 38 "/usr/include/time.h" 2 3 4
 
 
@@ -2820,7 +2818,7 @@ typedef __suseconds_t suseconds_t;
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -3201,8 +3199,8 @@ extern int __xmknodat (int __ver, int __fd, const char *__path,
 # 118 "awk.h"
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
 # 33 "/usr/include/stdlib.h" 2 3 4
 
@@ -3587,7 +3585,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -3968,7 +3966,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/string.h" 2 3 4
 
 
@@ -4289,7 +4287,7 @@ extern char *basename (const char *__filename) __attribute__ ((__nothrow__ , __l
 # 23 "/usr/include/x86_64-linux-gnu/bits/environments.h" 2 3 4
 # 210 "/usr/include/unistd.h" 2 3 4
 # 229 "/usr/include/unistd.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 230 "/usr/include/unistd.h" 2 3 4
 # 270 "/usr/include/unistd.h" 3 4
 typedef __intptr_t intptr_t;
@@ -5637,8 +5635,6 @@ extern void swab (const void *__restrict __from, void *__restrict __to,
 # 175 "awk.h"
 # 1 "regex.h" 1
 # 40 "regex.h"
-
-# 40 "regex.h"
 typedef long int s_reg_t;
 typedef unsigned long int active_reg_t;
 
@@ -6471,11 +6467,11 @@ extern int strncasecmp (const char *s1, const char *s2, register size_t n);
 
 # 1 "/usr/include/x86_64-linux-gnu/sys/param.h" 1 3 4
 # 23 "/usr/include/x86_64-linux-gnu/sys/param.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 24 "/usr/include/x86_64-linux-gnu/sys/param.h" 2 3 4
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
 # 27 "/usr/include/x86_64-linux-gnu/sys/param.h" 2 3 4
 
 
@@ -6499,8 +6495,6 @@ extern int strncasecmp (const char *s1, const char *s2, register size_t n);
 
 # 1 "/usr/include/x86_64-linux-gnu/sys/wait.h" 1 3 4
 # 27 "/usr/include/x86_64-linux-gnu/sys/wait.h" 3 4
-
-# 102 "/usr/include/x86_64-linux-gnu/sys/wait.h" 3 4
 
 # 102 "/usr/include/x86_64-linux-gnu/sys/wait.h" 3 4
 extern __pid_t wait (__WAIT_STATUS __stat_loc);
@@ -6741,8 +6735,6 @@ extern void __assert (const char *__assertion, const char *__file, int __line)
 
 # 53 "io.c" 2
 # 74 "io.c"
-
-# 74 "io.c"
 static IOBUF *nextfile (int skipping);
 static int inrec (IOBUF *iop);
 static int iop_close (IOBUF *iop);
@@ -6771,11 +6763,7 @@ extern FILE *popen();
 
 
 
-static struct redirect *red_head = 
-# 113 "io.c" 3 4
-                                  ((void *)0)
-# 113 "io.c"
-                                      ;
+static struct redirect *red_head = ((void *)0);
 static NODE *RS;
 static Regexp *RS_regexp;
 
@@ -6808,48 +6796,20 @@ int skipping;
  static long i = 1;
  static int files = 0;
  NODE *arg;
- static IOBUF *curfile = 
-# 146 "io.c" 3 4
-                        ((void *)0)
-# 146 "io.c"
-                            ;
+ static IOBUF *curfile = ((void *)0);
  static IOBUF mybuf;
  const char *fname;
 
  if (skipping) {
-  if (curfile != 
-# 151 "io.c" 3 4
-                ((void *)0)
-# 151 "io.c"
-                    )
+  if (curfile != ((void *)0))
    iop_close(curfile);
-  curfile = 
-# 153 "io.c" 3 4
-           ((void *)0)
-# 153 "io.c"
-               ;
-  return 
-# 154 "io.c" 3 4
-        ((void *)0)
-# 154 "io.c"
-            ;
+  curfile = ((void *)0);
+  return ((void *)0);
  }
- if (curfile != 
-# 156 "io.c" 3 4
-               ((void *)0)
-# 156 "io.c"
-                   ) {
-  if (curfile->cnt == 
-# 157 "io.c" 3 4
-                     (-1)
-# 157 "io.c"
-                        ) {
+ if (curfile != ((void *)0)) {
+  if (curfile->cnt == (-1)) {
    (void) iop_close(curfile);
-   curfile = 
-# 159 "io.c" 3 4
-            ((void *)0)
-# 159 "io.c"
-                ;
+   curfile = ((void *)0);
   } else
    return curfile;
  }
@@ -6866,11 +6826,7 @@ int skipping;
    files++;
    fname = arg->sub.val.sp;
    curfile = iop_open(fname, "r", &mybuf);
-   if (curfile == 
-# 176 "io.c" 3 4
-                 ((void *)0)
-# 176 "io.c"
-                     )
+   if (curfile == ((void *)0))
     goto give_up;
    curfile->flag |= 16;
 
@@ -6888,11 +6844,7 @@ int skipping;
   FILENAME_node->sub.nodep.l.lptr = make_str_node(("-"), (size_t) (1), 0);
   fname = "-";
   curfile = iop_open(fname, "r", &mybuf);
-  if (curfile == 
-# 194 "io.c" 3 4
-                ((void *)0)
-# 194 "io.c"
-                    )
+  if (curfile == ((void *)0))
    goto give_up;
   curfile->flag |= 16;
  }
@@ -6900,11 +6852,7 @@ int skipping;
 
  give_up:
  set_loc("io.c", 201), r_fatal("cannot open file `%s' for reading (%s)",
-  fname, strerror(
-# 202 "io.c" 3 4
-                 (*__errno_location ())
-# 202 "io.c"
-                      ));
+  fname, strerror((*__errno_location ())));
 
  return 0;
 }
@@ -6935,22 +6883,10 @@ IOBUF *iop;
  register int cnt;
  int retval = 0;
 
- if ((cnt = iop->cnt) != 
-# 233 "io.c" 3 4
-                        (-1)
-# 233 "io.c"
-                           )
+ if ((cnt = iop->cnt) != (-1))
   cnt = (*(iop->getrec))
-    (&begin, iop, RS->sub.val.sp[0], RS_regexp, 
-# 235 "io.c" 3 4
-                                          ((void *)0)
-# 235 "io.c"
-                                              );
- if (cnt == 
-# 236 "io.c" 3 4
-           (-1)
-# 236 "io.c"
-              ) {
+    (&begin, iop, RS->sub.val.sp[0], RS_regexp, ((void *)0));
+ if (cnt == (-1)) {
   cnt = 0;
   retval = 1;
  } else {
@@ -6970,17 +6906,9 @@ IOBUF *iop;
 {
  int ret;
 
- if (iop == 
-# 256 "io.c" 3 4
-           ((void *)0)
-# 256 "io.c"
-               )
+ if (iop == ((void *)0))
   return 0;
- 
-# 258 "io.c" 3 4
-(*__errno_location ()) 
-# 258 "io.c"
-      = 0;
+ (*__errno_location ()) = 0;
 # 267 "io.c"
  if ((iop->flag & 2) != 0) {
   iop->off = iop->buf;
@@ -6991,21 +6919,9 @@ IOBUF *iop;
  }
 
 
- if (iop->fd == fileno(
-# 276 "io.c" 3 4
-                      stdin
-# 276 "io.c"
-                           )
-     || iop->fd == fileno(
-# 277 "io.c" 3 4
-                         stdout
-# 277 "io.c"
-                               )
-     || iop->fd == fileno(
-# 278 "io.c" 3 4
-                         stderr
-# 278 "io.c"
-                               )
+ if (iop->fd == fileno(stdin)
+     || iop->fd == fileno(stdout)
+     || iop->fd == fileno(stderr)
      || (iop->flag & 8) != 0)
   ret = 0;
  else
@@ -7013,11 +6929,7 @@ IOBUF *iop;
 
  if (ret == -1)
   warning("close of fd %d (`%s') failed (%s)", iop->fd,
-    iop->name, strerror(
-# 286 "io.c" 3 4
-                       (*__errno_location ())
-# 286 "io.c"
-                            ));
+    iop->name, strerror((*__errno_location ())));
  if ((iop->flag & 4) == 0) {
 
 
@@ -7056,21 +6968,9 @@ do_input()
  IOBUF *iop;
  extern int exiting;
 
- (void) 
-# 325 "io.c" 3 4
-       _setjmp (
-# 325 "io.c"
-       filebuf
-# 325 "io.c" 3 4
-       )
-# 325 "io.c"
-                      ;
+ (void) _setjmp (filebuf);
 
- while ((iop = nextfile(0)) != 
-# 327 "io.c" 3 4
-                                  ((void *)0)
-# 327 "io.c"
-                                      ) {
+ while ((iop = nextfile(0)) != ((void *)0)) {
   if (inrec(iop) == 0)
    while (interpret(expression_value) && inrec(iop) == 0)
     continue;
@@ -7098,11 +6998,7 @@ int *errflg;
  const char *direction = "to";
  const char *mode;
  int fd;
- const char *what = 
-# 355 "io.c" 3 4
-                   ((void *)0)
-# 355 "io.c"
-                       ;
+ const char *what = ((void *)0);
 
  switch (tree->type) {
  case Node_redirect_append:
@@ -7132,118 +7028,62 @@ int *errflg;
   set_loc("io.c", 382), r_fatal("invalid tree type %d in redirect()", tree->type);
   break;
  }
- tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 385 "io.c" 3 4
-      ((void *)0)
-# 385 "io.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  if (do_lint && (tmp->flags & 16) == 0)
   warning("expression in `%s' redirection only has numeric value",
    what);
  tmp = ({NODE *_ts = (tmp); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
  str = tmp->sub.val.sp;
 
- if (str == 
-# 392 "io.c" 3 4
-           ((void *)0) 
-# 392 "io.c"
-                || *str == '\0')
+ if (str == ((void *)0) || *str == '\0')
   set_loc("io.c", 393), r_fatal("expression for `%s' redirection has null string value",
    what);
 
  if (do_lint
      && (((tmp->sub.val.slen) && *(str)== *("0") && strncmp((str), ("0"), (size_t) (tmp->sub.val.slen)) == 0) || ((tmp->sub.val.slen) && *(str)== *("1") && strncmp((str), ("1"), (size_t) (tmp->sub.val.slen)) == 0)))
   warning("filename `%s' for `%s' redirection may be result of logical expression", str, what);
- for (rp = red_head; rp != 
-# 399 "io.c" 3 4
-                          ((void *)0)
-# 399 "io.c"
-                              ; rp = rp->next)
+ for (rp = red_head; rp != ((void *)0); rp = rp->next)
   if (strlen(rp->value) == tmp->sub.val.slen
       && ((tmp->sub.val.slen) && *(rp->value)== *(str) && strncmp((rp->value), (str), (size_t) (tmp->sub.val.slen)) == 0)
       && ((rp->flag & ~(32|128)) == tflag
    || (outflag != 0
        && (rp->flag & (1|8)) == outflag)))
    break;
- if (rp == 
-# 406 "io.c" 3 4
-          ((void *)0)
-# 406 "io.c"
-              ) {
+ if (rp == ((void *)0)) {
   (void)((rp=(struct redirect *)malloc((size_t)(sizeof(struct redirect)))) || (set_loc(
-             "io.c"
+ "io.c"
 # 407 "io.c"
   ,
-             408
+ 408
 # 407 "io.c"
-  ), r_fatal("%s: %s: can't allocate memory (%s)", ("redirect"), "rp", strerror(
-# 407 "io.c" 3 4
- (*__errno_location ())
-# 407 "io.c"
- )),0))
+  ), r_fatal("%s: %s: can't allocate memory (%s)", ("redirect"), "rp", strerror((*__errno_location ()))),0))
               ;
-  (void)((str=(char *)malloc((size_t)(tmp->sub.val.slen+1))) || (set_loc("io.c", 409), r_fatal("%s: %s: can't allocate memory (%s)", ("redirect"), "str", strerror(
-# 409 "io.c" 3 4
- (*__errno_location ())
-# 409 "io.c"
- )),0));
+  (void)((str=(char *)malloc((size_t)(tmp->sub.val.slen+1))) || (set_loc("io.c", 409), r_fatal("%s: %s: can't allocate memory (%s)", ("redirect"), "str", strerror((*__errno_location ()))),0));
   memcpy(str, tmp->sub.val.sp, tmp->sub.val.slen);
   str[tmp->sub.val.slen] = '\0';
   rp->value = str;
   rp->flag = tflag;
-  rp->fp = 
-# 414 "io.c" 3 4
-          ((void *)0)
-# 414 "io.c"
-              ;
-  rp->iop = 
-# 415 "io.c" 3 4
-           ((void *)0)
-# 415 "io.c"
-               ;
+  rp->fp = ((void *)0);
+  rp->iop = ((void *)0);
   rp->pid = 0;
   rp->status = 0;
 
-  if (red_head != 
-# 419 "io.c" 3 4
-                 ((void *)0)
-# 419 "io.c"
-                     )
+  if (red_head != ((void *)0))
    red_head->prev = rp;
-  rp->prev = 
-# 421 "io.c" 3 4
-            ((void *)0)
-# 421 "io.c"
-                ;
+  rp->prev = ((void *)0);
   rp->next = red_head;
   red_head = rp;
  } else
   str = rp->value;
- while (rp->fp == 
-# 426 "io.c" 3 4
-                 ((void *)0) 
-# 426 "io.c"
-                      && rp->iop == 
-# 426 "io.c" 3 4
-                                    ((void *)0)
-# 426 "io.c"
-                                        ) {
+ while (rp->fp == ((void *)0) && rp->iop == ((void *)0)) {
   if (rp->flag & 128)
 
 
 
 
    return rp;
-  mode = 
-# 433 "io.c" 3 4
-        ((void *)0)
-# 433 "io.c"
-            ;
-  
-# 434 "io.c" 3 4
- (*__errno_location ()) 
-# 434 "io.c"
-       = 0;
+  mode = ((void *)0);
+  (*__errno_location ()) = 0;
   switch (tree->type) {
   case Node_redirect_output:
    mode = "w";
@@ -7257,131 +7097,47 @@ int *errflg;
 
    (void) flush_io();
 
-   if ((rp->fp = popen(str, "w")) == 
-# 448 "io.c" 3 4
-                                    ((void *)0)
-# 448 "io.c"
-                                        )
+   if ((rp->fp = popen(str, "w")) == ((void *)0))
     set_loc("io.c", 449), r_fatal("can't open pipe (\"%s\") for output (%s)",
-     str, strerror(
-# 450 "io.c" 3 4
-                  (*__errno_location ())
-# 450 "io.c"
-                       ));
+     str, strerror((*__errno_location ())));
    rp->flag |= 32;
    break;
   case Node_redirect_pipein:
    direction = "from";
-   if (gawk_popen(str, rp) == 
-# 455 "io.c" 3 4
-                             ((void *)0)
-# 455 "io.c"
-                                 )
+   if (gawk_popen(str, rp) == ((void *)0))
     set_loc("io.c", 456), r_fatal("can't open pipe (\"%s\") for input (%s)",
-     str, strerror(
-# 457 "io.c" 3 4
-                  (*__errno_location ())
-# 457 "io.c"
-                       ));
+     str, strerror((*__errno_location ())));
    break;
   case Node_redirect_input:
    direction = "from";
-   rp->iop = iop_open(str, "r", 
-# 461 "io.c" 3 4
-                               ((void *)0)
-# 461 "io.c"
-                                   );
+   rp->iop = iop_open(str, "r", ((void *)0));
    break;
   default:
    r_fatal("internal error line %d, file: %s", 464, "io.c");;
   }
-  if (mode != 
-# 466 "io.c" 3 4
-             ((void *)0)
-# 466 "io.c"
-                 ) {
-   
-# 467 "io.c" 3 4
-  (*__errno_location ()) 
-# 467 "io.c"
-        = 0;
+  if (mode != ((void *)0)) {
+   (*__errno_location ()) = 0;
    fd = devopen(str, mode);
    if (fd > (-1)) {
-    if (fd == fileno(
-# 470 "io.c" 3 4
-                    stdin
-# 470 "io.c"
-                         ))
-     rp->fp = 
-# 471 "io.c" 3 4
-             stdin
-# 471 "io.c"
-                  ;
-    else if (fd == fileno(
-# 472 "io.c" 3 4
-                         stdout
-# 472 "io.c"
-                               ))
-     rp->fp = 
-# 473 "io.c" 3 4
-             stdout
-# 473 "io.c"
-                   ;
-    else if (fd == fileno(
-# 474 "io.c" 3 4
-                         stderr
-# 474 "io.c"
-                               ))
-     rp->fp = 
-# 475 "io.c" 3 4
-             stderr
-# 475 "io.c"
-                   ;
+    if (fd == fileno(stdin))
+     rp->fp = stdin;
+    else if (fd == fileno(stdout))
+     rp->fp = stdout;
+    else if (fd == fileno(stderr))
+     rp->fp = stderr;
     else {
      rp->fp = fdopen(fd, (char *) mode);
 
-     if (rp->fp == 
-# 479 "io.c" 3 4
-                  ((void *)0)
-# 479 "io.c"
-                      )
+     if (rp->fp == ((void *)0))
       close(fd);
     }
-    if (rp->fp != 
-# 482 "io.c" 3 4
-                 ((void *)0) 
-# 482 "io.c"
-                      && isatty(fd))
+    if (rp->fp != ((void *)0) && isatty(fd))
      rp->flag |= 32;
    }
   }
-  if (rp->fp == 
-# 486 "io.c" 3 4
-               ((void *)0) 
-# 486 "io.c"
-                    && rp->iop == 
-# 486 "io.c" 3 4
-                                  ((void *)0)
-# 486 "io.c"
-                                      ) {
+  if (rp->fp == ((void *)0) && rp->iop == ((void *)0)) {
 
-   if (
-# 488 "io.c" 3 4
-      (*__errno_location ()) 
-# 488 "io.c"
-            == 
-# 488 "io.c" 3 4
-               24 
-# 488 "io.c"
-                      || 
-# 488 "io.c" 3 4
-                         (*__errno_location ()) 
-# 488 "io.c"
-                               == 
-# 488 "io.c" 3 4
-                                  23
-# 488 "io.c"
-                                        )
+   if ((*__errno_location ()) == 24 || (*__errno_location ()) == 23)
     close_one();
 
 
@@ -7390,31 +7146,15 @@ int *errflg;
 
    else {
 # 505 "io.c"
-    if (errflg != 
-# 505 "io.c" 3 4
-                 ((void *)0)
-# 505 "io.c"
-                     )
-     *errflg = 
-# 506 "io.c" 3 4
-              (*__errno_location ())
-# 506 "io.c"
-                   ;
+    if (errflg != ((void *)0))
+     *errflg = (*__errno_location ());
     if (tree->type == Node_redirect_output
         || tree->type == Node_redirect_append)
      set_loc("io.c", 509), r_fatal("can't redirect %s `%s' (%s)",
-         direction, str, strerror(
-# 510 "io.c" 3 4
-                                 (*__errno_location ())
-# 510 "io.c"
-                                      ));
+         direction, str, strerror((*__errno_location ())));
     else {
      do { if ((tmp)->flags&2) { unref(tmp); }} while (0);
-     return 
-# 513 "io.c" 3 4
-           ((void *)0)
-# 513 "io.c"
-               ;
+     return ((void *)0);
     }
    }
   }
@@ -7432,19 +7172,11 @@ int len;
 {
  struct redirect *rp;
 
- for (rp = red_head; rp != 
-# 531 "io.c" 3 4
-                          ((void *)0)
-# 531 "io.c"
-                              ; rp = rp->next)
+ for (rp = red_head; rp != ((void *)0); rp = rp->next)
   if (strlen(rp->value) == len && ((len) && *(rp->value)== *(str) && strncmp((rp->value), (str), (size_t) (len)) == 0))
    return rp;
 
- return 
-# 535 "io.c" 3 4
-       ((void *)0)
-# 535 "io.c"
-           ;
+ return ((void *)0);
 }
 
 
@@ -7453,55 +7185,23 @@ static void
 close_one()
 {
  register struct redirect *rp;
- register struct redirect *rplast = 
-# 544 "io.c" 3 4
-                                   ((void *)0)
-# 544 "io.c"
-                                       ;
+ register struct redirect *rplast = ((void *)0);
 
 
- for (rp = red_head; rp != 
-# 547 "io.c" 3 4
-                          ((void *)0)
-# 547 "io.c"
-                              ; rp = rp->next)
+ for (rp = red_head; rp != ((void *)0); rp = rp->next)
   rplast = rp;
 
- for (rp = rplast; rp != 
-# 550 "io.c" 3 4
-                        ((void *)0)
-# 550 "io.c"
-                            ; rp = rp->prev)
-  if (rp->fp != 
-# 551 "io.c" 3 4
-               ((void *)0) 
-# 551 "io.c"
-                    && (rp->flag & 1) != 0) {
+ for (rp = rplast; rp != ((void *)0); rp = rp->prev)
+  if (rp->fp != ((void *)0) && (rp->flag & 1) != 0) {
    rp->flag |= 64;
-   
-# 553 "io.c" 3 4
-  (*__errno_location ()) 
-# 553 "io.c"
-        = 0;
+   (*__errno_location ()) = 0;
    if ( fclose(rp->fp) != 0)
     warning("close of \"%s\" failed (%s).",
-     rp->value, strerror(
-# 556 "io.c" 3 4
-                        (*__errno_location ())
-# 556 "io.c"
-                             ));
-   rp->fp = 
-# 557 "io.c" 3 4
-           ((void *)0)
-# 557 "io.c"
-               ;
+     rp->value, strerror((*__errno_location ())));
+   rp->fp = ((void *)0);
    break;
   }
- if (rp == 
-# 560 "io.c" 3 4
-          ((void *)0)
-# 560 "io.c"
-              )
+ if (rp == ((void *)0))
 
   set_loc("io.c", 562), r_fatal("too many pipes or input files open");
 }
@@ -7515,11 +7215,7 @@ NODE *tree;
  NODE *tmp;
  register struct redirect *rp;
 
- tmp = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 574 "io.c" 3 4
-      ((void *)0)
-# 574 "io.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+ tmp = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
 
 
  if (tree->sub.nodep.l.lptr == FILENAME_node
@@ -7530,20 +7226,12 @@ NODE *tree;
   return mk_number(((double) 0.0), (unsigned int)(1|2|32|64));
  }
 
- for (rp = red_head; rp != 
-# 585 "io.c" 3 4
-                          ((void *)0)
-# 585 "io.c"
-                              ; rp = rp->next) {
+ for (rp = red_head; rp != ((void *)0); rp = rp->next) {
   if (strlen(rp->value) == tmp->sub.val.slen
       && ((tmp->sub.val.slen) && *(rp->value)== *(tmp->sub.val.sp) && strncmp((rp->value), (tmp->sub.val.sp), (size_t) (tmp->sub.val.slen)) == 0))
    break;
  }
- if (rp == 
-# 590 "io.c" 3 4
-          ((void *)0)
-# 590 "io.c"
-              ) {
+ if (rp == ((void *)0)) {
   if (do_lint)
    warning("close: `%.*s' is not an open file or pipe",
     tmp->sub.val.slen, tmp->sub.val.sp);
@@ -7551,17 +7239,9 @@ NODE *tree;
   return mk_number(((double) 0.0), (unsigned int)(1|2|32|64));
  }
  do { if ((tmp)->flags&2) { unref(tmp); }} while (0);
- fflush(
-# 598 "io.c" 3 4
-       stdout
-# 598 "io.c"
-             );
+ fflush(stdout);
  tmp = mk_number(((double) close_redir(rp, 0)), (unsigned int)(1|2|32|64));
- rp = 
-# 600 "io.c" 3 4
-     ((void *)0)
-# 600 "io.c"
-         ;
+ rp = ((void *)0);
  return tmp;
 }
 
@@ -7575,49 +7255,21 @@ int exitwarn;
  int status = 0;
  char *what;
 
- if (rp == 
-# 614 "io.c" 3 4
-          ((void *)0)
-# 614 "io.c"
-              )
+ if (rp == ((void *)0))
   return 0;
- if (rp->fp == 
-# 616 "io.c" 3 4
-              stdout 
-# 616 "io.c"
-                     || rp->fp == 
-# 616 "io.c" 3 4
-                                  stderr
-# 616 "io.c"
-                                        )
+ if (rp->fp == stdout || rp->fp == stderr)
   return 0;
- 
-# 618 "io.c" 3 4
-(*__errno_location ()) 
-# 618 "io.c"
-      = 0;
+ (*__errno_location ()) = 0;
  if ((rp->flag & (2|8)) == (2|8))
   status = pclose(rp->fp);
- else if (rp->fp != 
-# 621 "io.c" 3 4
-                   ((void *)0)
-# 621 "io.c"
-                       )
+ else if (rp->fp != ((void *)0))
   status = fclose(rp->fp);
- else if (rp->iop != 
-# 623 "io.c" 3 4
-                    ((void *)0)
-# 623 "io.c"
-                        ) {
+ else if (rp->iop != ((void *)0)) {
   if ((rp->flag & 2) != 0)
    status = gawk_pclose(rp);
   else {
    status = iop_close(rp->iop);
-   rp->iop = 
-# 628 "io.c" 3 4
-            ((void *)0)
-# 628 "io.c"
-                ;
+   rp->iop = ((void *)0);
   }
  }
 
@@ -7629,11 +7281,7 @@ int exitwarn;
 
 
  if (status != 0) {
-  char *s = strerror(
-# 640 "io.c" 3 4
-                    (*__errno_location ())
-# 640 "io.c"
-                         );
+  char *s = strerror((*__errno_location ()));
 
 
 
@@ -7649,17 +7297,9 @@ int exitwarn;
    ERRNO_node->sub.nodep.l.lptr = make_str_node((s), (size_t) (strlen(s)), 0);
   }
  }
- if (rp->next != 
-# 656 "io.c" 3 4
-                ((void *)0)
-# 656 "io.c"
-                    )
+ if (rp->next != ((void *)0))
   rp->next->prev = rp->prev;
- if (rp->prev != 
-# 658 "io.c" 3 4
-                ((void *)0)
-# 658 "io.c"
-                    )
+ if (rp->prev != ((void *)0))
   rp->prev->next = rp->next;
  else
   red_head = rp->next;
@@ -7676,54 +7316,22 @@ flush_io()
  register struct redirect *rp;
  int status = 0;
 
- 
-# 675 "io.c" 3 4
-(*__errno_location ()) 
-# 675 "io.c"
-      = 0;
- if (fflush(
-# 676 "io.c" 3 4
-           stdout
-# 676 "io.c"
-                 )) {
-  warning("error writing standard output (%s)", strerror(
-# 677 "io.c" 3 4
-                                                        (*__errno_location ())
-# 677 "io.c"
-                                                             ));
+ (*__errno_location ()) = 0;
+ if (fflush(stdout)) {
+  warning("error writing standard output (%s)", strerror((*__errno_location ())));
   status++;
  }
- if (fflush(
-# 680 "io.c" 3 4
-           stderr
-# 680 "io.c"
-                 )) {
-  warning("error writing standard error (%s)", strerror(
-# 681 "io.c" 3 4
-                                                       (*__errno_location ())
-# 681 "io.c"
-                                                            ));
+ if (fflush(stderr)) {
+  warning("error writing standard error (%s)", strerror((*__errno_location ())));
   status++;
  }
- for (rp = red_head; rp != 
-# 684 "io.c" 3 4
-                          ((void *)0)
-# 684 "io.c"
-                              ; rp = rp->next)
+ for (rp = red_head; rp != ((void *)0); rp = rp->next)
 
-  if ((rp->flag & 8) && rp->fp != 
-# 686 "io.c" 3 4
-                                         ((void *)0)
-# 686 "io.c"
-                                             ) {
+  if ((rp->flag & 8) && rp->fp != ((void *)0)) {
    if (fflush(rp->fp)) {
     warning("%s flush of \"%s\" failed (%s).",
         (rp->flag & 2) ? "pipe" :
-        "file", rp->value, strerror(
-# 690 "io.c" 3 4
-                                   (*__errno_location ())
-# 690 "io.c"
-                                        ));
+        "file", rp->value, strerror((*__errno_location ())));
     status++;
    }
   }
@@ -7739,16 +7347,8 @@ close_io()
  register struct redirect *next;
  int status = 0;
 
- 
-# 706 "io.c" 3 4
-(*__errno_location ()) 
-# 706 "io.c"
-      = 0;
- for (rp = red_head; rp != 
-# 707 "io.c" 3 4
-                          ((void *)0)
-# 707 "io.c"
-                              ; rp = next) {
+ (*__errno_location ()) = 0;
+ for (rp = red_head; rp != ((void *)0); rp = next) {
   next = rp->next;
 
 
@@ -7756,39 +7356,19 @@ close_io()
 
   if (close_redir(rp, do_lint))
    status++;
-  rp = 
-# 715 "io.c" 3 4
-      ((void *)0)
-# 715 "io.c"
-          ;
+  rp = ((void *)0);
  }
 
 
 
 
 
- if (fflush(
-# 722 "io.c" 3 4
-           stdout
-# 722 "io.c"
-                 )) {
-  warning("error writing standard output (%s)", strerror(
-# 723 "io.c" 3 4
-                                                        (*__errno_location ())
-# 723 "io.c"
-                                                             ));
+ if (fflush(stdout)) {
+  warning("error writing standard output (%s)", strerror((*__errno_location ())));
   status++;
  }
- if (fflush(
-# 726 "io.c" 3 4
-           stderr
-# 726 "io.c"
-                 )) {
-  warning("error writing standard error (%s)", strerror(
-# 727 "io.c" 3 4
-                                                       (*__errno_location ())
-# 727 "io.c"
-                                                            ));
+ if (fflush(stderr)) {
+  warning("error writing standard error (%s)", strerror((*__errno_location ())));
   status++;
  }
  return status;
@@ -7804,43 +7384,15 @@ const char *mode;
 
  switch(mode[0]) {
  case 'r':
-  ret = 
-# 743 "io.c" 3 4
-       00
-# 743 "io.c"
-               ;
+  ret = 00;
   break;
 
  case 'w':
-  ret = 
-# 747 "io.c" 3 4
-       01
-# 747 "io.c"
-               |
-# 747 "io.c" 3 4
-                0100
-# 747 "io.c"
-                       |
-# 747 "io.c" 3 4
-                        01000
-# 747 "io.c"
-                               ;
+  ret = 01|0100|01000;
   break;
 
  case 'a':
-  ret = 
-# 751 "io.c" 3 4
-       01
-# 751 "io.c"
-               |
-# 751 "io.c" 3 4
-                02000
-# 751 "io.c"
-                        |
-# 751 "io.c" 3 4
-                         0100
-# 751 "io.c"
-                                ;
+  ret = 01|02000|0100;
   break;
 
  default:
@@ -7864,11 +7416,7 @@ const char *name, *mode;
  flag = str2mode(mode);
 
  if ((*(name) == *("-") && strcmp((name), ("-")) == 0))
-  openfd = fileno(
-# 784 "io.c" 3 4
-                 stdin
-# 784 "io.c"
-                      );
+  openfd = fileno(stdin);
  else
   openfd = (-1);
 
@@ -7881,48 +7429,12 @@ const char *name, *mode;
  if (((5) && *(name)== *("/dev/") && strncmp((name), ("/dev/"), (size_t) (5)) == 0) && stat((char *) name, &buf) == -1) {
   cp = name + 5;
 
-  if ((*(cp) == *("stdin") && strcmp((cp), ("stdin")) == 0) && (flag & 
-# 797 "io.c" 3 4
-                                   0003
-# 797 "io.c"
-                                            ) == 
-# 797 "io.c" 3 4
-                                                 00
-# 797 "io.c"
-                                                         )
-   openfd = fileno(
-# 798 "io.c" 3 4
-                  stdin
-# 798 "io.c"
-                       );
-  else if ((*(cp) == *("stdout") && strcmp((cp), ("stdout")) == 0) && (flag & 
-# 799 "io.c" 3 4
-                                         0003
-# 799 "io.c"
-                                                  ) == 
-# 799 "io.c" 3 4
-                                                       01
-# 799 "io.c"
-                                                               )
-   openfd = fileno(
-# 800 "io.c" 3 4
-                  stdout
-# 800 "io.c"
-                        );
-  else if ((*(cp) == *("stderr") && strcmp((cp), ("stderr")) == 0) && (flag & 
-# 801 "io.c" 3 4
-                                         0003
-# 801 "io.c"
-                                                  ) == 
-# 801 "io.c" 3 4
-                                                       01
-# 801 "io.c"
-                                                               )
-   openfd = fileno(
-# 802 "io.c" 3 4
-                  stderr
-# 802 "io.c"
-                        );
+  if ((*(cp) == *("stdin") && strcmp((cp), ("stdin")) == 0) && (flag & 0003) == 00)
+   openfd = fileno(stdin);
+  else if ((*(cp) == *("stdout") && strcmp((cp), ("stdout")) == 0) && (flag & 0003) == 01)
+   openfd = fileno(stdout);
+  else if ((*(cp) == *("stderr") && strcmp((cp), ("stderr")) == 0) && (flag & 0003) == 01)
+   openfd = fileno(stderr);
   else if (((3) && *(cp)== *("fd/") && strncmp((cp), ("fd/"), (size_t) (3)) == 0)) {
    cp += 3;
    openfd = (int) strtod(cp, &ptr);
@@ -7935,15 +7447,7 @@ strictopen:
  if (openfd == (-1))
   openfd = open(name, flag, 0666);
  if (openfd != (-1) && fstat(openfd, &buf) > 0)
-  if (
-# 815 "io.c" 3 4
-     ((((
-# 815 "io.c"
-     buf.st_mode
-# 815 "io.c" 3 4
-     )) & 0170000) == (0040000))
-# 815 "io.c"
-                         )
+  if (((((buf.st_mode)) & 0170000) == (0040000)))
    set_loc("io.c", 816), r_fatal("file `%s' is a directory", name);
  return openfd;
 }
@@ -7960,11 +7464,7 @@ int allocate;
  char *cp;
 
  if (allocate) {
-  (void)((cp=(char *)malloc((size_t)(len+2))) || (set_loc("io.c", 832), r_fatal("%s: %s: can't allocate memory (%s)", ("spec_setup"), "cp", strerror(
-# 832 "io.c" 3 4
- (*__errno_location ())
-# 832 "io.c"
- )),0));
+  (void)((cp=(char *)malloc((size_t)(len+2))) || (set_loc("io.c", 832), r_fatal("%s: %s: can't allocate memory (%s)", ("spec_setup"), "cp", strerror((*__errno_location ()))),0));
   iop->buf = cp;
  } else {
   len = strlen(iop->buf);
@@ -7994,16 +7494,8 @@ const char *name, *mode;
  fd = devopen(name, mode);
  if (fd == (-1))
   return (-1);
- tp = iop_alloc(fd, name, 
-# 862 "io.c" 3 4
-                         ((void *)0)
-# 862 "io.c"
-                             );
- if (tp == 
-# 863 "io.c" 3 4
-          ((void *)0)
-# 863 "io.c"
-              ) {
+ tp = iop_alloc(fd, name, ((void *)0));
+ if (tp == ((void *)0)) {
 
   close(fd);
   return (-1);
@@ -8019,11 +7511,7 @@ pidopen(iop, name, mode)
 IOBUF *iop;
 const char *name, *mode;
 {
- char tbuf[
-# 887 "io.c" 3 4
-          8192
-# 887 "io.c"
-                ];
+ char tbuf[8192];
  int i;
 
  if (name[6] == 'g')
@@ -8043,18 +7531,10 @@ useropen(iop, name, mode)
 IOBUF *iop;
 const char *name, *mode;
 {
- char tbuf[
-# 919 "io.c" 3 4
-          8192
-# 919 "io.c"
-                ], *cp;
+ char tbuf[8192], *cp;
  int i;
 
- gid_t groupset[
-# 922 "io.c" 3 4
-                     65536
-# 922 "io.c"
-                                ];
+ gid_t groupset[65536];
  int ngroups;
 
 
@@ -8062,17 +7542,9 @@ const char *name, *mode;
 
  cp = tbuf + strlen(tbuf);
 
- ngroups = getgroups(
-# 930 "io.c" 3 4
-                    65536
-# 930 "io.c"
-                               , groupset);
+ ngroups = getgroups(65536, groupset);
  if (ngroups == -1)
-  set_loc("io.c", 932), r_fatal("could not find groups: %s", strerror(
-# 932 "io.c" 3 4
-                                             (*__errno_location ())
-# 932 "io.c"
-                                                  ));
+  set_loc("io.c", 932), r_fatal("could not find groups: %s", strerror((*__errno_location ())));
 
  for (i = 0; i < ngroups; i++) {
   *cp++ = ' ';
@@ -8123,11 +7595,7 @@ IOBUF *iop;
 
 
  if ((*(name) == *("-") && strcmp((name), ("-")) == 0))
-  openfd = fileno(
-# 983 "io.c" 3 4
-                 stdin
-# 983 "io.c"
-                      );
+  openfd = fileno(stdin);
  else if (do_traditional)
   goto strictopen;
  else if (((5) && *(name)== *("/dev/") && strncmp((name), ("/dev/"), (size_t) (5)) == 0) && stat((char *) name, &buf) == -1) {
@@ -8137,11 +7605,7 @@ IOBUF *iop;
    if (((table[i].compare) && *(name)== *(table[i].name) && strncmp((name), (table[i].name), (size_t) (table[i].compare)) == 0)) {
     iop = & table[i].iob;
 
-    if (iop->buf != 
-# 993 "io.c" 3 4
-                   ((void *)0)
-# 993 "io.c"
-                       ) {
+    if (iop->buf != ((void *)0)) {
      spec_setup(iop, 0, 0);
      return iop;
     } else if ((*table[i].fp)(iop, name, mode) == 0)
@@ -8149,11 +7613,7 @@ IOBUF *iop;
     else {
      warning("could not open %s, mode `%s'",
       name, mode);
-     return 
-# 1001 "io.c" 3 4
-           ((void *)0)
-# 1001 "io.c"
-               ;
+     return ((void *)0);
     }
    }
   }
@@ -8163,15 +7623,7 @@ strictopen:
  if (openfd == (-1))
   openfd = open(name, flag, 0666);
  if (openfd != (-1) && fstat(openfd, &buf) > 0)
-  if ((buf.st_mode & 
-# 1011 "io.c" 3 4
-                    0170000
-# 1011 "io.c"
-                          ) == 
-# 1011 "io.c" 3 4
-                               0040000
-# 1011 "io.c"
-                                      )
+  if ((buf.st_mode & 0170000) == 0040000)
    set_loc("io.c", 1012), r_fatal("file `%s' is a directory", name);
  return iop_alloc(openfd, name, iop);
 }
@@ -8188,39 +7640,11 @@ int interesting;
  int pid;
  int status = 0;
  struct redirect *redp;
- extern int 
-# 1028 "io.c" 3 4
-           (*__errno_location ())
-# 1028 "io.c"
-                ;
+ extern int (*__errno_location ());
 
- hstat = signal(
-# 1030 "io.c" 3 4
-               1
-# 1030 "io.c"
-                     , 
-# 1030 "io.c" 3 4
-                       ((__sighandler_t) 1)
-# 1030 "io.c"
-                              );
- istat = signal(
-# 1031 "io.c" 3 4
-               2
-# 1031 "io.c"
-                     , 
-# 1031 "io.c" 3 4
-                       ((__sighandler_t) 1)
-# 1031 "io.c"
-                              );
- qstat = signal(
-# 1032 "io.c" 3 4
-               3
-# 1032 "io.c"
-                      , 
-# 1032 "io.c" 3 4
-                        ((__sighandler_t) 1)
-# 1032 "io.c"
-                               );
+ hstat = signal(1, ((__sighandler_t) 1));
+ istat = signal(2, ((__sighandler_t) 1));
+ qstat = signal(3, ((__sighandler_t) 1));
  for (;;) {
 
   pid = wait(&status);
@@ -8230,43 +7654,19 @@ int interesting;
   if (interesting && pid == interesting) {
    break;
   } else if (pid != -1) {
-   for (redp = red_head; redp != 
-# 1042 "io.c" 3 4
-                                ((void *)0)
-# 1042 "io.c"
-                                    ; redp = redp->next)
+   for (redp = red_head; redp != ((void *)0); redp = redp->next)
     if (pid == redp->pid) {
      redp->pid = -1;
      redp->status = status;
      break;
     }
   }
-  if (pid == -1 && 
-# 1049 "io.c" 3 4
-                  (*__errno_location ()) 
-# 1049 "io.c"
-                        == 
-# 1049 "io.c" 3 4
-                           10
-# 1049 "io.c"
-                                 )
+  if (pid == -1 && (*__errno_location ()) == 10)
    break;
  }
- signal(
-# 1052 "io.c" 3 4
-       1
-# 1052 "io.c"
-             , hstat);
- signal(
-# 1053 "io.c" 3 4
-       2
-# 1053 "io.c"
-             , istat);
- signal(
-# 1054 "io.c" 3 4
-       3
-# 1054 "io.c"
-              , qstat);
+ signal(1, hstat);
+ signal(2, istat);
+ signal(3, qstat);
  return(status);
 }
 
@@ -8281,61 +7681,25 @@ struct redirect *rp;
  register int pid;
 # 1075 "io.c"
  if (pipe(p) < 0)
-  set_loc("io.c", 1076), r_fatal("cannot open pipe \"%s\" (%s)", cmd, strerror(
-# 1076 "io.c" 3 4
-                                                     (*__errno_location ())
-# 1076 "io.c"
-                                                          ));
+  set_loc("io.c", 1076), r_fatal("cannot open pipe \"%s\" (%s)", cmd, strerror((*__errno_location ())));
  if ((pid = fork()) == 0) {
   if (close(1) == -1)
    set_loc("io.c", 1079), r_fatal("close of stdout in child failed (%s)",
-    strerror(
-# 1080 "io.c" 3 4
-            (*__errno_location ())
-# 1080 "io.c"
-                 ));
+    strerror((*__errno_location ())));
   if (dup(p[1]) != 1)
-   set_loc("io.c", 1082), r_fatal("dup of pipe failed (%s)", strerror(
-# 1082 "io.c" 3 4
-                                            (*__errno_location ())
-# 1082 "io.c"
-                                                 ));
+   set_loc("io.c", 1082), r_fatal("dup of pipe failed (%s)", strerror((*__errno_location ())));
   if (close(p[0]) == -1 || close(p[1]) == -1)
-   set_loc("io.c", 1084), r_fatal("close of pipe failed (%s)", strerror(
-# 1084 "io.c" 3 4
-                                              (*__errno_location ())
-# 1084 "io.c"
-                                                   ));
-  execl("/bin/sh", "sh", "-c", cmd, 
-# 1085 "io.c" 3 4
-                                   ((void *)0)
-# 1085 "io.c"
-                                       );
+   set_loc("io.c", 1084), r_fatal("close of pipe failed (%s)", strerror((*__errno_location ())));
+  execl("/bin/sh", "sh", "-c", cmd, ((void *)0));
   _exit(127);
  }
  if (pid == -1)
-  set_loc("io.c", 1089), r_fatal("cannot fork for \"%s\" (%s)", cmd, strerror(
-# 1089 "io.c" 3 4
-                                                    (*__errno_location ())
-# 1089 "io.c"
-                                                         ));
+  set_loc("io.c", 1089), r_fatal("cannot fork for \"%s\" (%s)", cmd, strerror((*__errno_location ())));
  rp->pid = pid;
  if (close(p[1]) == -1)
-  set_loc("io.c", 1092), r_fatal("close of pipe failed (%s)", strerror(
-# 1092 "io.c" 3 4
-                                             (*__errno_location ())
-# 1092 "io.c"
-                                                  ));
- rp->iop = iop_alloc(p[0], cmd, 
-# 1093 "io.c" 3 4
-                               ((void *)0)
-# 1093 "io.c"
-                                   );
- if (rp->iop == 
-# 1094 "io.c" 3 4
-               ((void *)0)
-# 1094 "io.c"
-                   )
+  set_loc("io.c", 1092), r_fatal("close of pipe failed (%s)", strerror((*__errno_location ())));
+ rp->iop = iop_alloc(p[0], cmd, ((void *)0));
+ if (rp->iop == ((void *)0))
   (void) close(p[0]);
  return (rp->iop);
 }
@@ -8347,11 +7711,7 @@ gawk_pclose(rp)
 struct redirect *rp;
 {
  (void) iop_close(rp->iop);
- rp->iop = 
-# 1106 "io.c" 3 4
-          ((void *)0)
-# 1106 "io.c"
-              ;
+ rp->iop = ((void *)0);
 
 
  if (rp->pid == -1)
@@ -8365,50 +7725,22 @@ NODE *
 do_getline(tree)
 NODE *tree;
 {
- struct redirect *rp = 
-# 1225 "io.c" 3 4
-                      ((void *)0)
-# 1225 "io.c"
-                          ;
+ struct redirect *rp = ((void *)0);
  IOBUF *iop;
- int cnt = 
-# 1227 "io.c" 3 4
-          (-1)
-# 1227 "io.c"
-             ;
- char *s = 
-# 1228 "io.c" 3 4
-          ((void *)0)
-# 1228 "io.c"
-              ;
+ int cnt = (-1);
+ char *s = ((void *)0);
  int errcode;
 
- while (cnt == 
-# 1231 "io.c" 3 4
-              (-1)
-# 1231 "io.c"
-                 ) {
-  if (tree->sub.nodep.r.rptr == 
-# 1232 "io.c" 3 4
-                    ((void *)0)
-# 1232 "io.c"
-                        ) {
+ while (cnt == (-1)) {
+  if (tree->sub.nodep.r.rptr == ((void *)0)) {
    iop = nextfile(0);
-   if (iop == 
-# 1234 "io.c" 3 4
-             ((void *)0)
-# 1234 "io.c"
-                 )
+   if (iop == ((void *)0))
     return mk_number(((double) 0.0), (unsigned int)(1|2|32|64));
   } else {
    int redir_error = 0;
 
    rp = redirect(tree->sub.nodep.r.rptr, &redir_error);
-   if (rp == 
-# 1240 "io.c" 3 4
-            ((void *)0) 
-# 1240 "io.c"
-                 && redir_error) {
+   if (rp == ((void *)0) && redir_error) {
     if (! do_traditional) {
      s = strerror(redir_error);
 
@@ -8419,11 +7751,7 @@ NODE *tree;
     return mk_number(((double) -1.0), (unsigned int)(1|2|32|64));
    }
    iop = rp->iop;
-   if (iop == 
-# 1251 "io.c" 3 4
-             ((void *)0)
-# 1251 "io.c"
-                 )
+   if (iop == ((void *)0))
     return mk_number(((double) 0.0), (unsigned int)(1|2|32|64));
   }
   errcode = 0;
@@ -8437,16 +7765,8 @@ NODE *tree;
    }
    return mk_number(((double) -1.0), (unsigned int)(1|2|32|64));
   }
-  if (cnt == 
-# 1265 "io.c" 3 4
-            (-1)
-# 1265 "io.c"
-               ) {
-   if (rp != 
-# 1266 "io.c" 3 4
-            ((void *)0)
-# 1266 "io.c"
-                ) {
+  if (cnt == (-1)) {
+   if (rp != ((void *)0)) {
 
 
 
@@ -8454,37 +7774,21 @@ NODE *tree;
 
     if ((rp->flag & 2) == 0) {
      (void) iop_close(iop);
-     rp->iop = 
-# 1274 "io.c" 3 4
-              ((void *)0)
-# 1274 "io.c"
-                  ;
+     rp->iop = ((void *)0);
     }
     rp->flag |= 128;
     return mk_number(((double) 0.0), (unsigned int)(1|2|32|64));
    } else
     continue;
   }
-  if (rp == 
-# 1281 "io.c" 3 4
-           ((void *)0)
-# 1281 "io.c"
-               ) {
+  if (rp == ((void *)0)) {
    NR++;
    FNR++;
   }
-  if (tree->sub.nodep.l.lptr == 
-# 1285 "io.c" 3 4
-                    ((void *)0)
-# 1285 "io.c"
-                        )
+  if (tree->sub.nodep.l.lptr == ((void *)0))
    set_record(s, cnt, 1);
   else {
-   Func_ptr after_assign = 
-# 1288 "io.c" 3 4
-                          ((void *)0)
-# 1288 "io.c"
-                              ;
+   Func_ptr after_assign = ((void *)0);
    NODE **lhs;
 
    lhs = ((tree->sub.nodep.l.lptr)->type == Node_var ? (&(tree->sub.nodep.l.lptr)->sub.nodep.l.lptr) : r_get_lhs((tree->sub.nodep.l.lptr), (&after_assign)));
@@ -8492,11 +7796,7 @@ NODE *tree;
    *lhs = make_str_node((s), (size_t) (cnt), 0);
    (*lhs)->flags |= 128;
 
-   if (after_assign != 
-# 1296 "io.c" 3 4
-                      ((void *)0)
-# 1296 "io.c"
-                          )
+   if (after_assign != ((void *)0))
     (*after_assign)();
   }
  }
@@ -8520,18 +7820,10 @@ static int
 do_pathopen(file)
 const char *file;
 {
- static const char *savepath = 
-# 1343 "io.c" 3 4
-                              ((void *)0)
-# 1343 "io.c"
-                                  ;
+ static const char *savepath = ((void *)0);
  static int first = 1;
  const char *awkpath;
- char *cp, trypath[
-# 1346 "io.c" 3 4
-                  8192
-# 1346 "io.c"
-                        ];
+ char *cp, trypath[8192];
  int fd;
 
  if ((*(file) == *("-") && strcmp((file), ("-")) == 0))
@@ -8542,11 +7834,7 @@ const char *file;
 
  if (first) {
   first = 0;
-  if ((awkpath = getenv("AWKPATH")) != 
-# 1357 "io.c" 3 4
-                                      ((void *)0) 
-# 1357 "io.c"
-                                           && *awkpath)
+  if ((awkpath = getenv("AWKPATH")) != ((void *)0) && *awkpath)
    savepath = awkpath;
   else
    savepath = defpath;
@@ -8595,47 +7883,19 @@ IOBUF *iop;
  struct stat sbuf;
 
  if (fd == (-1))
-  return 
-# 1420 "io.c" 3 4
-        ((void *)0)
-# 1420 "io.c"
-            ;
- if (iop == 
-# 1421 "io.c" 3 4
-           ((void *)0)
-# 1421 "io.c"
-               )
-  (void)((iop=(IOBUF *)malloc((size_t)(sizeof(IOBUF)))) || (set_loc("io.c", 1422), r_fatal("%s: %s: can't allocate memory (%s)", ("iop_alloc"), "iop", strerror(
-# 1422 "io.c" 3 4
- (*__errno_location ())
-# 1422 "io.c"
- )),0));
+  return ((void *)0);
+ if (iop == ((void *)0))
+  (void)((iop=(IOBUF *)malloc((size_t)(sizeof(IOBUF)))) || (set_loc("io.c", 1422), r_fatal("%s: %s: can't allocate memory (%s)", ("iop_alloc"), "iop", strerror((*__errno_location ()))),0));
  iop->flag = 0;
  if (isatty(fd))
   iop->flag |= 1;
  iop->size = optimal_bufsize(fd, & sbuf);
- if (do_lint && 
-# 1427 "io.c" 3 4
-               ((((
-# 1427 "io.c"
-               sbuf.st_mode
-# 1427 "io.c" 3 4
-               )) & 0170000) == (0100000)) 
-# 1427 "io.c"
-                                     && sbuf.st_size == 0)
+ if (do_lint && ((((sbuf.st_mode)) & 0170000) == (0100000)) && sbuf.st_size == 0)
   warning("data file `%s' is empty", name);
  iop->secsiz = -2;
- 
-# 1430 "io.c" 3 4
-(*__errno_location ()) 
-# 1430 "io.c"
-      = 0;
+ (*__errno_location ()) = 0;
  iop->fd = fd;
- iop->off = iop->buf = 
-# 1432 "io.c" 3 4
-                      ((void *)0)
-# 1432 "io.c"
-                          ;
+ iop->off = iop->buf = ((void *)0);
  iop->cnt = 0;
  iop->name = name;
  iop->getrec = get_a_record;
@@ -8655,51 +7915,23 @@ int *errcode;
  char *bufend;
  char *start = iop->off;
  int rs;
- static Regexp *RS_null_re = 
-# 1519 "io.c" 3 4
-                            ((void *)0)
-# 1519 "io.c"
-                                ;
- Regexp *rsre = 
-# 1520 "io.c" 3 4
-               ((void *)0)
-# 1520 "io.c"
-                   ;
+ static Regexp *RS_null_re = ((void *)0);
+ Regexp *rsre = ((void *)0);
  int continuing = 0, continued = 0;
  int onecase;
 
 
- if (RS_null_re == 
-# 1525 "io.c" 3 4
-                  ((void *)0)
-# 1525 "io.c"
-                      ) {
+ if (RS_null_re == ((void *)0)) {
   RS_null_re = make_regexp("\n\n+", 3, 1, 1);
-  if (RS_null_re == 
-# 1527 "io.c" 3 4
-                   ((void *)0)
-# 1527 "io.c"
-                       )
+  if (RS_null_re == ((void *)0))
    set_loc("io.c", 1528), r_fatal("internal error: file `%s', line %d\n",
     "io.c", 1529);
  }
 
- if (iop->cnt == 
-# 1532 "io.c" 3 4
-                (-1)
-# 1532 "io.c"
-                   ) {
-  *out = 
-# 1533 "io.c" 3 4
-        ((void *)0)
-# 1533 "io.c"
-            ;
+ if (iop->cnt == (-1)) {
+  *out = ((void *)0);
   (void)(! do_traditional && (unref(RT_node->sub.nodep.l.lptr), RT_node->sub.nodep.l.lptr = Nnull_string));
-  return 
-# 1535 "io.c" 3 4
-        (-1)
-# 1535 "io.c"
-           ;
+  return (-1);
  }
 
  if (grRS == 0)
@@ -8707,15 +7939,7 @@ int *errcode;
  else
   rs = (char) grRS;
 
- onecase = (IGNORECASE && 
-# 1543 "io.c" 3 4
-                         ((*__ctype_b_loc ())[(int) ((
-# 1543 "io.c"
-                         rs
-# 1543 "io.c" 3 4
-                         ))] & (unsigned short int) _ISalpha)
-# 1543 "io.c"
-                                    );
+ onecase = (IGNORECASE && ((*__ctype_b_loc ())[(int) ((rs))] & (unsigned short int) _ISalpha));
  if (onecase)
   rs = casetable[rs];
 
@@ -8724,20 +7948,12 @@ int *errcode;
   bufend = iop->buf + iop->size + iop->secsiz;
   *bufend = rs;
  } else
-  bufend = 
-# 1552 "io.c" 3 4
-          ((void *)0)
-# 1552 "io.c"
-              ;
+  bufend = ((void *)0);
 
  for (;;) {
 # 1564 "io.c"
   if ((iop->flag & 2) == 0 && bp >= bufend) {
-   char *oldbuf = 
-# 1565 "io.c" 3 4
-                 ((void *)0)
-# 1565 "io.c"
-                     ;
+   char *oldbuf = ((void *)0);
    char *oldsplit = iop->buf + iop->secsiz;
    long len;
 
@@ -8750,16 +7966,12 @@ int *errcode;
      iop->secsiz *= 2;
     oldbuf = iop->buf;
     (void)((iop->buf=(char *)malloc((size_t)(iop->size+iop->secsiz+2))) || (set_loc(
-                                               "io.c"
+ "io.c"
 # 1577 "io.c"
     ,
-                                               1578
+ 1578
 # 1577 "io.c"
-    ), r_fatal("%s: %s: can't allocate memory (%s)", ("get_a_record"), "iop->buf", strerror(
-# 1577 "io.c" 3 4
-   (*__errno_location ())
-# 1577 "io.c"
-   )),0))
+    ), r_fatal("%s: %s: can't allocate memory (%s)", ("get_a_record"), "iop->buf", strerror((*__errno_location ()))),0))
                                                 ;
     bufend = iop->buf + iop->size + iop->secsiz;
     *bufend = rs;
@@ -8777,17 +7989,9 @@ int *errcode;
    }
    bp = iop->end = iop->off = iop->buf + iop->secsiz;
    start = bp - len;
-   if (oldbuf != 
-# 1595 "io.c" 3 4
-                ((void *)0)
-# 1595 "io.c"
-                    ) {
+   if (oldbuf != ((void *)0)) {
     free(oldbuf);
-    oldbuf = 
-# 1597 "io.c" 3 4
-            ((void *)0)
-# 1597 "io.c"
-                ;
+    oldbuf = ((void *)0);
    }
   }
 
@@ -8799,85 +8003,45 @@ int *errcode;
 
   if (bp >= iop->end) {
    if ((iop->flag & 2) != 0) {
-    iop->cnt = 
-# 1609 "io.c" 3 4
-              (-1)
-# 1609 "io.c"
-                 ;
+    iop->cnt = (-1);
     break;
    }
    iop->cnt = read(iop->fd, iop->end, bufend - iop->end);
    if (iop->cnt == -1) {
-    if (! do_traditional && errcode != 
-# 1614 "io.c" 3 4
-                                      ((void *)0)
-# 1614 "io.c"
-                                          ) {
-     *errcode = 
-# 1615 "io.c" 3 4
-               (*__errno_location ())
-# 1615 "io.c"
-                    ;
-     iop->cnt = 
-# 1616 "io.c" 3 4
-               (-1)
-# 1616 "io.c"
-                  ;
+    if (! do_traditional && errcode != ((void *)0)) {
+     *errcode = (*__errno_location ());
+     iop->cnt = (-1);
      break;
     } else
      set_loc("io.c", 1619), r_fatal("error reading input file `%s': %s",
-      iop->name, strerror(
-# 1620 "io.c" 3 4
-                         (*__errno_location ())
-# 1620 "io.c"
-                              ));
+      iop->name, strerror((*__errno_location ())));
    } else if (iop->cnt == 0) {
 
 
 
 
-    iop->cnt = 
-# 1626 "io.c" 3 4
-              (-1)
-# 1626 "io.c"
-                 ;
+    iop->cnt = (-1);
 
     if (! continuing) {
      (void)(! do_traditional && (unref(RT_node->sub.nodep.l.lptr), RT_node->sub.nodep.l.lptr = Nnull_string));
      break;
     }
    }
-   if (iop->cnt != 
-# 1633 "io.c" 3 4
-                  (-1)
-# 1633 "io.c"
-                     ) {
+   if (iop->cnt != (-1)) {
     iop->end += iop->cnt;
     *iop->end = rs;
    }
   }
 # 1649 "io.c"
-  if (! do_traditional && RSre != 
-# 1649 "io.c" 3 4
-                                 ((void *)0)
-# 1649 "io.c"
-                                     )
+  if (! do_traditional && RSre != ((void *)0))
    rsre = RSre;
   else if (grRS == 0)
    rsre = RS_null_re;
   else
-   rsre = 
-# 1654 "io.c" 3 4
-         ((void *)0)
-# 1654 "io.c"
-             ;
+   rsre = ((void *)0);
 # 1672 "io.c"
   continuing = 0;
-  if (rsre != 
-# 1673 "io.c" 3 4
-             ((void *)0)
-# 1673 "io.c"
-                 ) {
+  if (rsre != ((void *)0)) {
   again:
 
    if (research(rsre, start, 0, iop->end - start, 1) == -1
@@ -8887,11 +8051,7 @@ int *errcode;
    }
 
    if (start + (rsre)->regs.end[0] >= iop->end) {
-    if (iop->cnt != 
-# 1683 "io.c" 3 4
-                   (-1)
-# 1683 "io.c"
-                      ) {
+    if (iop->cnt != (-1)) {
      bp = iop->end;
      continuing = continued = 1;
      continue;
@@ -8930,31 +8090,15 @@ int *errcode;
   if ((iop->flag & 2) != 0)
    iop->cnt = bp - start;
  }
- if (iop->cnt == 
-# 1722 "io.c" 3 4
-                (-1)
-     
-# 1723 "io.c"
-    && (((iop->flag & 2) != 0)
+ if (iop->cnt == (-1)
+     && (((iop->flag & 2) != 0)
            || (start == bp && ! continued))) {
-  *out = 
-# 1725 "io.c" 3 4
-        ((void *)0)
-# 1725 "io.c"
-            ;
+  *out = ((void *)0);
   (void)(! do_traditional && (unref(RT_node->sub.nodep.l.lptr), RT_node->sub.nodep.l.lptr = Nnull_string));
-  return 
-# 1727 "io.c" 3 4
-        (-1)
-# 1727 "io.c"
-           ;
+  return (-1);
  }
 
- if (do_traditional || rsre == 
-# 1730 "io.c" 3 4
-                              ((void *)0)
-# 1730 "io.c"
-                                  ) {
+ if (do_traditional || rsre == ((void *)0)) {
   char *bstart;
 
   bstart = iop->off = bp;
@@ -8964,11 +8108,7 @@ int *errcode;
    bstart = bp;
   }
   *bp = '\0';
- } else if (grRS == 0 && iop->cnt == 
-# 1740 "io.c" 3 4
-                                        (-1)
-# 1740 "io.c"
-                                           ) {
+ } else if (grRS == 0 && iop->cnt == (-1)) {
 
 
 
@@ -8985,11 +8125,7 @@ int *errcode;
 void
 set_RS()
 {
- static NODE *save_rs = 
-# 1923 "io.c" 3 4
-                       ((void *)0)
-# 1923 "io.c"
-                           ;
+ static NODE *save_rs = ((void *)0);
 
  if (save_rs && cmp_nodes(RS_node->sub.nodep.l.lptr, save_rs) == 0)
   return;
@@ -8997,17 +8133,9 @@ set_RS()
  save_rs = dupnode(RS_node->sub.nodep.l.lptr);
  RS_is_null = 0;
  RS = ({NODE *_ts = (RS_node->sub.nodep.l.lptr); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
- if (RS_regexp != 
-# 1931 "io.c" 3 4
-                 ((void *)0)
-# 1931 "io.c"
-                     ) {
+ if (RS_regexp != ((void *)0)) {
   refree(RS_regexp);
-  RS_regexp = 
-# 1933 "io.c" 3 4
-             ((void *)0)
-# 1933 "io.c"
-                 ;
+  RS_regexp = ((void *)0);
  }
  if (RS->sub.val.slen == 0)
   RS_is_null = 1;

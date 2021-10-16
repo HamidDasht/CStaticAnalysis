@@ -1,0 +1,5 @@
+./dd README a
+
+../../cil/bin/cilly --save-temps -std=gnu99 -g -Wl,--as-needed  -o dd dd.c ../../../coreutils-8.30/src/libver.a ../../../coreutils-8.30/lib/libcoreutils.a -I../../../coreutils-8.30/lib -I../../../coreutils-8.30/src  ../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I../../include -L../../lib
+
+rm branches cfg* dd.cil.* dd.i dd.o dd dominator* features funcount idcount input_data stmtcount szd_execution xx*

@@ -1,5 +1,5 @@
 # 1 "random.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -27,10 +27,8 @@
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
@@ -154,7 +152,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -188,8 +186,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -673,7 +671,9 @@ extern int putw (int __w, FILE *__stream);
 
 extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
      ;
-# 640 "/usr/include/stdio.h" 3 4
+# 638 "/usr/include/stdio.h" 3 4
+extern char *gets (char *__s) __attribute__ ((__deprecated__));
+
 
 # 665 "/usr/include/stdio.h" 3 4
 extern __ssize_t __getdelim (char **__restrict __lineptr,
@@ -850,8 +850,6 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 1 "random.h" 1
 # 24 "random.c" 2
 # 109 "random.c"
-
-# 109 "random.c"
 static int degrees[ 5 ] = { 0, 7, 15,
         31, 63 };
 
@@ -919,11 +917,7 @@ gawk_initstate( seed, arg_state, n )
  else state[ -1 ] = 5*(rptr - state) + rand_type;
  if( n < 32 ) {
      if( n < 8 ) {
-  fprintf( 
-# 252 "random.c" 3 4
-          stderr
-# 252 "random.c"
-                , "initstate: not enough state (%d bytes) with which to do jack; ignored.\n", n );
+  fprintf( stderr, "initstate: not enough state (%d bytes) with which to do jack; ignored.\n", n );
   return 0;
      }
      rand_type = 0;
@@ -988,11 +982,7 @@ gawk_setstate( arg_state )
   break;
 
      default:
-  fprintf( 
-# 331 "random.c" 3 4
-          stderr
-# 331 "random.c"
-                , "setstate: state info has been munged; not changed.\n" );
+  fprintf( stderr, "setstate: state info has been munged; not changed.\n" );
  }
  state = &new_state[ 1 ];
  if( rand_type != 0 ) {

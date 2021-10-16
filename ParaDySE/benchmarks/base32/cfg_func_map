@@ -23,5 +23,5 @@ xset_binary_mode 134
 usage 140
 wrap_write 150
 do_encode 190
-do_decode 239
-main 319
+do_decode 248
+main 336

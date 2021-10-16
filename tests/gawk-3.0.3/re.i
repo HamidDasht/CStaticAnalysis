@@ -1,5 +1,5 @@
 # 1 "re.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -40,10 +40,8 @@
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
@@ -167,7 +165,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -201,8 +199,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -968,17 +966,17 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 # 37 "awk.h" 2
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 34 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 34 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 168 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 168 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 143 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
@@ -1002,9 +1000,9 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
 # 152 "/usr/include/limits.h" 2 3 4
-# 169 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
-# 8 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 2 3 4
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
+# 169 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
+# 8 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 2 3 4
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
 # 39 "awk.h" 2
 
 # 1 "/usr/include/ctype.h" 1 3 4
@@ -1270,7 +1268,7 @@ extern void siglongjmp (sigjmp_buf __env, int __val)
 
 # 1 "/usr/include/locale.h" 1 3 4
 # 28 "/usr/include/locale.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 29 "/usr/include/locale.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/locale.h" 1 3 4
 # 30 "/usr/include/locale.h" 2 3 4
@@ -1377,7 +1375,7 @@ extern __locale_t uselocale (__locale_t __dataset) __attribute__ ((__nothrow__ ,
 # 44 "awk.h" 2
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
 # 47 "awk.h" 2
 
 
@@ -2035,7 +2033,7 @@ extern int sigreturn (struct sigcontext *__scp) __attribute__ ((__nothrow__ , __
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 317 "/usr/include/signal.h" 2 3 4
 
 
@@ -2411,7 +2409,7 @@ extern int __libc_current_sigrtmax (void) __attribute__ ((__nothrow__ , __leaf__
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 38 "/usr/include/time.h" 2 3 4
 
 
@@ -2820,7 +2818,7 @@ typedef __suseconds_t suseconds_t;
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -3201,8 +3199,8 @@ extern int __xmknodat (int __ver, int __fd, const char *__path,
 # 118 "awk.h"
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
 # 33 "/usr/include/stdlib.h" 2 3 4
 
@@ -3587,7 +3585,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -3968,7 +3966,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/string.h" 2 3 4
 
 
@@ -4289,7 +4287,7 @@ extern char *basename (const char *__filename) __attribute__ ((__nothrow__ , __l
 # 23 "/usr/include/x86_64-linux-gnu/bits/environments.h" 2 3 4
 # 210 "/usr/include/unistd.h" 2 3 4
 # 229 "/usr/include/unistd.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 230 "/usr/include/unistd.h" 2 3 4
 # 270 "/usr/include/unistd.h" 3 4
 typedef __intptr_t intptr_t;
@@ -5637,8 +5635,6 @@ extern void swab (const void *__restrict __from, void *__restrict __to,
 # 175 "awk.h"
 # 1 "regex.h" 1
 # 40 "regex.h"
-
-# 40 "regex.h"
 typedef long int s_reg_t;
 typedef unsigned long int active_reg_t;
 
@@ -6485,11 +6481,7 @@ int dfa;
  register char *dest;
  register int c, c2;
 # 54 "re.c"
- (void)((dest=(char *)malloc((size_t)(len + 2))) || (set_loc("re.c", 54), r_fatal("%s: %s: can't allocate memory (%s)", ("make_regexp"), "dest", strerror(
-# 54 "re.c" 3 4
-(*__errno_location ())
-# 54 "re.c"
-)),0));
+ (void)((dest=(char *)malloc((size_t)(len + 2))) || (set_loc("re.c", 54), r_fatal("%s: %s: can't allocate memory (%s)", ("make_regexp"), "dest", strerror((*__errno_location ()))),0));
  temp = dest;
 
  while (src < end) {
@@ -6520,20 +6512,8 @@ int dfa;
 
 
 
-    if (do_traditional && ! do_posix && (
-# 85 "re.c" 3 4
-                                        ((*__ctype_b_loc ())[(int) ((
-# 85 "re.c"
-                                        c
-# 85 "re.c" 3 4
-                                        ))] & (unsigned short int) _ISdigit) 
-# 85 "re.c"
-                                                   || c == 'x')
-        && strchr("()|*+?.^$\\[]", c2) != 
-# 86 "re.c" 3 4
-                                         ((void *)0)
-# 86 "re.c"
-                                             )
+    if (do_traditional && ! do_posix && (((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISdigit) || c == 'x')
+        && strchr("()|*+?.^$\\[]", c2) != ((void *)0))
      *dest++ = '\\';
     *dest++ = (char) c2;
     break;
@@ -6562,33 +6542,17 @@ int dfa;
  }
 
  *dest = '\0' ;
- (void)((rp=(Regexp *)malloc((size_t)(sizeof(*rp)))) || (set_loc("re.c", 115), r_fatal("%s: %s: can't allocate memory (%s)", ("make_regexp"), "rp", strerror(
-# 115 "re.c" 3 4
-(*__errno_location ())
-# 115 "re.c"
-)),0));
+ (void)((rp=(Regexp *)malloc((size_t)(sizeof(*rp)))) || (set_loc("re.c", 115), r_fatal("%s: %s: can't allocate memory (%s)", ("make_regexp"), "rp", strerror((*__errno_location ()))),0));
  memset((char *) rp, 0, sizeof(*rp));
  rp->pat.allocated = 0;
- (void)((rp->pat.fastmap=(char *)malloc((size_t)(256))) || (set_loc("re.c", 118), r_fatal("%s: %s: can't allocate memory (%s)", ("make_regexp"), "rp->pat.fastmap", strerror(
-# 118 "re.c" 3 4
-(*__errno_location ())
-# 118 "re.c"
-)),0));
+ (void)((rp->pat.fastmap=(char *)malloc((size_t)(256))) || (set_loc("re.c", 118), r_fatal("%s: %s: can't allocate memory (%s)", ("make_regexp"), "rp->pat.fastmap", strerror((*__errno_location ()))),0));
 
  if (ignorecase)
   rp->pat.translate = casetable;
  else
-  rp->pat.translate = 
-# 123 "re.c" 3 4
-                     ((void *)0)
-# 123 "re.c"
-                         ;
+  rp->pat.translate = ((void *)0);
  len = dest - temp;
- if ((rerr = re_compile_pattern(temp, len, &(rp->pat))) != 
-# 125 "re.c" 3 4
-                                                          ((void *)0)
-# 125 "re.c"
-                                                              )
+ if ((rerr = re_compile_pattern(temp, len, &(rp->pat))) != ((void *)0))
   set_loc("re.c", 126), r_fatal("%s: /%s/", rerr, temp);
 
 
@@ -6686,16 +6650,8 @@ NODE *t;
  if ((t->sub.nodep.reflags & 1) == IGNORECASE) {
   if ((t->sub.nodep.reflags & 2) != 0)
    return t->sub.nodep.r.preg;
-  t1 = ({NODE *_ts = (({NODE * _t = (t->sub.nodep.x.extra); if (_t == 
-# 223 "re.c" 3 4
-      ((void *)0)
-# 223 "re.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
-  if (t->sub.nodep.l.lptr != 
-# 224 "re.c" 3 4
-                   ((void *)0)
-# 224 "re.c"
-                       ) {
+  t1 = ({NODE *_ts = (({NODE * _t = (t->sub.nodep.x.extra); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+  if (t->sub.nodep.l.lptr != ((void *)0)) {
    if (cmp_nodes(t->sub.nodep.l.lptr, t1) == 0) {
     do { if ((t1)->flags&2) { unref(t1); }} while (0);
     return t->sub.nodep.r.preg;
@@ -6705,26 +6661,14 @@ NODE *t;
   t->sub.nodep.l.lptr = dupnode(t1);
   do { if ((t1)->flags&2) { unref(t1); }} while (0);
  }
- if (t->sub.nodep.r.preg != 
-# 234 "re.c" 3 4
-                 ((void *)0)
-# 234 "re.c"
-                     )
+ if (t->sub.nodep.r.preg != ((void *)0))
   refree(t->sub.nodep.r.preg);
  if (t->sub.nodep.number > 0)
   t->sub.nodep.number++;
  if (t->sub.nodep.number > 10)
   t->sub.nodep.number = 0;
- if (t->sub.nodep.l.lptr == 
-# 240 "re.c" 3 4
-                  ((void *)0)
-# 240 "re.c"
-                      ) {
-  t1 = ({NODE *_ts = (({NODE * _t = (t->sub.nodep.x.extra); if (_t == 
-# 241 "re.c" 3 4
-      ((void *)0)
-# 241 "re.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+ if (t->sub.nodep.l.lptr == ((void *)0)) {
+  t1 = ({NODE *_ts = (({NODE * _t = (t->sub.nodep.x.extra); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
   t->sub.nodep.l.lptr = dupnode(t1);
   do { if ((t1)->flags&2) { unref(t1); }} while (0);
  }

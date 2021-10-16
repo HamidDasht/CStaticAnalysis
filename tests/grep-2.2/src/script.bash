@@ -1,4 +1,4 @@
 #!/bin/bash
-make cil="--doBranchLearning --merge";
+make cil="--doBranchLearning";
 make clean;
 make cil="--doCrestInstrument";

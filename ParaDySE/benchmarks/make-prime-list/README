@@ -1,5 +1,5 @@
 ./make-prime-list 545452434321
 
-cilly --save-temps -std=gnu99 -g -Wl,--as-needed  -o make-prime-list make-prime-list.c ../../../../coreutils-8.30/src/libver.a ../../../../coreutils-8.30/lib/libcoreutils.a -I../../../../coreutils-8.30/lib -I../../../../coreutils-8.30/src  ../../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I/home/hamid/Desktop/ParaDySE/include -L/home/hamid/Desktop/ParaDySE/lib
+../../cil/bin/cilly --save-temps -std=gnu99 -g -Wl,--as-needed  -o make-prime-list make-prime-list.c ../../../coreutils-8.30/src/libver.a ../../../coreutils-8.30/lib/libcoreutils.a -I../../../coreutils-8.30/lib -I../../../coreutils-8.30/src  ../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I../../include -L../../lib
 
 rm branches cfg* make-prime-list.cil.* make-prime-list.i make-prime-list.o make-prime-list dominator* features funcount idcount stmtcount szd_execution 

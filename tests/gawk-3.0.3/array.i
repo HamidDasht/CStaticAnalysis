@@ -1,5 +1,5 @@
 # 1 "array.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -40,10 +40,8 @@
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
@@ -167,7 +165,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -201,8 +199,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -968,17 +966,17 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 # 37 "awk.h" 2
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 34 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 34 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 168 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 168 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 143 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
@@ -1002,9 +1000,9 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
 # 152 "/usr/include/limits.h" 2 3 4
-# 169 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
-# 8 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 2 3 4
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
+# 169 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
+# 8 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 2 3 4
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
 # 39 "awk.h" 2
 
 # 1 "/usr/include/ctype.h" 1 3 4
@@ -1270,7 +1268,7 @@ extern void siglongjmp (sigjmp_buf __env, int __val)
 
 # 1 "/usr/include/locale.h" 1 3 4
 # 28 "/usr/include/locale.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 29 "/usr/include/locale.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/locale.h" 1 3 4
 # 30 "/usr/include/locale.h" 2 3 4
@@ -1377,7 +1375,7 @@ extern __locale_t uselocale (__locale_t __dataset) __attribute__ ((__nothrow__ ,
 # 44 "awk.h" 2
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
 # 47 "awk.h" 2
 
 
@@ -2035,7 +2033,7 @@ extern int sigreturn (struct sigcontext *__scp) __attribute__ ((__nothrow__ , __
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 317 "/usr/include/signal.h" 2 3 4
 
 
@@ -2411,7 +2409,7 @@ extern int __libc_current_sigrtmax (void) __attribute__ ((__nothrow__ , __leaf__
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 38 "/usr/include/time.h" 2 3 4
 
 
@@ -2820,7 +2818,7 @@ typedef __suseconds_t suseconds_t;
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -3201,8 +3199,8 @@ extern int __xmknodat (int __ver, int __fd, const char *__path,
 # 118 "awk.h"
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
 # 33 "/usr/include/stdlib.h" 2 3 4
 
@@ -3587,7 +3585,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -3968,7 +3966,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/string.h" 2 3 4
 
 
@@ -4289,7 +4287,7 @@ extern char *basename (const char *__filename) __attribute__ ((__nothrow__ , __l
 # 23 "/usr/include/x86_64-linux-gnu/bits/environments.h" 2 3 4
 # 210 "/usr/include/unistd.h" 2 3 4
 # 229 "/usr/include/unistd.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 230 "/usr/include/unistd.h" 2 3 4
 # 270 "/usr/include/unistd.h" 3 4
 typedef __intptr_t intptr_t;
@@ -5637,8 +5635,6 @@ extern void swab (const void *__restrict __from, void *__restrict __to,
 # 175 "awk.h"
 # 1 "regex.h" 1
 # 40 "regex.h"
-
-# 40 "regex.h"
 typedef long int s_reg_t;
 typedef unsigned long int active_reg_t;
 
@@ -6484,56 +6480,28 @@ register NODE *tree;
  char *subsep;
 
  if (tree->type != Node_expression_list)
-  return ({NODE *_ts = (({NODE * _t = (tree); if (_t == 
-# 60 "array.c" 3 4
-        ((void *)0)
-# 60 "array.c"
-        ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
- r = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 61 "array.c" 3 4
-    ((void *)0)
-# 61 "array.c"
-    ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
- if (tree->sub.nodep.r.rptr == 
-# 62 "array.c" 3 4
-                   ((void *)0)
-# 62 "array.c"
-                       )
+  return ({NODE *_ts = (({NODE * _t = (tree); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+ r = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+ if (tree->sub.nodep.r.rptr == ((void *)0))
   return r;
  subseplen = SUBSEP_node->sub.nodep.l.lptr->sub.val.slen;
  subsep = SUBSEP_node->sub.nodep.l.lptr->sub.val.sp;
  len = r->sub.val.slen + subseplen + 2;
- (void)((str=(char *)malloc((size_t)(len))) || (set_loc("array.c", 67), r_fatal("%s: %s: can't allocate memory (%s)", ("concat_exp"), "str", strerror(
-# 67 "array.c" 3 4
-(*__errno_location ())
-# 67 "array.c"
-)),0));
+ (void)((str=(char *)malloc((size_t)(len))) || (set_loc("array.c", 67), r_fatal("%s: %s: can't allocate memory (%s)", ("concat_exp"), "str", strerror((*__errno_location ()))),0));
  memcpy(str, r->sub.val.sp, r->sub.val.slen+1);
  s = str + r->sub.val.slen;
  do { if ((r)->flags&2) { unref(r); }} while (0);
- for (tree = tree->sub.nodep.r.rptr; tree != 
-# 71 "array.c" 3 4
-                                 ((void *)0)
-# 71 "array.c"
-                                     ; tree = tree->sub.nodep.r.rptr) {
+ for (tree = tree->sub.nodep.r.rptr; tree != ((void *)0); tree = tree->sub.nodep.r.rptr) {
   if (subseplen == 1)
    *s++ = *subsep;
   else {
    memcpy(s, subsep, subseplen+1);
    s += subseplen;
   }
-  r = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 78 "array.c" 3 4
-     ((void *)0)
-# 78 "array.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+  r = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
   len += r->sub.val.slen + subseplen;
   offset = s - str;
-  (void)((str=(char *)realloc((char *)str, (size_t)(len))) || (set_loc("array.c", 81), r_fatal("%s: %s: can't allocate memory (%s)", ("concat_exp"), "str", strerror(
-# 81 "array.c" 3 4
- (*__errno_location ())
-# 81 "array.c"
- )),0));
+  (void)((str=(char *)realloc((char *)str, (size_t)(len))) || (set_loc("array.c", 81), r_fatal("%s: %s: can't allocate memory (%s)", ("concat_exp"), "str", strerror((*__errno_location ()))),0));
   s = str + offset;
   memcpy(s, r->sub.val.sp, r->sub.val.slen+1);
   s += r->sub.val.slen;
@@ -6553,35 +6521,19 @@ NODE *symbol;
  int i;
  NODE *bucket, *next;
 
- if (symbol->sub.nodep.r.av == 
-# 101 "array.c" 3 4
-                         ((void *)0)
-# 101 "array.c"
-                             )
+ if (symbol->sub.nodep.r.av == ((void *)0))
   return;
  for (i = 0; i < symbol->sub.nodep.l.ll; i++) {
-  for (bucket = symbol->sub.nodep.r.av[i]; bucket != 
-# 104 "array.c" 3 4
-                                               ((void *)0)
-# 104 "array.c"
-                                                   ; bucket = next) {
+  for (bucket = symbol->sub.nodep.r.av[i]; bucket != ((void *)0); bucket = next) {
    next = bucket->sub.ahash.next;
    unref(bucket->sub.ahash.name);
    unref(bucket->sub.ahash.value);
    ((bucket)->flags &= ~512, (bucket)->sub.nodep.l.lptr = nextfree, nextfree = (bucket));
   }
-  symbol->sub.nodep.r.av[i] = 
-# 110 "array.c" 3 4
-                        ((void *)0)
-# 110 "array.c"
-                            ;
+  symbol->sub.nodep.r.av[i] = ((void *)0);
  }
  free(symbol->sub.nodep.r.av);
- symbol->sub.nodep.r.av = 
-# 113 "array.c" 3 4
-                    ((void *)0)
-# 113 "array.c"
-                        ;
+ symbol->sub.nodep.r.av = ((void *)0);
  symbol->sub.nodep.l.ll = symbol->sub.nodep.x.xl = 0;
  symbol->flags &= ~256;
 }
@@ -6634,20 +6586,12 @@ int hash1;
 {
  register NODE *bucket;
 
- for (bucket = symbol->sub.nodep.r.av[hash1]; bucket != 
-# 218 "array.c" 3 4
-                                                  ((void *)0)
-# 218 "array.c"
-                                                      ;
+ for (bucket = symbol->sub.nodep.r.av[hash1]; bucket != ((void *)0);
    bucket = bucket->sub.ahash.next) {
   if (cmp_nodes(bucket->sub.ahash.name, subs) == 0)
    return bucket;
  }
- return 
-# 223 "array.c" 3 4
-       ((void *)0)
-# 223 "array.c"
-           ;
+ return ((void *)0);
 }
 
 
@@ -6667,20 +6611,12 @@ NODE *symbol, *subs;
 
 
  subs = concat_exp(subs);
- if (symbol->sub.nodep.r.av == 
-# 243 "array.c" 3 4
-                         ((void *)0)
-# 243 "array.c"
-                             ) {
+ if (symbol->sub.nodep.r.av == ((void *)0)) {
   do { if ((subs)->flags&2) { unref(subs); }} while (0);
   return 0;
  }
  hash1 = hash(subs->sub.val.sp, subs->sub.val.slen, (unsigned long) symbol->sub.nodep.l.ll);
- ret = (assoc_find(symbol, subs, hash1) != 
-# 248 "array.c" 3 4
-                                          ((void *)0)
-# 248 "array.c"
-                                              );
+ ret = (assoc_find(symbol, subs, hash1) != ((void *)0));
  do { if ((subs)->flags&2) { unref(subs); }} while (0);
  return ret;
 }
@@ -6697,11 +6633,7 @@ NODE *symbol, *subs;
  if ((symbol->flags & 512) != 0)
   set_loc("array.c", 272), r_fatal("attempt to use scalar as array");
 
- if (symbol->sub.nodep.r.av == 
-# 274 "array.c" 3 4
-                         ((void *)0)
-# 274 "array.c"
-                             ) {
+ if (symbol->sub.nodep.r.av == ((void *)0)) {
   symbol->type = Node_var_array;
   symbol->sub.nodep.l.ll = symbol->sub.nodep.x.xl = 0;
   symbol->flags &= ~256;
@@ -6712,11 +6644,7 @@ NODE *symbol, *subs;
   hash1 = hash(subs->sub.val.sp, subs->sub.val.slen,
     (unsigned long) symbol->sub.nodep.l.ll);
   bucket = assoc_find(symbol, subs, hash1);
-  if (bucket != 
-# 285 "array.c" 3 4
-               ((void *)0)
-# 285 "array.c"
-                   ) {
+  if (bucket != ((void *)0)) {
    do { if ((subs)->flags&2) { unref(subs); }} while (0);
    return &(bucket->sub.ahash.value);
   }
@@ -6775,21 +6703,13 @@ NODE *symbol, *tree;
    return;
  }
  if (symbol->type == Node_var_array) {
-  if (symbol->sub.nodep.r.av == 
-# 344 "array.c" 3 4
-                          ((void *)0)
-# 344 "array.c"
-                              )
+  if (symbol->sub.nodep.r.av == ((void *)0))
    return;
  } else
   set_loc("array.c", 347), r_fatal("delete: illegal use of variable `%s' as array",
    symbol->vname);
 
- if (tree == 
-# 350 "array.c" 3 4
-            ((void *)0)
-# 350 "array.c"
-                ) {
+ if (tree == ((void *)0)) {
   assoc_clear(symbol);
   return;
  }
@@ -6797,35 +6717,19 @@ NODE *symbol, *tree;
  subs = concat_exp(tree);
  hash1 = hash(subs->sub.val.sp, subs->sub.val.slen, (unsigned long) symbol->sub.nodep.l.ll);
 
- last = 
-# 358 "array.c" 3 4
-       ((void *)0)
-# 358 "array.c"
-           ;
- for (bucket = symbol->sub.nodep.r.av[hash1]; bucket != 
-# 359 "array.c" 3 4
-                                                  ((void *)0)
-# 359 "array.c"
-                                                      ;
+ last = ((void *)0);
+ for (bucket = symbol->sub.nodep.r.av[hash1]; bucket != ((void *)0);
    last = bucket, bucket = bucket->sub.ahash.next)
   if (cmp_nodes(bucket->sub.ahash.name, subs) == 0)
    break;
  do { if ((subs)->flags&2) { unref(subs); }} while (0);
- if (bucket == 
-# 364 "array.c" 3 4
-              ((void *)0)
-# 364 "array.c"
-                  ) {
+ if (bucket == ((void *)0)) {
   if (do_lint)
    warning("delete: index `%s' not in array `%s'",
     subs->sub.val.sp, symbol->vname);
   return;
  }
- if (last != 
-# 370 "array.c" 3 4
-            ((void *)0)
-# 370 "array.c"
-                )
+ if (last != ((void *)0))
   last->sub.ahash.next = bucket->sub.ahash.next;
  else
   symbol->sub.nodep.r.av[hash1] = bucket->sub.ahash.next;
@@ -6839,11 +6743,7 @@ NODE *symbol, *tree;
   symbol->sub.nodep.x.xl = symbol->sub.nodep.l.ll = 0;
   symbol->flags &= ~256;
   free((char *) symbol->sub.nodep.r.av);
-  symbol->sub.nodep.r.av = 
-# 384 "array.c" 3 4
-                     ((void *)0)
-# 384 "array.c"
-                         ;
+  symbol->sub.nodep.r.av = ((void *)0);
  }
 }
 
@@ -6856,21 +6756,9 @@ struct search *lookat;
 {
  lookat->sym = symbol;
  lookat->idx = 0;
- lookat->bucket = 
-# 397 "array.c" 3 4
-                 ((void *)0)
-# 397 "array.c"
-                     ;
- lookat->retval = 
-# 398 "array.c" 3 4
-                 ((void *)0)
-# 398 "array.c"
-                     ;
- if (symbol->sub.nodep.r.av != 
-# 399 "array.c" 3 4
-                         ((void *)0)
-# 399 "array.c"
-                             )
+ lookat->bucket = ((void *)0);
+ lookat->retval = ((void *)0);
+ if (symbol->sub.nodep.r.av != ((void *)0))
   assoc_next(lookat);
 }
 
@@ -6882,30 +6770,14 @@ struct search *lookat;
 {
  register NODE *symbol = lookat->sym;
 
- if (symbol == 
-# 411 "array.c" 3 4
-              ((void *)0)
-# 411 "array.c"
-                  )
+ if (symbol == ((void *)0))
   set_loc("array.c", 412), r_fatal("null symbol in assoc_next");
- if (symbol->sub.nodep.r.av == 
-# 413 "array.c" 3 4
-                         ((void *)0) 
-# 413 "array.c"
-                              || lookat->idx > symbol->sub.nodep.l.ll) {
-  lookat->retval = 
-# 414 "array.c" 3 4
-                  ((void *)0)
-# 414 "array.c"
-                      ;
+ if (symbol->sub.nodep.r.av == ((void *)0) || lookat->idx > symbol->sub.nodep.l.ll) {
+  lookat->retval = ((void *)0);
   return;
  }
 # 428 "array.c"
- if (lookat->bucket != 
-# 428 "array.c" 3 4
-                      ((void *)0)
-# 428 "array.c"
-                          ) {
+ if (lookat->bucket != ((void *)0)) {
   lookat->retval = lookat->bucket->sub.ahash.name;
   lookat->bucket = lookat->bucket->sub.ahash.next;
   return;
@@ -6913,27 +6785,15 @@ struct search *lookat;
  for (; lookat->idx < symbol->sub.nodep.l.ll; lookat->idx++) {
   NODE *bucket;
 
-  if ((bucket = symbol->sub.nodep.r.av[lookat->idx]) != 
-# 436 "array.c" 3 4
-                                                  ((void *)0)
-# 436 "array.c"
-                                                      ) {
+  if ((bucket = symbol->sub.nodep.r.av[lookat->idx]) != ((void *)0)) {
    lookat->retval = bucket->sub.ahash.name;
    lookat->bucket = bucket->sub.ahash.next;
    lookat->idx++;
    return;
   }
  }
- lookat->retval = 
-# 443 "array.c" 3 4
-                 ((void *)0)
-# 443 "array.c"
-                     ;
- lookat->bucket = 
-# 444 "array.c" 3 4
-                 ((void *)0)
-# 444 "array.c"
-                     ;
+ lookat->retval = ((void *)0);
+ lookat->bucket = ((void *)0);
  return;
 }
 
@@ -6972,19 +6832,11 @@ NODE *symbol;
  }
 
 
- (void)((new=(NODE **)malloc((size_t)(newsize * sizeof(NODE *)))) || (set_loc("array.c", 491), r_fatal("%s: %s: can't allocate memory (%s)", ("grow_table"), "new", strerror(
-# 491 "array.c" 3 4
-(*__errno_location ())
-# 491 "array.c"
-)),0));
+ (void)((new=(NODE **)malloc((size_t)(newsize * sizeof(NODE *)))) || (set_loc("array.c", 491), r_fatal("%s: %s: can't allocate memory (%s)", ("grow_table"), "new", strerror((*__errno_location ()))),0));
  memset(new, '\0', newsize * sizeof(NODE *));
 
 
- if (symbol->sub.nodep.r.av == 
-# 495 "array.c" 3 4
-                         ((void *)0)
-# 495 "array.c"
-                             ) {
+ if (symbol->sub.nodep.r.av == ((void *)0)) {
   symbol->sub.nodep.x.xl = 0;
   goto done;
  }
@@ -6992,18 +6844,10 @@ NODE *symbol;
 
  old = symbol->sub.nodep.r.av;
  for (i = 0; i < oldsize; i++) {
-  if (old[i] == 
-# 503 "array.c" 3 4
-               ((void *)0)
-# 503 "array.c"
-                   )
+  if (old[i] == ((void *)0))
    continue;
 
-  for (chain = old[i]; chain != 
-# 506 "array.c" 3 4
-                               ((void *)0)
-# 506 "array.c"
-                                   ; chain = next) {
+  for (chain = old[i]; chain != ((void *)0); chain = next) {
    next = chain->sub.ahash.next;
    hash1 = hash(chain->sub.ahash.name->sub.val.sp,
      chain->sub.ahash.name->sub.val.slen, newsize);

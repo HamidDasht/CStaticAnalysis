@@ -874,14 +874,6 @@ main (int argc, char **argv)
   int binary = -1;
   bool prefix_tag = false;
 
-  // Instrument input file's data
-  char input_data[MAX_DATA];
-  for (int i = 0; i < MAX_DATA; i++)
-    CREST_char(input_data[i]);
-
-  FILE* f = fopen(IN_FILE, "w");
-  fputs(input_data, f);
-  fclose(f);
 
   /* Setting values of global variables.  */
   initialize_main (&argc, &argv);

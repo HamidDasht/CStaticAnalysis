@@ -1,5 +1,5 @@
 # 1 "regex.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -14,20 +14,13 @@
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 149 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 149 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 147 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long int ptrdiff_t;
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
-# 426 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-typedef struct {
-  long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
-  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
-} max_align_t;
 # 36 "regex.c" 2
 # 77 "regex.c"
 # 1 "/usr/include/stdlib.h" 1 3 4
@@ -53,7 +46,7 @@ typedef struct {
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/stdlib.h" 2 3 4
 
 
@@ -555,7 +548,7 @@ typedef __suseconds_t suseconds_t;
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -1046,7 +1039,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -1423,7 +1416,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/string.h" 2 3 4
 
 
@@ -1729,8 +1722,6 @@ extern char *basename (const char *__filename) __attribute__ ((__nothrow__ , __l
 
 # 99 "regex.c" 2
 # 136 "regex.c"
-
-# 136 "regex.c"
 static char re_syntax_table[256];
 
 static void
@@ -1946,8 +1937,6 @@ extern void regfree (regex_t *preg);
 # 28 "/usr/include/ctype.h" 3 4
 
 # 46 "/usr/include/ctype.h" 3 4
-
-# 46 "/usr/include/ctype.h" 3 4
 enum
 {
   _ISupper = ((0) < 8 ? ((1 << (0)) << 8) : ((1 << (0)) >> 8)),
@@ -2053,8 +2042,6 @@ extern int toupper_l (int __c, __locale_t __l) __attribute__ ((__nothrow__ , __l
 # 347 "/usr/include/ctype.h" 3 4
 
 # 174 "regex.c" 2
-# 335 "regex.c"
-
 # 335 "regex.c"
 typedef char boolean;
 
@@ -2361,11 +2348,7 @@ regex_compile (pattern, size, syntax, bufp)
   regnum_t regnum = 0;
 # 1842 "regex.c"
   compile_stack.stack = ((compile_stack_elt_t *) malloc ((32) * sizeof (compile_stack_elt_t)));
-  if (compile_stack.stack == 
-# 1843 "regex.c" 3 4
-                            ((void *)0)
-# 1843 "regex.c"
-                                )
+  if (compile_stack.stack == ((void *)0))
     return REG_ESPACE;
 
   compile_stack.size = 32;
@@ -2423,11 +2406,7 @@ regex_compile (pattern, size, syntax, bufp)
                 || syntax & (((((unsigned long int) 1) << 1) << 1) << 1)
 
                 || at_begline_loc_p (pattern, p, syntax))
-              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 1901 "regex.c" 3 4
-             ((void *)0)
-# 1901 "regex.c"
-             ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (begline); } while (0);
+              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (begline); } while (0);
             else
               goto normal_char;
           }
@@ -2442,11 +2421,7 @@ regex_compile (pattern, size, syntax, bufp)
                 || syntax & (((((unsigned long int) 1) << 1) << 1) << 1)
 
                 || at_endline_loc_p (p, pend, syntax))
-               do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 1916 "regex.c" 3 4
-              ((void *)0)
-# 1916 "regex.c"
-              ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (endline); } while (0);
+               do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (endline); } while (0);
              else
                goto normal_char;
            }
@@ -2531,11 +2506,7 @@ regex_compile (pattern, size, syntax, bufp)
                 ;
 
 
-                while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2009 "regex.c" 3 4
-               ((void *)0)
-# 2009 "regex.c"
-               ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
+                while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
 
 
 
@@ -2560,11 +2531,7 @@ regex_compile (pattern, size, syntax, bufp)
 
 
 
-            while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2034 "regex.c" 3 4
-           ((void *)0)
-# 2034 "regex.c"
-           ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
+            while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
             insert_op1 (keep_string_p ? on_failure_keep_string_jump : on_failure_jump, laststart, (int) ((b + 3) - (laststart) - 3), b)
 
                                           ;
@@ -2578,11 +2545,7 @@ regex_compile (pattern, size, syntax, bufp)
 
 
 
-                while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2048 "regex.c" 3 4
-               ((void *)0)
-# 2048 "regex.c"
-               ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
+                while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
                 insert_op1 (dummy_failure_jump, laststart, (int) ((laststart + 6) - (laststart) - 3), b);
                 b += 3;
               }
@@ -2592,11 +2555,7 @@ regex_compile (pattern, size, syntax, bufp)
 
  case '.':
           laststart = b;
-          do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2058 "regex.c" 3 4
-         ((void *)0)
-# 2058 "regex.c"
-         ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (anychar); } while (0);
+          do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (anychar); } while (0);
           break;
 
 
@@ -2608,21 +2567,13 @@ regex_compile (pattern, size, syntax, bufp)
 
 
 
-     while ((unsigned long) (b - bufp->buffer + (34)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2070 "regex.c" 3 4
-    ((void *)0)
-# 2070 "regex.c"
-    ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
+     while ((unsigned long) (b - bufp->buffer + (34)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
 
             laststart = b;
 
 
 
-            do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2076 "regex.c" 3 4
-           ((void *)0)
-# 2076 "regex.c"
-           ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (*p == '^' ? charset_not : charset); } while (0);
+            do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (*p == '^' ? charset_not : charset); } while (0);
             if (*p == '^')
               p++;
 
@@ -2630,11 +2581,7 @@ regex_compile (pattern, size, syntax, bufp)
             p1 = p;
 
 
-            do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2084 "regex.c" 3 4
-           ((void *)0)
-# 2084 "regex.c"
-           ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) ((1 << 8) / 8); } while (0);
+            do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) ((1 << 8) / 8); } while (0);
 
 
             memset ((b), 0, ((1 << 8) / 8));
@@ -2753,135 +2700,23 @@ regex_compile (pattern, size, syntax, bufp)
                           {
 
 
-                            if ( (is_alnum && (1 && 
-# 2230 "regex.c" 3 4
-                                                ((*__ctype_b_loc ())[(int) ((
-# 2230 "regex.c"
-                                                ch
-# 2230 "regex.c" 3 4
-                                                ))] & (unsigned short int) _ISalnum)
-# 2230 "regex.c"
-                                                ))
-                                || (is_alpha && (1 && 
-# 2231 "regex.c" 3 4
-                                                ((*__ctype_b_loc ())[(int) ((
-# 2231 "regex.c"
-                                                ch
-# 2231 "regex.c" 3 4
-                                                ))] & (unsigned short int) _ISalpha)
-# 2231 "regex.c"
-                                                ))
-                                || (is_blank && (1 && 
-# 2232 "regex.c" 3 4
-                                                ((*__ctype_b_loc ())[(int) ((
-# 2232 "regex.c"
-                                                ch
-# 2232 "regex.c" 3 4
-                                                ))] & (unsigned short int) _ISblank)
-# 2232 "regex.c"
-                                                ))
-                                || (is_cntrl && (1 && 
-# 2233 "regex.c" 3 4
-                                                ((*__ctype_b_loc ())[(int) ((
-# 2233 "regex.c"
-                                                ch
-# 2233 "regex.c" 3 4
-                                                ))] & (unsigned short int) _IScntrl)
-# 2233 "regex.c"
-                                                )))
+                            if ( (is_alnum && (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISalnum)))
+                                || (is_alpha && (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISalpha)))
+                                || (is_blank && (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISblank)))
+                                || (is_cntrl && (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _IScntrl))))
          (b[((unsigned char) (ch)) / 8] |= 1 << (((unsigned char) ch) % 8));
-       if ( (is_digit && (1 && 
-# 2235 "regex.c" 3 4
-                           ((*__ctype_b_loc ())[(int) ((
-# 2235 "regex.c"
-                           ch
-# 2235 "regex.c" 3 4
-                           ))] & (unsigned short int) _ISdigit)
-# 2235 "regex.c"
-                           ))
-                                || (is_graph && (1 && 
-# 2236 "regex.c" 3 4
-                                                ((*__ctype_b_loc ())[(int) ((
-# 2236 "regex.c"
-                                                ch
-# 2236 "regex.c" 3 4
-                                                ))] & (unsigned short int) _ISgraph)
-# 2236 "regex.c"
-                                                ))
-                                || (is_lower && (1 && 
-# 2237 "regex.c" 3 4
-                                                ((*__ctype_b_loc ())[(int) ((
-# 2237 "regex.c"
-                                                ch
-# 2237 "regex.c" 3 4
-                                                ))] & (unsigned short int) _ISlower)
-# 2237 "regex.c"
-                                                ))
-                                || (is_print && (1 && 
-# 2238 "regex.c" 3 4
-                                                ((*__ctype_b_loc ())[(int) ((
-# 2238 "regex.c"
-                                                ch
-# 2238 "regex.c" 3 4
-                                                ))] & (unsigned short int) _ISprint)
-# 2238 "regex.c"
-                                                )))
+       if ( (is_digit && (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISdigit)))
+                                || (is_graph && (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISgraph)))
+                                || (is_lower && (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISlower)))
+                                || (is_print && (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISprint))))
          (b[((unsigned char) (ch)) / 8] |= 1 << (((unsigned char) ch) % 8));
-       if ( (is_punct && (1 && 
-# 2240 "regex.c" 3 4
-                           ((*__ctype_b_loc ())[(int) ((
-# 2240 "regex.c"
-                           ch
-# 2240 "regex.c" 3 4
-                           ))] & (unsigned short int) _ISpunct)
-# 2240 "regex.c"
-                           ))
-                                || (is_space && (1 && 
-# 2241 "regex.c" 3 4
-                                                ((*__ctype_b_loc ())[(int) ((
-# 2241 "regex.c"
-                                                ch
-# 2241 "regex.c" 3 4
-                                                ))] & (unsigned short int) _ISspace)
-# 2241 "regex.c"
-                                                ))
-                                || (is_upper && (1 && 
-# 2242 "regex.c" 3 4
-                                                ((*__ctype_b_loc ())[(int) ((
-# 2242 "regex.c"
-                                                ch
-# 2242 "regex.c" 3 4
-                                                ))] & (unsigned short int) _ISupper)
-# 2242 "regex.c"
-                                                ))
-                                || (is_xdigit && (1 && 
-# 2243 "regex.c" 3 4
-                                                ((*__ctype_b_loc ())[(int) ((
-# 2243 "regex.c"
-                                                ch
-# 2243 "regex.c" 3 4
-                                                ))] & (unsigned short int) _ISxdigit)
-# 2243 "regex.c"
-                                                )))
+       if ( (is_punct && (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISpunct)))
+                                || (is_space && (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISspace)))
+                                || (is_upper && (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISupper)))
+                                || (is_xdigit && (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISxdigit))))
          (b[((unsigned char) (ch)) / 8] |= 1 << (((unsigned char) ch) % 8));
        if ( translate && (is_upper || is_lower)
-    && ((1 && 
-# 2246 "regex.c" 3 4
-       ((*__ctype_b_loc ())[(int) ((
-# 2246 "regex.c"
-       ch
-# 2246 "regex.c" 3 4
-       ))] & (unsigned short int) _ISupper)
-# 2246 "regex.c"
-       ) || (1 && 
-# 2246 "regex.c" 3 4
-                       ((*__ctype_b_loc ())[(int) ((
-# 2246 "regex.c"
-                       ch
-# 2246 "regex.c" 3 4
-                       ))] & (unsigned short int) _ISlower)
-# 2246 "regex.c"
-                       )))
+    && ((1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISupper)) || (1 && ((*__ctype_b_loc ())[(int) ((ch))] & (unsigned short int) _ISlower))))
          (b[((unsigned char) (ch)) / 8] |= 1 << (((unsigned char) ch) % 8));
                           }
                         had_char_class = 1;
@@ -2970,11 +2805,7 @@ regex_compile (pattern, size, syntax, bufp)
                 {
                   ((compile_stack.stack) = (compile_stack_elt_t *) realloc (compile_stack.stack, (compile_stack.size << 1) * sizeof (compile_stack_elt_t)))
                                                 ;
-                  if (compile_stack.stack == 
-# 2335 "regex.c" 3 4
-                                            ((void *)0)
-# 2335 "regex.c"
-                                                ) return REG_ESPACE;
+                  if (compile_stack.stack == ((void *)0)) return REG_ESPACE;
 
                   compile_stack.size <<= 1;
                 }
@@ -2996,11 +2827,7 @@ regex_compile (pattern, size, syntax, bufp)
               if (regnum <= 255)
                 {
                   (compile_stack.stack[compile_stack.avail]).inner_group_offset = b - bufp->buffer + 2;
-                  do { while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2357 "regex.c" 3 4
-                 ((void *)0)
-# 2357 "regex.c"
-                 ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (start_memory); *b++ = (unsigned char) (regnum); *b++ = (unsigned char) (0); } while (0);
+                  do { while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (start_memory); *b++ = (unsigned char) (regnum); *b++ = (unsigned char) (0); } while (0);
                 }
 
               compile_stack.avail++;
@@ -3030,11 +2857,7 @@ regex_compile (pattern, size, syntax, bufp)
 
 
 
-                  do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2387 "regex.c" 3 4
-                 ((void *)0)
-# 2387 "regex.c"
-                 ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (push_dummy_failure); } while (0);
+                  do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (push_dummy_failure); } while (0);
 
 
 
@@ -3078,11 +2901,7 @@ regex_compile (pattern, size, syntax, bufp)
                       = bufp->buffer + (compile_stack.stack[compile_stack.avail]).inner_group_offset;
 
                     *inner_group_loc = regnum - this_group_regnum;
-                    do { while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2431 "regex.c" 3 4
-                   ((void *)0)
-# 2431 "regex.c"
-                   ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (stop_memory); *b++ = (unsigned char) (this_group_regnum); *b++ = (unsigned char) (regnum - this_group_regnum); } while (0)
+                    do { while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (stop_memory); *b++ = (unsigned char) (this_group_regnum); *b++ = (unsigned char) (regnum - this_group_regnum); } while (0)
                                                            ;
                   }
               }
@@ -3098,11 +2917,7 @@ regex_compile (pattern, size, syntax, bufp)
 
 
 
-              while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2447 "regex.c" 3 4
-             ((void *)0)
-# 2447 "regex.c"
-             ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
+              while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
               insert_op1 (on_failure_jump, begalt, (int) ((b + 6) - (begalt) - 3), b);
               pending_exact = 0;
               b += 3;
@@ -3114,11 +2929,7 @@ regex_compile (pattern, size, syntax, bufp)
 
 
               fixup_alt_jump = b;
-              while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2475 "regex.c" 3 4
-             ((void *)0)
-# 2475 "regex.c"
-             ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
+              while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
               b += 3;
 
               laststart = 0;
@@ -3152,27 +2963,11 @@ regex_compile (pattern, size, syntax, bufp)
                       return (free (compile_stack.stack), REG_EBRACE);
                   }
 
-                { if (p != pend) { do {if (p == pend) return REG_EEND; c = (unsigned char) *p++; if (translate) c = (unsigned char) translate[c]; } while (0); while ((1 && 
-# 2509 "regex.c" 3 4
-               ((*__ctype_b_loc ())[(int) ((
-# 2509 "regex.c"
-               c
-# 2509 "regex.c" 3 4
-               ))] & (unsigned short int) _ISdigit)
-# 2509 "regex.c"
-               )) { if (lower_bound < 0) lower_bound = 0; lower_bound = lower_bound * 10 + c - '0'; if (p == pend) break; do {if (p == pend) return REG_EEND; c = (unsigned char) *p++; if (translate) c = (unsigned char) translate[c]; } while (0); } } };
+                { if (p != pend) { do {if (p == pend) return REG_EEND; c = (unsigned char) *p++; if (translate) c = (unsigned char) translate[c]; } while (0); while ((1 && ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISdigit))) { if (lower_bound < 0) lower_bound = 0; lower_bound = lower_bound * 10 + c - '0'; if (p == pend) break; do {if (p == pend) return REG_EEND; c = (unsigned char) *p++; if (translate) c = (unsigned char) translate[c]; } while (0); } } };
 
                 if (c == ',')
                   {
-                    { if (p != pend) { do {if (p == pend) return REG_EEND; c = (unsigned char) *p++; if (translate) c = (unsigned char) translate[c]; } while (0); while ((1 && 
-# 2513 "regex.c" 3 4
-                   ((*__ctype_b_loc ())[(int) ((
-# 2513 "regex.c"
-                   c
-# 2513 "regex.c" 3 4
-                   ))] & (unsigned short int) _ISdigit)
-# 2513 "regex.c"
-                   )) { if (upper_bound < 0) upper_bound = 0; upper_bound = upper_bound * 10 + c - '0'; if (p == pend) break; do {if (p == pend) return REG_EEND; c = (unsigned char) *p++; if (translate) c = (unsigned char) translate[c]; } while (0); } } };
+                    { if (p != pend) { do {if (p == pend) return REG_EEND; c = (unsigned char) *p++; if (translate) c = (unsigned char) translate[c]; } while (0); while ((1 && ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISdigit))) { if (upper_bound < 0) upper_bound = 0; upper_bound = upper_bound * 10 + c - '0'; if (p == pend) break; do {if (p == pend) return REG_EEND; c = (unsigned char) *p++; if (translate) c = (unsigned char) translate[c]; } while (0); } } };
                     if (upper_bound < 0) upper_bound = (0x7fff);
                   }
                 else
@@ -3221,11 +3016,7 @@ regex_compile (pattern, size, syntax, bufp)
 
                  if (upper_bound == 0)
                    {
-                     while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2562 "regex.c" 3 4
-                    ((void *)0)
-# 2562 "regex.c"
-                    ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
+                     while ((unsigned long) (b - bufp->buffer + (3)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
                      insert_op1 (jump, laststart, (int) ((b + 3) - (laststart) - 3), b);
                      b += 3;
                    }
@@ -3235,11 +3026,7 @@ regex_compile (pattern, size, syntax, bufp)
 
                      unsigned nbytes = 10 + (upper_bound > 1) * 10;
 
-                     while ((unsigned long) (b - bufp->buffer + (nbytes)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2581 "regex.c" 3 4
-                    ((void *)0)
-# 2581 "regex.c"
-                    ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
+                     while ((unsigned long) (b - bufp->buffer + (nbytes)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0);
 
 
 
@@ -3276,11 +3063,7 @@ regex_compile (pattern, size, syntax, bufp)
                        }
                    }
                 pending_exact = 0;
-                beg_interval = 
-# 2632 "regex.c" 3 4
-                              ((void *)0)
-# 2632 "regex.c"
-                                  ;
+                beg_interval = ((void *)0);
               }
               break;
 
@@ -3288,11 +3071,7 @@ regex_compile (pattern, size, syntax, bufp)
 
                ;
                p = beg_interval;
-               beg_interval = 
-# 2640 "regex.c" 3 4
-                             ((void *)0)
-# 2640 "regex.c"
-                                 ;
+               beg_interval = ((void *)0);
 
 
                do {if (p == pend) return REG_EEND; c = (unsigned char) *p++; if (translate) c = (unsigned char) translate[c]; } while (0);
@@ -3308,11 +3087,7 @@ regex_compile (pattern, size, syntax, bufp)
        if (re_syntax_options & (((((((((((((((((((((unsigned long int) 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
   goto normal_char;
               laststart = b;
-              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2677 "regex.c" 3 4
-             ((void *)0)
-# 2677 "regex.c"
-             ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (wordchar); } while (0);
+              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (wordchar); } while (0);
               break;
 
 
@@ -3320,72 +3095,44 @@ regex_compile (pattern, size, syntax, bufp)
        if (re_syntax_options & (((((((((((((((((((((unsigned long int) 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
   goto normal_char;
               laststart = b;
-              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2685 "regex.c" 3 4
-             ((void *)0)
-# 2685 "regex.c"
-             ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (notwordchar); } while (0);
+              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (notwordchar); } while (0);
               break;
 
 
             case '<':
        if (re_syntax_options & (((((((((((((((((((((unsigned long int) 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
   goto normal_char;
-              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2692 "regex.c" 3 4
-             ((void *)0)
-# 2692 "regex.c"
-             ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (wordbeg); } while (0);
+              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (wordbeg); } while (0);
               break;
 
             case '>':
        if (re_syntax_options & (((((((((((((((((((((unsigned long int) 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
   goto normal_char;
-              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2698 "regex.c" 3 4
-             ((void *)0)
-# 2698 "regex.c"
-             ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (wordend); } while (0);
+              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (wordend); } while (0);
               break;
 
             case 'b':
        if (re_syntax_options & (((((((((((((((((((((unsigned long int) 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
   goto normal_char;
-              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2704 "regex.c" 3 4
-             ((void *)0)
-# 2704 "regex.c"
-             ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (wordbound); } while (0);
+              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (wordbound); } while (0);
               break;
 
             case 'B':
        if (re_syntax_options & (((((((((((((((((((((unsigned long int) 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
   goto normal_char;
-              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2710 "regex.c" 3 4
-             ((void *)0)
-# 2710 "regex.c"
-             ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (notwordbound); } while (0);
+              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (notwordbound); } while (0);
               break;
 
             case '`':
        if (re_syntax_options & (((((((((((((((((((((unsigned long int) 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
   goto normal_char;
-              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2716 "regex.c" 3 4
-             ((void *)0)
-# 2716 "regex.c"
-             ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (begbuf); } while (0);
+              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (begbuf); } while (0);
               break;
 
             case '\'':
        if (re_syntax_options & (((((((((((((((((((((unsigned long int) 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
   goto normal_char;
-              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2722 "regex.c" 3 4
-             ((void *)0)
-# 2722 "regex.c"
-             ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (endbuf); } while (0);
+              do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (endbuf); } while (0);
               break;
 
             case '1': case '2': case '3': case '4': case '5':
@@ -3403,11 +3150,7 @@ regex_compile (pattern, size, syntax, bufp)
                 goto normal_char;
 
               laststart = b;
-              do { while ((unsigned long) (b - bufp->buffer + (2)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2740 "regex.c" 3 4
-             ((void *)0)
-# 2740 "regex.c"
-             ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (duplicate); *b++ = (unsigned char) (c1); } while (0);
+              do { while ((unsigned long) (b - bufp->buffer + (2)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (duplicate); *b++ = (unsigned char) (c1); } while (0);
               break;
 
 
@@ -3455,19 +3198,11 @@ regex_compile (pattern, size, syntax, bufp)
 
               laststart = b;
 
-       do { while ((unsigned long) (b - bufp->buffer + (2)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2788 "regex.c" 3 4
-      ((void *)0)
-# 2788 "regex.c"
-      ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (exactn); *b++ = (unsigned char) (0); } while (0);
+       do { while ((unsigned long) (b - bufp->buffer + (2)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (exactn); *b++ = (unsigned char) (0); } while (0);
        pending_exact = b - 1;
             }
 
-   do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2792 "regex.c" 3 4
-  ((void *)0)
-# 2792 "regex.c"
-  ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (c); } while (0);
+   do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (c); } while (0);
           (*pending_exact)++;
    break;
         }
@@ -3485,11 +3220,7 @@ regex_compile (pattern, size, syntax, bufp)
 
 
   if (syntax & ((((((((((((((((((((unsigned long int) 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
-    do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == 
-# 2810 "regex.c" 3 4
-   ((void *)0)
-# 2810 "regex.c"
-   ) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (succeed); } while (0);
+    do { while ((unsigned long) (b - bufp->buffer + (1)) > bufp->allocated) do { unsigned char *old_buffer = bufp->buffer; if (bufp->allocated == (1L << 16)) return REG_ESIZE; bufp->allocated <<= 1; if (bufp->allocated > (1L << 16)) bufp->allocated = (1L << 16); bufp->buffer = (unsigned char *) realloc ((bufp->buffer), (bufp->allocated)); if (bufp->buffer == ((void *)0)) return REG_ESPACE; if (old_buffer != bufp->buffer) { b = (b - old_buffer) + bufp->buffer; begalt = (begalt - old_buffer) + bufp->buffer; if (fixup_alt_jump) fixup_alt_jump = (fixup_alt_jump - old_buffer) + bufp->buffer; if (laststart) laststart = (laststart - old_buffer) + bufp->buffer; if (pending_exact) pending_exact = (pending_exact - old_buffer) + bufp->buffer; } } while (0); *b++ = (unsigned char) (succeed); } while (0);
 
   free (compile_stack.stack);
 
@@ -3692,11 +3423,7 @@ re_compile_fastmap (bufp)
 
   ;
 
-  do { fail_stack.stack = (fail_stack_elt_t *) malloc (5 * sizeof (fail_stack_elt_t)); if (fail_stack.stack == 
-# 3105 "regex.c" 3 4
- ((void *)0)
-# 3105 "regex.c"
- ) return -2; fail_stack.size = 5; fail_stack.avail = 0; } while (0);
+  do { fail_stack.stack = (fail_stack_elt_t *) malloc (5 * sizeof (fail_stack_elt_t)); if (fail_stack.stack == ((void *)0)) return -2; fail_stack.size = 5; fail_stack.avail = 0; } while (0);
   memset ((fastmap), 0, (1 << 8));
   bufp->fastmap_accurate = 1;
   bufp->can_be_null = 0;
@@ -3850,11 +3577,7 @@ re_compile_fastmap (bufp)
 # 3292 "regex.c"
           if (p + j < pend)
             {
-              if (!(((fail_stack.avail == fail_stack.size) && !((fail_stack).size > (unsigned) (re_max_failures * (5 * 3 + 4)) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *) realloc ((fail_stack).stack, ((fail_stack).size << 1) * sizeof (fail_stack_elt_t)), (fail_stack).stack == 
-# 3294 "regex.c" 3 4
-                  ((void *)0) 
-# 3294 "regex.c"
-                  ? 0 : ((fail_stack).size <<= 1, 1)))) ? 0 : ((fail_stack).stack[(fail_stack).avail++].pointer = p + j, 1)))
+              if (!(((fail_stack.avail == fail_stack.size) && !((fail_stack).size > (unsigned) (re_max_failures * (5 * 3 + 4)) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *) realloc ((fail_stack).stack, ((fail_stack).size << 1) * sizeof (fail_stack_elt_t)), (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1, 1)))) ? 0 : ((fail_stack).stack[(fail_stack).avail++].pointer = p + j, 1)))
   {
     free (fail_stack.stack);
     return -2;
@@ -3955,11 +3678,7 @@ re_search (bufp, string, size, startpos, range, regs)
      int size, startpos, range;
      struct re_registers *regs;
 {
-  return re_search_2 (bufp, 
-# 3408 "regex.c" 3 4
-                           ((void *)0)
-# 3408 "regex.c"
-                               , 0, string, size, startpos, range,
+  return re_search_2 (bufp, ((void *)0), 0, string, size, startpos, range,
         regs, size);
 }
 # 3434 "regex.c"
@@ -4092,11 +3811,7 @@ re_match (bufp, string, size, pos, regs)
      int size, pos;
      struct re_registers *regs;
 {
-  int result = re_match_2_internal (bufp, 
-# 3659 "regex.c" 3 4
-                                         ((void *)0)
-# 3659 "regex.c"
-                                             , 0, string, size,
+  int result = re_match_2_internal (bufp, ((void *)0), 0, string, size,
         pos, regs, size);
 
 
@@ -4197,11 +3912,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
 
   const char **best_regstart, **best_regend;
 # 3829 "regex.c"
-  const char *match_end = 
-# 3829 "regex.c" 3 4
-                         ((void *)0)
-# 3829 "regex.c"
-                             ;
+  const char *match_end = ((void *)0);
 
 
   int set_regs_matched_done = 0;
@@ -4219,11 +3930,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
 
   ;
 
-  do { fail_stack.stack = (fail_stack_elt_t *) malloc (5 * sizeof (fail_stack_elt_t)); if (fail_stack.stack == 
-# 3847 "regex.c" 3 4
- ((void *)0)
-# 3847 "regex.c"
- ) return -2; fail_stack.size = 5; fail_stack.avail = 0; } while (0);
+  do { fail_stack.stack = (fail_stack_elt_t *) malloc (5 * sizeof (fail_stack_elt_t)); if (fail_stack.stack == ((void *)0)) return -2; fail_stack.size = 5; fail_stack.avail = 0; } while (0);
 
 
 
@@ -4246,43 +3953,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
       if (!(regstart && regend && old_regstart && old_regend && reg_info
             && best_regstart && best_regend && reg_dummy && reg_info_dummy))
         {
-          do { free (fail_stack.stack); if (regstart) free (regstart); regstart = 
-# 3870 "regex.c" 3 4
-         ((void *)0)
-# 3870 "regex.c"
-         ; if (regend) free (regend); regend = 
-# 3870 "regex.c" 3 4
-         ((void *)0)
-# 3870 "regex.c"
-         ; if (old_regstart) free (old_regstart); old_regstart = 
-# 3870 "regex.c" 3 4
-         ((void *)0)
-# 3870 "regex.c"
-         ; if (old_regend) free (old_regend); old_regend = 
-# 3870 "regex.c" 3 4
-         ((void *)0)
-# 3870 "regex.c"
-         ; if (best_regstart) free (best_regstart); best_regstart = 
-# 3870 "regex.c" 3 4
-         ((void *)0)
-# 3870 "regex.c"
-         ; if (best_regend) free (best_regend); best_regend = 
-# 3870 "regex.c" 3 4
-         ((void *)0)
-# 3870 "regex.c"
-         ; if (reg_info) free (reg_info); reg_info = 
-# 3870 "regex.c" 3 4
-         ((void *)0)
-# 3870 "regex.c"
-         ; if (reg_dummy) free (reg_dummy); reg_dummy = 
-# 3870 "regex.c" 3 4
-         ((void *)0)
-# 3870 "regex.c"
-         ; if (reg_info_dummy) free (reg_info_dummy); reg_info_dummy = 
-# 3870 "regex.c" 3 4
-         ((void *)0)
-# 3870 "regex.c"
-         ; } while (0);
+          do { free (fail_stack.stack); if (regstart) free (regstart); regstart = ((void *)0); if (regend) free (regend); regend = ((void *)0); if (old_regstart) free (old_regstart); old_regstart = ((void *)0); if (old_regend) free (old_regend); old_regend = ((void *)0); if (best_regstart) free (best_regstart); best_regstart = ((void *)0); if (best_regend) free (best_regend); best_regend = ((void *)0); if (reg_info) free (reg_info); reg_info = ((void *)0); if (reg_dummy) free (reg_dummy); reg_dummy = ((void *)0); if (reg_info_dummy) free (reg_info_dummy); reg_info_dummy = ((void *)0); } while (0);
           return -2;
         }
     }
@@ -4291,59 +3962,15 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
 
 
       regstart = regend = old_regstart = old_regend = best_regstart
-        = best_regend = reg_dummy = 
-# 3879 "regex.c" 3 4
-                                   ((void *)0)
-# 3879 "regex.c"
-                                       ;
-      reg_info = reg_info_dummy = (register_info_type *) 
-# 3880 "regex.c" 3 4
-                                                        ((void *)0)
-# 3880 "regex.c"
-                                                            ;
+        = best_regend = reg_dummy = ((void *)0);
+      reg_info = reg_info_dummy = (register_info_type *) ((void *)0);
     }
 
 
 
   if (pos < 0 || pos > size1 + size2)
     {
-      do { free (fail_stack.stack); if (regstart) free (regstart); regstart = 
-# 3887 "regex.c" 3 4
-     ((void *)0)
-# 3887 "regex.c"
-     ; if (regend) free (regend); regend = 
-# 3887 "regex.c" 3 4
-     ((void *)0)
-# 3887 "regex.c"
-     ; if (old_regstart) free (old_regstart); old_regstart = 
-# 3887 "regex.c" 3 4
-     ((void *)0)
-# 3887 "regex.c"
-     ; if (old_regend) free (old_regend); old_regend = 
-# 3887 "regex.c" 3 4
-     ((void *)0)
-# 3887 "regex.c"
-     ; if (best_regstart) free (best_regstart); best_regstart = 
-# 3887 "regex.c" 3 4
-     ((void *)0)
-# 3887 "regex.c"
-     ; if (best_regend) free (best_regend); best_regend = 
-# 3887 "regex.c" 3 4
-     ((void *)0)
-# 3887 "regex.c"
-     ; if (reg_info) free (reg_info); reg_info = 
-# 3887 "regex.c" 3 4
-     ((void *)0)
-# 3887 "regex.c"
-     ; if (reg_dummy) free (reg_dummy); reg_dummy = 
-# 3887 "regex.c" 3 4
-     ((void *)0)
-# 3887 "regex.c"
-     ; if (reg_info_dummy) free (reg_info_dummy); reg_info_dummy = 
-# 3887 "regex.c" 3 4
-     ((void *)0)
-# 3887 "regex.c"
-     ; } while (0);
+      do { free (fail_stack.stack); if (regstart) free (regstart); regstart = ((void *)0); if (regend) free (regend); regend = ((void *)0); if (old_regstart) free (old_regstart); old_regstart = ((void *)0); if (old_regend) free (old_regend); old_regend = ((void *)0); if (best_regstart) free (best_regstart); best_regstart = ((void *)0); if (best_regend) free (best_regend); best_regend = ((void *)0); if (reg_info) free (reg_info); reg_info = ((void *)0); if (reg_dummy) free (reg_dummy); reg_dummy = ((void *)0); if (reg_info_dummy) free (reg_info_dummy); reg_info_dummy = ((void *)0); } while (0);
       return -1;
     }
 
@@ -4363,11 +3990,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
 
 
 
-  if (size2 == 0 && string1 != 
-# 3907 "regex.c" 3 4
-                              ((void *)0)
-# 3907 "regex.c"
-                                  )
+  if (size2 == 0 && string1 != ((void *)0))
     {
       string2 = string1;
       size2 = size1;
@@ -4506,53 +4129,9 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
                   regs->num_regs = ((30) > (num_regs + 1) ? (30) : (num_regs + 1));
                   regs->start = ((regoff_t *) malloc ((regs->num_regs) * sizeof (regoff_t)));
                   regs->end = ((regoff_t *) malloc ((regs->num_regs) * sizeof (regoff_t)));
-                  if (regs->start == 
-# 4046 "regex.c" 3 4
-                                    ((void *)0) 
-# 4046 "regex.c"
-                                         || regs->end == 
-# 4046 "regex.c" 3 4
-                                                         ((void *)0)
-# 4046 "regex.c"
-                                                             )
+                  if (regs->start == ((void *)0) || regs->end == ((void *)0))
       {
-        do { free (fail_stack.stack); if (regstart) free (regstart); regstart = 
-# 4048 "regex.c" 3 4
-       ((void *)0)
-# 4048 "regex.c"
-       ; if (regend) free (regend); regend = 
-# 4048 "regex.c" 3 4
-       ((void *)0)
-# 4048 "regex.c"
-       ; if (old_regstart) free (old_regstart); old_regstart = 
-# 4048 "regex.c" 3 4
-       ((void *)0)
-# 4048 "regex.c"
-       ; if (old_regend) free (old_regend); old_regend = 
-# 4048 "regex.c" 3 4
-       ((void *)0)
-# 4048 "regex.c"
-       ; if (best_regstart) free (best_regstart); best_regstart = 
-# 4048 "regex.c" 3 4
-       ((void *)0)
-# 4048 "regex.c"
-       ; if (best_regend) free (best_regend); best_regend = 
-# 4048 "regex.c" 3 4
-       ((void *)0)
-# 4048 "regex.c"
-       ; if (reg_info) free (reg_info); reg_info = 
-# 4048 "regex.c" 3 4
-       ((void *)0)
-# 4048 "regex.c"
-       ; if (reg_dummy) free (reg_dummy); reg_dummy = 
-# 4048 "regex.c" 3 4
-       ((void *)0)
-# 4048 "regex.c"
-       ; if (reg_info_dummy) free (reg_info_dummy); reg_info_dummy = 
-# 4048 "regex.c" 3 4
-       ((void *)0)
-# 4048 "regex.c"
-       ; } while (0);
+        do { free (fail_stack.stack); if (regstart) free (regstart); regstart = ((void *)0); if (regend) free (regend); regend = ((void *)0); if (old_regstart) free (old_regstart); old_regstart = ((void *)0); if (old_regend) free (old_regend); old_regend = ((void *)0); if (best_regstart) free (best_regstart); best_regstart = ((void *)0); if (best_regend) free (best_regend); best_regend = ((void *)0); if (reg_info) free (reg_info); reg_info = ((void *)0); if (reg_dummy) free (reg_dummy); reg_dummy = ((void *)0); if (reg_info_dummy) free (reg_info_dummy); reg_info_dummy = ((void *)0); } while (0);
         return -2;
       }
                   bufp->regs_allocated = 1;
@@ -4566,53 +4145,9 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
                       regs->num_regs = num_regs + 1;
                       ((regs->start) = (regoff_t *) realloc (regs->start, (regs->num_regs) * sizeof (regoff_t)));
                       ((regs->end) = (regoff_t *) realloc (regs->end, (regs->num_regs) * sizeof (regoff_t)));
-                      if (regs->start == 
-# 4062 "regex.c" 3 4
-                                        ((void *)0) 
-# 4062 "regex.c"
-                                             || regs->end == 
-# 4062 "regex.c" 3 4
-                                                             ((void *)0)
-# 4062 "regex.c"
-                                                                 )
+                      if (regs->start == ((void *)0) || regs->end == ((void *)0))
    {
-     do { free (fail_stack.stack); if (regstart) free (regstart); regstart = 
-# 4064 "regex.c" 3 4
-    ((void *)0)
-# 4064 "regex.c"
-    ; if (regend) free (regend); regend = 
-# 4064 "regex.c" 3 4
-    ((void *)0)
-# 4064 "regex.c"
-    ; if (old_regstart) free (old_regstart); old_regstart = 
-# 4064 "regex.c" 3 4
-    ((void *)0)
-# 4064 "regex.c"
-    ; if (old_regend) free (old_regend); old_regend = 
-# 4064 "regex.c" 3 4
-    ((void *)0)
-# 4064 "regex.c"
-    ; if (best_regstart) free (best_regstart); best_regstart = 
-# 4064 "regex.c" 3 4
-    ((void *)0)
-# 4064 "regex.c"
-    ; if (best_regend) free (best_regend); best_regend = 
-# 4064 "regex.c" 3 4
-    ((void *)0)
-# 4064 "regex.c"
-    ; if (reg_info) free (reg_info); reg_info = 
-# 4064 "regex.c" 3 4
-    ((void *)0)
-# 4064 "regex.c"
-    ; if (reg_dummy) free (reg_dummy); reg_dummy = 
-# 4064 "regex.c" 3 4
-    ((void *)0)
-# 4064 "regex.c"
-    ; if (reg_info_dummy) free (reg_info_dummy); reg_info_dummy = 
-# 4064 "regex.c" 3 4
-    ((void *)0)
-# 4064 "regex.c"
-    ; } while (0);
+     do { free (fail_stack.stack); if (regstart) free (regstart); regstart = ((void *)0); if (regend) free (regend); regend = ((void *)0); if (old_regstart) free (old_regstart); old_regstart = ((void *)0); if (old_regend) free (old_regend); old_regend = ((void *)0); if (best_regstart) free (best_regstart); best_regstart = ((void *)0); if (best_regend) free (best_regend); best_regend = ((void *)0); if (reg_info) free (reg_info); reg_info = ((void *)0); if (reg_dummy) free (reg_dummy); reg_dummy = ((void *)0); if (reg_info_dummy) free (reg_info_dummy); reg_info_dummy = ((void *)0); } while (0);
      return -2;
    }
                     }
@@ -4671,43 +4206,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
 
           ;
 
-          do { free (fail_stack.stack); if (regstart) free (regstart); regstart = 
-# 4123 "regex.c" 3 4
-         ((void *)0)
-# 4123 "regex.c"
-         ; if (regend) free (regend); regend = 
-# 4123 "regex.c" 3 4
-         ((void *)0)
-# 4123 "regex.c"
-         ; if (old_regstart) free (old_regstart); old_regstart = 
-# 4123 "regex.c" 3 4
-         ((void *)0)
-# 4123 "regex.c"
-         ; if (old_regend) free (old_regend); old_regend = 
-# 4123 "regex.c" 3 4
-         ((void *)0)
-# 4123 "regex.c"
-         ; if (best_regstart) free (best_regstart); best_regstart = 
-# 4123 "regex.c" 3 4
-         ((void *)0)
-# 4123 "regex.c"
-         ; if (best_regend) free (best_regend); best_regend = 
-# 4123 "regex.c" 3 4
-         ((void *)0)
-# 4123 "regex.c"
-         ; if (reg_info) free (reg_info); reg_info = 
-# 4123 "regex.c" 3 4
-         ((void *)0)
-# 4123 "regex.c"
-         ; if (reg_dummy) free (reg_dummy); reg_dummy = 
-# 4123 "regex.c" 3 4
-         ((void *)0)
-# 4123 "regex.c"
-         ; if (reg_info_dummy) free (reg_info_dummy); reg_info_dummy = 
-# 4123 "regex.c" 3 4
-         ((void *)0)
-# 4123 "regex.c"
-         ; } while (0);
+          do { free (fail_stack.stack); if (regstart) free (regstart); regstart = ((void *)0); if (regend) free (regend); regend = ((void *)0); if (old_regstart) free (old_regstart); old_regstart = ((void *)0); if (old_regend) free (old_regend); old_regend = ((void *)0); if (best_regstart) free (best_regstart); best_regstart = ((void *)0); if (best_regend) free (best_regend); best_regend = ((void *)0); if (reg_info) free (reg_info); reg_info = ((void *)0); if (reg_dummy) free (reg_dummy); reg_dummy = ((void *)0); if (reg_info_dummy) free (reg_info_dummy); reg_info_dummy = ((void *)0); } while (0);
           return mcnt;
         }
 
@@ -4960,11 +4459,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
                     }
     p1++;
                   do { do { (mcnt) = *(p1) & 0377; (mcnt) += ((signed char) (*((p1) + 1))) << 8; } while (0); (p1) += 2; } while (0);
-                  do { char *destination; s_reg_t this_reg; ; ; ; ; ; ; ; while (((fail_stack).size - (fail_stack).avail) < (((0 ? 0 : highest_active_reg - lowest_active_reg + 1) * 3) + 4)) { if (!((fail_stack).size > (unsigned) (re_max_failures * (5 * 3 + 4)) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *) realloc ((fail_stack).stack, ((fail_stack).size << 1) * sizeof (fail_stack_elt_t)), (fail_stack).stack == 
-# 4392 "regex.c" 3 4
-                 ((void *)0) 
-# 4392 "regex.c"
-                 ? 0 : ((fail_stack).size <<= 1, 1)))) return -2; ; ; } ; if (1) for (this_reg = lowest_active_reg; this_reg <= highest_active_reg; this_reg++) { ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regstart[this_reg]); ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regend[this_reg]); ; ; ; ; ; ; fail_stack.stack[fail_stack.avail++] = (reg_info[this_reg].word); } ; fail_stack.stack[fail_stack.avail++].integer = (lowest_active_reg); ; fail_stack.stack[fail_stack.avail++].integer = (highest_active_reg); ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (p1 + mcnt); ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (d); ; ; } while (0);
+                  do { char *destination; s_reg_t this_reg; ; ; ; ; ; ; ; while (((fail_stack).size - (fail_stack).avail) < (((0 ? 0 : highest_active_reg - lowest_active_reg + 1) * 3) + 4)) { if (!((fail_stack).size > (unsigned) (re_max_failures * (5 * 3 + 4)) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *) realloc ((fail_stack).stack, ((fail_stack).size << 1) * sizeof (fail_stack_elt_t)), (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1, 1)))) return -2; ; ; } ; if (1) for (this_reg = lowest_active_reg; this_reg <= highest_active_reg; this_reg++) { ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regstart[this_reg]); ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regend[this_reg]); ; ; ; ; ; ; fail_stack.stack[fail_stack.avail++] = (reg_info[this_reg].word); } ; fail_stack.stack[fail_stack.avail++].integer = (lowest_active_reg); ; fail_stack.stack[fail_stack.avail++].integer = (highest_active_reg); ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (p1 + mcnt); ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (d); ; ; } while (0);
 
                   goto fail;
                 }
@@ -5101,15 +4596,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
           ;
 
 
-          do { char *destination; s_reg_t this_reg; ; ; ; ; ; ; ; while (((fail_stack).size - (fail_stack).avail) < (((0 ? 0 : highest_active_reg - lowest_active_reg + 1) * 3) + 4)) { if (!((fail_stack).size > (unsigned) (re_max_failures * (5 * 3 + 4)) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *) realloc ((fail_stack).stack, ((fail_stack).size << 1) * sizeof (fail_stack_elt_t)), (fail_stack).stack == 
-# 4546 "regex.c" 3 4
-         ((void *)0) 
-# 4546 "regex.c"
-         ? 0 : ((fail_stack).size <<= 1, 1)))) return -2; ; ; } ; if (1) for (this_reg = lowest_active_reg; this_reg <= highest_active_reg; this_reg++) { ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regstart[this_reg]); ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regend[this_reg]); ; ; ; ; ; ; fail_stack.stack[fail_stack.avail++] = (reg_info[this_reg].word); } ; fail_stack.stack[fail_stack.avail++].integer = (lowest_active_reg); ; fail_stack.stack[fail_stack.avail++].integer = (highest_active_reg); ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (p + mcnt); ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (
-# 4546 "regex.c" 3 4
-         ((void *)0)
-# 4546 "regex.c"
-         ); ; ; } while (0);
+          do { char *destination; s_reg_t this_reg; ; ; ; ; ; ; ; while (((fail_stack).size - (fail_stack).avail) < (((0 ? 0 : highest_active_reg - lowest_active_reg + 1) * 3) + 4)) { if (!((fail_stack).size > (unsigned) (re_max_failures * (5 * 3 + 4)) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *) realloc ((fail_stack).stack, ((fail_stack).size << 1) * sizeof (fail_stack_elt_t)), (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1, 1)))) return -2; ; ; } ; if (1) for (this_reg = lowest_active_reg; this_reg <= highest_active_reg; this_reg++) { ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regstart[this_reg]); ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regend[this_reg]); ; ; ; ; ; ; fail_stack.stack[fail_stack.avail++] = (reg_info[this_reg].word); } ; fail_stack.stack[fail_stack.avail++].integer = (lowest_active_reg); ; fail_stack.stack[fail_stack.avail++].integer = (highest_active_reg); ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (p + mcnt); ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (((void *)0)); ; ; } while (0);
           break;
 # 4562 "regex.c"
  case on_failure_jump:
@@ -5143,11 +4630,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
             }
 
           ;
-          do { char *destination; s_reg_t this_reg; ; ; ; ; ; ; ; while (((fail_stack).size - (fail_stack).avail) < (((0 ? 0 : highest_active_reg - lowest_active_reg + 1) * 3) + 4)) { if (!((fail_stack).size > (unsigned) (re_max_failures * (5 * 3 + 4)) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *) realloc ((fail_stack).stack, ((fail_stack).size << 1) * sizeof (fail_stack_elt_t)), (fail_stack).stack == 
-# 4603 "regex.c" 3 4
-         ((void *)0) 
-# 4603 "regex.c"
-         ? 0 : ((fail_stack).size <<= 1, 1)))) return -2; ; ; } ; if (1) for (this_reg = lowest_active_reg; this_reg <= highest_active_reg; this_reg++) { ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regstart[this_reg]); ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regend[this_reg]); ; ; ; ; ; ; fail_stack.stack[fail_stack.avail++] = (reg_info[this_reg].word); } ; fail_stack.stack[fail_stack.avail++].integer = (lowest_active_reg); ; fail_stack.stack[fail_stack.avail++].integer = (highest_active_reg); ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (p + mcnt); ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (d); ; ; } while (0);
+          do { char *destination; s_reg_t this_reg; ; ; ; ; ; ; ; while (((fail_stack).size - (fail_stack).avail) < (((0 ? 0 : highest_active_reg - lowest_active_reg + 1) * 3) + 4)) { if (!((fail_stack).size > (unsigned) (re_max_failures * (5 * 3 + 4)) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *) realloc ((fail_stack).stack, ((fail_stack).size << 1) * sizeof (fail_stack_elt_t)), (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1, 1)))) return -2; ; ; } ; if (1) for (this_reg = lowest_active_reg; this_reg <= highest_active_reg; this_reg++) { ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regstart[this_reg]); ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regend[this_reg]); ; ; ; ; ; ; fail_stack.stack[fail_stack.avail++] = (reg_info[this_reg].word); } ; fail_stack.stack[fail_stack.avail++].integer = (lowest_active_reg); ; fail_stack.stack[fail_stack.avail++].integer = (highest_active_reg); ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (p + mcnt); ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (d); ; ; } while (0);
           break;
 
 
@@ -5289,11 +4772,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
             const char *sdummy;
 
             ;
-            { s_reg_t this_reg; const unsigned char *string_temp; ; ; ; ; ; ; ; string_temp = fail_stack.stack[--fail_stack.avail].pointer; if (string_temp != 
-# 4780 "regex.c" 3 4
-           ((void *)0)
-# 4780 "regex.c"
-           ) sdummy = (const char *) string_temp; ; ; ; pdummy = (unsigned char *) fail_stack.stack[--fail_stack.avail].pointer; ; ; dummy_high_reg = (active_reg_t) fail_stack.stack[--fail_stack.avail].integer; ; dummy_low_reg = (active_reg_t) fail_stack.stack[--fail_stack.avail].integer; ; if (1) for (this_reg = dummy_high_reg; this_reg >= dummy_low_reg; this_reg--) { ; reg_info_dummy[this_reg].word = fail_stack.stack[--fail_stack.avail]; ; reg_dummy[this_reg] = (const char *) fail_stack.stack[--fail_stack.avail].pointer; ; reg_dummy[this_reg] = (const char *) fail_stack.stack[--fail_stack.avail].pointer; ; } else { for (this_reg = highest_active_reg; this_reg > dummy_high_reg; this_reg--) { reg_info_dummy[this_reg].word.integer = 0; reg_dummy[this_reg] = 0; reg_dummy[this_reg] = 0; } highest_active_reg = dummy_high_reg; } set_regs_matched_done = 0; ; }
+            { s_reg_t this_reg; const unsigned char *string_temp; ; ; ; ; ; ; ; string_temp = fail_stack.stack[--fail_stack.avail].pointer; if (string_temp != ((void *)0)) sdummy = (const char *) string_temp; ; ; ; pdummy = (unsigned char *) fail_stack.stack[--fail_stack.avail].pointer; ; ; dummy_high_reg = (active_reg_t) fail_stack.stack[--fail_stack.avail].integer; ; dummy_low_reg = (active_reg_t) fail_stack.stack[--fail_stack.avail].integer; ; if (1) for (this_reg = dummy_high_reg; this_reg >= dummy_low_reg; this_reg--) { ; reg_info_dummy[this_reg].word = fail_stack.stack[--fail_stack.avail]; ; reg_dummy[this_reg] = (const char *) fail_stack.stack[--fail_stack.avail].pointer; ; reg_dummy[this_reg] = (const char *) fail_stack.stack[--fail_stack.avail].pointer; ; } else { for (this_reg = highest_active_reg; this_reg > dummy_high_reg; this_reg--) { reg_info_dummy[this_reg].word.integer = 0; reg_dummy[this_reg] = 0; reg_dummy[this_reg] = 0; } highest_active_reg = dummy_high_reg; } set_regs_matched_done = 0; ; }
 
                                                                     ;
           }
@@ -5336,11 +4815,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
           ;
 
 
-          do { char *destination; s_reg_t this_reg; ; ; ; ; ; ; ; while (((fail_stack).size - (fail_stack).avail) < (((0 ? 0 : highest_active_reg - lowest_active_reg + 1) * 3) + 4)) { if (!((fail_stack).size > (unsigned) (re_max_failures * (5 * 3 + 4)) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *) realloc ((fail_stack).stack, ((fail_stack).size << 1) * sizeof (fail_stack_elt_t)), (fail_stack).stack == 
-# 4823 "regex.c" 3 4
-         ((void *)0) 
-# 4823 "regex.c"
-         ? 0 : ((fail_stack).size <<= 1, 1)))) return -2; ; ; } ; if (1) for (this_reg = lowest_active_reg; this_reg <= highest_active_reg; this_reg++) { ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regstart[this_reg]); ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regend[this_reg]); ; ; ; ; ; ; fail_stack.stack[fail_stack.avail++] = (reg_info[this_reg].word); } ; fail_stack.stack[fail_stack.avail++].integer = (lowest_active_reg); ; fail_stack.stack[fail_stack.avail++].integer = (highest_active_reg); ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (0); ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (0); ; ; } while (0);
+          do { char *destination; s_reg_t this_reg; ; ; ; ; ; ; ; while (((fail_stack).size - (fail_stack).avail) < (((0 ? 0 : highest_active_reg - lowest_active_reg + 1) * 3) + 4)) { if (!((fail_stack).size > (unsigned) (re_max_failures * (5 * 3 + 4)) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *) realloc ((fail_stack).stack, ((fail_stack).size << 1) * sizeof (fail_stack_elt_t)), (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1, 1)))) return -2; ; ; } ; if (1) for (this_reg = lowest_active_reg; this_reg <= highest_active_reg; this_reg++) { ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regstart[this_reg]); ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regend[this_reg]); ; ; ; ; ; ; fail_stack.stack[fail_stack.avail++] = (reg_info[this_reg].word); } ; fail_stack.stack[fail_stack.avail++].integer = (lowest_active_reg); ; fail_stack.stack[fail_stack.avail++].integer = (highest_active_reg); ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (0); ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (0); ; ; } while (0);
           goto unconditional_jump;
 
 
@@ -5353,11 +4828,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
           ;
 
 
-          do { char *destination; s_reg_t this_reg; ; ; ; ; ; ; ; while (((fail_stack).size - (fail_stack).avail) < (((0 ? 0 : highest_active_reg - lowest_active_reg + 1) * 3) + 4)) { if (!((fail_stack).size > (unsigned) (re_max_failures * (5 * 3 + 4)) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *) realloc ((fail_stack).stack, ((fail_stack).size << 1) * sizeof (fail_stack_elt_t)), (fail_stack).stack == 
-# 4836 "regex.c" 3 4
-         ((void *)0) 
-# 4836 "regex.c"
-         ? 0 : ((fail_stack).size <<= 1, 1)))) return -2; ; ; } ; if (1) for (this_reg = lowest_active_reg; this_reg <= highest_active_reg; this_reg++) { ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regstart[this_reg]); ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regend[this_reg]); ; ; ; ; ; ; fail_stack.stack[fail_stack.avail++] = (reg_info[this_reg].word); } ; fail_stack.stack[fail_stack.avail++].integer = (lowest_active_reg); ; fail_stack.stack[fail_stack.avail++].integer = (highest_active_reg); ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (0); ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (0); ; ; } while (0);
+          do { char *destination; s_reg_t this_reg; ; ; ; ; ; ; ; while (((fail_stack).size - (fail_stack).avail) < (((0 ? 0 : highest_active_reg - lowest_active_reg + 1) * 3) + 4)) { if (!((fail_stack).size > (unsigned) (re_max_failures * (5 * 3 + 4)) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *) realloc ((fail_stack).stack, ((fail_stack).size << 1) * sizeof (fail_stack_elt_t)), (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1, 1)))) return -2; ; ; } ; if (1) for (this_reg = lowest_active_reg; this_reg <= highest_active_reg; this_reg++) { ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regstart[this_reg]); ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (regend[this_reg]); ; ; ; ; ; ; fail_stack.stack[fail_stack.avail++] = (reg_info[this_reg].word); } ; fail_stack.stack[fail_stack.avail++].integer = (lowest_active_reg); ; fail_stack.stack[fail_stack.avail++].integer = (highest_active_reg); ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (0); ; ; ; fail_stack.stack[fail_stack.avail++].pointer = (unsigned char *) (0); ; ; } while (0);
           break;
 
 
@@ -5503,11 +4974,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
       if (!(fail_stack.avail == 0))
  {
           ;
-          { s_reg_t this_reg; const unsigned char *string_temp; ; ; ; ; ; ; ; string_temp = fail_stack.stack[--fail_stack.avail].pointer; if (string_temp != 
-# 5054 "regex.c" 3 4
-         ((void *)0)
-# 5054 "regex.c"
-         ) d = (const char *) string_temp; ; ; ; p = (unsigned char *) fail_stack.stack[--fail_stack.avail].pointer; ; ; highest_active_reg = (active_reg_t) fail_stack.stack[--fail_stack.avail].integer; ; lowest_active_reg = (active_reg_t) fail_stack.stack[--fail_stack.avail].integer; ; if (1) for (this_reg = highest_active_reg; this_reg >= lowest_active_reg; this_reg--) { ; reg_info[this_reg].word = fail_stack.stack[--fail_stack.avail]; ; regend[this_reg] = (const char *) fail_stack.stack[--fail_stack.avail].pointer; ; regstart[this_reg] = (const char *) fail_stack.stack[--fail_stack.avail].pointer; ; } else { for (this_reg = highest_active_reg; this_reg > highest_active_reg; this_reg--) { reg_info[this_reg].word.integer = 0; regend[this_reg] = 0; regstart[this_reg] = 0; } highest_active_reg = highest_active_reg; } set_regs_matched_done = 0; ; }
+          { s_reg_t this_reg; const unsigned char *string_temp; ; ; ; ; ; ; ; string_temp = fail_stack.stack[--fail_stack.avail].pointer; if (string_temp != ((void *)0)) d = (const char *) string_temp; ; ; ; p = (unsigned char *) fail_stack.stack[--fail_stack.avail].pointer; ; ; highest_active_reg = (active_reg_t) fail_stack.stack[--fail_stack.avail].integer; ; lowest_active_reg = (active_reg_t) fail_stack.stack[--fail_stack.avail].integer; ; if (1) for (this_reg = highest_active_reg; this_reg >= lowest_active_reg; this_reg--) { ; reg_info[this_reg].word = fail_stack.stack[--fail_stack.avail]; ; regend[this_reg] = (const char *) fail_stack.stack[--fail_stack.avail].pointer; ; regstart[this_reg] = (const char *) fail_stack.stack[--fail_stack.avail].pointer; ; } else { for (this_reg = highest_active_reg; this_reg > highest_active_reg; this_reg--) { reg_info[this_reg].word.integer = 0; regend[this_reg] = 0; regstart[this_reg] = 0; } highest_active_reg = highest_active_reg; } set_regs_matched_done = 0; ; }
 
                                                         ;
 
@@ -5554,43 +5021,7 @@ re_match_2_internal (bufp, string1, size1, string2, size2, pos, regs, stop)
   if (best_regs_set)
     goto restore_best_regs;
 
-  do { free (fail_stack.stack); if (regstart) free (regstart); regstart = 
-# 5101 "regex.c" 3 4
- ((void *)0)
-# 5101 "regex.c"
- ; if (regend) free (regend); regend = 
-# 5101 "regex.c" 3 4
- ((void *)0)
-# 5101 "regex.c"
- ; if (old_regstart) free (old_regstart); old_regstart = 
-# 5101 "regex.c" 3 4
- ((void *)0)
-# 5101 "regex.c"
- ; if (old_regend) free (old_regend); old_regend = 
-# 5101 "regex.c" 3 4
- ((void *)0)
-# 5101 "regex.c"
- ; if (best_regstart) free (best_regstart); best_regstart = 
-# 5101 "regex.c" 3 4
- ((void *)0)
-# 5101 "regex.c"
- ; if (best_regend) free (best_regend); best_regend = 
-# 5101 "regex.c" 3 4
- ((void *)0)
-# 5101 "regex.c"
- ; if (reg_info) free (reg_info); reg_info = 
-# 5101 "regex.c" 3 4
- ((void *)0)
-# 5101 "regex.c"
- ; if (reg_dummy) free (reg_dummy); reg_dummy = 
-# 5101 "regex.c" 3 4
- ((void *)0)
-# 5101 "regex.c"
- ; if (reg_info_dummy) free (reg_info_dummy); reg_info_dummy = 
-# 5101 "regex.c" 3 4
- ((void *)0)
-# 5101 "regex.c"
- ; } while (0);
+  do { free (fail_stack.stack); if (regstart) free (regstart); regstart = ((void *)0); if (regend) free (regend); regend = ((void *)0); if (old_regstart) free (old_regstart); old_regstart = ((void *)0); if (old_regend) free (old_regend); old_regend = ((void *)0); if (best_regstart) free (best_regstart); best_regstart = ((void *)0); if (best_regend) free (best_regend); best_regend = ((void *)0); if (reg_info) free (reg_info); reg_info = ((void *)0); if (reg_dummy) free (reg_dummy); reg_dummy = ((void *)0); if (reg_info_dummy) free (reg_info_dummy); reg_info_dummy = ((void *)0); } while (0);
 
   return -1;
 }
@@ -5851,11 +5282,7 @@ re_compile_pattern (pattern, length, bufp)
   ret = regex_compile (pattern, length, re_syntax_options, bufp);
 
   if (!ret)
-    return 
-# 5403 "regex.c" 3 4
-          ((void *)0)
-# 5403 "regex.c"
-              ;
+    return ((void *)0);
   return (re_error_msgid[(int) ret]);
 }
 # 5514 "regex.c"
@@ -5888,31 +5315,15 @@ regcomp (preg, pattern, cflags)
       preg->translate
  = (char *) malloc (256
           * sizeof (*(char *)0));
-      if (preg->translate == 
-# 5543 "regex.c" 3 4
-                            ((void *)0)
-# 5543 "regex.c"
-                                )
+      if (preg->translate == ((void *)0))
         return (int) REG_ESPACE;
 
 
       for (i = 0; i < 256; i++)
-        preg->translate[i] = (1 && 
-# 5548 "regex.c" 3 4
-                            ((*__ctype_b_loc ())[(int) ((
-# 5548 "regex.c"
-                            i
-# 5548 "regex.c" 3 4
-                            ))] & (unsigned short int) _ISupper)
-# 5548 "regex.c"
-                            ) ? tolower (i) : i;
+        preg->translate[i] = (1 && ((*__ctype_b_loc ())[(int) ((i))] & (unsigned short int) _ISupper)) ? tolower (i) : i;
     }
   else
-    preg->translate = 
-# 5551 "regex.c" 3 4
-                     ((void *)0)
-# 5551 "regex.c"
-                         ;
+    preg->translate = ((void *)0);
 
 
   if (cflags & ((1 << 1) << 1))
@@ -5967,15 +5378,7 @@ regexec (preg, string, nmatch, pmatch, eflags)
       regs.num_regs = nmatch;
       regs.start = ((regoff_t *) malloc ((nmatch) * sizeof (regoff_t)));
       regs.end = ((regoff_t *) malloc ((nmatch) * sizeof (regoff_t)));
-      if (regs.start == 
-# 5621 "regex.c" 3 4
-                       ((void *)0) 
-# 5621 "regex.c"
-                            || regs.end == 
-# 5621 "regex.c" 3 4
-                                           ((void *)0)
-# 5621 "regex.c"
-                                               )
+      if (regs.start == ((void *)0) || regs.end == ((void *)0))
         return (int) REG_NOMATCH;
     }
 
@@ -6055,43 +5458,19 @@ void
 regfree (preg)
     regex_t *preg;
 {
-  if (preg->buffer != 
-# 5701 "regex.c" 3 4
-                     ((void *)0)
-# 5701 "regex.c"
-                         )
+  if (preg->buffer != ((void *)0))
     free (preg->buffer);
-  preg->buffer = 
-# 5703 "regex.c" 3 4
-                ((void *)0)
-# 5703 "regex.c"
-                    ;
+  preg->buffer = ((void *)0);
 
   preg->allocated = 0;
   preg->used = 0;
 
-  if (preg->fastmap != 
-# 5708 "regex.c" 3 4
-                      ((void *)0)
-# 5708 "regex.c"
-                          )
+  if (preg->fastmap != ((void *)0))
     free (preg->fastmap);
-  preg->fastmap = 
-# 5710 "regex.c" 3 4
-                 ((void *)0)
-# 5710 "regex.c"
-                     ;
+  preg->fastmap = ((void *)0);
   preg->fastmap_accurate = 0;
 
-  if (preg->translate != 
-# 5713 "regex.c" 3 4
-                        ((void *)0)
-# 5713 "regex.c"
-                            )
+  if (preg->translate != ((void *)0))
     free (preg->translate);
-  preg->translate = 
-# 5715 "regex.c" 3 4
-                   ((void *)0)
-# 5715 "regex.c"
-                       ;
+  preg->translate = ((void *)0);
 }

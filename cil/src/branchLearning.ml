@@ -796,7 +796,8 @@ let feature : featureDescr =
 		str_vis = new strBranchVisitor and
 		loop_depth = new loopDepth depth and
 		if_depth = new ifDepth depth and
-		count_edges = new cntEdges depth in
+		count_edges = new cntEdges depth and
+		count_edges_main = new cntEdgesMain depth in
 		Printf.printf "Start \n";
 		visitCilFileSameGlobals (func_decs :> cilVisitor) f;
         visitCilFileSameGlobals (vis :> cilVisitor) f ;

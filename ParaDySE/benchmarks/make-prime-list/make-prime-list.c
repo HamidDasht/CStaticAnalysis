@@ -190,8 +190,8 @@ main (int argc, char **argv)
   
   int crest_input;
   CREST_unsigned_int(crest_input);
-  sprintf(argv[1], "%d", crest_input / 1000);
-  limit = atoi (argv[1]);
+  limit = crest_input / 10000;
+  
   if (limit < 3)
     return EXIT_SUCCESS;
 

@@ -1,5 +1,5 @@
 # 1 "./awktab.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -45,10 +45,8 @@
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
@@ -172,7 +170,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -206,8 +204,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -973,17 +971,17 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 # 37 "./awk.h" 2
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 34 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 34 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 168 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 168 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 143 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
@@ -1007,9 +1005,9 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
 # 152 "/usr/include/limits.h" 2 3 4
-# 169 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
-# 8 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 2 3 4
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
+# 169 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
+# 8 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 2 3 4
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
 # 39 "./awk.h" 2
 
 # 1 "/usr/include/ctype.h" 1 3 4
@@ -1275,7 +1273,7 @@ extern void siglongjmp (sigjmp_buf __env, int __val)
 
 # 1 "/usr/include/locale.h" 1 3 4
 # 28 "/usr/include/locale.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 29 "/usr/include/locale.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/locale.h" 1 3 4
 # 30 "/usr/include/locale.h" 2 3 4
@@ -1382,7 +1380,7 @@ extern __locale_t uselocale (__locale_t __dataset) __attribute__ ((__nothrow__ ,
 # 44 "./awk.h" 2
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
 # 47 "./awk.h" 2
 
 
@@ -2040,7 +2038,7 @@ extern int sigreturn (struct sigcontext *__scp) __attribute__ ((__nothrow__ , __
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 317 "/usr/include/signal.h" 2 3 4
 
 
@@ -2416,7 +2414,7 @@ extern int __libc_current_sigrtmax (void) __attribute__ ((__nothrow__ , __leaf__
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 38 "/usr/include/time.h" 2 3 4
 
 
@@ -2825,7 +2823,7 @@ typedef __suseconds_t suseconds_t;
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -3206,8 +3204,8 @@ extern int __xmknodat (int __ver, int __fd, const char *__path,
 # 118 "./awk.h"
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
 # 33 "/usr/include/stdlib.h" 2 3 4
 
@@ -3592,7 +3590,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -3973,7 +3971,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/string.h" 2 3 4
 
 
@@ -4294,7 +4292,7 @@ extern char *basename (const char *__filename) __attribute__ ((__nothrow__ , __l
 # 23 "/usr/include/x86_64-linux-gnu/bits/environments.h" 2 3 4
 # 210 "/usr/include/unistd.h" 2 3 4
 # 229 "/usr/include/unistd.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 230 "/usr/include/unistd.h" 2 3 4
 # 270 "/usr/include/unistd.h" 3 4
 typedef __intptr_t intptr_t;
@@ -5642,8 +5640,6 @@ extern void swab (const void *__restrict __from, void *__restrict __to,
 # 175 "./awk.h"
 # 1 "./regex.h" 1
 # 40 "./regex.h"
-
-# 40 "./regex.h"
 typedef long int s_reg_t;
 typedef unsigned long int active_reg_t;
 
@@ -6508,23 +6504,11 @@ static char *lexptr;
 static char *lexend;
 static char *lexptr_begin;
 static char *lexeme;
-static char *thisline = 
-# 70 "./awk.y" 3 4
-                       ((void *)0)
-# 70 "./awk.y"
-                           ;
+static char *thisline = ((void *)0);
 
 static int param_counter;
-static char *tokstart = 
-# 73 "./awk.y" 3 4
-                       ((void *)0)
-# 73 "./awk.y"
-                           ;
-static char *tok = 
-# 74 "./awk.y" 3 4
-                  ((void *)0)
-# 74 "./awk.y"
-                      ;
+static char *tokstart = ((void *)0);
+static char *tok = ((void *)0);
 static char *tokend;
 
 
@@ -7163,25 +7147,9 @@ yynewstate:
       yystacksize *= 2;
       if (yystacksize > 10000)
  yystacksize = 10000;
-      yyss = (short *) 
-# 333 "/usr/local/share/bison.simple" 3 4
-                      __builtin_alloca (
-# 333 "/usr/local/share/bison.simple"
-                      yystacksize * sizeof (*yyssp)
-# 333 "/usr/local/share/bison.simple" 3 4
-                      )
-# 333 "/usr/local/share/bison.simple"
-                                                            ;
+      yyss = (short *) __builtin_alloca (yystacksize * sizeof (*yyssp));
       __builtin_memcpy((char *)yyss,(char *)yyss1,size * sizeof (*yyssp));
-      yyvs = (YYSTYPE *) 
-# 335 "/usr/local/share/bison.simple" 3 4
-                        __builtin_alloca (
-# 335 "/usr/local/share/bison.simple"
-                        yystacksize * sizeof (*yyvsp)
-# 335 "/usr/local/share/bison.simple" 3 4
-                        )
-# 335 "/usr/local/share/bison.simple"
-                                                              ;
+      yyvs = (YYSTYPE *) __builtin_alloca (yystacksize * sizeof (*yyvsp));
       __builtin_memcpy((char *)yyvs,(char *)yyvs1,size * sizeof (*yyvsp));
 
 
@@ -7304,77 +7272,41 @@ case 1:
 case 2:
 # 159 "./awk.y"
 {
-   if (yyvsp[0].nodeval != 
-# 160 "./awk.y" 3 4
-                          ((void *)0)
-# 160 "./awk.y"
-                              )
+   if (yyvsp[0].nodeval != ((void *)0))
     yyval.nodeval = yyvsp[0].nodeval;
    else
-    yyval.nodeval = 
-# 163 "./awk.y" 3 4
-                   ((void *)0)
-# 163 "./awk.y"
-                       ;
+    yyval.nodeval = ((void *)0);
    (yyerrstatus = 0);
   ;
     break;}
 case 3:
 # 168 "./awk.y"
 {
-   if (yyvsp[0].nodeval == 
-# 169 "./awk.y" 3 4
-                          ((void *)0)
-# 169 "./awk.y"
-                              )
+   if (yyvsp[0].nodeval == ((void *)0))
     yyval.nodeval = yyvsp[-1].nodeval;
-   else if (yyvsp[-1].nodeval == 
-# 171 "./awk.y" 3 4
-                                ((void *)0)
-# 171 "./awk.y"
-                                    )
+   else if (yyvsp[-1].nodeval == ((void *)0))
     yyval.nodeval = yyvsp[0].nodeval;
    else {
     if (yyvsp[-1].nodeval->type != Node_rule_list)
      yyvsp[-1].nodeval = node(yyvsp[-1].nodeval, Node_rule_list,
-      (NODE*) 
-# 176 "./awk.y" 3 4
-             ((void *)0)
-# 176 "./awk.y"
-                 );
+      (NODE*) ((void *)0));
     yyval.nodeval = append_right(yyvsp[-1].nodeval,
-       node(yyvsp[0].nodeval, Node_rule_list, (NODE *) 
-# 178 "./awk.y" 3 4
-                                                      ((void *)0)
-# 178 "./awk.y"
-                                                          ));
+       node(yyvsp[0].nodeval, Node_rule_list, (NODE *) ((void *)0)));
    }
    (yyerrstatus = 0);
   ;
     break;}
 case 4:
 # 182 "./awk.y"
-{ yyval.nodeval = 
-# 182 "./awk.y" 3 4
-                 ((void *)0)
-# 182 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 5:
 # 183 "./awk.y"
-{ yyval.nodeval = 
-# 183 "./awk.y" 3 4
-                 ((void *)0)
-# 183 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 6:
 # 184 "./awk.y"
-{ yyval.nodeval = 
-# 184 "./awk.y" 3 4
-                 ((void *)0)
-# 184 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 7:
 # 188 "./awk.y"
@@ -7383,40 +7315,16 @@ case 7:
 case 8:
 # 190 "./awk.y"
 {
-  if (begin_block != 
-# 191 "./awk.y" 3 4
-                    ((void *)0)
-# 191 "./awk.y"
-                        ) {
+  if (begin_block != ((void *)0)) {
    if (begin_block->type != Node_rule_list)
     begin_block = node(begin_block, Node_rule_list,
-     (NODE *) 
-# 194 "./awk.y" 3 4
-             ((void *)0)
-# 194 "./awk.y"
-                 );
+     (NODE *) ((void *)0));
    (void) append_right(begin_block, node(
-       node((NODE *) 
-# 196 "./awk.y" 3 4
-                    ((void *)0)
-# 196 "./awk.y"
-                        , Node_rule_node, yyvsp[0].nodeval),
-       Node_rule_list, (NODE *) 
-# 197 "./awk.y" 3 4
-                               ((void *)0)
-# 197 "./awk.y"
-                                   ) );
+       node((NODE *) ((void *)0), Node_rule_node, yyvsp[0].nodeval),
+       Node_rule_list, (NODE *) ((void *)0)) );
   } else
-   begin_block = node((NODE *) 
-# 199 "./awk.y" 3 4
-                              ((void *)0)
-# 199 "./awk.y"
-                                  , Node_rule_node, yyvsp[0].nodeval);
-  yyval.nodeval = 
-# 200 "./awk.y" 3 4
-                 ((void *)0)
-# 200 "./awk.y"
-                     ;
+   begin_block = node((NODE *) ((void *)0), Node_rule_node, yyvsp[0].nodeval);
+  yyval.nodeval = ((void *)0);
   io_allowed = 1;
   (yyerrstatus = 0);
    ;
@@ -7428,40 +7336,16 @@ case 9:
 case 10:
 # 206 "./awk.y"
 {
-  if (end_block != 
-# 207 "./awk.y" 3 4
-                  ((void *)0)
-# 207 "./awk.y"
-                      ) {
+  if (end_block != ((void *)0)) {
    if (end_block->type != Node_rule_list)
     end_block = node(end_block, Node_rule_list,
-     (NODE *) 
-# 210 "./awk.y" 3 4
-             ((void *)0)
-# 210 "./awk.y"
-                 );
+     (NODE *) ((void *)0));
    (void) append_right (end_block, node(
-       node((NODE *) 
-# 212 "./awk.y" 3 4
-                    ((void *)0)
-# 212 "./awk.y"
-                        , Node_rule_node, yyvsp[0].nodeval),
-       Node_rule_list, (NODE *) 
-# 213 "./awk.y" 3 4
-                               ((void *)0)
-# 213 "./awk.y"
-                                   ));
+       node((NODE *) ((void *)0), Node_rule_node, yyvsp[0].nodeval),
+       Node_rule_list, (NODE *) ((void *)0)));
   } else
-   end_block = node((NODE *) 
-# 215 "./awk.y" 3 4
-                            ((void *)0)
-# 215 "./awk.y"
-                                , Node_rule_node, yyvsp[0].nodeval);
-  yyval.nodeval = 
-# 216 "./awk.y" 3 4
-                 ((void *)0)
-# 216 "./awk.y"
-                     ;
+   end_block = node((NODE *) ((void *)0), Node_rule_node, yyvsp[0].nodeval);
+  yyval.nodeval = ((void *)0);
   io_allowed = 1;
   (yyerrstatus = 0);
    ;
@@ -7488,11 +7372,7 @@ case 13:
     break;}
 case 14:
 # 235 "./awk.y"
-{ yyval.nodeval = node((NODE *) 
-# 235 "./awk.y" 3 4
-                               ((void *)0)
-# 235 "./awk.y"
-                                   , Node_rule_node, yyvsp[0].nodeval); (yyerrstatus = 0); ;
+{ yyval.nodeval = node((NODE *) ((void *)0), Node_rule_node, yyvsp[0].nodeval); (yyerrstatus = 0); ;
     break;}
 case 15:
 # 237 "./awk.y"
@@ -7501,23 +7381,11 @@ case 15:
         Node_rule_node,
         node(node(node(mk_number((0.0), (unsigned int)(1|32|64)),
          Node_field_spec,
-         (NODE *) 
-# 242 "./awk.y" 3 4
-                 ((void *)0)
-# 242 "./awk.y"
-                     ),
+         (NODE *) ((void *)0)),
      Node_expression_list,
-     (NODE *) 
-# 244 "./awk.y" 3 4
-             ((void *)0)
-# 244 "./awk.y"
-                 ),
+     (NODE *) ((void *)0)),
       Node_K_print,
-      (NODE *) 
-# 246 "./awk.y" 3 4
-              ((void *)0)
-# 246 "./awk.y"
-                  ));
+      (NODE *) ((void *)0)));
     (yyerrstatus = 0);
   ;
     break;}
@@ -7525,11 +7393,7 @@ case 16:
 # 250 "./awk.y"
 {
    func_install(yyvsp[-1].nodeval, yyvsp[0].nodeval);
-   yyval.nodeval = 
-# 252 "./awk.y" 3 4
-                  ((void *)0)
-# 252 "./awk.y"
-                      ;
+   yyval.nodeval = ((void *)0);
    (yyerrstatus = 0);
   ;
     break;}
@@ -7580,15 +7444,7 @@ case 24:
 case 25:
 # 302 "./awk.y"
 {
-  yyval.nodeval = node((NODE *) 
-# 303 "./awk.y" 3 4
-                               ((void *)0)
-# 303 "./awk.y"
-                                   , Node_K_return, (NODE *) 
-# 303 "./awk.y" 3 4
-                                                             ((void *)0)
-# 303 "./awk.y"
-                                                                 );
+  yyval.nodeval = node((NODE *) ((void *)0), Node_K_return, (NODE *) ((void *)0));
   can_return = 0;
    ;
     break;}
@@ -7615,11 +7471,7 @@ case 29:
     len = strlen(yyvsp[-1].sval);
     n->sub.nodep.x.extra = make_str_node((yyvsp[-1].sval), (size_t) (len), 0);
     n->sub.nodep.r.preg = make_regexp(yyvsp[-1].sval, len, 0, 1);
-    n->sub.nodep.l.lptr = 
-# 333 "./awk.y" 3 4
-                ((void *)0)
-# 333 "./awk.y"
-                    ;
+    n->sub.nodep.l.lptr = ((void *)0);
     n->sub.nodep.reflags = 2;
     n->sub.nodep.number = 1;
     yyval.nodeval = n;
@@ -7631,11 +7483,7 @@ case 30:
     break;}
 case 31:
 # 344 "./awk.y"
-{ yyval.nodeval = 
-# 344 "./awk.y" 3 4
-                 ((void *)0)
-# 344 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 32:
 # 349 "./awk.y"
@@ -7648,56 +7496,28 @@ case 32:
 case 33:
 # 355 "./awk.y"
 {
-   if (yyvsp[-1].nodeval == 
-# 356 "./awk.y" 3 4
-                           ((void *)0) 
-# 356 "./awk.y"
-                                || yyvsp[-1].nodeval->type != Node_statement_list)
-    yyvsp[-1].nodeval = node(yyvsp[-1].nodeval, Node_statement_list, (NODE *) 
-# 357 "./awk.y" 3 4
-                                                                             ((void *)0)
-# 357 "./awk.y"
-                                                                                 );
+   if (yyvsp[-1].nodeval == ((void *)0) || yyvsp[-1].nodeval->type != Node_statement_list)
+    yyvsp[-1].nodeval = node(yyvsp[-1].nodeval, Node_statement_list, (NODE *) ((void *)0));
        yyval.nodeval = append_right(yyvsp[-1].nodeval,
-    node(yyvsp[0].nodeval, Node_statement_list, (NODE *) 
-# 359 "./awk.y" 3 4
-                                                          ((void *)0)
-# 359 "./awk.y"
-                                                              ));
+    node(yyvsp[0].nodeval, Node_statement_list, (NODE *) ((void *)0)));
        (yyerrstatus = 0);
   ;
     break;}
 case 34:
 # 363 "./awk.y"
-{ yyval.nodeval = 
-# 363 "./awk.y" 3 4
-                 ((void *)0)
-# 363 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 35:
 # 365 "./awk.y"
-{ yyval.nodeval = 
-# 365 "./awk.y" 3 4
-                 ((void *)0)
-# 365 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 38:
 # 375 "./awk.y"
-{ yyval.nodeval = 
-# 375 "./awk.y" 3 4
-                 ((void *)0)
-# 375 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 39:
 # 377 "./awk.y"
-{ yyval.nodeval = 
-# 377 "./awk.y" 3 4
-                 ((void *)0)
-# 377 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 40:
 # 379 "./awk.y"
@@ -7720,11 +7540,7 @@ case 44:
 {
   yyval.nodeval = node(yyvsp[0].nodeval, Node_K_arrayfor,
    make_for_loop(variable(yyvsp[-5].sval, 1, Node_var),
-   (NODE *) 
-# 390 "./awk.y" 3 4
-           ((void *)0)
-# 390 "./awk.y"
-               , variable(yyvsp[-3].sval, 1, Node_var_array)));
+   (NODE *) ((void *)0), variable(yyvsp[-3].sval, 1, Node_var_array)));
    ;
     break;}
 case 45:
@@ -7737,36 +7553,16 @@ case 46:
 # 397 "./awk.y"
 {
   yyval.nodeval = node(yyvsp[0].nodeval, Node_K_for,
-   (NODE *) make_for_loop(yyvsp[-6].nodeval, (NODE *) 
-# 399 "./awk.y" 3 4
-                                                     ((void *)0)
-# 399 "./awk.y"
-                                                         , yyvsp[-3].nodeval));
+   (NODE *) make_for_loop(yyvsp[-6].nodeval, (NODE *) ((void *)0), yyvsp[-3].nodeval));
    ;
     break;}
 case 47:
 # 403 "./awk.y"
-{ yyval.nodeval = node((NODE *) 
-# 403 "./awk.y" 3 4
-                               ((void *)0)
-# 403 "./awk.y"
-                                   , Node_K_break, (NODE *) 
-# 403 "./awk.y" 3 4
-                                                            ((void *)0)
-# 403 "./awk.y"
-                                                                ); ;
+{ yyval.nodeval = node((NODE *) ((void *)0), Node_K_break, (NODE *) ((void *)0)); ;
     break;}
 case 48:
 # 406 "./awk.y"
-{ yyval.nodeval = node((NODE *) 
-# 406 "./awk.y" 3 4
-                               ((void *)0)
-# 406 "./awk.y"
-                                   , Node_K_continue, (NODE *) 
-# 406 "./awk.y" 3 4
-                                                               ((void *)0)
-# 406 "./awk.y"
-                                                                   ); ;
+{ yyval.nodeval = node((NODE *) ((void *)0), Node_K_continue, (NODE *) ((void *)0)); ;
     break;}
 case 49:
 # 408 "./awk.y"
@@ -7775,26 +7571,14 @@ case 49:
 case 50:
 # 410 "./awk.y"
 {
-   if (yyvsp[-3].nodetypeval == Node_K_print && yyvsp[-2].nodeval == 
-# 411 "./awk.y" 3 4
-                                                                    ((void *)0)
-# 411 "./awk.y"
-                                                                        ) {
+   if (yyvsp[-3].nodetypeval == Node_K_print && yyvsp[-2].nodeval == ((void *)0)) {
     static int warned = 0;
 
     yyvsp[-2].nodeval = node(node(mk_number((0.0), (unsigned int)(1|32|64)),
             Node_field_spec,
-            (NODE *) 
-# 416 "./awk.y" 3 4
-                    ((void *)0)
-# 416 "./awk.y"
-                        ),
+            (NODE *) ((void *)0)),
        Node_expression_list,
-       (NODE *) 
-# 418 "./awk.y" 3 4
-               ((void *)0)
-# 418 "./awk.y"
-                   );
+       (NODE *) ((void *)0));
 
     if (do_lint && ! io_allowed && ! warned) {
      warned = 1;
@@ -7844,15 +7628,7 @@ case 51:
     yyerror("`next' used in BEGIN or END action");
    type = Node_K_next;
     }
-    yyval.nodeval = node((NODE *) 
-# 466 "./awk.y" 3 4
-                                 ((void *)0)
-# 466 "./awk.y"
-                                     , type, (NODE *) 
-# 466 "./awk.y" 3 4
-                                                      ((void *)0)
-# 466 "./awk.y"
-                                                          );
+    yyval.nodeval = node((NODE *) ((void *)0), type, (NODE *) ((void *)0));
   ;
     break;}
 case 52:
@@ -7873,24 +7649,12 @@ case 52:
    errcount++;
    error("`nextfile' used in BEGIN or END action");
     }
-    yyval.nodeval = node((NODE *) 
-# 485 "./awk.y" 3 4
-                                 ((void *)0)
-# 485 "./awk.y"
-                                     , Node_K_nextfile, (NODE *) 
-# 485 "./awk.y" 3 4
-                                                                 ((void *)0)
-# 485 "./awk.y"
-                                                                     );
+    yyval.nodeval = node((NODE *) ((void *)0), Node_K_nextfile, (NODE *) ((void *)0));
   ;
     break;}
 case 53:
 # 488 "./awk.y"
-{ yyval.nodeval = node(yyvsp[-1].nodeval, Node_K_exit, (NODE *) 
-# 488 "./awk.y" 3 4
-                                                               ((void *)0)
-# 488 "./awk.y"
-                                                                   ); ;
+{ yyval.nodeval = node(yyvsp[-1].nodeval, Node_K_exit, (NODE *) ((void *)0)); ;
     break;}
 case 54:
 # 490 "./awk.y"
@@ -7901,11 +7665,7 @@ case 54:
     break;}
 case 55:
 # 495 "./awk.y"
-{ yyval.nodeval = node(yyvsp[-1].nodeval, Node_K_return, (NODE *) 
-# 495 "./awk.y" 3 4
-                                                                 ((void *)0)
-# 495 "./awk.y"
-                                                                     ); ;
+{ yyval.nodeval = node(yyvsp[-1].nodeval, Node_K_return, (NODE *) ((void *)0)); ;
     break;}
 case 56:
 # 497 "./awk.y"
@@ -7924,11 +7684,7 @@ case 57:
    errcount++;
    error("`delete array' is a gawk extension");
     }
-    yyval.nodeval = node(variable(yyvsp[-1].sval, 1, Node_var_array), Node_K_delete, (NODE *) 
-# 510 "./awk.y" 3 4
-                                                                                                    ((void *)0)
-# 510 "./awk.y"
-                                                                                                        );
+    yyval.nodeval = node(variable(yyvsp[-1].sval, 1, Node_var_array), Node_K_delete, (NODE *) ((void *)0));
   ;
     break;}
 case 58:
@@ -7947,11 +7703,7 @@ case 61:
 # 525 "./awk.y"
 {
   yyval.nodeval = node(yyvsp[-3].nodeval, Node_K_if,
-   node(yyvsp[0].nodeval, Node_if_branches, (NODE *) 
-# 527 "./awk.y" 3 4
-                                                    ((void *)0)
-# 527 "./awk.y"
-                                                        ));
+   node(yyvsp[0].nodeval, Node_if_branches, (NODE *) ((void *)0)));
    ;
     break;}
 case 62:
@@ -7965,59 +7717,31 @@ case 63:
     break;}
 case 67:
 # 548 "./awk.y"
-{ yyval.nodeval = 
-# 548 "./awk.y" 3 4
-                 ((void *)0)
-# 548 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 68:
 # 550 "./awk.y"
-{ yyval.nodeval = node(yyvsp[0].nodeval, Node_redirect_input, (NODE *) 
-# 550 "./awk.y" 3 4
-                                                                      ((void *)0)
-# 550 "./awk.y"
-                                                                          ); ;
+{ yyval.nodeval = node(yyvsp[0].nodeval, Node_redirect_input, (NODE *) ((void *)0)); ;
     break;}
 case 69:
 # 555 "./awk.y"
-{ yyval.nodeval = 
-# 555 "./awk.y" 3 4
-                 ((void *)0)
-# 555 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 70:
 # 557 "./awk.y"
-{ yyval.nodeval = node(yyvsp[0].nodeval, Node_redirect_output, (NODE *) 
-# 557 "./awk.y" 3 4
-                                                                       ((void *)0)
-# 557 "./awk.y"
-                                                                           ); ;
+{ yyval.nodeval = node(yyvsp[0].nodeval, Node_redirect_output, (NODE *) ((void *)0)); ;
     break;}
 case 71:
 # 559 "./awk.y"
-{ yyval.nodeval = node(yyvsp[0].nodeval, Node_redirect_append, (NODE *) 
-# 559 "./awk.y" 3 4
-                                                                       ((void *)0)
-# 559 "./awk.y"
-                                                                           ); ;
+{ yyval.nodeval = node(yyvsp[0].nodeval, Node_redirect_append, (NODE *) ((void *)0)); ;
     break;}
 case 72:
 # 561 "./awk.y"
-{ yyval.nodeval = node(yyvsp[0].nodeval, Node_redirect_pipe, (NODE *) 
-# 561 "./awk.y" 3 4
-                                                                     ((void *)0)
-# 561 "./awk.y"
-                                                                         ); ;
+{ yyval.nodeval = node(yyvsp[0].nodeval, Node_redirect_pipe, (NODE *) ((void *)0)); ;
     break;}
 case 73:
 # 566 "./awk.y"
-{ yyval.nodeval = 
-# 566 "./awk.y" 3 4
-                 ((void *)0)
-# 566 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 74:
 # 568 "./awk.y"
@@ -8033,35 +7757,19 @@ case 76:
     break;}
 case 77:
 # 577 "./awk.y"
-{ yyval.nodeval = 
-# 577 "./awk.y" 3 4
-                 ((void *)0)
-# 577 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 78:
 # 579 "./awk.y"
-{ yyval.nodeval = 
-# 579 "./awk.y" 3 4
-                 ((void *)0)
-# 579 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 79:
 # 581 "./awk.y"
-{ yyval.nodeval = 
-# 581 "./awk.y" 3 4
-                 ((void *)0)
-# 581 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 80:
 # 587 "./awk.y"
-{ yyval.nodeval = 
-# 587 "./awk.y" 3 4
-                 ((void *)0)
-# 587 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 81:
 # 589 "./awk.y"
@@ -8069,11 +7777,7 @@ case 81:
     break;}
 case 82:
 # 594 "./awk.y"
-{ yyval.nodeval = 
-# 594 "./awk.y" 3 4
-                 ((void *)0)
-# 594 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 83:
 # 596 "./awk.y"
@@ -8081,63 +7785,35 @@ case 83:
     break;}
 case 84:
 # 601 "./awk.y"
-{ yyval.nodeval = node(yyvsp[0].nodeval, Node_expression_list, (NODE *) 
-# 601 "./awk.y" 3 4
-                                                                       ((void *)0)
-# 601 "./awk.y"
-                                                                           ); ;
+{ yyval.nodeval = node(yyvsp[0].nodeval, Node_expression_list, (NODE *) ((void *)0)); ;
     break;}
 case 85:
 # 603 "./awk.y"
 {
   yyval.nodeval = append_right(yyvsp[-2].nodeval,
-   node(yyvsp[0].nodeval, Node_expression_list, (NODE *) 
-# 605 "./awk.y" 3 4
-                                                        ((void *)0)
-# 605 "./awk.y"
-                                                            ));
+   node(yyvsp[0].nodeval, Node_expression_list, (NODE *) ((void *)0)));
   (yyerrstatus = 0);
    ;
     break;}
 case 86:
 # 609 "./awk.y"
-{ yyval.nodeval = 
-# 609 "./awk.y" 3 4
-                 ((void *)0)
-# 609 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 87:
 # 611 "./awk.y"
-{ yyval.nodeval = 
-# 611 "./awk.y" 3 4
-                 ((void *)0)
-# 611 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 88:
 # 613 "./awk.y"
-{ yyval.nodeval = 
-# 613 "./awk.y" 3 4
-                 ((void *)0)
-# 613 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 89:
 # 615 "./awk.y"
-{ yyval.nodeval = 
-# 615 "./awk.y" 3 4
-                 ((void *)0)
-# 615 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 90:
 # 620 "./awk.y"
-{ yyval.nodeval = 
-# 620 "./awk.y" 3 4
-                 ((void *)0)
-# 620 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 91:
 # 622 "./awk.y"
@@ -8145,55 +7821,31 @@ case 91:
     break;}
 case 92:
 # 627 "./awk.y"
-{ yyval.nodeval = node(yyvsp[0].nodeval, Node_expression_list, (NODE *) 
-# 627 "./awk.y" 3 4
-                                                                       ((void *)0)
-# 627 "./awk.y"
-                                                                           ); ;
+{ yyval.nodeval = node(yyvsp[0].nodeval, Node_expression_list, (NODE *) ((void *)0)); ;
     break;}
 case 93:
 # 629 "./awk.y"
 {
    yyval.nodeval = append_right(yyvsp[-2].nodeval,
-    node(yyvsp[0].nodeval, Node_expression_list, (NODE *) 
-# 631 "./awk.y" 3 4
-                                                         ((void *)0)
-# 631 "./awk.y"
-                                                             ));
+    node(yyvsp[0].nodeval, Node_expression_list, (NODE *) ((void *)0)));
    (yyerrstatus = 0);
   ;
     break;}
 case 94:
 # 635 "./awk.y"
-{ yyval.nodeval = 
-# 635 "./awk.y" 3 4
-                 ((void *)0)
-# 635 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 95:
 # 637 "./awk.y"
-{ yyval.nodeval = 
-# 637 "./awk.y" 3 4
-                 ((void *)0)
-# 637 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 96:
 # 639 "./awk.y"
-{ yyval.nodeval = 
-# 639 "./awk.y" 3 4
-                 ((void *)0)
-# 639 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 97:
 # 641 "./awk.y"
-{ yyval.nodeval = 
-# 641 "./awk.y" 3 4
-                 ((void *)0)
-# 641 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 98:
 # 646 "./awk.y"
@@ -8215,21 +7867,13 @@ case 101:
 # 656 "./awk.y"
 {
     yyval.nodeval = node(yyvsp[0].nodeval, Node_K_getline,
-    node(yyvsp[-3].nodeval, Node_redirect_pipein, (NODE *) 
-# 658 "./awk.y" 3 4
-                                                          ((void *)0)
-# 658 "./awk.y"
-                                                              ));
+    node(yyvsp[-3].nodeval, Node_redirect_pipein, (NODE *) ((void *)0)));
   ;
     break;}
 case 102:
 # 661 "./awk.y"
 {
-    if (do_lint && ! io_allowed && yyvsp[0].nodeval == 
-# 662 "./awk.y" 3 4
-                                                      ((void *)0)
-# 662 "./awk.y"
-                                                          )
+    if (do_lint && ! io_allowed && yyvsp[0].nodeval == ((void *)0))
    warning("non-redirected getline undefined inside BEGIN or END action");
     yyval.nodeval = node(yyvsp[-1].nodeval, Node_K_getline, yyvsp[0].nodeval);
   ;
@@ -8267,11 +7911,7 @@ case 107:
 {
     yyval.nodeval = node(node(mk_number((0.0), (unsigned int)(1|32|64)),
      Node_field_spec,
-     (NODE *) 
-# 690 "./awk.y" 3 4
-             ((void *)0)
-# 690 "./awk.y"
-                 ),
+     (NODE *) ((void *)0)),
               Node_nomatch,
        yyvsp[0].nodeval);
   ;
@@ -8327,11 +7967,7 @@ case 118:
 case 119:
 # 724 "./awk.y"
 {
-    if (do_lint && ! io_allowed && yyvsp[0].nodeval == 
-# 725 "./awk.y" 3 4
-                                                      ((void *)0)
-# 725 "./awk.y"
-                                                          )
+    if (do_lint && ! io_allowed && yyvsp[0].nodeval == ((void *)0))
    warning("non-redirected getline undefined inside BEGIN or END action");
     yyval.nodeval = node(yyvsp[-1].nodeval, Node_K_getline, yyvsp[0].nodeval);
   ;
@@ -8342,11 +7978,7 @@ case 120:
     break;}
 case 121:
 # 732 "./awk.y"
-{ yyval.nodeval = node((NODE *) 
-# 732 "./awk.y" 3 4
-                               ((void *)0)
-# 732 "./awk.y"
-                                   , Node_nomatch, yyvsp[0].nodeval); ;
+{ yyval.nodeval = node((NODE *) ((void *)0), Node_nomatch, yyvsp[0].nodeval); ;
     break;}
 case 122:
 # 734 "./awk.y"
@@ -8398,27 +8030,15 @@ case 134:
     break;}
 case 135:
 # 763 "./awk.y"
-{ yyval.nodeval = node(yyvsp[-1].nodeval, Node_postincrement, (NODE *) 
-# 763 "./awk.y" 3 4
-                                                                      ((void *)0)
-# 763 "./awk.y"
-                                                                          ); ;
+{ yyval.nodeval = node(yyvsp[-1].nodeval, Node_postincrement, (NODE *) ((void *)0)); ;
     break;}
 case 136:
 # 765 "./awk.y"
-{ yyval.nodeval = node(yyvsp[-1].nodeval, Node_postdecrement, (NODE *) 
-# 765 "./awk.y" 3 4
-                                                                      ((void *)0)
-# 765 "./awk.y"
-                                                                          ); ;
+{ yyval.nodeval = node(yyvsp[-1].nodeval, Node_postdecrement, (NODE *) ((void *)0)); ;
     break;}
 case 137:
 # 770 "./awk.y"
-{ yyval.nodeval = node(yyvsp[0].nodeval, Node_not, (NODE *) 
-# 770 "./awk.y" 3 4
-                                                           ((void *)0)
-# 770 "./awk.y"
-                                                               ); ;
+{ yyval.nodeval = node(yyvsp[0].nodeval, Node_not, (NODE *) ((void *)0)); ;
     break;}
 case 138:
 # 772 "./awk.y"
@@ -8437,11 +8057,7 @@ case 141:
 {
   if (do_lint)
    warning("call of `length' without parentheses is not portable");
-  yyval.nodeval = snode((NODE *) 
-# 782 "./awk.y" 3 4
-                                ((void *)0)
-# 782 "./awk.y"
-                                    , Node_builtin, (int) yyvsp[0].lval);
+  yyval.nodeval = snode((NODE *) ((void *)0), Node_builtin, (int) yyvsp[0].lval);
   if (do_posix)
    warning("call of `length' without parentheses is deprecated by POSIX");
    ;
@@ -8457,19 +8073,11 @@ case 142:
     break;}
 case 144:
 # 795 "./awk.y"
-{ yyval.nodeval = node(yyvsp[0].nodeval, Node_preincrement, (NODE *) 
-# 795 "./awk.y" 3 4
-                                                                    ((void *)0)
-# 795 "./awk.y"
-                                                                        ); ;
+{ yyval.nodeval = node(yyvsp[0].nodeval, Node_preincrement, (NODE *) ((void *)0)); ;
     break;}
 case 145:
 # 797 "./awk.y"
-{ yyval.nodeval = node(yyvsp[0].nodeval, Node_predecrement, (NODE *) 
-# 797 "./awk.y" 3 4
-                                                                    ((void *)0)
-# 797 "./awk.y"
-                                                                        ); ;
+{ yyval.nodeval = node(yyvsp[0].nodeval, Node_predecrement, (NODE *) ((void *)0)); ;
     break;}
 case 146:
 # 799 "./awk.y"
@@ -8486,11 +8094,7 @@ case 148:
    yyvsp[0].nodeval->sub.val.fltnum = -(({NODE *_tn = (yyvsp[0].nodeval); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);}));
    yyval.nodeval = yyvsp[0].nodeval;
     } else
-   yyval.nodeval = node(yyvsp[0].nodeval, Node_unary_minus, (NODE *) 
-# 809 "./awk.y" 3 4
-                                                                    ((void *)0)
-# 809 "./awk.y"
-                                                                        );
+   yyval.nodeval = node(yyvsp[0].nodeval, Node_unary_minus, (NODE *) ((void *)0));
   ;
     break;}
 case 149:
@@ -8505,11 +8109,7 @@ case 149:
     break;}
 case 150:
 # 823 "./awk.y"
-{ yyval.nodeval = 
-# 823 "./awk.y" 3 4
-                 ((void *)0)
-# 823 "./awk.y"
-                     ; ;
+{ yyval.nodeval = ((void *)0); ;
     break;}
 case 151:
 # 825 "./awk.y"
@@ -8522,11 +8122,7 @@ case 152:
 case 153:
 # 832 "./awk.y"
 {
-  if (yyvsp[-1].nodeval->sub.nodep.r.rptr == 
-# 833 "./awk.y" 3 4
-                                 ((void *)0)
-# 833 "./awk.y"
-                                     ) {
+  if (yyvsp[-1].nodeval->sub.nodep.r.rptr == ((void *)0)) {
    yyval.nodeval = node(variable(yyvsp[-3].sval, 1, Node_var_array), Node_subscript, yyvsp[-1].nodeval->sub.nodep.l.lptr);
    ((yyvsp[-1].nodeval)->flags &= ~512, (yyvsp[-1].nodeval)->sub.nodep.l.lptr = nextfree, nextfree = (yyvsp[-1].nodeval));
   } else
@@ -8535,11 +8131,7 @@ case 153:
     break;}
 case 154:
 # 840 "./awk.y"
-{ yyval.nodeval = node(yyvsp[0].nodeval, Node_field_spec, (NODE *) 
-# 840 "./awk.y" 3 4
-                                                                  ((void *)0)
-# 840 "./awk.y"
-                                                                      ); ;
+{ yyval.nodeval = node(yyvsp[0].nodeval, Node_field_spec, (NODE *) ((void *)0)); ;
     break;}
 case 156:
 # 848 "./awk.y"
@@ -8767,11 +8359,7 @@ yyerror(const char *m, ...)
 
 {
  va_list args;
- const char *mesg = 
-# 977 "./awk.y" 3 4
-                   ((void *)0)
-# 977 "./awk.y"
-                       ;
+ const char *mesg = ((void *)0);
  register char *bp, *cp;
  char *scan;
  char buf[120];
@@ -8780,11 +8368,7 @@ yyerror(const char *m, ...)
  errcount++;
 
  if (lexptr && lexeme) {
-  if (thisline == 
-# 986 "./awk.y" 3 4
-                 ((void *)0)
-# 986 "./awk.y"
-                     ) {
+  if (thisline == ((void *)0)) {
    cp = lexeme;
    if (*cp == '\n') {
     cp--;
@@ -8807,11 +8391,7 @@ yyerror(const char *m, ...)
  msg("%.*s", (int) (bp - thisline), thisline);
  bp = buf;
  cp = buf + sizeof(buf) - 24;
- if (lexptr != 
-# 1009 "./awk.y" 3 4
-              ((void *)0)
-# 1009 "./awk.y"
-                  ) {
+ if (lexptr != ((void *)0)) {
   scan = thisline;
   while (bp < cp && scan < lexeme)
    if (*scan++ == '\t')
@@ -8822,24 +8402,8 @@ yyerror(const char *m, ...)
   *bp++ = ' ';
  }
 
- 
-# 1020 "./awk.y" 3 4
-__builtin_va_start(
-# 1020 "./awk.y"
-args
-# 1020 "./awk.y" 3 4
-,
-# 1020 "./awk.y"
-m
-# 1020 "./awk.y" 3 4
-)
-# 1020 "./awk.y"
-                 ;
- if (mesg == 
-# 1021 "./awk.y" 3 4
-            ((void *)0)
-# 1021 "./awk.y"
-                )
+ __builtin_va_start(args,m);
+ if (mesg == ((void *)0))
   mesg = m;
 
 
@@ -8848,15 +8412,7 @@ m
 
  strcpy(bp, mesg);
  err("", buf, args);
- 
-# 1030 "./awk.y" 3 4
-__builtin_va_end(
-# 1030 "./awk.y"
-args
-# 1030 "./awk.y" 3 4
-)
-# 1030 "./awk.y"
-            ;
+ __builtin_va_end(args);
 }
 
 
@@ -8866,11 +8422,7 @@ get_src_buf()
 {
  static int samefile = 0;
  static int nextfile = 0;
- static char *buf = 
-# 1040 "./awk.y" 3 4
-                   ((void *)0)
-# 1040 "./awk.y"
-                       ;
+ static char *buf = ((void *)0);
  static int fd;
  int n;
  register char *scan;
@@ -8884,11 +8436,7 @@ get_src_buf()
 again:
  newfile = 0;
  if (nextfile > numfiles)
-  return 
-# 1054 "./awk.y" 3 4
-        ((void *)0)
-# 1054 "./awk.y"
-            ;
+  return ((void *)0);
 
  if (srcfiles[nextfile].stype == CMDLINE) {
   if (len == 0) {
@@ -8927,11 +8475,7 @@ again:
      break;
     }
    len = lexptr - scan;
-   (void)((buf=(char *)malloc((size_t)(len+1))) || (set_loc("./awk.y", 1093), r_fatal("%s: %s: can't allocate memory (%s)", ("get_src_buf"), "buf", strerror(
-# 1093 "./awk.y" 3 4
-  (*__errno_location ())
-# 1093 "./awk.y"
-  )),0));
+   (void)((buf=(char *)malloc((size_t)(len+1))) || (set_loc("./awk.y", 1093), r_fatal("%s: %s: can't allocate memory (%s)", ("get_src_buf"), "buf", strerror((*__errno_location ()))),0));
    memcpy(buf, scan, len);
    thisline = buf;
    lexptr = buf + len;
@@ -8941,45 +8485,21 @@ again:
    lexend = lexptr + 1;
   } else {
    len = 0;
-   lexeme = lexptr = lexptr_begin = 
-# 1103 "./awk.y" 3 4
-                                   ((void *)0)
-# 1103 "./awk.y"
-                                       ;
+   lexeme = lexptr = lexptr_begin = ((void *)0);
   }
-  if (lexptr == 
-# 1105 "./awk.y" 3 4
-               ((void *)0) 
-# 1105 "./awk.y"
-                    && ++nextfile <= numfiles)
+  if (lexptr == ((void *)0) && ++nextfile <= numfiles)
    goto again;
   return lexptr;
  }
  if (! samefile) {
   source = srcfiles[nextfile].val;
-  if (source == 
-# 1111 "./awk.y" 3 4
-               ((void *)0)
-# 1111 "./awk.y"
-                   ) {
-   if (buf != 
-# 1112 "./awk.y" 3 4
-             ((void *)0)
-# 1112 "./awk.y"
-                 ) {
+  if (source == ((void *)0)) {
+   if (buf != ((void *)0)) {
     free(buf);
-    buf = 
-# 1114 "./awk.y" 3 4
-         ((void *)0)
-# 1114 "./awk.y"
-             ;
+    buf = ((void *)0);
    }
    len = 0;
-   return lexeme = lexptr = lexptr_begin = 
-# 1117 "./awk.y" 3 4
-                                          ((void *)0)
-# 1117 "./awk.y"
-                                              ;
+   return lexeme = lexptr = lexptr_begin = ((void *)0);
   }
   fd = pathopen(source);
   if (fd <= (-1)) {
@@ -8987,31 +8507,15 @@ again:
 
 
    in = source;
-   source = 
-# 1125 "./awk.y" 3 4
-           ((void *)0)
-# 1125 "./awk.y"
-               ;
+   source = ((void *)0);
    set_loc("./awk.y", 1126), r_fatal("can't open source file \"%s\" for reading (%s)",
-    in, strerror(
-# 1127 "./awk.y" 3 4
-                (*__errno_location ())
-# 1127 "./awk.y"
-                     ));
+    in, strerror((*__errno_location ())));
   }
   len = optimal_bufsize(fd, & sbuf);
   newfile = 1;
-  if (buf != 
-# 1131 "./awk.y" 3 4
-            ((void *)0)
-# 1131 "./awk.y"
-                )
+  if (buf != ((void *)0))
    free(buf);
-  (void)((buf=(char *)malloc((size_t)(len + 128))) || (set_loc("./awk.y", 1133), r_fatal("%s: %s: can't allocate memory (%s)", ("get_src_buf"), "buf", strerror(
-# 1133 "./awk.y" 3 4
- (*__errno_location ())
-# 1133 "./awk.y"
- )),0));
+  (void)((buf=(char *)malloc((size_t)(len + 128))) || (set_loc("./awk.y", 1133), r_fatal("%s: %s: can't allocate memory (%s)", ("get_src_buf"), "buf", strerror((*__errno_location ()))),0));
   lexptr_begin = buf + 128;
   samefile = 1;
   sourceline = 1;
@@ -9040,11 +8544,7 @@ again:
  n = read(fd, buf + 128, len);
  if (n == -1)
   set_loc("./awk.y", 1161), r_fatal("can't read sourcefile \"%s\" (%s)",
-   source, strerror(
-# 1162 "./awk.y" 3 4
-                   (*__errno_location ())
-# 1162 "./awk.y"
-                        ));
+   source, strerror((*__errno_location ())));
  if (n == 0) {
   if (newfile) {
    static int warned = 0;
@@ -9081,22 +8581,10 @@ tokexpand()
 
  tokoffset = tok - tokstart;
  toksize *= 2;
- if (tokstart != 
-# 1199 "./awk.y" 3 4
-                ((void *)0)
-# 1199 "./awk.y"
-                    )
-  (void)((tokstart=(char *)realloc((char *)tokstart, (size_t)(toksize))) || (set_loc("./awk.y", 1200), r_fatal("%s: %s: can't allocate memory (%s)", ("tokexpand"), "tokstart", strerror(
-# 1200 "./awk.y" 3 4
- (*__errno_location ())
-# 1200 "./awk.y"
- )),0));
+ if (tokstart != ((void *)0))
+  (void)((tokstart=(char *)realloc((char *)tokstart, (size_t)(toksize))) || (set_loc("./awk.y", 1200), r_fatal("%s: %s: can't allocate memory (%s)", ("tokexpand"), "tokstart", strerror((*__errno_location ()))),0));
  else
-  (void)((tokstart=(char *)malloc((size_t)(toksize))) || (set_loc("./awk.y", 1202), r_fatal("%s: %s: can't allocate memory (%s)", ("tokexpand"), "tokstart", strerror(
-# 1202 "./awk.y" 3 4
- (*__errno_location ())
-# 1202 "./awk.y"
- )),0));
+  (void)((tokstart=(char *)malloc((size_t)(toksize))) || (set_loc("./awk.y", 1202), r_fatal("%s: %s: can't allocate memory (%s)", ("tokexpand"), "tokstart", strerror((*__errno_location ()))),0));
  tokend = tokstart + toksize;
  tok = tokstart + tokoffset;
  return tok;
@@ -9108,46 +8596,18 @@ allow_newline()
  int c;
 
  for (;;) {
-  c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1244 "./awk.y" 3 4
-     (-1)
-# 1244 "./awk.y"
-     ) );
-  if (c == 
-# 1245 "./awk.y" 3 4
-          (-1)
-# 1245 "./awk.y"
-             )
+  c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) );
+  if (c == (-1))
    break;
   if (c == '#') {
-   while ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1248 "./awk.y" 3 4
-              (-1)
-# 1248 "./awk.y"
-              ) )) != '\n' && c != 
-# 1248 "./awk.y" 3 4
-                                       (-1)
-# 1248 "./awk.y"
-                                          )
+   while ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) != '\n' && c != (-1))
     continue;
-   if (c == 
-# 1250 "./awk.y" 3 4
-           (-1)
-# 1250 "./awk.y"
-              )
+   if (c == (-1))
     break;
   }
   if (c == '\n')
    sourceline++;
-  if (! 
-# 1255 "./awk.y" 3 4
-       ((*__ctype_b_loc ())[(int) ((
-# 1255 "./awk.y"
-       c
-# 1255 "./awk.y" 3 4
-       ))] & (unsigned short int) _ISspace)
-# 1255 "./awk.y"
-                 ) {
+  if (! ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISspace)) {
    (lexptr && lexptr > lexptr_begin ? lexptr-- : lexptr);
    break;
   }
@@ -9169,15 +8629,7 @@ yylex()
  static int lasttok = 0, eof_warned = 0;
  int inhex = 0;
 
- if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1277 "./awk.y" 3 4
-    (-1)
-# 1277 "./awk.y"
-    ) ) == 
-# 1277 "./awk.y" 3 4
-               (-1)
-# 1277 "./awk.y"
-                  ) {
+ if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) ) == (-1)) {
   if (lasttok != 268) {
    lasttok = 268;
    if (do_lint && ! eof_warned) {
@@ -9191,30 +8643,18 @@ yylex()
  (lexptr && lexptr > lexptr_begin ? lexptr-- : lexptr);
 # 1299 "./awk.y"
  lexeme = lexptr;
- thisline = 
-# 1300 "./awk.y" 3 4
-           ((void *)0)
-# 1300 "./awk.y"
-               ;
+ thisline = ((void *)0);
  if (want_regexp) {
   int in_brack = 0;
 # 1320 "./awk.y"
   want_regexp = 0;
   tok = tokstart;
   for (;;) {
-   c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1323 "./awk.y" 3 4
-      (-1)
-# 1323 "./awk.y"
-      ) );
+   c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) );
    switch (c) {
    case '[':
 
-    if ((c1 = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1327 "./awk.y" 3 4
-             (-1)
-# 1327 "./awk.y"
-             ) )) == ':' || in_brack == 0)
+    if ((c1 = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) == ':' || in_brack == 0)
      in_brack++;
     (lexptr && lexptr > lexptr_begin ? lexptr-- : lexptr);
     break;
@@ -9228,15 +8668,7 @@ yylex()
      in_brack--;
     break;
    case '\\':
-    if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1341 "./awk.y" 3 4
-            (-1)
-# 1341 "./awk.y"
-            ) )) == 
-# 1341 "./awk.y" 3 4
-                        (-1)
-# 1341 "./awk.y"
-                           ) {
+    if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) == (-1)) {
      yyerror("unterminated regexp ends with \\ at end of file");
      return lasttok = 260;
     } else if (c == '\n') {
@@ -9260,11 +8692,7 @@ yylex()
     (lexptr && lexptr > lexptr_begin ? lexptr-- : lexptr);
     yyerror("unterminated regexp");
     return lasttok = 260;
-   case 
-# 1365 "./awk.y" 3 4
-       (-1)
-# 1365 "./awk.y"
-          :
+   case (-1):
     yyerror("unterminated regexp at end of file");
     return lasttok = 260;
    }
@@ -9272,28 +8700,16 @@ yylex()
   }
  }
 retry:
- while ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1373 "./awk.y" 3 4
-            (-1)
-# 1373 "./awk.y"
-            ) )) == ' ' || c == '\t')
+ while ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) == ' ' || c == '\t')
   continue;
 
  lexeme = lexptr ? lexptr - 1 : lexptr;
- thisline = 
-# 1377 "./awk.y" 3 4
-           ((void *)0)
-# 1377 "./awk.y"
-               ;
+ thisline = ((void *)0);
  tok = tokstart;
  yylval.nodetypeval = Node_illegal;
 
  switch (c) {
- case 
-# 1382 "./awk.y" 3 4
-     (-1)
-# 1382 "./awk.y"
-        :
+ case (-1):
   if (lasttok != 268) {
    lasttok = 268;
    if (do_lint && ! eof_warned) {
@@ -9309,16 +8725,8 @@ retry:
   return lasttok = 268;
 
  case '#':
-  while ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1398 "./awk.y" 3 4
-             (-1)
-# 1398 "./awk.y"
-             ) )) != '\n') {
-   if (c == 
-# 1399 "./awk.y" 3 4
-           (-1)
-# 1399 "./awk.y"
-              ) {
+  while ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) != '\n') {
+   if (c == (-1)) {
     if (lasttok != 268) {
      lasttok = 268;
      if (do_lint && ! eof_warned) {
@@ -9336,11 +8744,7 @@ retry:
 
  case '\\':
 # 1438 "./awk.y"
-  if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1438 "./awk.y" 3 4
-     (-1)
-# 1438 "./awk.y"
-     ) ) == '\n') {
+  if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) ) == '\n') {
    sourceline++;
    goto retry;
   } else {
@@ -9367,11 +8771,7 @@ retry:
   return lasttok = c;
 
  case '*':
-  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1465 "./awk.y" 3 4
-          (-1)
-# 1465 "./awk.y"
-          ) )) == '=') {
+  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) == '=') {
    yylval.nodetypeval = Node_assign_times;
    return lasttok = 266;
   } else if (do_posix) {
@@ -9381,11 +8781,7 @@ retry:
 
    static int did_warn_op = 0, did_warn_assgn = 0;
 
-   if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1475 "./awk.y" 3 4
-      (-1)
-# 1475 "./awk.y"
-      ) ) == '=') {
+   if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) ) == '=') {
     if (do_lint && ! did_warn_assgn) {
      did_warn_assgn = 1;
      warning("**= is not allowed by POSIX");
@@ -9408,11 +8804,7 @@ retry:
 
  case '/':
   if (want_assign) {
-   if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1498 "./awk.y" 3 4
-      (-1)
-# 1498 "./awk.y"
-      ) ) == '=') {
+   if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) ) == '=') {
     yylval.nodetypeval = Node_assign_quotient;
     return lasttok = 266;
    }
@@ -9421,11 +8813,7 @@ retry:
   return lasttok = '/';
 
  case '%':
-  if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1507 "./awk.y" 3 4
-     (-1)
-# 1507 "./awk.y"
-     ) ) == '=') {
+  if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) ) == '=') {
    yylval.nodetypeval = Node_assign_mod;
    return lasttok = 266;
   }
@@ -9436,11 +8824,7 @@ retry:
  {
   static int did_warn_op = 0, did_warn_assgn = 0;
 
-  if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1518 "./awk.y" 3 4
-     (-1)
-# 1518 "./awk.y"
-     ) ) == '=') {
+  if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) ) == '=') {
    if (do_lint && ! did_warn_assgn) {
     did_warn_assgn = 1;
     warning("operator `^=' is not supported in old awk");
@@ -9457,11 +8841,7 @@ retry:
  }
 
  case '+':
-  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1535 "./awk.y" 3 4
-          (-1)
-# 1535 "./awk.y"
-          ) )) == '=') {
+  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) == '=') {
    yylval.nodetypeval = Node_assign_plus;
    return lasttok = 266;
   }
@@ -9471,11 +8851,7 @@ retry:
   return lasttok = '+';
 
  case '!':
-  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1545 "./awk.y" 3 4
-          (-1)
-# 1545 "./awk.y"
-          ) )) == '=') {
+  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) == '=') {
    yylval.nodetypeval = Node_notequal;
    return lasttok = 264;
   }
@@ -9488,11 +8864,7 @@ retry:
   return lasttok = '!';
 
  case '<':
-  if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1558 "./awk.y" 3 4
-     (-1)
-# 1558 "./awk.y"
-     ) ) == '=') {
+  if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) ) == '=') {
    yylval.nodetypeval = Node_leq;
    return lasttok = 264;
   }
@@ -9501,11 +8873,7 @@ retry:
   return lasttok = '<';
 
  case '=':
-  if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1567 "./awk.y" 3 4
-     (-1)
-# 1567 "./awk.y"
-     ) ) == '=') {
+  if (((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) ) == '=') {
    yylval.nodetypeval = Node_equal;
    return lasttok = 264;
   }
@@ -9514,11 +8882,7 @@ retry:
   return lasttok = 266;
 
  case '>':
-  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1576 "./awk.y" 3 4
-          (-1)
-# 1576 "./awk.y"
-          ) )) == '=') {
+  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) == '=') {
    yylval.nodetypeval = Node_geq;
    return lasttok = 264;
   } else if (c == '>') {
@@ -9549,22 +8913,14 @@ retry:
 
  case '"':
   esc_seen = 0;
-  while ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1607 "./awk.y" 3 4
-             (-1)
-# 1607 "./awk.y"
-             ) )) != '"') {
+  while ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) != '"') {
    if (c == '\n') {
     (lexptr && lexptr > lexptr_begin ? lexptr-- : lexptr);
     yyerror("unterminated string");
     exit(1);
    }
    if (c == '\\') {
-    c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1614 "./awk.y" 3 4
-       (-1)
-# 1614 "./awk.y"
-       ) );
+    c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) );
     if (c == '\n') {
      sourceline++;
      continue;
@@ -9572,11 +8928,7 @@ retry:
     esc_seen = 1;
     (*tok++ = ('\\'), tok == tokend ? tokexpand() : tok);
    }
-   if (c == 
-# 1622 "./awk.y" 3 4
-           (-1)
-# 1622 "./awk.y"
-              ) {
+   if (c == (-1)) {
     (lexptr && lexptr > lexptr_begin ? lexptr-- : lexptr);
     yyerror("unterminated string");
     exit(1);
@@ -9589,11 +8941,7 @@ retry:
   return lasttok = 263;
 
  case '-':
-  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1635 "./awk.y" 3 4
-          (-1)
-# 1635 "./awk.y"
-          ) )) == '=') {
+  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) == '=') {
    yylval.nodetypeval = Node_assign_minus;
    return lasttok = 266;
   }
@@ -9603,21 +8951,9 @@ retry:
   return lasttok = '-';
 
  case '.':
-  c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1645 "./awk.y" 3 4
-     (-1)
-# 1645 "./awk.y"
-     ) );
+  c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) );
   (lexptr && lexptr > lexptr_begin ? lexptr-- : lexptr);
-  if (! 
-# 1647 "./awk.y" 3 4
-       ((*__ctype_b_loc ())[(int) ((
-# 1647 "./awk.y"
-       c
-# 1647 "./awk.y" 3 4
-       ))] & (unsigned short int) _ISdigit)
-# 1647 "./awk.y"
-                 )
+  if (! ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISdigit))
    return lasttok = '.';
   else
    c = '.';
@@ -9655,11 +8991,7 @@ retry:
      break;
     }
     seen_e = 1;
-    if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1693 "./awk.y" 3 4
-            (-1)
-# 1693 "./awk.y"
-            ) )) == '-' || c == '+')
+    if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) == '-' || c == '+')
      (*tok++ = (c), tok == tokend ? tokexpand() : tok);
     else
      (lexptr && lexptr > lexptr_begin ? lexptr-- : lexptr);
@@ -9682,17 +9014,9 @@ retry:
    }
    if (gotnumber)
     break;
-   c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1730 "./awk.y" 3 4
-      (-1)
-# 1730 "./awk.y"
-      ) );
+   c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) );
   }
-  if (c != 
-# 1732 "./awk.y" 3 4
-          (-1)
-# 1732 "./awk.y"
-             )
+  if (c != (-1))
    (lexptr && lexptr > lexptr_begin ? lexptr-- : lexptr);
   else if (do_lint && ! eof_warned) {
    warning("source file does not end in newline");
@@ -9709,11 +9033,7 @@ retry:
   return lasttok = 262;
 
  case '&':
-  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1749 "./awk.y" 3 4
-          (-1)
-# 1749 "./awk.y"
-          ) )) == '&') {
+  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) == '&') {
    yylval.nodetypeval = Node_and;
    allow_newline();
    want_assign = 0;
@@ -9723,11 +9043,7 @@ retry:
   return lasttok = '&';
 
  case '|':
-  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1759 "./awk.y" 3 4
-          (-1)
-# 1759 "./awk.y"
-          ) )) == '|') {
+  if ((c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) )) == '|') {
    yylval.nodetypeval = Node_or;
    allow_newline();
    want_assign = 0;
@@ -9737,49 +9053,21 @@ retry:
   return lasttok = '|';
  }
 
- if (c != '_' && ! 
-# 1769 "./awk.y" 3 4
-                  ((*__ctype_b_loc ())[(int) ((
-# 1769 "./awk.y"
-                  c
-# 1769 "./awk.y" 3 4
-                  ))] & (unsigned short int) _ISalpha)
-# 1769 "./awk.y"
-                            ) {
+ if (c != '_' && ! ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISalpha)) {
   yyerror("Invalid char '%c' in expression\n", c);
   exit(1);
  }
 
 
  tok = tokstart;
- while ((
-# 1776 "./awk.y" 3 4
-       ((*__ctype_b_loc ())[(int) ((
-# 1776 "./awk.y"
-       c
-# 1776 "./awk.y" 3 4
-       ))] & (unsigned short int) _ISalnum) 
-# 1776 "./awk.y"
-       || (c) == '_')) {
+ while ((((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISalnum) || (c) == '_')) {
   (*tok++ = (c), tok == tokend ? tokexpand() : tok);
-  c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : 
-# 1778 "./awk.y" 3 4
-     (-1)
-# 1778 "./awk.y"
-     ) );
+  c = ((lexptr && lexptr < lexend) ? *lexptr++ : (get_src_buf() ? *lexptr++ : (-1)) );
  }
  (*tok++ = ('\0'), tok == tokend ? tokexpand() : tok);
- (void)((tokkey=(char *)malloc((size_t)(tok - tokstart))) || (set_loc("./awk.y", 1781), r_fatal("%s: %s: can't allocate memory (%s)", ("yylex"), "tokkey", strerror(
-# 1781 "./awk.y" 3 4
-(*__errno_location ())
-# 1781 "./awk.y"
-)),0));
+ (void)((tokkey=(char *)malloc((size_t)(tok - tokstart))) || (set_loc("./awk.y", 1781), r_fatal("%s: %s: can't allocate memory (%s)", ("yylex"), "tokkey", strerror((*__errno_location ()))),0));
  memcpy(tokkey, tokstart, tok - tokstart);
- if (c != 
-# 1783 "./awk.y" 3 4
-         (-1)
-# 1783 "./awk.y"
-            )
+ if (c != (-1))
   (lexptr && lexptr > lexptr_begin ? lexptr-- : lexptr);
  else if (do_lint && ! eof_warned) {
   warning("source file does not end in newline");
@@ -9892,11 +9180,7 @@ NODE *subn;
  r = node_common(op);
 
 
- for (n = subn; n != 
-# 1896 "./awk.y" 3 4
-                    ((void *)0)
-# 1896 "./awk.y"
-                        ; n = n->sub.nodep.r.rptr) {
+ for (n = subn; n != ((void *)0); n = n->sub.nodep.r.rptr) {
   nexp++;
   if (nexp > 3)
    break;
@@ -9917,17 +9201,9 @@ NODE *subn;
 
 
  if (nexp == 0 && r->sub.nodep.r.pptr == do_length) {
-  subn = node(node(mk_number((0.0), (unsigned int)(1|32|64)), Node_field_spec, (NODE *) 
-# 1917 "./awk.y" 3 4
-                                                              ((void *)0)
-# 1917 "./awk.y"
-                                                                  ),
+  subn = node(node(mk_number((0.0), (unsigned int)(1|32|64)), Node_field_spec, (NODE *) ((void *)0)),
               Node_expression_list,
-       (NODE *) 
-# 1919 "./awk.y" 3 4
-               ((void *)0)
-# 1919 "./awk.y"
-                   );
+       (NODE *) ((void *)0));
  } else if (r->sub.nodep.r.pptr == do_match) {
   if (subn->sub.nodep.r.rptr->sub.nodep.l.lptr->type != Node_regex)
    subn->sub.nodep.r.rptr->sub.nodep.l.lptr = mk_rexp(subn->sub.nodep.r.rptr->sub.nodep.l.lptr);
@@ -9937,17 +9213,9 @@ NODE *subn;
   if (nexp == 2)
    append_right(subn, node(node(mk_number((0.0), (unsigned int)(1|32|64)),
            Node_field_spec,
-           (NODE *) 
-# 1929 "./awk.y" 3 4
-                   ((void *)0)
-# 1929 "./awk.y"
-                       ),
+           (NODE *) ((void *)0)),
              Node_expression_list,
-      (NODE *) 
-# 1931 "./awk.y" 3 4
-              ((void *)0)
-# 1931 "./awk.y"
-                  ));
+      (NODE *) ((void *)0)));
   else if (subn->sub.nodep.r.rptr->sub.nodep.r.rptr->sub.nodep.l.lptr->type == Node_val) {
    if (do_lint)
     warning("string literal as last arg of substitute");
@@ -9960,25 +9228,13 @@ NODE *subn;
   if (nexp == 3)
    append_right(subn, node(node(mk_number((0.0), (unsigned int)(1|32|64)),
            Node_field_spec,
-           (NODE *) 
-# 1944 "./awk.y" 3 4
-                   ((void *)0)
-# 1944 "./awk.y"
-                       ),
+           (NODE *) ((void *)0)),
              Node_expression_list,
-      (NODE *) 
-# 1946 "./awk.y" 3 4
-              ((void *)0)
-# 1946 "./awk.y"
-                  ));
+      (NODE *) ((void *)0)));
  } else if (r->sub.nodep.r.pptr == do_split) {
   if (nexp == 2)
    append_right(subn,
-       node(FS_node, Node_expression_list, (NODE *) 
-# 1950 "./awk.y" 3 4
-                                                   ((void *)0)
-# 1950 "./awk.y"
-                                                       ));
+       node(FS_node, Node_expression_list, (NODE *) ((void *)0)));
   n = subn->sub.nodep.r.rptr->sub.nodep.r.rptr->sub.nodep.l.lptr;
   if (n->type != Node_regex)
    subn->sub.nodep.r.rptr->sub.nodep.r.rptr->sub.nodep.l.lptr = mk_rexp(n);
@@ -10012,11 +9268,7 @@ NODE *init, *cond, *incr;
  register FOR_LOOP_HEADER *r;
  NODE *n;
 
- (void)((r=(FOR_LOOP_HEADER *)malloc((size_t)(sizeof(FOR_LOOP_HEADER)))) || (set_loc("./awk.y", 1992), r_fatal("%s: %s: can't allocate memory (%s)", ("make_for_loop"), "r", strerror(
-# 1992 "./awk.y" 3 4
-(*__errno_location ())
-# 1992 "./awk.y"
-)),0));
+ (void)((r=(FOR_LOOP_HEADER *)malloc((size_t)(sizeof(FOR_LOOP_HEADER)))) || (set_loc("./awk.y", 1992), r_fatal("%s: %s: can't allocate memory (%s)", ("make_for_loop"), "r", strerror((*__errno_location ()))),0));
  if (nextfree) n = nextfree, nextfree = nextfree->sub.nodep.l.lptr; else n = more_nodes();
  n->type = Node_illegal;
  r->init = init;
@@ -10037,11 +9289,7 @@ NODE *func;
  int count, i, j, dups;
  NODE *params;
 
- if (func == 
-# 2013 "./awk.y" 3 4
-            ((void *)0)
-# 2013 "./awk.y"
-                )
+ if (func == ((void *)0))
   return 1;
 
  fname = func->sub.nodep.l.param_name;
@@ -10051,30 +9299,14 @@ NODE *func;
  if (count == 0)
   return 0;
 
- if (params == 
-# 2023 "./awk.y" 3 4
-              ((void *)0)
-# 2023 "./awk.y"
-                  )
+ if (params == ((void *)0))
   return 1;
 
- (void)((names=(char **)malloc((size_t)(count * sizeof(char *)))) || (set_loc("./awk.y", 2026), r_fatal("%s: %s: can't allocate memory (%s)", ("dup_parms"), "names", strerror(
-# 2026 "./awk.y" 3 4
-(*__errno_location ())
-# 2026 "./awk.y"
-)),0));
+ (void)((names=(char **)malloc((size_t)(count * sizeof(char *)))) || (set_loc("./awk.y", 2026), r_fatal("%s: %s: can't allocate memory (%s)", ("dup_parms"), "names", strerror((*__errno_location ()))),0));
 
  i = 0;
- for (np = params; np != 
-# 2029 "./awk.y" 3 4
-                        ((void *)0)
-# 2029 "./awk.y"
-                            ; np = np->sub.nodep.r.rptr) {
-  if (np->sub.nodep.l.param_name == 
-# 2030 "./awk.y" 3 4
-                  ((void *)0)
-# 2030 "./awk.y"
-                      ) {
+ for (np = params; np != ((void *)0); np = np->sub.nodep.r.rptr) {
+  if (np->sub.nodep.l.param_name == ((void *)0)) {
    free(names);
    return 1;
   }
@@ -10136,19 +9368,11 @@ const char *name;
 
  len = strlen(name);
  for (bucket = variables[hash(name, len, (unsigned long) 1021)];
-   bucket != 
-# 2092 "./awk.y" 3 4
-            ((void *)0)
-# 2092 "./awk.y"
-                ; bucket = bucket->sub.hash.next)
+   bucket != ((void *)0); bucket = bucket->sub.hash.next)
   if (bucket->sub.hash.length == len && ((len) && *(bucket->sub.hash.name)== *(name) && strncmp((bucket->sub.hash.name), (name), (size_t) (len)) == 0))
    return bucket->sub.hash.value;
 
- return 
-# 2096 "./awk.y" 3 4
-       ((void *)0)
-# 2096 "./awk.y"
-           ;
+ return ((void *)0);
 }
 
 
@@ -10162,15 +9386,7 @@ append_right(list, new)
 NODE *list, *new;
 {
  register NODE *oldlist;
- static NODE *savefront = 
-# 2110 "./awk.y" 3 4
-                         ((void *)0)
-# 2110 "./awk.y"
-                             , *savetail = 
-# 2110 "./awk.y" 3 4
-                                           ((void *)0)
-# 2110 "./awk.y"
-                                               ;
+ static NODE *savefront = ((void *)0), *savetail = ((void *)0);
 
  oldlist = list;
  if (savefront == oldlist) {
@@ -10178,11 +9394,7 @@ NODE *list, *new;
   return oldlist;
  } else
   savefront = oldlist;
- while (list->sub.nodep.r.rptr != 
-# 2118 "./awk.y" 3 4
-                      ((void *)0)
-# 2118 "./awk.y"
-                          )
+ while (list->sub.nodep.r.rptr != ((void *)0))
   list = list->sub.nodep.r.rptr;
  savetail = list->sub.nodep.r.rptr = new;
  return oldlist;
@@ -10198,11 +9410,7 @@ NODE *def;
  pop_params(params->sub.nodep.r.rptr);
  pop_var(params, 0);
  r = lookup(params->sub.nodep.l.param_name);
- if (r != 
-# 2141 "./awk.y" 3 4
-         ((void *)0)
-# 2141 "./awk.y"
-             ) {
+ if (r != ((void *)0)) {
   set_loc("./awk.y", 2142), r_fatal("function name `%s' previously defined", params->sub.nodep.l.param_name);
  } else
   (void) install(params->sub.nodep.l.param_name, node(params, Node_func, def));
@@ -10224,11 +9432,7 @@ int freeit;
  name = np->sub.nodep.l.param_name;
  len = strlen(name);
  save = &(variables[hash(name, len, (unsigned long) 1021)]);
- for (bucket = *save; bucket != 
-# 2163 "./awk.y" 3 4
-                               ((void *)0)
-# 2163 "./awk.y"
-                                   ; bucket = bucket->sub.hash.next) {
+ for (bucket = *save; bucket != ((void *)0); bucket = bucket->sub.hash.next) {
   if (len == bucket->sub.hash.length && ((len) && *(bucket->sub.hash.name)== *(name) && strncmp((bucket->sub.hash.name), (name), (size_t) (len)) == 0)) {
    *save = bucket->sub.hash.next;
    ((bucket)->flags &= ~512, (bucket)->sub.nodep.l.lptr = nextfree, nextfree = (bucket));
@@ -10250,11 +9454,7 @@ static void
 pop_params(params)
 NODE *params;
 {
- if (params == 
-# 2185 "./awk.y" 3 4
-              ((void *)0)
-# 2185 "./awk.y"
-                  )
+ if (params == ((void *)0))
   return;
  pop_params(params->sub.nodep.r.rptr);
  pop_var(params, 1);
@@ -10270,11 +9470,7 @@ char *name;
 
  if (nextfree) r = nextfree, nextfree = nextfree->sub.nodep.l.lptr; else r = more_nodes();
  r->type = Node_param_list;
- r->sub.nodep.r.rptr = 
-# 2201 "./awk.y" 3 4
-           ((void *)0)
-# 2201 "./awk.y"
-               ;
+ r->sub.nodep.r.rptr = ((void *)0);
  r->sub.nodep.l.param_name = name;
  r->sub.nodep.number = param_counter++;
  return (install(name, r));
@@ -10301,11 +9497,7 @@ enum defref how;
  len = strlen(name);
  ind = hash(name, len, 1021);
 
- for (fp = ftable[ind]; fp != 
-# 2228 "./awk.y" 3 4
-                             ((void *)0)
-# 2228 "./awk.y"
-                                 ; fp = fp->next) {
+ for (fp = ftable[ind]; fp != ((void *)0); fp = fp->next) {
   if (strcmp(fp->name, name) == 0) {
    if (how == FUNC_DEFINE)
     fp->defined++;
@@ -10317,17 +9509,9 @@ enum defref how;
 
 
 
- (void)((fp=(struct fdesc *)malloc((size_t)(sizeof(struct fdesc)))) || (set_loc("./awk.y", 2240), r_fatal("%s: %s: can't allocate memory (%s)", ("func_use"), "fp", strerror(
-# 2240 "./awk.y" 3 4
-(*__errno_location ())
-# 2240 "./awk.y"
-)),0));
+ (void)((fp=(struct fdesc *)malloc((size_t)(sizeof(struct fdesc)))) || (set_loc("./awk.y", 2240), r_fatal("%s: %s: can't allocate memory (%s)", ("func_use"), "fp", strerror((*__errno_location ()))),0));
  memset(fp, '\0', sizeof(struct fdesc));
- (void)((fp->name=(char *)malloc((size_t)(len + 1))) || (set_loc("./awk.y", 2242), r_fatal("%s: %s: can't allocate memory (%s)", ("func_use"), "fp->name", strerror(
-# 2242 "./awk.y" 3 4
-(*__errno_location ())
-# 2242 "./awk.y"
-)),0));
+ (void)((fp->name=(char *)malloc((size_t)(len + 1))) || (set_loc("./awk.y", 2242), r_fatal("%s: %s: can't allocate memory (%s)", ("func_use"), "fp->name", strerror((*__errno_location ()))),0));
  strcpy(fp->name, name);
  if (how == FUNC_DEFINE)
   fp->defined++;
@@ -10346,11 +9530,7 @@ check_funcs()
  int i;
 
  for (i = 0; i < 1021; i++) {
-  for (fp = ftable[i]; fp != 
-# 2261 "./awk.y" 3 4
-                            ((void *)0)
-# 2261 "./awk.y"
-                                ; fp = fp->next) {
+  for (fp = ftable[i]; fp != ((void *)0); fp = fp->next) {
 # 2270 "./awk.y"
    if (do_lint && fp->defined == 0)
     warning(
@@ -10365,11 +9545,7 @@ check_funcs()
 
 
  for (i = 0; i < 1021; i++) {
-  for (fp = ftable[i]; fp != 
-# 2283 "./awk.y" 3 4
-                            ((void *)0)
-# 2283 "./awk.y"
-                                ; fp = next) {
+  for (fp = ftable[i]; fp != ((void *)0); fp = next) {
    next = fp->next;
    free(fp->name);
    free(fp);
@@ -10386,11 +9562,7 @@ NODE *arglist;
  NODE *argp, *arg;
  int i;
 
- for (i = 1, argp = arglist; argp != 
-# 2300 "./awk.y" 3 4
-                                    ((void *)0)
-# 2300 "./awk.y"
-                                        ; argp = argp->sub.nodep.r.rptr, i++) {
+ for (i = 1, argp = arglist; argp != ((void *)0); argp = argp->sub.nodep.r.rptr, i++) {
   arg = argp->sub.nodep.l.lptr;
   if (arg->type == Node_regex)
    warning("regexp constant for parameter #%d yields boolean value", i);
@@ -10412,16 +9584,8 @@ NODETYPE type;
   load_environ();
   env_loaded = 1;
  }
- if ((r = lookup(name)) == 
-# 2322 "./awk.y" 3 4
-                          ((void *)0)
-# 2322 "./awk.y"
-                              )
-  r = install(name, node(Nnull_string, type, (NODE *) 
-# 2323 "./awk.y" 3 4
-                                                     ((void *)0)
-# 2323 "./awk.y"
-                                                         ));
+ if ((r = lookup(name)) == ((void *)0))
+  r = install(name, node(Nnull_string, type, (NODE *) ((void *)0)));
  else if (can_free)
   free(name);
  return r;
@@ -10441,16 +9605,8 @@ NODE *exp;
  if (nextfree) n = nextfree, nextfree = nextfree->sub.nodep.l.lptr; else n = more_nodes();
  n->type = Node_regex;
  n->sub.nodep.x.extra = exp;
- n->sub.nodep.l.lptr = 
-# 2343 "./awk.y" 3 4
-             ((void *)0)
-# 2343 "./awk.y"
-                 ;
- n->sub.nodep.r.preg = 
-# 2344 "./awk.y" 3 4
-            ((void *)0)
-# 2344 "./awk.y"
-                ;
+ n->sub.nodep.l.lptr = ((void *)0);
+ n->sub.nodep.r.preg = ((void *)0);
  n->sub.nodep.reflags = 0;
  n->sub.nodep.number = 1;
  return n;

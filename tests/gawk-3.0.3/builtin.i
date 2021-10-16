@@ -1,5 +1,5 @@
 # 1 "builtin.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -40,10 +40,8 @@
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
@@ -167,7 +165,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -201,8 +199,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -968,17 +966,17 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 # 37 "awk.h" 2
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 34 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 34 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 168 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 168 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 143 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
@@ -1002,9 +1000,9 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
 # 152 "/usr/include/limits.h" 2 3 4
-# 169 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
-# 8 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 2 3 4
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
+# 169 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
+# 8 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 2 3 4
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
 # 39 "awk.h" 2
 
 # 1 "/usr/include/ctype.h" 1 3 4
@@ -1270,7 +1268,7 @@ extern void siglongjmp (sigjmp_buf __env, int __val)
 
 # 1 "/usr/include/locale.h" 1 3 4
 # 28 "/usr/include/locale.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 29 "/usr/include/locale.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/locale.h" 1 3 4
 # 30 "/usr/include/locale.h" 2 3 4
@@ -1377,7 +1375,7 @@ extern __locale_t uselocale (__locale_t __dataset) __attribute__ ((__nothrow__ ,
 # 44 "awk.h" 2
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
 # 47 "awk.h" 2
 
 
@@ -2035,7 +2033,7 @@ extern int sigreturn (struct sigcontext *__scp) __attribute__ ((__nothrow__ , __
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 317 "/usr/include/signal.h" 2 3 4
 
 
@@ -2411,7 +2409,7 @@ extern int __libc_current_sigrtmax (void) __attribute__ ((__nothrow__ , __leaf__
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 38 "/usr/include/time.h" 2 3 4
 
 
@@ -2820,7 +2818,7 @@ typedef __suseconds_t suseconds_t;
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -3201,8 +3199,8 @@ extern int __xmknodat (int __ver, int __fd, const char *__path,
 # 118 "awk.h"
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
 # 33 "/usr/include/stdlib.h" 2 3 4
 
@@ -3587,7 +3585,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -3968,7 +3966,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/string.h" 2 3 4
 
 
@@ -4289,7 +4287,7 @@ extern char *basename (const char *__filename) __attribute__ ((__nothrow__ , __l
 # 23 "/usr/include/x86_64-linux-gnu/bits/environments.h" 2 3 4
 # 210 "/usr/include/unistd.h" 2 3 4
 # 229 "/usr/include/unistd.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 230 "/usr/include/unistd.h" 2 3 4
 # 270 "/usr/include/unistd.h" 3 4
 typedef __intptr_t intptr_t;
@@ -5637,8 +5635,6 @@ extern void swab (const void *__restrict __from, void *__restrict __to,
 # 175 "awk.h"
 # 1 "regex.h" 1
 # 40 "regex.h"
-
-# 40 "regex.h"
 typedef long int s_reg_t;
 typedef unsigned long int active_reg_t;
 
@@ -6470,8 +6466,6 @@ extern int strncasecmp (const char *s1, const char *s2, register size_t n);
 
 
 
-
-# 69 "/usr/include/assert.h" 3 4
 extern void __assert_fail (const char *__assertion, const char *__file,
       unsigned int __line, const char *__function)
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
@@ -7594,8 +7588,6 @@ extern int matherr (struct exception *__exc);
 # 34 "builtin.c" 2
 
 
-
-# 36 "builtin.c"
 extern char *gawk_initstate (unsigned seed, char *state, int n);
 extern char *gawk_setstate (char *state);
 extern long gawk_random (void);
@@ -7621,19 +7613,11 @@ const char *from;
 struct redirect *rp;
 int flush;
 {
- 
-# 93 "builtin.c" 3 4
-(*__errno_location ()) 
-# 93 "builtin.c"
-      = 0;
+ (*__errno_location ()) = 0;
  if (fwrite(ptr, size, count, fp) != count)
   goto wrerror;
  if (flush
-   && ((fp == 
-# 97 "builtin.c" 3 4
-             stdout 
-# 97 "builtin.c"
-                    && output_is_tty)
+   && ((fp == stdout && output_is_tty)
     || (rp && (rp->flag & 32)))) {
   fflush(fp);
   if (ferror(fp))
@@ -7644,15 +7628,7 @@ int flush;
 wrerror:
  set_loc("builtin.c", 106), r_fatal("%s to \"%s\" failed (%s)", from,
   rp ? rp->value : "standard output",
-  
-# 108 "builtin.c" 3 4
- (*__errno_location ()) 
-# 108 "builtin.c"
-       ? strerror(
-# 108 "builtin.c" 3 4
-                  (*__errno_location ())
-# 108 "builtin.c"
-                       ) : "reason unknown");
+  (*__errno_location ()) ? strerror((*__errno_location ())) : "reason unknown");
 }
 
 
@@ -7664,28 +7640,12 @@ NODE *tree;
  NODE *tmp;
  double d, res;
 
- tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 120 "builtin.c" 3 4
-      ((void *)0)
-# 120 "builtin.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  d = ({NODE *_tn = (tmp); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
  do { if ((tmp)->flags&2) { unref(tmp); }} while (0);
- 
-# 123 "builtin.c" 3 4
-(*__errno_location ()) 
-# 123 "builtin.c"
-      = 0;
+ (*__errno_location ()) = 0;
  res = exp(d);
- if (
-# 125 "builtin.c" 3 4
-    (*__errno_location ()) 
-# 125 "builtin.c"
-          == 
-# 125 "builtin.c" 3 4
-             34
-# 125 "builtin.c"
-                   )
+ if ((*__errno_location ()) == 34)
   warning("exp argument %g is out of range", d);
  return mk_number(((double) res), (unsigned int)(1|2|32|64));
 }
@@ -7697,24 +7657,12 @@ size_t len;
 {
  if (len == 11) {
   if (((11) && *(name)== *("/dev/stderr") && strncmp((name), ("/dev/stderr"), (size_t) (11)) == 0))
-   return 
-# 145 "builtin.c" 3 4
-         stderr
-# 145 "builtin.c"
-               ;
+   return stderr;
   else if (((11) && *(name)== *("/dev/stdout") && strncmp((name), ("/dev/stdout"), (size_t) (11)) == 0))
-   return 
-# 147 "builtin.c" 3 4
-         stdout
-# 147 "builtin.c"
-               ;
+   return stdout;
  }
 
- return 
-# 150 "builtin.c" 3 4
-       ((void *)0)
-# 150 "builtin.c"
-           ;
+ return ((void *)0);
 }
 
 
@@ -7730,24 +7678,12 @@ NODE *tree;
  char *file;
 
 
- if (tree == 
-# 166 "builtin.c" 3 4
-            ((void *)0)
-# 166 "builtin.c"
-                ) {
-  status = fflush(
-# 167 "builtin.c" 3 4
-                 stdout
-# 167 "builtin.c"
-                       );
+ if (tree == ((void *)0)) {
+  status = fflush(stdout);
   return mk_number(((double) status), (unsigned int)(1|2|32|64));
  }
 
- tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 171 "builtin.c" 3 4
-      ((void *)0)
-# 171 "builtin.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  tmp = ({NODE *_ts = (tmp); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
  file = tmp->sub.val.sp;
 
@@ -7760,11 +7696,7 @@ NODE *tree;
 
  rp = getredirect(tmp->sub.val.sp, tmp->sub.val.slen);
  status = 1;
- if (rp != 
-# 184 "builtin.c" 3 4
-          ((void *)0)
-# 184 "builtin.c"
-              ) {
+ if (rp != ((void *)0)) {
   if ((rp->flag & (8|16)) == 0) {
 
     warning(
@@ -7775,17 +7707,9 @@ NODE *tree;
    return mk_number(((double) status), (unsigned int)(1|2|32|64));
   }
   fp = rp->fp;
-  if (fp != 
-# 195 "builtin.c" 3 4
-           ((void *)0)
-# 195 "builtin.c"
-               )
+  if (fp != ((void *)0))
    status = fflush(fp);
- } else if ((fp = stdfile(tmp->sub.val.sp, tmp->sub.val.slen)) != 
-# 197 "builtin.c" 3 4
-                                                     ((void *)0)
-# 197 "builtin.c"
-                                                         ) {
+ } else if ((fp = stdfile(tmp->sub.val.sp, tmp->sub.val.slen)) != ((void *)0)) {
   status = fflush(fp);
  } else
   warning("fflush: `%s' is not an open file or pipe", file);
@@ -7805,16 +7729,8 @@ NODE *tree;
  long ret;
 
 
- s1 = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 217 "builtin.c" 3 4
-     ((void *)0)
-# 217 "builtin.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
- s2 = ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == 
-# 218 "builtin.c" 3 4
-     ((void *)0)
-# 218 "builtin.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ s1 = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ s2 = ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  ({NODE *_ts = (s1); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
  ({NODE *_ts = (s2); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
  p1 = s1->sub.val.sp;
@@ -7876,11 +7792,7 @@ NODE *tree;
  NODE *tmp;
  double d;
 
- tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 280 "builtin.c" 3 4
-      ((void *)0)
-# 280 "builtin.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  d = ({NODE *_tn = (tmp); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
  d = double_to_int(d);
  do { if ((tmp)->flags&2) { unref(tmp); }} while (0);
@@ -7896,11 +7808,7 @@ NODE *tree;
  NODE *tmp;
  size_t len;
 
- tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 296 "builtin.c" 3 4
-      ((void *)0)
-# 296 "builtin.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  len = ({NODE *_ts = (tmp); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);})->sub.val.slen;
  do { if ((tmp)->flags&2) { unref(tmp); }} while (0);
  return mk_number(((double) len), (unsigned int)(1|2|32|64));
@@ -7915,11 +7823,7 @@ NODE *tree;
  NODE *tmp;
  double d, arg;
 
- tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 311 "builtin.c" 3 4
-      ((void *)0)
-# 311 "builtin.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  arg = (double) ({NODE *_tn = (tmp); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
  if (arg < 0.0)
   warning("log called with negative argument %g", arg);
@@ -7945,11 +7849,7 @@ register NODE *carg;
  NODE *arg;
  long fw, prec;
  int lj, alt, big, bigbig, small, have_prec, need_format;
- long *cur = 
-# 397 "builtin.c" 3 4
-            ((void *)0)
-# 397 "builtin.c"
-                ;
+ long *cur = ((void *)0);
 
 
 
@@ -7969,11 +7869,7 @@ register NODE *carg;
  static char Uchbuf[] = "0123456789ABCDEF";
 
 
- (void)((obuf=(char *)malloc((size_t)(512))) || (set_loc("builtin.c", 417), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror(
-# 417 "builtin.c" 3 4
-(*__errno_location ())
-# 417 "builtin.c"
-)),0));
+ (void)((obuf=(char *)malloc((size_t)(512))) || (set_loc("builtin.c", 417), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror((*__errno_location ()))),0));
  obufout = obuf;
  osiz = 512;
  ofre = osiz - 1;
@@ -7987,11 +7883,7 @@ register NODE *carg;
    continue;
   }
   need_format = 1;
-  if (s1 - s0) { while ((s1 - s0) > ofre) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 431), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror(
-# 431 "builtin.c" 3 4
- (*__errno_location ())
-# 431 "builtin.c"
- )),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } memcpy(obufout, s0, (size_t) (s1 - s0)); obufout += (s1 - s0); ofre -= (s1 - s0); };
+  if (s1 - s0) { while ((s1 - s0) > ofre) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 431), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror((*__errno_location ()))),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } memcpy(obufout, s0, (size_t) (s1 - s0)); obufout += (s1 - s0); ofre -= (s1 - s0); };
   s0 = s1;
   cur = &fw;
   fw = 0;
@@ -8016,11 +7908,7 @@ check_pos:
    goto retry;
   case '%':
    need_format = 0;
-   { if (ofre <= 0) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 456), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror(
-# 456 "builtin.c" 3 4
-  (*__errno_location ())
-# 456 "builtin.c"
-  )),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } *obufout++ = *"%"; --ofre; };
+   { if (ofre <= 0) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 456), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror((*__errno_location ()))),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } *obufout++ = *"%"; --ofre; };
    s0 = s1;
    break;
 
@@ -8039,11 +7927,7 @@ check_pos:
   case '7':
   case '8':
   case '9':
-   if (cur == 
-# 475 "builtin.c" 3 4
-             ((void *)0)
-# 475 "builtin.c"
-                 )
+   if (cur == ((void *)0))
     break;
    if (prec >= 0)
     *cur = cs1 - '0';
@@ -8059,30 +7943,14 @@ check_pos:
    if (prec < 0)
     have_prec = 0;
    if (cur == &prec)
-    cur = 
-# 491 "builtin.c" 3 4
-         ((void *)0)
-# 491 "builtin.c"
-             ;
+    cur = ((void *)0);
    if (n0 == 0)
     continue;
    goto retry;
   case '*':
-   if (cur == 
-# 496 "builtin.c" 3 4
-             ((void *)0)
-# 496 "builtin.c"
-                 )
+   if (cur == ((void *)0))
     break;
-   { if (carg == 
-# 498 "builtin.c" 3 4
-  ((void *)0)
-# 498 "builtin.c"
-  ) { toofew = 1; break; } else { arg = ({NODE * _t = (carg->sub.nodep.l.lptr); if (_t == 
-# 498 "builtin.c" 3 4
-  ((void *)0)
-# 498 "builtin.c"
-  ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;}); carg = carg->sub.nodep.r.rptr; } };
+   { if (carg == ((void *)0)) { toofew = 1; break; } else { arg = ({NODE * _t = (carg->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;}); carg = carg->sub.nodep.r.rptr; } };
    *cur = ({NODE *_tn = (arg); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
    do { if ((arg)->flags&2) { unref(arg); }} while (0);
    if (*cur < 0 && cur == &fw) {
@@ -8094,11 +7962,7 @@ check_pos:
      have_prec = 1;
     else
      have_prec = 0;
-    cur = 
-# 510 "builtin.c" 3 4
-         ((void *)0)
-# 510 "builtin.c"
-             ;
+    cur = ((void *)0);
    }
    goto retry;
   case ' ':
@@ -8176,15 +8040,7 @@ check_pos:
    goto retry;
   case 'c':
    need_format = 0;
-   { if (carg == 
-# 588 "builtin.c" 3 4
-  ((void *)0)
-# 588 "builtin.c"
-  ) { toofew = 1; break; } else { arg = ({NODE * _t = (carg->sub.nodep.l.lptr); if (_t == 
-# 588 "builtin.c" 3 4
-  ((void *)0)
-# 588 "builtin.c"
-  ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;}); carg = carg->sub.nodep.r.rptr; } };
+   { if (carg == ((void *)0)) { toofew = 1; break; } else { arg = ({NODE * _t = (carg->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;}); carg = carg->sub.nodep.r.rptr; } };
 
    if ((arg->flags & (128|64)) == 128)
     (void) ({NODE *_tn = (arg); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
@@ -8208,15 +8064,7 @@ check_pos:
    goto pr_tail;
   case 's':
    need_format = 0;
-   { if (carg == 
-# 612 "builtin.c" 3 4
-  ((void *)0)
-# 612 "builtin.c"
-  ) { toofew = 1; break; } else { arg = ({NODE * _t = (carg->sub.nodep.l.lptr); if (_t == 
-# 612 "builtin.c" 3 4
-  ((void *)0)
-# 612 "builtin.c"
-  ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;}); carg = carg->sub.nodep.r.rptr; } };
+   { if (carg == ((void *)0)) { toofew = 1; break; } else { arg = ({NODE * _t = (carg->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;}); carg = carg->sub.nodep.r.rptr; } };
    arg = ({NODE *_ts = (arg); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
    if (! have_prec || prec > arg->sub.val.slen)
     prec = arg->sub.val.slen;
@@ -8225,33 +8073,17 @@ check_pos:
   case 'd':
   case 'i':
    need_format = 0;
-   { if (carg == 
-# 621 "builtin.c" 3 4
-  ((void *)0)
-# 621 "builtin.c"
-  ) { toofew = 1; break; } else { arg = ({NODE * _t = (carg->sub.nodep.l.lptr); if (_t == 
-# 621 "builtin.c" 3 4
-  ((void *)0)
-# 621 "builtin.c"
-  ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;}); carg = carg->sub.nodep.r.rptr; } };
+   { if (carg == ((void *)0)) { toofew = 1; break; } else { arg = ({NODE * _t = (carg->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;}); carg = carg->sub.nodep.r.rptr; } };
    tmpval = ({NODE *_tn = (arg); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
    if (tmpval < 0) {
-    if (tmpval < 
-# 624 "builtin.c" 3 4
-                (-0x7fffffffffffffffL - 1L)
-# 624 "builtin.c"
-                        )
+    if (tmpval < (-9223372036854775807L - 1L))
      goto out_of_range;
     sgn = 1;
     uval = - (unsigned long) (long) tmpval;
    } else {
 
 
-    if (! (tmpval <= (unsigned long) 
-# 631 "builtin.c" 3 4
-                                    (0x7fffffffffffffffL * 2UL + 1UL)
-# 631 "builtin.c"
-                                             ))
+    if (! (tmpval <= (unsigned long) (9223372036854775807L * 2UL + 1UL)))
      goto out_of_range;
     sgn = 0;
     uval = (unsigned long) tmpval;
@@ -8277,11 +8109,7 @@ check_pos:
    prec = cend - cp;
    if (fw > prec && ! lj && fill != sp
        && (*cp == '-' || signchar)) {
-    { if (ofre <= 0) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 657), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror(
-# 657 "builtin.c" 3 4
-   (*__errno_location ())
-# 657 "builtin.c"
-   )),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } *obufout++ = *cp; --ofre; };
+    { if (ofre <= 0) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 657), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror((*__errno_location ()))),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } *obufout++ = *cp; --ofre; };
     cp++;
     prec--;
     fw--;
@@ -8296,32 +8124,16 @@ check_pos:
   case 'o':
    base += 8;
    need_format = 0;
-   { if (carg == 
-# 672 "builtin.c" 3 4
-  ((void *)0)
-# 672 "builtin.c"
-  ) { toofew = 1; break; } else { arg = ({NODE * _t = (carg->sub.nodep.l.lptr); if (_t == 
-# 672 "builtin.c" 3 4
-  ((void *)0)
-# 672 "builtin.c"
-  ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;}); carg = carg->sub.nodep.r.rptr; } };
+   { if (carg == ((void *)0)) { toofew = 1; break; } else { arg = ({NODE * _t = (carg->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;}); carg = carg->sub.nodep.r.rptr; } };
    tmpval = ({NODE *_tn = (arg); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
    if (tmpval < 0) {
-    if (tmpval < 
-# 675 "builtin.c" 3 4
-                (-0x7fffffffffffffffL - 1L)
-# 675 "builtin.c"
-                        )
+    if (tmpval < (-9223372036854775807L - 1L))
      goto out_of_range;
     uval = (unsigned long) (long) tmpval;
    } else {
 
 
-    if (! (tmpval <= (unsigned long) 
-# 681 "builtin.c" 3 4
-                                    (0x7fffffffffffffffL * 2UL + 1UL)
-# 681 "builtin.c"
-                                             ))
+    if (! (tmpval <= (unsigned long) (9223372036854775807L * 2UL + 1UL)))
      goto out_of_range;
     uval = (unsigned long) tmpval;
    }
@@ -8342,11 +8154,7 @@ check_pos:
      *--cp = cs1;
      *--cp = '0';
      if (fill != sp) {
-      if (2) { while ((2) > ofre) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 702), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror(
-# 702 "builtin.c" 3 4
-     (*__errno_location ())
-# 702 "builtin.c"
-     )),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } memcpy(obufout, cp, (size_t) (2)); obufout += (2); ofre -= (2); };
+      if (2) { while ((2) > ofre) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 702), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror((*__errno_location ()))),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } memcpy(obufout, cp, (size_t) (2)); obufout += (2); ofre -= (2); };
       cp += 2;
       fw -= 2;
      }
@@ -8360,25 +8168,13 @@ check_pos:
  pr_tail:
    if (! lj) {
     while (fw > prec) {
-         { if (ofre <= 0) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 716), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror(
-# 716 "builtin.c" 3 4
-        (*__errno_location ())
-# 716 "builtin.c"
-        )),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } *obufout++ = *fill; --ofre; };
+         { if (ofre <= 0) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 716), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror((*__errno_location ()))),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } *obufout++ = *fill; --ofre; };
      fw--;
     }
    }
-   if ((int) prec) { while (((int) prec) > ofre) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 720), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror(
-# 720 "builtin.c" 3 4
-  (*__errno_location ())
-# 720 "builtin.c"
-  )),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } memcpy(obufout, cp, (size_t) ((int) prec)); obufout += ((int) prec); ofre -= ((int) prec); };
+   if ((int) prec) { while (((int) prec) > ofre) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 720), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror((*__errno_location ()))),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } memcpy(obufout, cp, (size_t) ((int) prec)); obufout += ((int) prec); ofre -= ((int) prec); };
    while (fw > prec) {
-    { if (ofre <= 0) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 722), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror(
-# 722 "builtin.c" 3 4
-   (*__errno_location ())
-# 722 "builtin.c"
-   )),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } *obufout++ = *fill; --ofre; };
+    { if (ofre <= 0) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 722), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror((*__errno_location ()))),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } *obufout++ = *fill; --ofre; };
     fw--;
    }
    s0 = s1;
@@ -8396,25 +8192,13 @@ check_pos:
   case 'f':
   case 'E':
    need_format = 0;
-   { if (carg == 
-# 740 "builtin.c" 3 4
-  ((void *)0)
-# 740 "builtin.c"
-  ) { toofew = 1; break; } else { arg = ({NODE * _t = (carg->sub.nodep.l.lptr); if (_t == 
-# 740 "builtin.c" 3 4
-  ((void *)0)
-# 740 "builtin.c"
-  ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;}); carg = carg->sub.nodep.r.rptr; } };
+   { if (carg == ((void *)0)) { toofew = 1; break; } else { arg = ({NODE * _t = (carg->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;}); carg = carg->sub.nodep.r.rptr; } };
    tmpval = ({NODE *_tn = (arg); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
      format_float:
    do { if ((arg)->flags&2) { unref(arg); }} while (0);
    if (! have_prec)
     prec = 6;
-   if ((fw + prec + 9) > ofre) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 746), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror(
-# 746 "builtin.c" 3 4
-  (*__errno_location ())
-# 746 "builtin.c"
-  )),0)); obufout = obuf + olen; ofre += osiz; osiz *= 2; };
+   if ((fw + prec + 9) > ofre) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 746), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror((*__errno_location ()))),0)); obufout = obuf + olen; ofre += osiz; osiz *= 2; };
 
    cp = cpbuf;
    *cp++ = '%';
@@ -8452,19 +8236,11 @@ check_pos:
   if (need_format)
    warning(
    "printf format specifier does not have control letter");
-  if (carg != 
-# 791 "builtin.c" 3 4
-             ((void *)0)
-# 791 "builtin.c"
-                 )
+  if (carg != ((void *)0))
    warning(
    "too many arguments supplied for format string");
  }
- if (s1 - s0) { while ((s1 - s0) > ofre) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 795), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror(
-# 795 "builtin.c" 3 4
-(*__errno_location ())
-# 795 "builtin.c"
-)),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } memcpy(obufout, s0, (size_t) (s1 - s0)); obufout += (s1 - s0); ofre -= (s1 - s0); };
+ if (s1 - s0) { while ((s1 - s0) > ofre) { long olen = obufout - obuf; (void)((obuf=(char *)realloc((char *)obuf, (size_t)(osiz * 2))) || (set_loc("builtin.c", 795), r_fatal("%s: %s: can't allocate memory (%s)", ("format_tree"), "obuf", strerror((*__errno_location ()))),0)); ofre += osiz; osiz *= 2; obufout = obuf + olen; } memcpy(obufout, s0, (size_t) (s1 - s0)); obufout += (s1 - s0); ofre -= (s1 - s0); };
  r = make_str_node(obuf, obufout - obuf, 2);
  r->flags |= 2;
  return r;
@@ -8477,11 +8253,7 @@ do_sprintf(tree)
 NODE *tree;
 {
  NODE *r;
- NODE *sfmt = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 808 "builtin.c" 3 4
-             ((void *)0)
-# 808 "builtin.c"
-             ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+ NODE *sfmt = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
 
  r = format_tree(sfmt->sub.val.sp, sfmt->sub.val.slen, tree->sub.nodep.r.rptr);
  do { if ((sfmt)->flags&2) { unref(sfmt); }} while (0);
@@ -8494,18 +8266,10 @@ void
 do_printf(tree)
 register NODE *tree;
 {
- struct redirect *rp = 
-# 821 "builtin.c" 3 4
-                      ((void *)0)
-# 821 "builtin.c"
-                          ;
+ struct redirect *rp = ((void *)0);
  register FILE *fp;
 
- if (tree->sub.nodep.l.lptr == 
-# 824 "builtin.c" 3 4
-                   ((void *)0)
-# 824 "builtin.c"
-                       ) {
+ if (tree->sub.nodep.l.lptr == ((void *)0)) {
   if (do_traditional) {
    if (do_lint)
     warning("printf: no arguments");
@@ -8514,34 +8278,18 @@ register NODE *tree;
   set_loc("builtin.c", 830), r_fatal("printf: no arguments");
  }
 
- if (tree->sub.nodep.r.rptr != 
-# 833 "builtin.c" 3 4
-                   ((void *)0)
-# 833 "builtin.c"
-                       ) {
+ if (tree->sub.nodep.r.rptr != ((void *)0)) {
   int errflg;
 
   rp = redirect(tree->sub.nodep.r.rptr, &errflg);
-  if (rp != 
-# 837 "builtin.c" 3 4
-           ((void *)0)
-# 837 "builtin.c"
-               ) {
+  if (rp != ((void *)0)) {
    fp = rp->fp;
-   if (fp == 
-# 839 "builtin.c" 3 4
-            ((void *)0)
-# 839 "builtin.c"
-                )
+   if (fp == ((void *)0))
     return;
   } else
    return;
  } else
-  fp = 
-# 844 "builtin.c" 3 4
-      stdout
-# 844 "builtin.c"
-            ;
+  fp = stdout;
  tree = do_sprintf(tree->sub.nodep.l.lptr);
  efwrite(tree->sub.val.sp, sizeof(char), tree->sub.val.slen, fp, "printf", rp, 1);
  do { if ((tree)->flags&2) { unref(tree); }} while (0);
@@ -8556,11 +8304,7 @@ NODE *tree;
  NODE *tmp;
  double arg;
 
- tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 859 "builtin.c" 3 4
-      ((void *)0)
-# 859 "builtin.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  arg = (double) ({NODE *_tn = (tmp); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
  do { if ((tmp)->flags&2) { unref(tmp); }} while (0);
  if (arg < 0.0)
@@ -8580,16 +8324,8 @@ NODE *tree;
  size_t length;
  double d_index, d_length;
 
- t1 = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 879 "builtin.c" 3 4
-     ((void *)0)
-# 879 "builtin.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
- t2 = ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == 
-# 880 "builtin.c" 3 4
-     ((void *)0)
-# 880 "builtin.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ t1 = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+ t2 = ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  d_index = ({NODE *_tn = (t2); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
  do { if ((t2)->flags&2) { unref(t2); }} while (0);
 
@@ -8605,19 +8341,11 @@ NODE *tree;
 
  indx = d_index - 1;
 
- if (tree->sub.nodep.r.rptr->sub.nodep.r.rptr == 
-# 896 "builtin.c" 3 4
-                          ((void *)0)
-# 896 "builtin.c"
-                              ) {
+ if (tree->sub.nodep.r.rptr->sub.nodep.r.rptr == ((void *)0)) {
 
   length = t1->sub.val.slen - indx;
  } else {
-  t3 = ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == 
-# 900 "builtin.c" 3 4
-      ((void *)0)
-# 900 "builtin.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+  t3 = ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
   d_length = ({NODE *_tn = (t3); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
   do { if ((t3)->flags&2) { unref(t3); }} while (0);
   if (d_length <= 0.0) {
@@ -8669,11 +8397,7 @@ NODE *tree;
  time_t fclock;
  char *bufp;
  size_t buflen, bufsize;
- char buf[
-# 952 "builtin.c" 3 4
-         8192
-# 952 "builtin.c"
-               ];
+ char buf[8192];
  static char def_format[] = "%a %b %d %H:%M:%S %Z %Y";
  char *format;
  int formatlen;
@@ -8683,26 +8407,10 @@ NODE *tree;
  formatlen = strlen(format);
  (void) time(&fclock);
 
- t1 = t2 = 
-# 962 "builtin.c" 3 4
-          ((void *)0)
-# 962 "builtin.c"
-              ;
- if (tree != 
-# 963 "builtin.c" 3 4
-            ((void *)0)
-# 963 "builtin.c"
-                ) {
-  if (tree->sub.nodep.l.lptr != 
-# 964 "builtin.c" 3 4
-                    ((void *)0)
-# 964 "builtin.c"
-                        ) {
-   t1 = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 965 "builtin.c" 3 4
-       ((void *)0)
-# 965 "builtin.c"
-       ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+ t1 = t2 = ((void *)0);
+ if (tree != ((void *)0)) {
+  if (tree->sub.nodep.l.lptr != ((void *)0)) {
+   t1 = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
    format = t1->sub.val.sp;
    formatlen = t1->sub.val.slen;
    if (formatlen == 0) {
@@ -8713,16 +8421,8 @@ NODE *tree;
    }
   }
 
-  if (tree->sub.nodep.r.rptr != 
-# 976 "builtin.c" 3 4
-                    ((void *)0)
-# 976 "builtin.c"
-                        ) {
-   t2 = ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == 
-# 977 "builtin.c" 3 4
-       ((void *)0)
-# 977 "builtin.c"
-       ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+  if (tree->sub.nodep.r.rptr != ((void *)0)) {
+   t2 = ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
    fclock = (time_t) ({NODE *_tn = (t2); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
    do { if ((t2)->flags&2) { unref(t2); }} while (0);
   }
@@ -8740,17 +8440,9 @@ NODE *tree;
    break;
   bufsize *= 2;
   if (bufp == buf)
-   (void)((bufp=(char *)malloc((size_t)(bufsize))) || (set_loc("builtin.c", 1002), r_fatal("%s: %s: can't allocate memory (%s)", ("do_strftime"), "bufp", strerror(
-# 1002 "builtin.c" 3 4
-  (*__errno_location ())
-# 1002 "builtin.c"
-  )),0));
+   (void)((bufp=(char *)malloc((size_t)(bufsize))) || (set_loc("builtin.c", 1002), r_fatal("%s: %s: can't allocate memory (%s)", ("do_strftime"), "bufp", strerror((*__errno_location ()))),0));
   else
-   (void)((bufp=(char *)realloc((char *)bufp, (size_t)(bufsize))) || (set_loc("builtin.c", 1004), r_fatal("%s: %s: can't allocate memory (%s)", ("do_strftime"), "bufp", strerror(
-# 1004 "builtin.c" 3 4
-  (*__errno_location ())
-# 1004 "builtin.c"
-  )),0));
+   (void)((bufp=(char *)realloc((char *)bufp, (size_t)(bufsize))) || (set_loc("builtin.c", 1004), r_fatal("%s: %s: can't allocate memory (%s)", ("do_strftime"), "bufp", strerror((*__errno_location ()))),0));
  }
  ret = tmp_string(bufp, buflen);
  if (bufp != buf)
@@ -8786,11 +8478,7 @@ NODE *tree;
  char save;
 
  (void) flush_io();
- tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 1040 "builtin.c" 3 4
-      ((void *)0)
-# 1040 "builtin.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  cmd = ({NODE *_ts = (tmp); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);})->sub.val.sp;
 
  if (cmd && *cmd) {
@@ -8816,11 +8504,7 @@ do_print(tree)
 register NODE *tree;
 {
  register NODE **t;
- struct redirect *rp = 
-# 1081 "builtin.c" 3 4
-                      ((void *)0)
-# 1081 "builtin.c"
-                          ;
+ struct redirect *rp = ((void *)0);
  register FILE *fp;
  int numnodes, i;
  NODE *save;
@@ -8829,26 +8513,14 @@ register NODE *tree;
   int errflg;
 
   rp = redirect(tree->sub.nodep.r.rptr, &errflg);
-  if (rp != 
-# 1090 "builtin.c" 3 4
-           ((void *)0)
-# 1090 "builtin.c"
-               ) {
+  if (rp != ((void *)0)) {
    fp = rp->fp;
-   if (fp == 
-# 1092 "builtin.c" 3 4
-            ((void *)0)
-# 1092 "builtin.c"
-                )
+   if (fp == ((void *)0))
     return;
   } else
    return;
  } else
-  fp = 
-# 1097 "builtin.c" 3 4
-      stdout
-# 1097 "builtin.c"
-            ;
+  fp = stdout;
 
 
 
@@ -8856,32 +8528,16 @@ register NODE *tree;
 
 
  save = tree = tree->sub.nodep.l.lptr;
- for (numnodes = 0; tree != 
-# 1105 "builtin.c" 3 4
-                           ((void *)0)
-# 1105 "builtin.c"
-                               ; tree = tree->sub.nodep.r.rptr)
+ for (numnodes = 0; tree != ((void *)0); tree = tree->sub.nodep.r.rptr)
   numnodes++;
- (void)((t=(NODE **)malloc((size_t)(numnodes * sizeof(NODE *)))) || (set_loc("builtin.c", 1107), r_fatal("%s: %s: can't allocate memory (%s)", ("do_print"), "t", strerror(
-# 1107 "builtin.c" 3 4
-(*__errno_location ())
-# 1107 "builtin.c"
-)),0));
+ (void)((t=(NODE **)malloc((size_t)(numnodes * sizeof(NODE *)))) || (set_loc("builtin.c", 1107), r_fatal("%s: %s: can't allocate memory (%s)", ("do_print"), "t", strerror((*__errno_location ()))),0));
 
  tree = save;
- for (i = 0; tree != 
-# 1110 "builtin.c" 3 4
-                    ((void *)0)
-# 1110 "builtin.c"
-                        ; i++, tree = tree->sub.nodep.r.rptr) {
+ for (i = 0; tree != ((void *)0); i++, tree = tree->sub.nodep.r.rptr) {
   NODE *n;
 
 
-  n = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 1114 "builtin.c" 3 4
-     ((void *)0)
-# 1114 "builtin.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+  n = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
   t[i] = dupnode(n);
   do { if ((n)->flags&2) { unref(n); }} while (0);
 
@@ -8916,24 +8572,12 @@ NODE *tree;
  NODE *t1, *t2;
  register unsigned char *cp, *cp2;
 
- t1 = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 1149 "builtin.c" 3 4
-     ((void *)0)
-# 1149 "builtin.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ t1 = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  t1 = ({NODE *_ts = (t1); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
  t2 = tmp_string(t1->sub.val.sp, t1->sub.val.slen);
  for (cp = (unsigned char *)t2->sub.val.sp,
       cp2 = (unsigned char *)(t2->sub.val.sp + t2->sub.val.slen); cp < cp2; cp++)
-  if ((1 && 
-# 1154 "builtin.c" 3 4
-     ((*__ctype_b_loc ())[(int) ((
-# 1154 "builtin.c"
-     *cp
-# 1154 "builtin.c" 3 4
-     ))] & (unsigned short int) _ISupper)
-# 1154 "builtin.c"
-     ))
+  if ((1 && ((*__ctype_b_loc ())[(int) ((*cp))] & (unsigned short int) _ISupper)))
    *cp = tolower(*cp);
  do { if ((t1)->flags&2) { unref(t1); }} while (0);
  return t2;
@@ -8948,24 +8592,12 @@ NODE *tree;
  NODE *t1, *t2;
  register unsigned char *cp, *cp2;
 
- t1 = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 1169 "builtin.c" 3 4
-     ((void *)0)
-# 1169 "builtin.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ t1 = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  t1 = ({NODE *_ts = (t1); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
  t2 = tmp_string(t1->sub.val.sp, t1->sub.val.slen);
  for (cp = (unsigned char *)t2->sub.val.sp,
       cp2 = (unsigned char *)(t2->sub.val.sp + t2->sub.val.slen); cp < cp2; cp++)
-  if ((1 && 
-# 1174 "builtin.c" 3 4
-     ((*__ctype_b_loc ())[(int) ((
-# 1174 "builtin.c"
-     *cp
-# 1174 "builtin.c" 3 4
-     ))] & (unsigned short int) _ISlower)
-# 1174 "builtin.c"
-     ))
+  if ((1 && ((*__ctype_b_loc ())[(int) ((*cp))] & (unsigned short int) _ISlower)))
    *cp = toupper(*cp);
  do { if ((t1)->flags&2) { unref(t1); }} while (0);
  return t2;
@@ -8980,16 +8612,8 @@ NODE *tree;
  NODE *t1, *t2;
  double d1, d2;
 
- t1 = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 1189 "builtin.c" 3 4
-     ((void *)0)
-# 1189 "builtin.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
- t2 = ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == 
-# 1190 "builtin.c" 3 4
-     ((void *)0)
-# 1190 "builtin.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ t1 = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ t2 = ({NODE * _t = (tree->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  d1 = ({NODE *_tn = (t1); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
  d2 = ({NODE *_tn = (t2); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
  do { if ((t1)->flags&2) { unref(t1); }} while (0);
@@ -9006,11 +8630,7 @@ NODE *tree;
  NODE *tmp;
  double d;
 
- tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 1207 "builtin.c" 3 4
-      ((void *)0)
-# 1207 "builtin.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  d = sin((double) ({NODE *_tn = (tmp); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);}));
  do { if ((tmp)->flags&2) { unref(tmp); }} while (0);
  return mk_number(((double) d), (unsigned int)(1|2|32|64));
@@ -9025,11 +8645,7 @@ NODE *tree;
  NODE *tmp;
  double d;
 
- tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 1222 "builtin.c" 3 4
-      ((void *)0)
-# 1222 "builtin.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  d = cos((double) ({NODE *_tn = (tmp); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);}));
  do { if ((tmp)->flags&2) { unref(tmp); }} while (0);
  return mk_number(((double) d), (unsigned int)(1|2|32|64));
@@ -9070,18 +8686,10 @@ NODE *tree;
  } else
   (void) gawk_setstate(state);
 
- if (tree == 
-# 1263 "builtin.c" 3 4
-            ((void *)0)
-# 1263 "builtin.c"
-                )
+ if (tree == ((void *)0))
   gawk_srandom((unsigned int) (save_seed = (long) time((time_t *) 0)));
  else {
-  tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 1266 "builtin.c" 3 4
-       ((void *)0)
-# 1266 "builtin.c"
-       ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+  tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
   gawk_srandom((unsigned int) (save_seed = (long) ({NODE *_tn = (tmp); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);})));
   do { if ((tmp)->flags&2) { unref(tmp); }} while (0);
  }
@@ -9099,11 +8707,7 @@ NODE *tree;
  double rlength;
  Regexp *rp;
 
- t1 = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 1284 "builtin.c" 3 4
-     ((void *)0)
-# 1284 "builtin.c"
-     ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+ t1 = ({NODE *_ts = (({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
  tree = tree->sub.nodep.r.rptr->sub.nodep.l.lptr;
  rp = re_update(tree);
  rstart = research(rp, t1->sub.val.sp, 0, t1->sub.val.slen, 1);
@@ -9148,11 +8752,7 @@ int how_many, backdigs;
  NODE *tmp;
  NODE **lhs = &tree;
  int priv = 0;
- Func_ptr after_assign = 
-# 1394 "builtin.c" 3 4
-                        ((void *)0)
-# 1394 "builtin.c"
-                            ;
+ Func_ptr after_assign = ((void *)0);
 
  int global = (how_many == -1);
  long current;
@@ -9166,11 +8766,7 @@ int how_many, backdigs;
 
  tree = tree->sub.nodep.r.rptr;
  tmp = tree->sub.nodep.l.lptr;
- t = ({NODE *_ts = (({NODE * _t = (tmp); if (_t == 
-# 1408 "builtin.c" 3 4
-    ((void *)0)
-# 1408 "builtin.c"
-    ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+ t = ({NODE *_ts = (({NODE * _t = (tmp); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
 
 
  if (research(rp, t->sub.val.sp, 0, t->sub.val.slen, 1) == -1 ||
@@ -9180,11 +8776,7 @@ int how_many, backdigs;
  }
 
  if (tmp->type == Node_val)
-  lhs = 
-# 1418 "builtin.c" 3 4
-       ((void *)0)
-# 1418 "builtin.c"
-           ;
+  lhs = ((void *)0);
  else
   lhs = ((tmp)->type == Node_var ? (&(tmp)->sub.nodep.l.lptr) : r_get_lhs((tmp), (&after_assign)));
  t->flags |= 8;
@@ -9205,19 +8797,11 @@ int how_many, backdigs;
  textlen = t->sub.val.slen;
  buflen = textlen + 2;
 
- s = ({NODE *_ts = (({NODE * _t = (s); if (_t == 
-# 1439 "builtin.c" 3 4
-    ((void *)0)
-# 1439 "builtin.c"
-    ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+ s = ({NODE *_ts = (({NODE * _t = (s); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
  repl = s->sub.val.sp;
  replend = repl + s->sub.val.slen;
  repllen = replend - repl;
- (void)((buf=(char *)malloc((size_t)(buflen + 2))) || (set_loc("builtin.c", 1443), r_fatal("%s: %s: can't allocate memory (%s)", ("sub_common"), "buf", strerror(
-# 1443 "builtin.c" 3 4
-(*__errno_location ())
-# 1443 "builtin.c"
-)),0));
+ (void)((buf=(char *)malloc((size_t)(buflen + 2))) || (set_loc("builtin.c", 1443), r_fatal("%s: %s: can't allocate memory (%s)", ("sub_common"), "buf", strerror((*__errno_location ()))),0));
  buf[buflen] = '\0';
  buf[buflen + 1] = '\0';
  ampersands = 0;
@@ -9227,15 +8811,7 @@ int how_many, backdigs;
    ampersands++;
   } else if (*scan == '\\') {
    if (backdigs) {
-    if ((1 && 
-# 1453 "builtin.c" 3 4
-       ((*__ctype_b_loc ())[(int) ((
-# 1453 "builtin.c"
-       scan[1]
-# 1453 "builtin.c" 3 4
-       ))] & (unsigned short int) _ISdigit)
-# 1453 "builtin.c"
-       )) {
+    if ((1 && ((*__ctype_b_loc ())[(int) ((scan[1]))] & (unsigned short int) _ISdigit))) {
      ampersands++;
      scan++;
     } else {
@@ -9278,11 +8854,7 @@ int how_many, backdigs;
   sofar = bp - buf;
   while (buflen < (sofar + len + 1)) {
    buflen *= 2;
-   (void)((buf=(char *)realloc((char *)buf, (size_t)(buflen))) || (set_loc("builtin.c", 1496), r_fatal("%s: %s: can't allocate memory (%s)", ("sub_common"), "buf", strerror(
-# 1496 "builtin.c" 3 4
-  (*__errno_location ())
-# 1496 "builtin.c"
-  )),0));
+   (void)((buf=(char *)realloc((char *)buf, (size_t)(buflen))) || (set_loc("builtin.c", 1496), r_fatal("%s: %s: can't allocate memory (%s)", ("sub_common"), "buf", strerror((*__errno_location ()))),0));
    bp = buf + sofar;
   }
   for (scan = text; scan < matchstart; scan++)
@@ -9308,15 +8880,7 @@ int how_many, backdigs;
       *bp++ = *cp;
     else if (*scan == '\\') {
      if (backdigs) {
-      if ((1 && 
-# 1522 "builtin.c" 3 4
-         ((*__ctype_b_loc ())[(int) ((
-# 1522 "builtin.c"
-         scan[1]
-# 1522 "builtin.c" 3 4
-         ))] & (unsigned short int) _ISdigit)
-# 1522 "builtin.c"
-         )) {
+      if ((1 && ((*__ctype_b_loc ())[(int) ((scan[1]))] & (unsigned short int) _ISdigit))) {
        int dig = scan[1] - '0';
        char *start, *end;
 
@@ -9379,11 +8943,7 @@ int how_many, backdigs;
  sofar = bp - buf;
  if (buflen - sofar - textlen - 1) {
   buflen = sofar + textlen + 2;
-  (void)((buf=(char *)realloc((char *)buf, (size_t)(buflen))) || (set_loc("builtin.c", 1585), r_fatal("%s: %s: can't allocate memory (%s)", ("sub_common"), "buf", strerror(
-# 1585 "builtin.c" 3 4
- (*__errno_location ())
-# 1585 "builtin.c"
- )),0));
+  (void)((buf=(char *)realloc((char *)buf, (size_t)(buflen))) || (set_loc("builtin.c", 1585), r_fatal("%s: %s: can't allocate memory (%s)", ("sub_common"), "buf", strerror((*__errno_location ()))),0));
   bp = buf + sofar;
  }
  for (scan = matchend; scan < text + textlen; scan++)
@@ -9400,11 +8960,7 @@ int how_many, backdigs;
    unref(*lhs);
    *lhs = t;
   }
-  if (after_assign != 
-# 1602 "builtin.c" 3 4
-                     ((void *)0)
-# 1602 "builtin.c"
-                         )
+  if (after_assign != ((void *)0))
    (*after_assign)();
   t->flags &= ~(32|64);
  }
@@ -9449,17 +9005,9 @@ NODE *tree;
  n2 = *(tree->sub.nodep.r.rptr);
  n1.sub.nodep.r.rptr = & n2;
 
- t = ({NODE * _t = (n2.sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == 
-# 1647 "builtin.c" 3 4
-    ((void *)0)
-# 1647 "builtin.c"
-    ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ t = ({NODE * _t = (n2.sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
 
- tmp = ({NODE *_ts = (({NODE * _t = (n2.sub.nodep.r.rptr->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == 
-# 1649 "builtin.c" 3 4
-      ((void *)0)
-# 1649 "builtin.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+ tmp = ({NODE *_ts = (({NODE * _t = (n2.sub.nodep.r.rptr->sub.nodep.r.rptr->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
 
 
 

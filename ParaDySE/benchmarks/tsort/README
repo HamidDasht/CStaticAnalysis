@@ -1,0 +1,8 @@
+./tsort input_file
+
+cilly --save-temps -std=gnu99 -g -Wl,--as-needed -lpthread -o tsort tsort.c ../../../../coreutils-8.30/src/libver.a ../../../../coreutils-8.30/lib/libcoreutils.a -I../../../../coreutils-8.30/lib -I../../../../coreutils-8.30/src  ../../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I/home/hamid/Desktop/ParaDySE/include -L/home/hamid/Desktop/ParaDySE/lib
+
+rm branches cfg* tsort.cil.* tsort.i tsort.o tsort dominator* features funcount idcount stmtcount szd_execution
+
+
+cilly --save-temps -std=gnu99 -g -Wl,--as-needed -lpthread -o tsort tsort.c error.c localcharset.c fadvise.c long-options.c readtokens.c getopt.c xalloc-die.c xmalloc.c progname.c freopen-safer.c quotearg.c fclose.c freopen.c closeout.c exitfail.c getprogname.c close-stream.c vfprintf.c fseterr.c vasnprintf.c xsize.c c-strcasecmp.c fflush.c mbrtowc.c nl_langinfo.c version-etc.c version.c fseeko.c printf-parse.c printf-args.c c-ctype.c hard-locale.c version-etc-fsf.c config.h -I../../../../coreutils-8.30/lib -I../../../../coreutils-8.30/src --doCrestInstrument -lm -lcrest -lstdc++ -I/home/hamid/Desktop/ParaDySE/include -L/home/hamid/Desktop/ParaDySE/lib

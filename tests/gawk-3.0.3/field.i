@@ -1,5 +1,5 @@
 # 1 "field.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -40,10 +40,8 @@
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
@@ -167,7 +165,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -201,8 +199,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -968,17 +966,17 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 # 37 "awk.h" 2
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 34 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 34 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 168 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 168 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 143 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
@@ -1002,9 +1000,9 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
 # 152 "/usr/include/limits.h" 2 3 4
-# 169 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
-# 8 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 2 3 4
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
+# 169 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
+# 8 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 2 3 4
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
 # 39 "awk.h" 2
 
 # 1 "/usr/include/ctype.h" 1 3 4
@@ -1270,7 +1268,7 @@ extern void siglongjmp (sigjmp_buf __env, int __val)
 
 # 1 "/usr/include/locale.h" 1 3 4
 # 28 "/usr/include/locale.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 29 "/usr/include/locale.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/locale.h" 1 3 4
 # 30 "/usr/include/locale.h" 2 3 4
@@ -1377,7 +1375,7 @@ extern __locale_t uselocale (__locale_t __dataset) __attribute__ ((__nothrow__ ,
 # 44 "awk.h" 2
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
 # 47 "awk.h" 2
 
 
@@ -2035,7 +2033,7 @@ extern int sigreturn (struct sigcontext *__scp) __attribute__ ((__nothrow__ , __
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 317 "/usr/include/signal.h" 2 3 4
 
 
@@ -2411,7 +2409,7 @@ extern int __libc_current_sigrtmax (void) __attribute__ ((__nothrow__ , __leaf__
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 38 "/usr/include/time.h" 2 3 4
 
 
@@ -2820,7 +2818,7 @@ typedef __suseconds_t suseconds_t;
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -3201,8 +3199,8 @@ extern int __xmknodat (int __ver, int __fd, const char *__path,
 # 118 "awk.h"
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
 # 33 "/usr/include/stdlib.h" 2 3 4
 
@@ -3587,7 +3585,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -3968,7 +3966,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/string.h" 2 3 4
 
 
@@ -4289,7 +4287,7 @@ extern char *basename (const char *__filename) __attribute__ ((__nothrow__ , __l
 # 23 "/usr/include/x86_64-linux-gnu/bits/environments.h" 2 3 4
 # 210 "/usr/include/unistd.h" 2 3 4
 # 229 "/usr/include/unistd.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 230 "/usr/include/unistd.h" 2 3 4
 # 270 "/usr/include/unistd.h" 3 4
 typedef __intptr_t intptr_t;
@@ -5637,8 +5635,6 @@ extern void swab (const void *__restrict __from, void *__restrict __to,
 # 175 "awk.h"
 # 1 "regex.h" 1
 # 40 "regex.h"
-
-# 40 "regex.h"
 typedef long int s_reg_t;
 typedef unsigned long int active_reg_t;
 
@@ -6470,8 +6466,6 @@ extern int strncasecmp (const char *s1, const char *s2, register size_t n);
 
 
 
-
-# 69 "/usr/include/assert.h" 3 4
 extern void __assert_fail (const char *__assertion, const char *__file,
       unsigned int __line, const char *__function)
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
@@ -6491,8 +6485,6 @@ extern void __assert (const char *__assertion, const char *__file, int __line)
 
 # 28 "field.c" 2
 
-
-# 29 "field.c"
 typedef void (* Setfunc) (long, char *, long, NODE *);
 
 static long (*parse_field) (long, char **, int, NODE *, Regexp *, Setfunc, NODE *)
@@ -6522,25 +6514,13 @@ static int resave_fs;
 static NODE *save_FS;
 
 
-static int *FIELDWIDTHS = 
-# 58 "field.c" 3 4
-                         ((void *)0)
-# 58 "field.c"
-                             ;
+static int *FIELDWIDTHS = ((void *)0);
 
 NODE **fields_arr;
 int field0_valid;
 int default_FS;
-Regexp *FS_regexp = 
-# 63 "field.c" 3 4
-                   ((void *)0)
-# 63 "field.c"
-                       ;
-static NODE *Null_field = 
-# 64 "field.c" 3 4
-                         ((void *)0)
-# 64 "field.c"
-                             ;
+Regexp *FS_regexp = ((void *)0);
+static NODE *Null_field = ((void *)0);
 
 
 
@@ -6549,11 +6529,7 @@ init_fields()
 {
  NODE *n;
 
- (void)((fields_arr=(NODE **)malloc((size_t)(sizeof(NODE *)))) || (set_loc("field.c", 73), r_fatal("%s: %s: can't allocate memory (%s)", ("init_fields"), "fields_arr", strerror(
-# 73 "field.c" 3 4
-(*__errno_location ())
-# 73 "field.c"
-)),0));
+ (void)((fields_arr=(NODE **)malloc((size_t)(sizeof(NODE *)))) || (set_loc("field.c", 73), r_fatal("%s: %s: can't allocate memory (%s)", ("init_fields"), "fields_arr", strerror((*__errno_location ()))),0));
  if (nextfree) n = nextfree, nextfree = nextfree->sub.nodep.l.lptr; else n = more_nodes();
  *n = *Nnull_string;
  n->flags |= (512|2048);
@@ -6577,11 +6553,7 @@ long num;
  register int t;
  register NODE *n;
 
- (void)((fields_arr=(NODE **)realloc((char *)fields_arr, (size_t)((num + 1) * sizeof(NODE *)))) || (set_loc("field.c", 97), r_fatal("%s: %s: can't allocate memory (%s)", ("grow_fields_arr"), "fields_arr", strerror(
-# 97 "field.c" 3 4
-(*__errno_location ())
-# 97 "field.c"
-)),0));
+ (void)((fields_arr=(NODE **)realloc((char *)fields_arr, (size_t)((num + 1) * sizeof(NODE *)))) || (set_loc("field.c", 97), r_fatal("%s: %s: can't allocate memory (%s)", ("grow_fields_arr"), "fields_arr", strerror((*__errno_location ()))),0));
  for (t = nf_high_water + 1; t <= num; t++) {
   if (nextfree) n = nextfree, nextfree = nextfree->sub.nodep.l.lptr; else n = more_nodes();
   *n = *Null_field;
@@ -6629,19 +6601,7 @@ rebuild_record()
  long i;
  char *f0start, *f0end;
 
- 
-# 145 "field.c" 3 4
-((
-# 145 "field.c"
-NF != -1
-# 145 "field.c" 3 4
-) ? (void) (0) : __assert_fail (
-# 145 "field.c"
-"NF != -1"
-# 145 "field.c" 3 4
-, "field.c", 145, __PRETTY_FUNCTION__))
-# 145 "field.c"
-                ;
+ ((NF != -1) ? (void) (0) : __assert_fail ("NF != -1", "field.c", 145, __PRETTY_FUNCTION__));
 
  tlen = 0;
  ofs = ({NODE *_ts = (OFS_node->sub.nodep.l.lptr); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
@@ -6654,11 +6614,7 @@ NF != -1
  tlen += (NF - 1) * ofslen;
  if ((long) tlen < 0)
   tlen = 0;
- (void)((ops=(char *)malloc((size_t)(tlen + 2))) || (set_loc("field.c", 158), r_fatal("%s: %s: can't allocate memory (%s)", ("rebuild_record"), "ops", strerror(
-# 158 "field.c" 3 4
-(*__errno_location ())
-# 158 "field.c"
-)),0));
+ (void)((ops=(char *)malloc((size_t)(tlen + 2))) || (set_loc("field.c", 158), r_fatal("%s: %s: can't allocate memory (%s)", ("rebuild_record"), "ops", strerror((*__errno_location ()))),0));
  cops = ops;
  ops[0] = '\0';
  for (i = 1; i <= NF; i++) {
@@ -6769,19 +6725,7 @@ set_NF()
  register int i;
  NODE *n;
 
- 
-# 269 "field.c" 3 4
-((
-# 269 "field.c"
-NF != -1
-# 269 "field.c" 3 4
-) ? (void) (0) : __assert_fail (
-# 269 "field.c"
-"NF != -1"
-# 269 "field.c" 3 4
-, "field.c", 269, __PRETTY_FUNCTION__))
-# 269 "field.c"
-                ;
+ ((NF != -1) ? (void) (0) : __assert_fail ("NF != -1", "field.c", 269, __PRETTY_FUNCTION__));
 
  NF = (long) ({NODE *_tn = (NF_node->sub.nodep.l.lptr); (_tn->flags & 32) ?_tn->sub.val.fltnum : r_force_number(_tn);});
  if (NF > nf_high_water)
@@ -6820,7 +6764,7 @@ NODE *n;
  register char *field;
  register char *end = scan + len;
 
- if (up_to == 0x7fffffffffffffffL)
+ if (up_to == 9223372036854775807L)
   nf = 0;
  if (len == 0)
   return nf;
@@ -6872,7 +6816,7 @@ NODE *n;
  register char *end = scan + len;
  char sav;
 
- if (up_to == 0x7fffffffffffffffL)
+ if (up_to == 9223372036854775807L)
   nf = 0;
  if (len == 0)
   return nf;
@@ -6931,7 +6875,7 @@ NODE *n;
  register char *end = scan + len;
  char sav;
 
- if (up_to == 0x7fffffffffffffffL)
+ if (up_to == 9223372036854775807L)
   nf = 0;
  if (len == 0)
   return nf;
@@ -6994,7 +6938,7 @@ NODE *n;
  register long nf = parse_high_water;
  register char *end = scan + len;
 
- if (up_to == 0x7fffffffffffffffL)
+ if (up_to == 9223372036854775807L)
   nf = 0;
  if (len == 0)
   return nf;
@@ -7024,7 +6968,7 @@ NODE *n;
  int onecase;
  char sav;
 
- if (up_to == 0x7fffffffffffffffL)
+ if (up_to == 9223372036854775807L)
   nf = 0;
  if (len == 0)
   return nf;
@@ -7034,15 +6978,7 @@ NODE *n;
  else
   fschar = fs->sub.val.sp[0];
 
- onecase = (IGNORECASE && 
-# 553 "field.c" 3 4
-                         ((*__ctype_b_loc ())[(int) ((
-# 553 "field.c"
-                         fschar
-# 553 "field.c" 3 4
-                         ))] & (unsigned short int) _ISalpha)
-# 553 "field.c"
-                                        );
+ onecase = (IGNORECASE && ((*__ctype_b_loc ())[(int) ((fschar))] & (unsigned short int) _ISalpha));
  if (onecase)
   fschar = casetable[(int) fschar];
 
@@ -7097,7 +7033,7 @@ NODE *n;
  register long nf = parse_high_water;
  register char *end = scan + len;
 
- if (up_to == 0x7fffffffffffffffL)
+ if (up_to == 9223372036854775807L)
   nf = 0;
  if (len == 0)
   return nf;
@@ -7129,35 +7065,23 @@ Func_ptr *assign;
   if (! field0_valid) {
 
    if (NF == -1) {
-    NF = (*parse_field)(0x7fffffffffffffffL -1, &parse_extent,
+    NF = (*parse_field)(9223372036854775807L -1, &parse_extent,
          fields_arr[0]->sub.val.slen -
      (parse_extent - fields_arr[0]->sub.val.sp),
          save_FS, FS_regexp, set_field,
-     (NODE *) 
-# 644 "field.c" 3 4
-             ((void *)0)
-# 644 "field.c"
-                 );
+     (NODE *) ((void *)0));
     parse_high_water = NF;
    }
    rebuild_record();
   }
-  if (assign != 
-# 649 "field.c" 3 4
-               ((void *)0)
-# 649 "field.c"
-                   )
+  if (assign != ((void *)0))
    *assign = reset_record;
   return &fields_arr[0];
  }
 
 
 
- if (assign != 
-# 656 "field.c" 3 4
-              ((void *)0)
-# 656 "field.c"
-                  )
+ if (assign != ((void *)0))
   field0_valid = 0;
 
  if (requested <= parse_high_water)
@@ -7172,23 +7096,15 @@ Func_ptr *assign;
    parse_extent = fields_arr[0]->sub.val.sp;
   parse_high_water = (*parse_field)(requested, &parse_extent,
        fields_arr[0]->sub.val.slen - (parse_extent - fields_arr[0]->sub.val.sp),
-       save_FS, FS_regexp, set_field, (NODE *) 
-# 671 "field.c" 3 4
-                                              ((void *)0)
-# 671 "field.c"
-                                                  );
+       save_FS, FS_regexp, set_field, (NODE *) ((void *)0));
 # 681 "field.c"
   if (parse_extent == fields_arr[0]->sub.val.sp + fields_arr[0]->sub.val.slen)
    NF = parse_high_water;
-  if (requested == 0x7fffffffffffffffL -1)
+  if (requested == 9223372036854775807L -1)
    requested = parse_high_water;
  }
  if (parse_high_water < requested) {
-  if (assign != 
-# 687 "field.c" 3 4
-               ((void *)0)
-# 687 "field.c"
-                   ) {
+  if (assign != ((void *)0)) {
    if (requested > nf_high_water)
     grow_fields_arr(requested);
 
@@ -7228,11 +7144,7 @@ NODE *tree;
  char *s;
  long (*parseit) (long, char **, int, NODE *, Regexp *, Setfunc, NODE *)
                                ;
- Regexp *rp = 
-# 727 "field.c" 3 4
-             ((void *)0)
-# 727 "field.c"
-                 ;
+ Regexp *rp = ((void *)0);
 
 
 
@@ -7240,27 +7152,15 @@ NODE *tree;
 
 
 
- tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == 
-# 735 "field.c" 3 4
-      ((void *)0)
-# 735 "field.c"
-      ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
+ tmp = ({NODE * _t = (tree->sub.nodep.l.lptr); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;});
  src = dupnode(tmp);
  do { if ((tmp)->flags&2) { unref(tmp); }} while (0);
 
  arr = tree->sub.nodep.r.rptr->sub.nodep.l.lptr;
- if (tree->sub.nodep.r.rptr->sub.nodep.r.rptr != 
-# 740 "field.c" 3 4
-                          ((void *)0)
-# 740 "field.c"
-                              )
+ if (tree->sub.nodep.r.rptr->sub.nodep.r.rptr != ((void *)0))
   sep = tree->sub.nodep.r.rptr->sub.nodep.r.rptr->sub.nodep.l.lptr;
  else
-  sep = 
-# 743 "field.c" 3 4
-       ((void *)0)
-# 743 "field.c"
-           ;
+  sep = ((void *)0);
 
  (void) ({NODE *_ts = (src); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
 
@@ -7276,11 +7176,7 @@ NODE *tree;
   fs = ({NODE *_ts = (FS_node->sub.nodep.l.lptr); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
   rp = FS_regexp;
  } else {
-  tmp = ({NODE *_ts = (({NODE * _t = (sep->sub.nodep.x.extra); if (_t == 
-# 759 "field.c" 3 4
-       ((void *)0)
-# 759 "field.c"
-       ) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
+  tmp = ({NODE *_ts = (({NODE * _t = (sep->sub.nodep.x.extra); if (_t == ((void *)0)) _t = Nnull_string; else { switch(_t->type) { case Node_val: break; case Node_var: _t = _t->sub.nodep.l.lptr; break; default: _t = r_tree_eval(_t, 0); break; } } _t;})); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
   if (tmp->sub.val.slen == 0)
    parseit = null_parse_field;
   else if (tmp->sub.val.slen == 1 && (sep->sub.nodep.reflags & 2) == 0) {
@@ -7299,7 +7195,7 @@ NODE *tree;
  }
 
  s = src->sub.val.sp;
- tmp = mk_number(((double) (*parseit)(0x7fffffffffffffffL, &s, (int) src->sub.val.slen, fs, rp, set_element, arr)), (unsigned int)(1|2|32|64))
+ tmp = mk_number(((double) (*parseit)(9223372036854775807L, &s, (int) src->sub.val.slen, fs, rp, set_element, arr)), (unsigned int)(1|2|32|64))
                                     ;
  unref(src);
  do { if ((sep)->flags&2) { unref(sep); }} while (0);
@@ -7329,35 +7225,19 @@ set_FIELDWIDTHS()
 
 
 
- if (fields_arr != 
-# 808 "field.c" 3 4
-                  ((void *)0)
-# 808 "field.c"
-                      )
-  (void) get_field(0x7fffffffffffffffL - 1, 0);
+ if (fields_arr != ((void *)0))
+  (void) get_field(9223372036854775807L - 1, 0);
 
  parse_field = fw_parse_field;
  scan = ({NODE *_ts = (FIELDWIDTHS_node->sub.nodep.l.lptr); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);})->sub.val.sp;
  end = scan + 1;
- if (FIELDWIDTHS == 
-# 814 "field.c" 3 4
-                   ((void *)0)
-# 814 "field.c"
-                       )
-  (void)((FIELDWIDTHS=(int *)malloc((size_t)(fw_alloc * sizeof(int)))) || (set_loc("field.c", 815), r_fatal("%s: %s: can't allocate memory (%s)", ("set_FIELDWIDTHS"), "FIELDWIDTHS", strerror(
-# 815 "field.c" 3 4
- (*__errno_location ())
-# 815 "field.c"
- )),0));
+ if (FIELDWIDTHS == ((void *)0))
+  (void)((FIELDWIDTHS=(int *)malloc((size_t)(fw_alloc * sizeof(int)))) || (set_loc("field.c", 815), r_fatal("%s: %s: can't allocate memory (%s)", ("set_FIELDWIDTHS"), "FIELDWIDTHS", strerror((*__errno_location ()))),0));
  FIELDWIDTHS[0] = 0;
  for (i = 1; ; i++) {
   if (i >= fw_alloc) {
    fw_alloc *= 2;
-   (void)((FIELDWIDTHS=(int *)realloc((char *)FIELDWIDTHS, (size_t)(fw_alloc * sizeof(int)))) || (set_loc("field.c", 820), r_fatal("%s: %s: can't allocate memory (%s)", ("set_FIELDWIDTHS"), "FIELDWIDTHS", strerror(
-# 820 "field.c" 3 4
-  (*__errno_location ())
-# 820 "field.c"
-  )),0));
+   (void)((FIELDWIDTHS=(int *)realloc((char *)FIELDWIDTHS, (size_t)(fw_alloc * sizeof(int)))) || (set_loc("field.c", 820), r_fatal("%s: %s: can't allocate memory (%s)", ("set_FIELDWIDTHS"), "FIELDWIDTHS", strerror((*__errno_location ()))),0));
   }
   FIELDWIDTHS[i] = (int) strtod(scan, &end);
   if (end == scan)
@@ -7381,27 +7261,15 @@ set_FS()
 {
  char buf[10];
  NODE *fs;
- static NODE *save_fs = 
-# 844 "field.c" 3 4
-                       ((void *)0)
-# 844 "field.c"
-                           ;
- static NODE *save_rs = 
-# 845 "field.c" 3 4
-                       ((void *)0)
-# 845 "field.c"
-                           ;
+ static NODE *save_fs = ((void *)0);
+ static NODE *save_rs = ((void *)0);
 
 
 
 
 
- if (fields_arr != 
-# 851 "field.c" 3 4
-                  ((void *)0)
-# 851 "field.c"
-                      )
-  (void) get_field(0x7fffffffffffffffL - 1, 0);
+ if (fields_arr != ((void *)0))
+  (void) get_field(9223372036854775807L - 1, 0);
 
  if (save_fs && cmp_nodes(FS_node->sub.nodep.l.lptr, save_fs) == 0
   && save_rs && cmp_nodes(RS_node->sub.nodep.l.lptr, save_rs) == 0)
@@ -7415,11 +7283,7 @@ set_FS()
    default_FS = 0;
    if (FS_regexp) {
   refree(FS_regexp);
-  FS_regexp = 
-# 866 "field.c" 3 4
-             ((void *)0)
-# 866 "field.c"
-                 ;
+  FS_regexp = ((void *)0);
  }
  fs = ({NODE *_ts = (FS_node->sub.nodep.l.lptr); ((_ts->flags & 16) && (_ts->sub.val.idx == -1 || _ts->sub.val.idx == CONVFMTidx)) ? _ts : r_force_string(_ts);});
  if (! do_traditional && fs->sub.val.slen == 0)
@@ -7458,11 +7322,7 @@ set_FS()
  } else if (parse_field == re_parse_field) {
   FS_regexp = make_regexp(fs->sub.val.sp, fs->sub.val.slen, IGNORECASE, 1);
  } else
-  FS_regexp = 
-# 905 "field.c" 3 4
-             ((void *)0)
-# 905 "field.c"
-                 ;
+  FS_regexp = ((void *)0);
 }
 
 

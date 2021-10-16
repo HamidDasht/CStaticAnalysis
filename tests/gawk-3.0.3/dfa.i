@@ -1,5 +1,5 @@
 # 1 "dfa.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -33,8 +33,6 @@
 
 
 
-
-# 69 "/usr/include/assert.h" 3 4
 extern void __assert_fail (const char *__assertion, const char *__file,
       unsigned int __line, const char *__function)
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
@@ -328,8 +326,8 @@ extern int toupper_l (int __c, __locale_t __l) __attribute__ ((__nothrow__ , __l
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 # 44 "/usr/include/stdio.h" 3 4
@@ -350,7 +348,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -384,8 +382,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -1154,8 +1152,8 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
 # 33 "/usr/include/stdlib.h" 2 3 4
 
@@ -1477,7 +1475,7 @@ typedef __suseconds_t suseconds_t;
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -1968,7 +1966,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -2351,7 +2349,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/string.h" 2 3 4
 
 
@@ -2658,8 +2656,6 @@ extern char *basename (const char *__filename) __attribute__ ((__nothrow__ , __l
 # 39 "dfa.c" 2
 # 80 "dfa.c"
 # 1 "regex.h" 1
-# 40 "regex.h"
-
 # 40 "regex.h"
 typedef long int s_reg_t;
 typedef unsigned long int active_reg_t;
@@ -3271,105 +3267,17 @@ static int laststart;
 static int parens;
 static int minrep, maxrep;
 # 362 "dfa.c"
-static int is_alpha(int c) { return 
-# 362 "dfa.c" 3 4
-((*__ctype_b_loc ())[(int) ((
-# 362 "dfa.c"
-c
-# 362 "dfa.c" 3 4
-))] & (unsigned short int) _ISalpha)
-# 362 "dfa.c"
-; }
-static int is_upper(int c) { return 
-# 363 "dfa.c" 3 4
-((*__ctype_b_loc ())[(int) ((
-# 363 "dfa.c"
-c
-# 363 "dfa.c" 3 4
-))] & (unsigned short int) _ISupper)
-# 363 "dfa.c"
-; }
-static int is_lower(int c) { return 
-# 364 "dfa.c" 3 4
-((*__ctype_b_loc ())[(int) ((
-# 364 "dfa.c"
-c
-# 364 "dfa.c" 3 4
-))] & (unsigned short int) _ISlower)
-# 364 "dfa.c"
-; }
-static int is_digit(int c) { return 
-# 365 "dfa.c" 3 4
-((*__ctype_b_loc ())[(int) ((
-# 365 "dfa.c"
-c
-# 365 "dfa.c" 3 4
-))] & (unsigned short int) _ISdigit)
-# 365 "dfa.c"
-; }
-static int is_xdigit(int c) { return 
-# 366 "dfa.c" 3 4
-((*__ctype_b_loc ())[(int) ((
-# 366 "dfa.c"
-c
-# 366 "dfa.c" 3 4
-))] & (unsigned short int) _ISxdigit)
-# 366 "dfa.c"
-; }
-static int is_space(int c) { return 
-# 367 "dfa.c" 3 4
-((*__ctype_b_loc ())[(int) ((
-# 367 "dfa.c"
-c
-# 367 "dfa.c" 3 4
-))] & (unsigned short int) _ISspace)
-# 367 "dfa.c"
-; }
-static int is_punct(int c) { return 
-# 368 "dfa.c" 3 4
-((*__ctype_b_loc ())[(int) ((
-# 368 "dfa.c"
-c
-# 368 "dfa.c" 3 4
-))] & (unsigned short int) _ISpunct)
-# 368 "dfa.c"
-; }
-static int is_alnum(int c) { return 
-# 369 "dfa.c" 3 4
-((*__ctype_b_loc ())[(int) ((
-# 369 "dfa.c"
-c
-# 369 "dfa.c" 3 4
-))] & (unsigned short int) _ISalnum)
-# 369 "dfa.c"
-; }
-static int is_print(int c) { return 
-# 370 "dfa.c" 3 4
-((*__ctype_b_loc ())[(int) ((
-# 370 "dfa.c"
-c
-# 370 "dfa.c" 3 4
-))] & (unsigned short int) _ISprint)
-# 370 "dfa.c"
-; }
-static int is_graph(int c) { return 
-# 371 "dfa.c" 3 4
-((*__ctype_b_loc ())[(int) ((
-# 371 "dfa.c"
-c
-# 371 "dfa.c" 3 4
-))] & (unsigned short int) _ISgraph)
-# 371 "dfa.c"
-; }
-static int is_cntrl(int c) { return 
-# 372 "dfa.c" 3 4
-((*__ctype_b_loc ())[(int) ((
-# 372 "dfa.c"
-c
-# 372 "dfa.c" 3 4
-))] & (unsigned short int) _IScntrl)
-# 372 "dfa.c"
-; }
+static int is_alpha(int c) { return ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISalpha); }
+static int is_upper(int c) { return ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISupper); }
+static int is_lower(int c) { return ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISlower); }
+static int is_digit(int c) { return ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISdigit); }
+static int is_xdigit(int c) { return ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISxdigit); }
+static int is_space(int c) { return ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISspace); }
+static int is_punct(int c) { return ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISpunct); }
+static int is_alnum(int c) { return ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISalnum); }
+static int is_print(int c) { return ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISprint); }
+static int is_graph(int c) { return ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISgraph); }
+static int is_cntrl(int c) { return ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _IScntrl); }
 
 static int is_blank(c)
 int c;
@@ -3547,29 +3455,13 @@ lex()
 
 
    { if (! lexleft) if ("unfinished repeat count" != 0) dfaerror("unfinished repeat count"); else return lasttok = END; (c) = (unsigned char) *lexptr++; --lexleft; };
-   if (
-# 550 "dfa.c" 3 4
-      ((*__ctype_b_loc ())[(int) ((
-# 550 "dfa.c"
-      c
-# 550 "dfa.c" 3 4
-      ))] & (unsigned short int) _ISdigit)
-# 550 "dfa.c"
-                )
+   if (((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISdigit))
      {
        minrep = c - '0';
        for (;;)
   {
     { if (! lexleft) if ("unfinished repeat count" != 0) dfaerror("unfinished repeat count"); else return lasttok = END; (c) = (unsigned char) *lexptr++; --lexleft; };
-    if (!
-# 556 "dfa.c" 3 4
-        ((*__ctype_b_loc ())[(int) ((
-# 556 "dfa.c"
-        c
-# 556 "dfa.c" 3 4
-        ))] & (unsigned short int) _ISdigit)
-# 556 "dfa.c"
-                  )
+    if (!((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISdigit))
       break;
     minrep = 10 * minrep + c - '0';
   }
@@ -3580,15 +3472,7 @@ lex()
      for (;;)
        {
   { if (! lexleft) if ("unfinished repeat count" != 0) dfaerror("unfinished repeat count"); else return lasttok = END; (c) = (unsigned char) *lexptr++; --lexleft; };
-  if (!
-# 567 "dfa.c" 3 4
-      ((*__ctype_b_loc ())[(int) ((
-# 567 "dfa.c"
-      c
-# 567 "dfa.c" 3 4
-      ))] & (unsigned short int) _ISdigit)
-# 567 "dfa.c"
-                )
+  if (!((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISdigit))
     break;
   maxrep = 10 * maxrep + c - '0';
        }
@@ -3655,15 +3539,7 @@ lex()
      goto normal_char;
    zeroset(ccl);
    for (c2 = 0; c2 < (1 << 8); ++c2)
-     if (
-# 634 "dfa.c" 3 4
-        ((*__ctype_b_loc ())[(int) ((
-# 634 "dfa.c"
-        c2
-# 634 "dfa.c" 3 4
-        ))] & (unsigned short int) _ISalnum)
-# 634 "dfa.c"
-                   )
+     if (((*__ctype_b_loc ())[(int) ((c2))] & (unsigned short int) _ISalnum))
        setbit(c2, ccl);
    setbit('_', ccl);
    if (c == 'W')
@@ -3736,25 +3612,9 @@ lex()
   {
     setbit(c, ccl);
     if (case_fold)
-      if (
-# 707 "dfa.c" 3 4
-         ((*__ctype_b_loc ())[(int) ((
-# 707 "dfa.c"
-         c
-# 707 "dfa.c" 3 4
-         ))] & (unsigned short int) _ISupper)
-# 707 "dfa.c"
-                   )
+      if (((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISupper))
         setbit(tolower(c), ccl);
-      else if (
-# 709 "dfa.c" 3 4
-              ((*__ctype_b_loc ())[(int) ((
-# 709 "dfa.c"
-              c
-# 709 "dfa.c" 3 4
-              ))] & (unsigned short int) _ISlower)
-# 709 "dfa.c"
-                        )
+      else if (((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISlower))
         setbit(toupper(c), ccl);
     ++c;
   }
@@ -3774,27 +3634,11 @@ lex()
  default:
  normal_char:
    laststart = 0;
-   if (case_fold && 
-# 729 "dfa.c" 3 4
-                   ((*__ctype_b_loc ())[(int) ((
-# 729 "dfa.c"
-                   c
-# 729 "dfa.c" 3 4
-                   ))] & (unsigned short int) _ISalpha)
-# 729 "dfa.c"
-                             )
+   if (case_fold && ((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISalpha))
      {
        zeroset(ccl);
        setbit(c, ccl);
-       if (
-# 733 "dfa.c" 3 4
-          ((*__ctype_b_loc ())[(int) ((
-# 733 "dfa.c"
-          c
-# 733 "dfa.c" 3 4
-          ))] & (unsigned short int) _ISupper)
-# 733 "dfa.c"
-                    )
+       if (((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISupper))
   setbit(tolower(c), ccl);
        else
   setbit(toupper(c), ccl);
@@ -4454,15 +4298,7 @@ dfastate(s, d, trans)
     {
       initialized = 1;
       for (i = 0; i < (1 << 8); ++i)
- if (
-# 1548 "dfa.c" 3 4
-    ((*__ctype_b_loc ())[(int) ((
-# 1548 "dfa.c"
-    i
-# 1548 "dfa.c" 3 4
-    ))] & (unsigned short int) _ISalnum)
-# 1548 "dfa.c"
-              )
+ if (((*__ctype_b_loc ())[(int) ((i))] & (unsigned short int) _ISalnum))
    setbit(i, letters);
       setbit('\n', newline);
     }
@@ -4597,15 +4433,7 @@ dfastate(s, d, trans)
       for (i = 0; i < (1 << 8); ++i)
  if (i == '\n')
    trans[i] = state_newline;
- else if (
-# 1683 "dfa.c" 3 4
-         ((*__ctype_b_loc ())[(int) ((
-# 1683 "dfa.c"
-         i
-# 1683 "dfa.c" 3 4
-         ))] & (unsigned short int) _ISalnum)
-# 1683 "dfa.c"
-                   )
+ else if (((*__ctype_b_loc ())[(int) ((i))] & (unsigned short int) _ISalnum))
    trans[i] = state_letter;
  else
    trans[i] = state;
@@ -4666,15 +4494,7 @@ dfastate(s, d, trans)
 
        if (c == '\n')
   trans[c] = state_newline;
-       else if (
-# 1744 "dfa.c" 3 4
-               ((*__ctype_b_loc ())[(int) ((
-# 1744 "dfa.c"
-               c
-# 1744 "dfa.c" 3 4
-               ))] & (unsigned short int) _ISalnum)
-# 1744 "dfa.c"
-                         )
+       else if (((*__ctype_b_loc ())[(int) ((c))] & (unsigned short int) _ISalnum))
   trans[c] = state_letter;
        else if (c < (1 << 8))
   trans[c] = state;
@@ -4705,20 +4525,12 @@ build_state(s, d)
  if (d->trans[i])
    {
      free((ptr_t) d->trans[i]);
-     d->trans[i] = 
-# 1782 "dfa.c" 3 4
-                  ((void *)0)
-# 1782 "dfa.c"
-                      ;
+     d->trans[i] = ((void *)0);
    }
  else if (d->fails[i])
    {
      free((ptr_t) d->fails[i]);
-     d->fails[i] = 
-# 1787 "dfa.c" 3 4
-                  ((void *)0)
-# 1787 "dfa.c"
-                      ;
+     d->fails[i] = ((void *)0);
    }
       d->trcount = 0;
     }
@@ -4757,16 +4569,8 @@ build_state(s, d)
  ((d->newlines) = (int *) xrealloc((ptr_t) (d->newlines), (d->tralloc) * sizeof (int)));
  while (oldalloc < d->tralloc)
    {
-     d->trans[oldalloc] = 
-# 1826 "dfa.c" 3 4
-                         ((void *)0)
-# 1826 "dfa.c"
-                             ;
-     d->fails[oldalloc++] = 
-# 1827 "dfa.c" 3 4
-                           ((void *)0)
-# 1827 "dfa.c"
-                               ;
+     d->trans[oldalloc] = ((void *)0);
+     d->fails[oldalloc++] = ((void *)0);
    }
       }
 
@@ -4819,15 +4623,7 @@ dfaexec(d, begin, end, newline, count, backref)
       for (i = 0; i < (1 << 8); ++i)
  if (i == '\n')
    sbit[i] = 4;
- else if (
-# 1893 "dfa.c" 3 4
-         ((*__ctype_b_loc ())[(int) ((
-# 1893 "dfa.c"
-         i
-# 1893 "dfa.c" 3 4
-         ))] & (unsigned short int) _ISalnum)
-# 1893 "dfa.c"
-                   )
+ else if (((*__ctype_b_loc ())[(int) ((i))] & (unsigned short int) _ISalnum))
    sbit[i] = 2;
  else
    sbit[i] = 1;
@@ -4881,11 +4677,7 @@ dfaexec(d, begin, end, newline, count, backref)
 
 
       if ((char *) p > end)
- return 
-# 1947 "dfa.c" 3 4
-       ((void *)0)
-# 1947 "dfa.c"
-           ;
+ return ((void *)0);
 
       if (s >= 0)
  {
@@ -4944,15 +4736,7 @@ dfacomp(s, len, d, searchflag)
 
       case_fold = 0;
       for (i = 0; i < len; ++i)
- if (
-# 2006 "dfa.c" 3 4
-    ((*__ctype_b_loc ())[(int) ((
-# 2006 "dfa.c"
-    s[i]
-# 2006 "dfa.c" 3 4
-    ))] & (unsigned short int) _ISupper)
-# 2006 "dfa.c"
-                 )
+ if (((*__ctype_b_loc ())[(int) ((s[i]))] & (unsigned short int) _ISupper))
    lcopy[i] = tolower(s[i]);
  else
    lcopy[i] = s[i];
@@ -5017,37 +4801,17 @@ icatalloc(old, new)
   char *result;
   size_t oldsize, newsize;
 
-  newsize = (new == 
-# 2151 "dfa.c" 3 4
-                   ((void *)0)
-# 2151 "dfa.c"
-                       ) ? 0 : strlen(new);
-  if (old == 
-# 2152 "dfa.c" 3 4
-            ((void *)0)
-# 2152 "dfa.c"
-                )
+  newsize = (new == ((void *)0)) ? 0 : strlen(new);
+  if (old == ((void *)0))
     oldsize = 0;
   else if (newsize == 0)
     return old;
   else oldsize = strlen(old);
-  if (old == 
-# 2157 "dfa.c" 3 4
-            ((void *)0)
-# 2157 "dfa.c"
-                )
+  if (old == ((void *)0))
     result = (char *) malloc(newsize + 1);
   else
     result = (char *) realloc((void *) old, oldsize + newsize + 1);
-  if (result != 
-# 2161 "dfa.c" 3 4
-               ((void *)0) 
-# 2161 "dfa.c"
-                    && new != 
-# 2161 "dfa.c" 3 4
-                              ((void *)0)
-# 2161 "dfa.c"
-                                  )
+  if (result != ((void *)0) && new != ((void *)0))
     (void) strcpy(result + oldsize, new);
   return result;
 }
@@ -5056,11 +4820,7 @@ static char *
 icpyalloc(string)
      char *string;
 {
-  return icatalloc((char *) 
-# 2170 "dfa.c" 3 4
-                           ((void *)0)
-# 2170 "dfa.c"
-                               , string);
+  return icatalloc((char *) ((void *)0), string);
 }
 
 static char *
@@ -5075,22 +4835,14 @@ istrstr(lookin, lookfor)
   for (cp = lookin; *cp != '\0'; ++cp)
     if (strncmp(cp, lookfor, len) == 0)
       return cp;
-  return 
-# 2185 "dfa.c" 3 4
-        ((void *)0)
-# 2185 "dfa.c"
-            ;
+  return ((void *)0);
 }
 
 static void
 ifree(cp)
      char *cp;
 {
-  if (cp != 
-# 2192 "dfa.c" 3 4
-           ((void *)0)
-# 2192 "dfa.c"
-               )
+  if (cp != ((void *)0))
     free(cp);
 }
 
@@ -5100,24 +4852,12 @@ freelist(cpp)
 {
   int i;
 
-  if (cpp == 
-# 2202 "dfa.c" 3 4
-            ((void *)0)
-# 2202 "dfa.c"
-                )
+  if (cpp == ((void *)0))
     return;
-  for (i = 0; cpp[i] != 
-# 2204 "dfa.c" 3 4
-                       ((void *)0)
-# 2204 "dfa.c"
-                           ; ++i)
+  for (i = 0; cpp[i] != ((void *)0); ++i)
     {
       free(cpp[i]);
-      cpp[i] = 
-# 2207 "dfa.c" 3 4
-              ((void *)0)
-# 2207 "dfa.c"
-                  ;
+      cpp[i] = ((void *)0);
     }
 }
 
@@ -5129,57 +4869,25 @@ enlist(cpp, new, len)
 {
   int i, j;
 
-  if (cpp == 
-# 2219 "dfa.c" 3 4
-            ((void *)0)
-# 2219 "dfa.c"
-                )
-    return 
-# 2220 "dfa.c" 3 4
-          ((void *)0)
-# 2220 "dfa.c"
-              ;
-  if ((new = icpyalloc(new)) == 
-# 2221 "dfa.c" 3 4
-                               ((void *)0)
-# 2221 "dfa.c"
-                                   )
+  if (cpp == ((void *)0))
+    return ((void *)0);
+  if ((new = icpyalloc(new)) == ((void *)0))
     {
       freelist(cpp);
-      return 
-# 2224 "dfa.c" 3 4
-            ((void *)0)
-# 2224 "dfa.c"
-                ;
+      return ((void *)0);
     }
   new[len] = '\0';
 
-  for (i = 0; cpp[i] != 
-# 2228 "dfa.c" 3 4
-                       ((void *)0)
-# 2228 "dfa.c"
-                           ; ++i)
-    if (istrstr(cpp[i], new) != 
-# 2229 "dfa.c" 3 4
-                               ((void *)0)
-# 2229 "dfa.c"
-                                   )
+  for (i = 0; cpp[i] != ((void *)0); ++i)
+    if (istrstr(cpp[i], new) != ((void *)0))
       {
  free(new);
  return cpp;
       }
 
   j = 0;
-  while (cpp[j] != 
-# 2236 "dfa.c" 3 4
-                  ((void *)0)
-# 2236 "dfa.c"
-                      )
-    if (istrstr(new, cpp[j]) == 
-# 2237 "dfa.c" 3 4
-                               ((void *)0)
-# 2237 "dfa.c"
-                                   )
+  while (cpp[j] != ((void *)0))
+    if (istrstr(new, cpp[j]) == ((void *)0))
       ++j;
     else
       {
@@ -5187,30 +4895,14 @@ enlist(cpp, new, len)
  if (--i == j)
    break;
  cpp[j] = cpp[i];
- cpp[i] = 
-# 2245 "dfa.c" 3 4
-         ((void *)0)
-# 2245 "dfa.c"
-             ;
+ cpp[i] = ((void *)0);
       }
 
   cpp = (char **) realloc((char *) cpp, (i + 2) * sizeof *cpp);
-  if (cpp == 
-# 2249 "dfa.c" 3 4
-            ((void *)0)
-# 2249 "dfa.c"
-                )
-    return 
-# 2250 "dfa.c" 3 4
-          ((void *)0)
-# 2250 "dfa.c"
-              ;
+  if (cpp == ((void *)0))
+    return ((void *)0);
   cpp[i] = new;
-  cpp[i + 1] = 
-# 2252 "dfa.c" 3 4
-              ((void *)0)
-# 2252 "dfa.c"
-                  ;
+  cpp[i + 1] = ((void *)0);
   return cpp;
 }
 
@@ -5227,45 +4919,17 @@ comsubs(left, right)
   char *rcp;
   size_t i, len;
 
-  if (left == 
-# 2269 "dfa.c" 3 4
-             ((void *)0) 
-# 2269 "dfa.c"
-                  || right == 
-# 2269 "dfa.c" 3 4
-                              ((void *)0)
-# 2269 "dfa.c"
-                                  )
-    return 
-# 2270 "dfa.c" 3 4
-          ((void *)0)
-# 2270 "dfa.c"
-              ;
+  if (left == ((void *)0) || right == ((void *)0))
+    return ((void *)0);
   cpp = (char **) malloc(sizeof *cpp);
-  if (cpp == 
-# 2272 "dfa.c" 3 4
-            ((void *)0)
-# 2272 "dfa.c"
-                )
-    return 
-# 2273 "dfa.c" 3 4
-          ((void *)0)
-# 2273 "dfa.c"
-              ;
-  cpp[0] = 
-# 2274 "dfa.c" 3 4
-          ((void *)0)
-# 2274 "dfa.c"
-              ;
+  if (cpp == ((void *)0))
+    return ((void *)0);
+  cpp[0] = ((void *)0);
   for (lcp = left; *lcp != '\0'; ++lcp)
     {
       len = 0;
       rcp = strchr(right, *lcp);
-      while (rcp != 
-# 2279 "dfa.c" 3 4
-                   ((void *)0)
-# 2279 "dfa.c"
-                       )
+      while (rcp != ((void *)0))
  {
    for (i = 1; lcp[i] != '\0' && lcp[i] == rcp[i]; ++i)
      continue;
@@ -5275,11 +4939,7 @@ comsubs(left, right)
  }
       if (len == 0)
  continue;
-      if ((cpp = enlist(cpp, lcp, len)) == 
-# 2289 "dfa.c" 3 4
-                                          ((void *)0)
-# 2289 "dfa.c"
-                                              )
+      if ((cpp = enlist(cpp, lcp, len)) == ((void *)0))
  break;
     }
   return cpp;
@@ -5292,32 +4952,12 @@ char **new;
 {
   int i;
 
-  if (old == 
-# 2302 "dfa.c" 3 4
-            ((void *)0) 
-# 2302 "dfa.c"
-                 || new == 
-# 2302 "dfa.c" 3 4
-                           ((void *)0)
-# 2302 "dfa.c"
-                               )
-    return 
-# 2303 "dfa.c" 3 4
-          ((void *)0)
-# 2303 "dfa.c"
-              ;
-  for (i = 0; new[i] != 
-# 2304 "dfa.c" 3 4
-                       ((void *)0)
-# 2304 "dfa.c"
-                           ; ++i)
+  if (old == ((void *)0) || new == ((void *)0))
+    return ((void *)0);
+  for (i = 0; new[i] != ((void *)0); ++i)
     {
       old = enlist(old, new[i], strlen(new[i]));
-      if (old == 
-# 2307 "dfa.c" 3 4
-                ((void *)0)
-# 2307 "dfa.c"
-                    )
+      if (old == ((void *)0))
  break;
     }
   return old;
@@ -5334,75 +4974,27 @@ inboth(left, right)
   char **temp;
   int lnum, rnum;
 
-  if (left == 
-# 2324 "dfa.c" 3 4
-             ((void *)0) 
-# 2324 "dfa.c"
-                  || right == 
-# 2324 "dfa.c" 3 4
-                              ((void *)0)
-# 2324 "dfa.c"
-                                  )
-    return 
-# 2325 "dfa.c" 3 4
-          ((void *)0)
-# 2325 "dfa.c"
-              ;
+  if (left == ((void *)0) || right == ((void *)0))
+    return ((void *)0);
   both = (char **) malloc(sizeof *both);
-  if (both == 
-# 2327 "dfa.c" 3 4
-             ((void *)0)
-# 2327 "dfa.c"
-                 )
-    return 
-# 2328 "dfa.c" 3 4
-          ((void *)0)
-# 2328 "dfa.c"
-              ;
-  both[0] = 
-# 2329 "dfa.c" 3 4
-           ((void *)0)
-# 2329 "dfa.c"
-               ;
-  for (lnum = 0; left[lnum] != 
-# 2330 "dfa.c" 3 4
-                              ((void *)0)
-# 2330 "dfa.c"
-                                  ; ++lnum)
+  if (both == ((void *)0))
+    return ((void *)0);
+  both[0] = ((void *)0);
+  for (lnum = 0; left[lnum] != ((void *)0); ++lnum)
     {
-      for (rnum = 0; right[rnum] != 
-# 2332 "dfa.c" 3 4
-                                   ((void *)0)
-# 2332 "dfa.c"
-                                       ; ++rnum)
+      for (rnum = 0; right[rnum] != ((void *)0); ++rnum)
  {
    temp = comsubs(left[lnum], right[rnum]);
-   if (temp == 
-# 2335 "dfa.c" 3 4
-              ((void *)0)
-# 2335 "dfa.c"
-                  )
+   if (temp == ((void *)0))
      {
        freelist(both);
-       return 
-# 2338 "dfa.c" 3 4
-             ((void *)0)
-# 2338 "dfa.c"
-                 ;
+       return ((void *)0);
      }
    both = addlists(both, temp);
    freelist(temp);
    free(temp);
-   if (both == 
-# 2343 "dfa.c" 3 4
-              ((void *)0)
-# 2343 "dfa.c"
-                  )
-     return 
-# 2344 "dfa.c" 3 4
-           ((void *)0)
-# 2344 "dfa.c"
-               ;
+   if (both == ((void *)0))
+     return ((void *)0);
  }
     }
   return both;
@@ -5442,11 +5034,7 @@ struct dfa *dfa;
   result = empty_string;
   exact = 0;
   musts = (must *) malloc((dfa->tindex + 1) * sizeof *musts);
-  if (musts == 
-# 2384 "dfa.c" 3 4
-              ((void *)0)
-# 2384 "dfa.c"
-                  )
+  if (musts == ((void *)0))
     return;
   mp = musts;
   for (i = 0; i <= dfa->tindex; ++i)
@@ -5457,31 +5045,11 @@ struct dfa *dfa;
       mp[i].left = malloc(2);
       mp[i].right = malloc(2);
       mp[i].is = malloc(2);
-      if (mp[i].in == 
-# 2395 "dfa.c" 3 4
-                     ((void *)0) 
-# 2395 "dfa.c"
-                          || mp[i].left == 
-# 2395 "dfa.c" 3 4
-                                           ((void *)0) 
-# 2395 "dfa.c"
-                                                ||
-   mp[i].right == 
-# 2396 "dfa.c" 3 4
-                 ((void *)0) 
-# 2396 "dfa.c"
-                      || mp[i].is == 
-# 2396 "dfa.c" 3 4
-                                     ((void *)0)
-# 2396 "dfa.c"
-                                         )
+      if (mp[i].in == ((void *)0) || mp[i].left == ((void *)0) ||
+   mp[i].right == ((void *)0) || mp[i].is == ((void *)0))
  goto done;
       mp[i].left[0] = mp[i].right[0] = mp[i].is[0] = '\0';
-      mp[i].in[0] = 
-# 2399 "dfa.c" 3 4
-                   ((void *)0)
-# 2399 "dfa.c"
-                       ;
+      mp[i].in[0] = ((void *)0);
     }
 # 2410 "dfa.c"
   for (ri = 0; ri < dfa->tindex; ++ri)
@@ -5541,11 +5109,7 @@ struct dfa *dfa;
        lmp->right[j] = lmp->right[(ln - i) + j];
      lmp->right[j] = '\0';
      new = inboth(lmp->in, rmp->in);
-     if (new == 
-# 2467 "dfa.c" 3 4
-               ((void *)0)
-# 2467 "dfa.c"
-                   )
+     if (new == ((void *)0))
        goto done;
      freelist(lmp->in);
      free((char *) lmp->in);
@@ -5561,11 +5125,7 @@ struct dfa *dfa;
  case END:
    if (mp != &musts[1])
      goto done;
-   for (i = 0; musts[0].in[i] != 
-# 2483 "dfa.c" 3 4
-                                ((void *)0)
-# 2483 "dfa.c"
-                                    ; ++i)
+   for (i = 0; musts[0].in[i] != ((void *)0); ++i)
      if (strlen(musts[0].in[i]) > strlen(result))
        result = musts[0].in[i];
    if (strcmp(result, musts[0].is) == 0)
@@ -5584,11 +5144,7 @@ struct dfa *dfa;
 
 
      lmp->in = addlists(lmp->in, rmp->in);
-     if (lmp->in == 
-# 2502 "dfa.c" 3 4
-                   ((void *)0)
-# 2502 "dfa.c"
-                       )
+     if (lmp->in == ((void *)0))
        goto done;
      if (lmp->right[0] != '\0' &&
   rmp->left[0] != '\0')
@@ -5596,27 +5152,15 @@ struct dfa *dfa;
   char *tp;
 
   tp = icpyalloc(lmp->right);
-  if (tp == 
-# 2510 "dfa.c" 3 4
-           ((void *)0)
-# 2510 "dfa.c"
-               )
+  if (tp == ((void *)0))
     goto done;
   tp = icatalloc(tp, rmp->left);
-  if (tp == 
-# 2513 "dfa.c" 3 4
-           ((void *)0)
-# 2513 "dfa.c"
-               )
+  if (tp == ((void *)0))
     goto done;
   lmp->in = enlist(lmp->in, tp,
      strlen(tp));
   free(tp);
-  if (lmp->in == 
-# 2518 "dfa.c" 3 4
-                ((void *)0)
-# 2518 "dfa.c"
-                    )
+  if (lmp->in == ((void *)0))
     goto done;
        }
 
@@ -5624,32 +5168,20 @@ struct dfa *dfa;
        {
   lmp->left = icatalloc(lmp->left,
           rmp->left);
-  if (lmp->left == 
-# 2526 "dfa.c" 3 4
-                  ((void *)0)
-# 2526 "dfa.c"
-                      )
+  if (lmp->left == ((void *)0))
     goto done;
        }
 
      if (rmp->is[0] == '\0')
        lmp->right[0] = '\0';
      lmp->right = icatalloc(lmp->right, rmp->right);
-     if (lmp->right == 
-# 2533 "dfa.c" 3 4
-                      ((void *)0)
-# 2533 "dfa.c"
-                          )
+     if (lmp->right == ((void *)0))
        goto done;
 
      if (lmp->is[0] != '\0' && rmp->is[0] != '\0')
        {
   lmp->is = icatalloc(lmp->is, rmp->is);
-  if (lmp->is == 
-# 2539 "dfa.c" 3 4
-                ((void *)0)
-# 2539 "dfa.c"
-                    )
+  if (lmp->is == ((void *)0))
     goto done;
        }
      else
@@ -5679,11 +5211,7 @@ struct dfa *dfa;
        mp->is[0] = mp->left[0] = mp->right[0] = t;
        mp->is[1] = mp->left[1] = mp->right[1] = '\0';
        mp->in = enlist(mp->in, mp->is, (size_t)1);
-       if (mp->in == 
-# 2569 "dfa.c" 3 4
-                    ((void *)0)
-# 2569 "dfa.c"
-                        )
+       if (mp->in == ((void *)0))
   goto done;
      }
    break;

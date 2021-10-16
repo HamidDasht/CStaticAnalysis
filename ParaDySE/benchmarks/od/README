@@ -1,5 +1,5 @@
 ./od -j 99 -N 99 input_file -abcdfilosx
 
-cilly --save-temps -std=gnu99 -g -Wl,--as-needed  -o od od.c ../../../../coreutils-8.30/src/libver.a ../../../../coreutils-8.30/lib/libcoreutils.a -I../../../../coreutils-8.30/lib -I../../../../coreutils-8.30/src  ../../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I/home/hamid/Desktop/ParaDySE/include -L/home/hamid/Desktop/ParaDySE/lib
+../../cil/bin/cilly --save-temps -std=gnu99 -g -Wl,--as-needed  -o od od.c ../../../coreutils-8.30/src/libver.a ../../../coreutils-8.30/lib/libcoreutils.a -I../../../coreutils-8.30/lib -I../../../coreutils-8.30/src  ../../../coreutils-8.30/lib/libcoreutils.a --doCrestInstrument -lm -lcrest -lstdc++ -I../../include -L../../lib
 
 rm branches cfg* od.cil.* od.i od.o od dominator* features funcount idcount stmtcount input_file szd_execution 

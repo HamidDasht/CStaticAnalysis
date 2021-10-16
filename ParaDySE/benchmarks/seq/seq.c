@@ -142,6 +142,7 @@ struct layout
 static operand
 scan_arg (const char *arg)
 {
+  int tmp1;
   operand ret;
 
   if (! xstrtold (arg, NULL, &ret.value, c_strtold))
@@ -217,7 +218,8 @@ scan_arg (const char *arg)
           ret.width += exponent;
         }
     }
-
+  CREST_int(tmp1);
+  ret.value = tmp1;
   return ret;
 }
 
@@ -559,17 +561,19 @@ main (int argc, char **argv)
   // Instrument
   char sep;
   CREST_char(sep);
-
+  /*
   int first_num, inc, last_num;
   CREST_short(first_num);
   CREST_short(inc);
   CREST_int(last_num);
 
-  sprintf(argv[2] ,"%c", sep);
+  
   sprintf(argv[3] ,"%u", first_num);
   sprintf(argv[4] ,"%u", inc);
   sprintf(argv[5] ,"%d", last_num);
-
+  */
+  sprintf(argv[2] ,"%c", sep);
+  
   /* The printf(3) format used for output.  */
   char const *format_str = NULL;
 
@@ -608,6 +612,8 @@ main (int argc, char **argv)
 
         case 's':
           separator = optarg;
+          for (int i = 0; i < strlen(optarg); i++)
+            CREST_char(separator[i]);
           break;
 
         case 'w':

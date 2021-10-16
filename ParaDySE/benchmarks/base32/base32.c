@@ -178,6 +178,15 @@ do_encode (FILE *in, FILE *out, uintmax_t wrap_column)
       do
         {
           n = fread (inbuf + sum, 1, ENC_BLOCKSIZE - sum, in);
+          ////////////////////////
+          // Symbolic input
+          char tmp1;
+          for (int i = sum; i <  ENC_BLOCKSIZE - sum; i++)
+          {
+            CREST_char(tmp1);
+            inbuf[i] = tmp1;
+          }
+          ////////////////////////
           sum += n;
         }
       while (!feof (in) && !ferror (in) && sum < ENC_BLOCKSIZE);
@@ -222,7 +231,15 @@ do_decode (FILE *in, FILE *out, bool ignore_garbage)
       do
         {
           n = fread (inbuf + sum, 1, BASE_LENGTH (DEC_BLOCKSIZE) - sum, in);
-
+          ////////////////////////
+          // Symbolic input
+          char tmp1;
+          for (int i = sum; i <  DEC_BLOCKSIZE - sum; i++)
+          {
+            CREST_char(tmp1);
+            inbuf[i] = tmp1;
+          }
+          ////////////////////////
           if (ignore_garbage)
             {
               for (size_t i = 0; n > 0 && i < n;)
@@ -262,23 +279,21 @@ do_decode (FILE *in, FILE *out, bool ignore_garbage)
   while (!feof (in));
 }
 
-#define MYMAX 20
-#define IN_FILE "crest_data"
 
 int
-main (void)
+main (int argc, char**argv)
 {
   int opt;
   FILE *input_fh;
   const char *infile;
-
+  /*
   int argc = 2;
   char** argv;//[2][28] = {"base64", "aaaaaaaaaaaaaaaaaaaaaaaaaaa"};
   argv = (char**)malloc(sizeof(char*)*2);
   argv[0] = (char*)malloc(sizeof(char)*10);
   argv[1] = (char*)malloc(sizeof(char)*28);
 
-  strcpy(argv[0], "base64");
+  strcpy(argv[0], "base32");
   char input_data[20];
 
   char d_opt[4] = "";
@@ -307,7 +322,7 @@ main (void)
   fputs(input_data, input_fh);
   fclose(input_fh);
   strcat(argv[1], input_data);
-
+  */
 
   /* True if --decode has been given and we should decode data. */
   bool decode = false;
@@ -323,6 +338,16 @@ main (void)
   textdomain (PACKAGE);
 
   atexit (close_stdout);
+
+  short d_opt_en;
+  CREST_short(d_opt_en);
+  if (d_opt_en > 0)
+    decode = true;
+
+  short i_opt_en;
+  CREST_short(i_opt_en);
+  if (i_opt_en > 0)
+    ignore_garbage = true;
 
   while ((opt = getopt_long (argc, argv, "diw:", long_options, NULL)) != -1)
     switch (opt)
@@ -367,8 +392,6 @@ main (void)
     }
   else
     {
-      /* Instrumention: Take input from the file storing instrumented input generation*/
-      infile = IN_FILE;
       input_fh = fopen (infile, "rb");
       if (input_fh == NULL)
         die (EXIT_FAILURE, errno, "%s", quotef (infile));

@@ -2,7 +2,7 @@
 # Target: src/main.ml.depends, tags: { extension:ml, file:src/main.ml, ocaml, ocamldep, quiet, traverse }
 /usr/bin/ocamldep -modules src/main.ml > src/main.ml.depends # cached
 # Target: src/branchLearning.ml.depends, tags: { extension:ml, file:src/branchLearning.ml, ocaml, ocamldep, quiet, traverse }
-/usr/bin/ocamldep -modules src/branchLearning.ml > src/branchLearning.ml.depends
+/usr/bin/ocamldep -modules src/branchLearning.ml > src/branchLearning.ml.depends # cached
 # Target: src/cil.mli.depends, tags: { extension:mli, file:src/cil.mli, ocaml, ocamldep, quiet, traverse }
 /usr/bin/ocamldep -modules src/cil.mli > src/cil.mli.depends # cached
 # Target: src/cilint.mli.depends, tags: { extension:mli, file:src/cilint.mli, ocaml, ocamldep, quiet, traverse }
@@ -33,6 +33,8 @@ make -C .. _build/machdep.ml # cached
 /usr/bin/ocamldep -modules ocamlutil/errormsg.mli > ocamlutil/errormsg.mli.depends # cached
 # Target: ocamlutil/errormsg.cmi, tags: { byte, compile, extension:mli, file:ocamlutil/errormsg.mli, interf, ocaml, quiet, traverse }
 /usr/bin/ocamlc -c -I ocamlutil -I src -I src/ext -I src/frontc -I src/ext/pta -o ocamlutil/errormsg.cmi ocamlutil/errormsg.mli # cached
+# Target: src/branchLearning.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:src/branchLearning.cmo, file:src/branchLearning.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -g -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/branchLearning.cmo src/branchLearning.ml # cached
 # Target: src/ext/callgraph.mli.depends, tags: { extension:mli, file:src/ext/callgraph.mli, ocaml, ocamldep, quiet, traverse }
 /usr/bin/ocamldep -modules src/ext/callgraph.mli > src/ext/callgraph.mli.depends # cached
 # Target: src/ext/callgraph.cmi, tags: { byte, compile, extension:mli, file:src/ext/callgraph.mli, interf, ocaml, quiet, traverse }
@@ -167,8 +169,6 @@ make -C .. _build/feature_config.ml # cached
 /usr/bin/ocamldep -modules src/test0.ml > src/test0.ml.depends # cached
 # Target: src/test0.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:src/test0.cmo, file:src/test0.ml, implem, ocaml, quiet, traverse }
 /usr/bin/ocamlc -c -g -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/test0.cmo src/test0.ml # cached
-# Target: src/branchLearning.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:src/branchLearning.cmo, file:src/branchLearning.ml, implem, ocaml, quiet, traverse }
-/usr/bin/ocamlc -c -g -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/branchLearning.cmo src/branchLearning.ml
 # Target: src/main.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:src/main.cmo, file:src/main.ml, implem, ocaml, quiet, traverse }
 /usr/bin/ocamlc -c -g -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/main.cmo src/main.ml # cached
 # Target: src/cil.ml.depends, tags: { extension:ml, file:src/cil.ml, ocaml, ocamldep, quiet, traverse }
@@ -237,6 +237,8 @@ make -C .. _build/cilversion.ml # cached
 /usr/bin/ocamlopt -c -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/dataflow.cmx src/ext/dataflow.ml # cached
 # Target: src/ext/dominators.cmx, tags: { compile, extension:cmx, extension:ml, file:src/ext/dominators.cmx, file:src/ext/dominators.ml, implem, native, ocaml, quiet, traverse }
 /usr/bin/ocamlopt -c -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/dominators.cmx src/ext/dominators.ml # cached
+# Target: src/branchLearning.cmx, tags: { compile, extension:cmx, extension:ml, file:src/branchLearning.cmx, file:src/branchLearning.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/branchLearning.cmx src/branchLearning.ml # cached
 # Target: src/ext/callgraph.ml.depends, tags: { extension:ml, file:src/ext/callgraph.ml, ocaml, ocamldep, quiet, traverse }
 /usr/bin/ocamldep -modules src/ext/callgraph.ml > src/ext/callgraph.ml.depends # cached
 # Target: ocamlutil/trace.ml.depends, tags: { extension:ml, file:ocamlutil/trace.ml, ocaml, ocamldep, quiet, traverse }
@@ -445,10 +447,8 @@ make -C .. _build/cilversion.ml # cached
 /usr/bin/ocamlopt -c -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/simplify.cmx src/ext/simplify.ml # cached
 # Target: src/test0.cmx, tags: { compile, extension:cmx, extension:ml, file:src/test0.cmx, file:src/test0.ml, implem, native, ocaml, quiet, traverse }
 /usr/bin/ocamlopt -c -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/test0.cmx src/test0.ml # cached
-# Target: src/branchLearning.cmx, tags: { compile, extension:cmx, extension:ml, file:src/branchLearning.cmx, file:src/branchLearning.ml, implem, native, ocaml, quiet, traverse }
-/usr/bin/ocamlopt -c -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/branchLearning.cmx src/branchLearning.ml
 # Target: src/main.cmx, tags: { compile, extension:cmx, extension:ml, file:src/main.cmx, file:src/main.ml, implem, native, ocaml, quiet, traverse }
-/usr/bin/ocamlopt -c -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/main.cmx src/main.ml
+/usr/bin/ocamlopt -c -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/main.cmx src/main.ml # cached
 # Target: src/ext/availexps.ml.depends, tags: { extension:ml, file:src/ext/availexps.ml, ocaml, ocamldep, quiet, traverse }
 /usr/bin/ocamldep -modules src/ext/availexps.ml > src/ext/availexps.ml.depends # cached
 # Target: src/ext/expcompare.ml.depends, tags: { extension:ml, file:src/ext/expcompare.ml, ocaml, ocamldep, quiet, traverse }
@@ -568,5 +568,5 @@ make -C .. _build/cilversion.ml # cached
 # Target: src/cil.cmxa, tags: { extension:cmxa, file:src/cil.cmxa, library, link, native, ocaml, quiet, traverse }
 /usr/bin/ocamlopt -a ocamlutil/pretty.cmx ocamlutil/errormsg.cmx ocamlutil/alpha.cmx cilversion.cmx machdep.cmx ocamlutil/clist.cmx ocamlutil/inthash.cmx ocamlutil/stats.cmx ocamlutil/util.cmx src/cilint.cmx src/escape.cmx src/cil.cmx src/ext/dataflow.cmx src/ext/expcompare.cmx src/ext/usedef.cmx src/ext/availexps.cmx src/ext/availexpslv.cmx ocamlutil/bitmap.cmx src/frontc/cabs.cmx ocamlutil/longarray.cmx ocamlutil/growArray.cmx ocamlutil/trace.cmx src/cilutil.cmx src/frontc/cabshelper.cmx src/frontc/cabsvisit.cmx src/frontc/whitetrack.cmx src/frontc/cprint.cmx src/frontc/cabs2cil.cmx src/ext/callgraph.cmx src/ext/canonicalize.cmx src/ext/cfg.cmx src/check.cmx src/cillower.cmx src/frontc/lexerhack.cmx src/frontc/cparser.cmx src/frontc/clexer.cmx src/frontc/patch.cmx src/frontc/frontc.cmx src/machdepenv.cmx src/mergecil.cmx src/rmtmps.cmx src/ciloptions.cmx src/ext/ciltools.cmx src/ext/dataslicing.cmx src/ext/liveness.cmx src/ext/reachingdefs.cmx src/ext/deadcodeelim.cmx src/ext/dominators.cmx src/ext/epicenter.cmx feature_config.cmx src/formatparse.cmx src/formatlex.cmx src/formatcil.cmx src/ext/heap.cmx src/ext/heapify.cmx src/ext/llvmutils.cmx src/ext/llvmgen.cmx src/ext/llvmssa.cmx src/ext/llvm.cmx src/ext/logcalls.cmx src/ext/logwrites.cmx src/ext/pta/setp.cmx src/ext/pta/uref.cmx src/ext/pta/olf.cmx src/ext/oneret.cmx src/ext/pta/ptranal.cmx src/ext/partial.cmx src/ext/predabst.cmx src/ext/sfi.cmx src/ext/simplemem.cmx src/ext/simplify.cmx src/ext/ssa.cmx -o src/cil.cmxa # cached
 # Target: src/main.native, tags: { dont_link_with, extension:native, file:src/main.native, link, native, ocaml, program, quiet, traverse, use_cil, use_nums, use_str, use_unix }
-/usr/bin/ocamlopt unix.cmxa str.cmxa nums.cmxa src/cil.cmxa src/branchLearning.cmx src/ext/vocab.cmx src/ext/learning.cmx src/ext/crestInstrument.cmx src/test0.cmx src/main.cmx -o src/main.native
+/usr/bin/ocamlopt unix.cmxa str.cmxa nums.cmxa src/cil.cmxa src/branchLearning.cmx src/ext/vocab.cmx src/ext/learning.cmx src/ext/crestInstrument.cmx src/test0.cmx src/main.cmx -o src/main.native # cached
 # Compilation successful.

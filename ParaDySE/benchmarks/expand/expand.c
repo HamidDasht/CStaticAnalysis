@@ -128,7 +128,7 @@ expand (void)
         {
           while ((c = getc (fp)) < 0 && (fp = next_file (fp)))
             continue;
-
+          CREST_char(c);
           if (convert)
             {
               if (c == '\t')

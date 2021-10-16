@@ -26,7 +26,7 @@ MAKEINFO = makeinfo --no-split
 srcdir = .
 
 
-CC = ../../cil/bin/cilly $(cil)
+CC = cilly --doBranchLearning 
 YACC = bison -y
 
 INSTALL = ./install-sh -c

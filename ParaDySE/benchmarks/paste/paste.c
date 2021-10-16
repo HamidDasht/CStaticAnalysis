@@ -180,6 +180,7 @@ xputchar (char c)
 static bool
 paste_parallel (size_t nfiles, char **fnamptr)
 {
+  char tmp1, tmp2;
   bool ok = true;
   /* If all files are just ready to be closed, or will be on this
      round, the string of delimiters must be preserved.
@@ -242,6 +243,8 @@ paste_parallel (size_t nfiles, char **fnamptr)
           if (fileptr[i])
             {
               chr = getc (fileptr[i]);
+              CREST_char(tmp1);
+              chr = tmp1;
               err = errno;
               if (chr != EOF && delims_saved)
                 {
@@ -257,6 +260,8 @@ paste_parallel (size_t nfiles, char **fnamptr)
                     break;
                   xputchar (chr);
                   chr = getc (fileptr[i]);
+                  CREST_char(tmp2);
+                  chr = tmp2;
                   err = errno;
                 }
             }
@@ -377,6 +382,7 @@ paste_serial (size_t nfiles, char **fnamptr)
       delimptr = delims;	/* Set up for delimiter string. */
 
       charold = getc (fileptr);
+      CREST_char(charold);
       saved_errno = errno;
       if (charold != EOF)
         {
@@ -388,6 +394,7 @@ paste_serial (size_t nfiles, char **fnamptr)
 
           while ((charnew = getc (fileptr)) != EOF)
             {
+              CREST_char(charnew);
               /* Process the old character. */
               if (charold == line_delim)
                 {
@@ -479,28 +486,6 @@ main (int argc, char **argv)
   textdomain (PACKAGE);
 
   atexit (close_stdout);
-
-  // Instrument input file's data
-  char input_data1[MAX_DATA];
-  char input_data2[MAX_DATA/2];
-  char input_data3[MAX_DATA/4];
-  for (int i = 0; i < MAX_DATA; i++)
-    CREST_char(input_data1[i]);
-  for (int i = 0; i < MAX_DATA/2; i++)
-    CREST_char(input_data2[i]);
-  for (int i = 0; i < MAX_DATA/4; i++)
-    CREST_char(input_data3[i]);
-
-  FILE* f = fopen(IN_FILE1, "wb");
-  fwrite(input_data1, sizeof(input_data1), 1, f);
-  fclose(f);
-  f = fopen(IN_FILE2, "wb");
-  fwrite(input_data2, sizeof(input_data2), 1, f);
-  fclose(f);
-  f = fopen(IN_FILE3, "wb");
-  fwrite(input_data3, sizeof(input_data3), 1, f);
-  fclose(f);
-
 
   have_read_stdin = false;
   serial_merge = false;

@@ -18,7 +18,7 @@
 
 prefix = /usr
 
-CC=../../cil/bin/cilly --doCrestInstrument
+CC=cilly --doCrestInstrument
 
 VERSION=1.6.0
 TREE_DEST=tree

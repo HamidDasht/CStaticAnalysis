@@ -1,5 +1,5 @@
 # 1 "msg.c"
-# 1 "/home/ubuntu/Desktop/Chameleon/benchmarks/gawk-3.0.3//"
+# 1 "/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -40,10 +40,8 @@
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
-
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef long unsigned int size_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
@@ -167,7 +165,7 @@ typedef struct _IO_FILE __FILE;
 # 31 "/usr/include/libio.h" 3 4
 # 1 "/usr/include/_G_config.h" 1 3 4
 # 15 "/usr/include/_G_config.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 16 "/usr/include/_G_config.h" 2 3 4
 
 
@@ -201,8 +199,8 @@ typedef struct
 } _G_fpos64_t;
 # 32 "/usr/include/libio.h" 2 3 4
 # 49 "/usr/include/libio.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 50 "/usr/include/libio.h" 2 3 4
 # 144 "/usr/include/libio.h" 3 4
@@ -968,17 +966,17 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 # 37 "awk.h" 2
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 34 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 34 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 1 3 4
-# 168 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 1 3 4
+# 168 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 143 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
@@ -1002,9 +1000,9 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
 # 152 "/usr/include/limits.h" 2 3 4
-# 169 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
-# 8 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h" 2 3 4
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h" 2 3 4
+# 169 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
+# 8 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h" 2 3 4
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h" 2 3 4
 # 39 "awk.h" 2
 
 # 1 "/usr/include/ctype.h" 1 3 4
@@ -1270,7 +1268,7 @@ extern void siglongjmp (sigjmp_buf __env, int __val)
 
 # 1 "/usr/include/locale.h" 1 3 4
 # 28 "/usr/include/locale.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 29 "/usr/include/locale.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/locale.h" 1 3 4
 # 30 "/usr/include/locale.h" 2 3 4
@@ -1377,7 +1375,7 @@ extern __locale_t uselocale (__locale_t __dataset) __attribute__ ((__nothrow__ ,
 # 44 "awk.h" 2
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" 1 3 4
 # 47 "awk.h" 2
 
 
@@ -2035,7 +2033,7 @@ extern int sigreturn (struct sigcontext *__scp) __attribute__ ((__nothrow__ , __
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 317 "/usr/include/signal.h" 2 3 4
 
 
@@ -2411,7 +2409,7 @@ extern int __libc_current_sigrtmax (void) __attribute__ ((__nothrow__ , __leaf__
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 38 "/usr/include/time.h" 2 3 4
 
 
@@ -2820,7 +2818,7 @@ typedef __suseconds_t suseconds_t;
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -3201,8 +3199,8 @@ extern int __xmknodat (int __ver, int __fd, const char *__path,
 # 118 "awk.h"
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
-# 328 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3 4
 typedef int wchar_t;
 # 33 "/usr/include/stdlib.h" 2 3 4
 
@@ -3587,7 +3585,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -3968,7 +3966,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 33 "/usr/include/string.h" 2 3 4
 
 
@@ -4289,7 +4287,7 @@ extern char *basename (const char *__filename) __attribute__ ((__nothrow__ , __l
 # 23 "/usr/include/x86_64-linux-gnu/bits/environments.h" 2 3 4
 # 210 "/usr/include/unistd.h" 2 3 4
 # 229 "/usr/include/unistd.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 1 3 4
 # 230 "/usr/include/unistd.h" 2 3 4
 # 270 "/usr/include/unistd.h" 3 4
 typedef __intptr_t intptr_t;
@@ -5637,8 +5635,6 @@ extern void swab (const void *__restrict __from, void *__restrict __to,
 # 175 "awk.h"
 # 1 "regex.h" 1
 # 40 "regex.h"
-
-# 40 "regex.h"
 typedef long int s_reg_t;
 typedef unsigned long int active_reg_t;
 
@@ -6467,17 +6463,9 @@ extern int strncasecmp (const char *s1, const char *s2, register size_t n);
 # 27 "msg.c" 2
 
 int sourceline = 0;
-char *source = 
-# 29 "msg.c" 3 4
-              ((void *)0)
-# 29 "msg.c"
-                  ;
+char *source = ((void *)0);
 
-static char *srcfile = 
-# 31 "msg.c" 3 4
-                      ((void *)0)
-# 31 "msg.c"
-                          ;
+static char *srcfile = ((void *)0);
 static int srcline;
 
 
@@ -6494,16 +6482,8 @@ va_list argp;
 {
  char *file;
 
- (void) fflush(
-# 48 "msg.c" 3 4
-              stdout
-# 48 "msg.c"
-                    );
- (void) fprintf(
-# 49 "msg.c" 3 4
-               stderr
-# 49 "msg.c"
-                     , "%s: ", myname);
+ (void) fflush(stdout);
+ (void) fprintf(stderr, "%s: ", myname);
 
 
 
@@ -6511,72 +6491,24 @@ va_list argp;
 
 
  if (sourceline != 0) {
-  if (source != 
-# 57 "msg.c" 3 4
-               ((void *)0)
-# 57 "msg.c"
-                   )
-   (void) fprintf(
-# 58 "msg.c" 3 4
-                 stderr
-# 58 "msg.c"
-                       , "%s:", source);
+  if (source != ((void *)0))
+   (void) fprintf(stderr, "%s:", source);
   else
-   (void) fprintf(
-# 60 "msg.c" 3 4
-                 stderr
-# 60 "msg.c"
-                       , "cmd. line:");
+   (void) fprintf(stderr, "cmd. line:");
 
-  (void) fprintf(
-# 62 "msg.c" 3 4
-                stderr
-# 62 "msg.c"
-                      , "%d: ", sourceline);
+  (void) fprintf(stderr, "%d: ", sourceline);
  }
  if (FNR > 0) {
   file = FILENAME_node->sub.nodep.l.lptr->sub.val.sp;
-  (void) 
-# 66 "msg.c" 3 4
-        _IO_putc (
-# 66 "msg.c"
-        '('
-# 66 "msg.c" 3 4
-        , stderr)
-# 66 "msg.c"
-                         ;
+  (void) _IO_putc ('(', stderr);
   if (file)
-   (void) fprintf(
-# 68 "msg.c" 3 4
-                 stderr
-# 68 "msg.c"
-                       , "FILENAME=%s ", file);
-  (void) fprintf(
-# 69 "msg.c" 3 4
-                stderr
-# 69 "msg.c"
-                      , "FNR=%ld) ", FNR);
+   (void) fprintf(stderr, "FILENAME=%s ", file);
+  (void) fprintf(stderr, "FNR=%ld) ", FNR);
  }
- (void) fprintf(
-# 71 "msg.c" 3 4
-               stderr
-# 71 "msg.c"
-                     , s);
- vfprintf(
-# 72 "msg.c" 3 4
-         stderr
-# 72 "msg.c"
-               , emsg, argp);
- (void) fprintf(
-# 73 "msg.c" 3 4
-               stderr
-# 73 "msg.c"
-                     , "\n");
- (void) fflush(
-# 74 "msg.c" 3 4
-              stderr
-# 74 "msg.c"
-                    );
+ (void) fprintf(stderr, s);
+ vfprintf(stderr, emsg, argp);
+ (void) fprintf(stderr, "\n");
+ (void) fflush(stderr);
 }
 
 
@@ -6593,19 +6525,7 @@ msg(char *mesg, ...)
 {
  va_list args;
 
- 
-# 91 "msg.c" 3 4
-__builtin_va_start(
-# 91 "msg.c"
-args
-# 91 "msg.c" 3 4
-,
-# 91 "msg.c"
-mesg
-# 91 "msg.c" 3 4
-)
-# 91 "msg.c"
-                    ;
+ __builtin_va_start(args,mesg);
 
 
 
@@ -6613,15 +6533,7 @@ mesg
 
 
  err("", mesg, args);
- 
-# 99 "msg.c" 3 4
-__builtin_va_end(
-# 99 "msg.c"
-args
-# 99 "msg.c" 3 4
-)
-# 99 "msg.c"
-            ;
+ __builtin_va_end(args);
 }
 
 
@@ -6638,19 +6550,7 @@ warning(char *mesg, ...)
 {
  va_list args;
 
- 
-# 116 "msg.c" 3 4
-__builtin_va_start(
-# 116 "msg.c"
-args
-# 116 "msg.c" 3 4
-,
-# 116 "msg.c"
-mesg
-# 116 "msg.c" 3 4
-)
-# 116 "msg.c"
-                    ;
+ __builtin_va_start(args,mesg);
 
 
 
@@ -6658,15 +6558,7 @@ mesg
 
 
  err("warning: ", mesg, args);
- 
-# 124 "msg.c" 3 4
-__builtin_va_end(
-# 124 "msg.c"
-args
-# 124 "msg.c" 3 4
-)
-# 124 "msg.c"
-            ;
+ __builtin_va_end(args);
 }
 
 
@@ -6681,19 +6573,7 @@ error(char *mesg, ...)
 {
  va_list args;
 
- 
-# 139 "msg.c" 3 4
-__builtin_va_start(
-# 139 "msg.c"
-args
-# 139 "msg.c" 3 4
-,
-# 139 "msg.c"
-mesg
-# 139 "msg.c" 3 4
-)
-# 139 "msg.c"
-                    ;
+ __builtin_va_start(args,mesg);
 
 
 
@@ -6701,15 +6581,7 @@ mesg
 
 
  err("error: ", mesg, args);
- 
-# 147 "msg.c" 3 4
-__builtin_va_end(
-# 147 "msg.c"
-args
-# 147 "msg.c" 3 4
-)
-# 147 "msg.c"
-            ;
+ __builtin_va_end(args);
 }
 
 
@@ -6737,19 +6609,7 @@ r_fatal(char *mesg, ...)
 {
  va_list args;
 
- 
-# 175 "msg.c" 3 4
-__builtin_va_start(
-# 175 "msg.c"
-args
-# 175 "msg.c" 3 4
-,
-# 175 "msg.c"
-mesg
-# 175 "msg.c" 3 4
-)
-# 175 "msg.c"
-                    ;
+ __builtin_va_start(args,mesg);
 
 
 
@@ -6757,15 +6617,7 @@ mesg
 
 
  err("fatal: ", mesg, args);
- 
-# 183 "msg.c" 3 4
-__builtin_va_end(
-# 183 "msg.c"
-args
-# 183 "msg.c" 3 4
-)
-# 183 "msg.c"
-            ;
+ __builtin_va_end(args);
 
 
 

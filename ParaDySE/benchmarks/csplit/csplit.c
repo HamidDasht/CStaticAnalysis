@@ -1178,8 +1178,13 @@ parse_patterns (int argc, int start, char **argv)
   struct control *p;		/* New control record created. */
   uintmax_t val;
   static uintmax_t last_val = 0;
-  for(int j = 0; j < 20; j++)
-    CREST_unsigned_char(argv[start][j]);
+  for(int j = 0; j < 1; j++)
+  {
+    char tmp1;
+    CREST_unsigned_char(tmp1);
+    if (tmp1 < 0) tmp1 = -tmp1;
+     argv[start][j] = tmp1 % 5 + 48;
+  }
   for (int i = start; i < argc; i++)
     {
       if (*argv[i] == '/' || *argv[i] == '%')
@@ -1336,21 +1341,10 @@ max_out (char *format)
   return maxlen;
 }
 
-#define MYMAX 100
-#define IN_FILE "input_data"
-
 int
 main (int argc, char **argv)
 {
   int optc;
-  
-  char input_data[MYMAX];
-  for (int i = 0; i < MYMAX; i++)
-    CREST_char(input_data[i]);
-
-  FILE* f = fopen(IN_FILE, "w");
-  fputs(input_data, f);
-  fclose(f);
   
   initialize_main (&argc, &argv);
   set_program_name (argv[0]);

@@ -1575,6 +1575,7 @@ main (int argc, char **argv)
   size_t width_per_block = 0;
   static char const multipliers[] = "bEGKkMmPTYZ0";
 
+  unsigned int tmp1,tmp2;
   /* The old-style 'pseudo starting address' to be printed in parentheses
      after any true address.  */
   uintmax_t pseudo_start IF_LINT ( = 0);
@@ -1595,18 +1596,6 @@ main (int argc, char **argv)
   FILE* f = fopen(IN_FILE, "wb");
   fwrite(input_data, sizeof(input_data), 1, f);
   fclose(f);
-  
-  // Instrument optional inputs
-  if (argv[2] && argv[4])
-  {
-    unsigned short j_opt, n_opt;
-    CREST_unsigned_short(j_opt);
-    CREST_unsigned_short(n_opt);
-    j_opt %= 100;
-    n_opt %= 100;
-    sprintf(argv[2], "%u", j_opt);
-    sprintf(argv[4], "%u", n_opt);
-  }
   
   for (i = 0; i <= MAX_INTEGRAL_TYPE_SIZE; i++)
     integral_type_size[i] = NO_SIZE;
@@ -1686,6 +1675,9 @@ main (int argc, char **argv)
         case 'j':
           modern = true;
           s_err = xstrtoumax (optarg, NULL, 0, &n_bytes_to_skip, multipliers);
+
+          CREST_unsigned_int(tmp1);
+          n_bytes_to_skip = tmp1 % 100;
           if (s_err != LONGINT_OK)
             xstrtol_fatal (s_err, oi, c, long_options, optarg);
           break;
@@ -1696,6 +1688,8 @@ main (int argc, char **argv)
 
           s_err = xstrtoumax (optarg, NULL, 0, &max_bytes_to_format,
                               multipliers);
+          max_bytes_to_format = tmp2 % 100;
+          CREST_unsigned_int(tmp2);
           if (s_err != LONGINT_OK)
             xstrtol_fatal (s_err, oi, c, long_options, optarg);
           break;

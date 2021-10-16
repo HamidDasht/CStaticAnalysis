@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/cha/Chameleon/benchmarks/gawk-3.0.3'
+ac_pwd='/home/hamid/Desktop/CStaticAnalysis/tests/gawk-3.0.3'
 srcdir='.'
 INSTALL='./install-sh -c'
 test -n "$AWK" || AWK=awk

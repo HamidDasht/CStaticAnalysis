@@ -414,22 +414,14 @@ int
 main (int argc, char **argv)
 {
   int c;
-  //int argc = 2;
-  //char** argv;
-  //argv = (char**)malloc(sizeof(char*)*2);
-  //argv[0] = (char*)malloc(sizeof(char)*10);
-  //argv[1] = (char*)malloc(sizeof(char)*60);
-  //strcpy(argv[0], "comm");
 
   char input_data_1[MYMAX];
   char input_data_2[MYMAX];
-
   for (int i = 0; i < MYMAX; i++)
   {
-    CREST_char(input_data_1[i]);
-    CREST_char(input_data_2[i]);
+   CREST_char(input_data_1[i]);
+   CREST_char(input_data_2[i]);
   }
-
   FILE* f = fopen(FILE1, "w");
   fputs(input_data_1, f);
   fclose(f);
@@ -437,61 +429,31 @@ main (int argc, char **argv)
   fputs(input_data_2, f);
   fclose(f);
   
-  /*
-  char one_opt[4] = "";
   short one_opt_en;
   CREST_short(one_opt_en);
   if (one_opt_en > 0)
-  {
-    strcpy(one_opt,"-1 ");
-    argc++;
-  }  
-  strcpy(argv[1], one_opt);
+    only_file_1 = false;
 
-  char two_opt[4] = "";
   short two_opt_en;
   CREST_short(two_opt_en);
   if (two_opt_en > 0)
-  {
-    strcpy(two_opt,"-2 ");
-    argc++;
-  }  
-  strcpy(argv[1], two_opt);
+    only_file_2 = false;
 
-  char three_opt[4] = "";
   short three_opt_en;
   CREST_short(three_opt_en);
   if (three_opt_en > 0)
-  {
-    strcpy(three_opt,"-3 ");
-    argc++;
-  }  
-  strcpy(argv[1], three_opt);
+    both = false;
 
-  char check_opt[15] = "";
   short check_opt_en;
   CREST_short(check_opt_en);
   if (check_opt_en > 0)
-  {
-    strcpy(check_opt,"--check-order ");
-    argc++;
-  }  
-  strcpy(argv[1], check_opt);
+    check_input_order = CHECK_ORDER_ENABLED;
 
-  char nocheck_opt[17] = "";
   short nocheck_opt_en;
   CREST_short(nocheck_opt_en);
   if (nocheck_opt_en > 0)
-  {
-    strcpy(nocheck_opt,"--nocheck-order ");
-    argc++;
-  }  
-  strcpy(argv[1], nocheck_opt);
-
-  strcat(argv[1], FILE1);
-  strcat(argv[1], " ");
-  strcat(argv[1], FILE2);
-  */
+    check_input_order = CHECK_ORDER_DISABLED;
+    
 
   initialize_main (&argc, &argv);
   set_program_name (argv[0]);
@@ -551,7 +513,7 @@ main (int argc, char **argv)
 
       case_GETOPT_HELP_CHAR;
 
-      case_GETOPT_VERSION_CHAR (PROGRAM_NAME, AUTHORS);
+      //case_GETOPT_VERSION_CHAR (PROGRAM_NAME, AUTHORS);
 
       default:
         usage (EXIT_FAILURE);
